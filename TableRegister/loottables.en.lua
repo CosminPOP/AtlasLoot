@@ -178,6 +178,7 @@ AtlasLoot_TableNames = {
     ["MaraTinkererGizlock"] = { AL["Tinkerer Gizlock"], "AtlasLootItems" },
     ["MaraRotgrip"] = { AL["Rotgrip"], "AtlasLootItems" },
     ["MaraPrincessTheradras"] = { AL["Princess Theradras"], "AtlasLootItems" },
+    ["MaraTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
     --Molten Core
     ["MCLucifron"] = { AL["Lucifron"], "AtlasLootItems" },
     ["MCMagmadar"] = { AL["Magmadar"], "AtlasLootItems" },
@@ -211,6 +212,8 @@ AtlasLoot_TableNames = {
     --Onyxia's Lair
     ["Onyxia"] = { AL["Onyxia"], "AtlasLootItems" },
     --Ragefire Chasm
+    ["RFCBazzalan"] = { AL["Bazzalan"], "AtlasLootItems" },
+    ["RFCOggleflint"] = { AL["Oggleflint"], "AtlasLootItems" },
     ["RFCTaragaman"] = { AL["Taragaman the Hungerer"], "AtlasLootItems" },
     ["RFCJergosh"] = { AL["Jergosh the Invoker"], "AtlasLootItems" },
     --Razorfen Downs
@@ -303,6 +306,11 @@ AtlasLoot_TableNames = {
     ["SFKDeathswornCaptain"] = { AL["Deathsworn Captain"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
     ["SFKTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Shadowfang Keep"] .. ")", "AtlasLootItems" },
     --The Stockade
+    ["SWStTargorr"] = { AL["Targorr the Dread"], "AtlasLootItems" },
+    ["SWStHamhock"] = { AL["Hamhock"], "AtlasLootItems" },
+    ["SWStBazil"] = { AL["Bazil Thredd"], "AtlasLootItems" },
+    ["SWStDextren"] = { AL["Dextren Ward"], "AtlasLootItems"},
+
     ["SWStKamDeepfury"] = { AL["Kam Deepfury"], "AtlasLootItems" },
     ["SWStBruegalIronknuckle"] = { AL["Bruegal Ironknuckle"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
     ["SWStTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Stockade"] .. ")", "AtlasLootItems" },
@@ -1013,6 +1021,7 @@ AtlasLoot_TableNamesBoss = {
         ["MaraTinkererGizlock"] = { AL["Tinkerer Gizlock"], "AtlasLootItems" },
         ["MaraRotgrip"] = { AL["Rotgrip"], "AtlasLootItems" },
         ["MaraPrincessTheradras"] = { AL["Princess Theradras"], "AtlasLootItems" },
+        ["MaraTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
     },
     ["Molten Core"] = {
         ["MCLucifron"] = { AL["Lucifron"], "AtlasLootItems" },
@@ -1050,6 +1059,7 @@ AtlasLoot_TableNamesBoss = {
         ["Onyxia"] = { AL["Onyxia"], "AtlasLootItems" },
     },
     ["Ragefire Chasm"] = {
+        ["RFCOggleflint"] = { AL["Oggleflint"], "AtlasLootItems" },
         ["RFCTaragaman"] = { AL["Taragaman the Hungerer"], "AtlasLootItems" },
         ["RFCJergosh"] = { AL["Jergosh the Invoker"], "AtlasLootItems" },
     },

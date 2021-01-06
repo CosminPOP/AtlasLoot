@@ -1230,11 +1230,16 @@ AL:RegisterTranslations("enUS", function() return {
 	["Vem"] = true,
 	["Princess Yauj"] = true,
 	["Shattrath City"] = true,
+	["Oggleflint"] = true,
+	["Bazzalan"] = true,
 	["Taragaman the Hungerer"] = true,
 	["Jergosh the Invoker"] = true,
 	["Zelemar the Wrathful"] = true,
 	["Targorr the Dread"] = true,
 	["Kam Deepfury"] = true,
+	["Hamhock"] = true,
+	["MaraTrash"] = true,
+	["Trash Mobs"] = true,
 	["Bazil Thredd"] = true,
 	["Dextren Ward"] = true,
 	["Bruegal Ironknuckle"] = true,
@@ -1398,4 +1403,3 @@ AL:RegisterTranslations("enUS", function() return {
 	["Dust of Deterioration"] = true,
 	["Leaded Vial"] = true,
 	} end)
-	
