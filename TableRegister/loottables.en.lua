@@ -654,6 +654,9 @@ AtlasLoot_TableNames = {
     ["Zandalar1"] = { AL["Zandalar Tribe"] .. ": " .. AL["Friendly"] .. "/" .. AL["Honored"], "AtlasLootRepItems" },
     ["Zandalar2"] = { AL["Zandalar Tribe"] .. ": " .. AL["Revered"] .. "/" .. AL["Exalted"], "AtlasLootRepItems" },
 
+    ["Helf"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
+    ["Revantusk"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
+
     --------------
     --- Trades ---
     --------------
@@ -1517,6 +1520,7 @@ AtlasLoot_TableNamesBoss = {
         ["GelkisClan1"] = { AL["Gelkis Clan Centaur"], "AtlasLootRepItems" },
         --The League of Arathor
         ["LeagueofArathor"] = { AL["The League of Arathor"], "AtlasLootRepItems" },
+
         --Magram Clan Centaur
         ["MagramClan1"] = { AL["Magram Clan Centaur"], "AtlasLootRepItems" },
         --Stormpike Guard
@@ -1531,6 +1535,9 @@ AtlasLoot_TableNamesBoss = {
         --Zandalar Tribe
         ["Zandalar1"] = { AL["Zandalar Tribe"] .. ": " .. AL["Friendly"] .. "/" .. AL["Honored"], "AtlasLootRepItems" },
         ["Zandalar2"] = { AL["Zandalar Tribe"] .. ": " .. AL["Revered"] .. "/" .. AL["Exalted"], "AtlasLootRepItems" },
+
+        ["Helf"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
+        ["Revantusk"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
     },
 
     --------------

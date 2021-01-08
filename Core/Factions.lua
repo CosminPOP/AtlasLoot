@@ -110,6 +110,20 @@ function AtlasLootRepMenu()
 	AtlasLootMenuItem_22_Icon:SetTexture("Interface\\Icons\\INV_Misc_Coin_08");
 	AtlasLootMenuItem_22.lootpage="Zandalar1";
 	AtlasLootMenuItem_22:Show();
+
+	--helf
+	AtlasLootMenuItem_13_Name:SetText(AL["Silvermoon Remnant"]);
+	AtlasLootMenuItem_13_Extra:SetText("|cff2773ff"..AL["Alliance"]);
+	AtlasLootMenuItem_13_Icon:SetTexture("Interface\\Icons\\INV_Staff_13");
+	AtlasLootMenuItem_13.lootpage="Helf";
+	AtlasLootMenuItem_13:Show();
+	--raventusk
+	AtlasLootMenuItem_28_Name:SetText(AL["Revantusk Trolls"]);
+	AtlasLootMenuItem_28_Extra:SetText("|cffFF0000"..AL["Horde"]);
+	AtlasLootMenuItem_28_Icon:SetTexture("Interface\\Icons\\INV_Misc_Head_Troll_01");
+	AtlasLootMenuItem_28.lootpage="Revantusk";
+	AtlasLootMenuItem_28:Show();
+
 	for i = 1, 30, 1 do
 		getglobal("AtlasLootMenuItem_"..i.."_Extra"):Show();
 	end

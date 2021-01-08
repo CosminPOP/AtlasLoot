@@ -1402,4 +1402,6 @@ AL:RegisterTranslations("enUS", function() return {
 	["Huge Emerald"] = true,
 	["Dust of Deterioration"] = true,
 	["Leaded Vial"] = true,
+	["Silvermoon Remnant"] = true,
+	["Revantusk Trolls"] = true,
 	} end)
