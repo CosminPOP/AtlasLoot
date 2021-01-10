@@ -2819,7 +2819,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Wintersaber Trainers"], "Wintersaber1" },
 		{ AL["Zandalar Tribe"], "Zandalar1" },
 		{ AL["Silvermoon Remnant"], "Helf" },
-		{ AL["Revantusk Trolls"], "Raventusk" },
+		{ AL["Revantusk Trolls"], "Revantusk" },
 	},
 	["BoEWorldEpics"] = {
 		{ AtlasLoot_TableNames["WorldEpics3"][1], "WorldEpics3" },
