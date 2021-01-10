@@ -1917,6 +1917,8 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 20889, "INV_Bracer_18", "=q3=Qiraji Regal Drape", "=q16=#c4#=ds=, =q14=#c2#=ds=, =q15=#c7#=ds=, =q11=#c8#=ds=, =q13=#c1#", "36.51%" },
 		{ 20888, "INV_Qiraj_RingCeremonial", "=q3=Qiraji Ceremonial Ring", "=q14=#c2#=ds=, =q12=#c6#=ds=, =q9=#c5#=ds=, =q11=#c8#", "8.56%" },
 		{ 20884, "INV_Qiraj_RingMagisterial", "=q3=Qiraji Magisterial Ring", "=q17=#c9#=ds=, =q16=#c4#=ds=, =q15=#c7#=ds=, =q10=#c3#=ds=, =q13=#c1#", "8.82%" },
+		{ 0, "", "", "" },
+		{ 81004, "", "=q3=", "", "10%" },
 	};
 	AQ20Moam = {
 		{ 21472, "INV_Helmet_62", "=q4=Dustwind Turban", "=ds=#s1#, #a1#", "7.76%" },
@@ -1943,8 +1945,6 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "" },
 		{ 22220, "INV_Scroll_05", "=q3=Plans: Black Grasp of the Destroyer", "=ds=#p2# #m14#", "4.11%" },
 		{ 22194, "INV_Gauntlets_31", "=q4=Black Grasp of the Destroyer", "=ds=#s9#, #a3#" },
-		{ 0, "", "", "" },
-		{ 81004, "", "=q3=", "", "10%" },
 	};
 	AQ20Buru = {
 		{ 21487, "INV_Gauntlets_12", "=q4=Slimy Scaled Gauntlets", "=ds=#s9#, #a3#", "2.64%" },
