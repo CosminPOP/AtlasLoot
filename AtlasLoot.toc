@@ -15,7 +15,7 @@ Libs\AceAddon\AceAddon-2.0.lua
 Libs\Dewdrop\Dewdrop-2.0.lua
 
 Locale\Locale.xml
-Bossnames\BossNames.xml
+# Bossnames\BossNames.xml
 Sets\Sets.xml
 Crafting\Crafting.xml
 PvP\PvP.xml
