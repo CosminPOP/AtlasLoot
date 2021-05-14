@@ -2797,6 +2797,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Lord Kazzak"], "KKazzak"},
 		{ "Turtlhu, the Black Turtle of Doom", "Turtlhu" },
 		{ "Nerubian Overseer", "Nerubian" },
+		{ "Dark Reaver of Karazhan", "Reaver" },
 	},
 	["AbyssalCouncil1"] = {
 		{ AL["Abyssal Council"].." - "..AL["Templars"], "AbyssalTemplars" },

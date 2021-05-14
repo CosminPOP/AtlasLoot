@@ -574,6 +574,7 @@ AtlasLoot_TableNames = {
     ["ASpiritA"] = { AL["Spirit of Azuregos"], "AtlasLootWBItems" },
     ["Turtlhu"] = { "Turtlhu, the Black Turtle of Doom", "AtlasLootWBItems" },
     ["Nerubian"] = { "Nerubian Overseer", "AtlasLootWBItems" },
+    ["Reaver"] = { "Dark Reaver of Karazhan", "AtlasLootWBItems" },
     --Doom Lord Kazzak
     ["KKazzak"] = { AL["Lord Kazzak"], "AtlasLootWBItems" },
     --Emrald Dragons
@@ -1453,6 +1454,7 @@ AtlasLoot_TableNamesBoss = {
         ["ASpiritA"] = { AL["Spirit of Azuregos"], "AtlasLootWBItems" },
         ["Turtlhu"] = { "Turtlhu, the Black Turtle of Doom", "AtlasLootWBItems" },
         ["Nerubian"] = { "Nerubian Overseer", "AtlasLootWBItems" },
+        ["Reaver"] = { "Dark Reaver of Karazhan", "AtlasLootWBItems" },
         --Doom Lord Kazzak
         ["KKazzak"] = { AL["Lord Kazzak"], "AtlasLootWBItems" },
         --Emrald Dragons
