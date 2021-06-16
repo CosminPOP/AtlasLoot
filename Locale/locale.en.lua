@@ -718,6 +718,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Frostwhisper's Embalming Fluid"] = true,
 	["Unforged Rune Covered Breastplate"] = true,
 	["Malor's Strongbox"] = true,
+	["Malor the Zealous"] = true,
 	["Unfinished Painting"] = true,
 	["Felvine Shard"] = true,
 	["Baelog's Chest"] = true,

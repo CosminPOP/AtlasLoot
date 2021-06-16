@@ -585,7 +585,7 @@ AtlasLootBossButtons = {
 		"STRATTheUnforgiven";
 		"LunarFestival1";
 		"STRATTimmytheCruel";
-		"";
+		"STRATMalor";
 		"STRATMalorsStrongbox";
 		"STRATCrimsonHammersmith";
 		"STRATBSPlansSerenity";
@@ -4086,6 +4086,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	DMWTendrisWarpwood = {
 		{ 18393, "INV_Belt_34", "=q3=Warpwood Binding", "=ds=#s10#, #a3#", "19.81%" },
 		{ 18390, "INV_Pants_14", "=q3=Tanglemoss Leggings", "=ds=#s11#, #a2#", "22.55%" },
+		{ 70054, "INV_Pants_14", "=q3=Wyrmheart Boots", "", "6%" },
 		{ 0, "", "", "" },
 		{ 18352, "INV_Shield_18", "=q2=Petrified Bark Shield", "=ds=#w8#", "21.67%" },
 		{ 18353, "INV_Staff_08", "=q2=Stoneflower Staff", "=ds=#w9#", "23.46%" },
@@ -4093,6 +4094,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	DMWIllyannaRavenoak = {
 		{ 18383, "INV_Gauntlets_09", "=q3=Force Imbued Gauntlets", "=ds=#s9#, #a4#", "20.11%" },
 		{ 18386, "INV_Pants_06", "=q3=Padre's Trousers", "=ds=#s11#, #a1#", "18.79%" },
+		{ 70053, "inv_pants_04", "=q3=Rotworm Legplates", "", "6%" },
 		{ 0, "", "", "" },
 		{ 18349, "INV_Gauntlets_12", "=q2=Gauntlets of Accuracy", "=ds=#s9#, #a3#", "23.94%" },
 		{ 18347, "INV_Axe_11", "=q2=Well Balanced Axe", "=ds=#h1#, #w1#", "22.44%" },
@@ -4101,6 +4103,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 18374, "INV_Shoulder_24", "=q3=Flamescarred Shoulders", "=ds=#s3#, #a2#", "18.11%" },
 		{ 18397, "INV_Jewelry_Necklace_07", "=q3=Elder Magus Pendant", "=ds=#s2#", "17.46%" },
 		{ 18371, "INV_Battery_02", "=q3=Mindtap Talisman", "=ds=#s14#", "7.45%" },
+		{ 70051, "inv_gauntlets_09", "=q3=Gauntlets of Wrangling", "", "6%" },
 		{ 0, "", "", "" },
 		{ 18350, "INV_Misc_Cape_18", "=q2=Amplifying Cloak", "=ds=#s4#", "21.44%" },
 		{ 18351, "INV_Bracer_18", "=q2=Magically Sealed Bracers", "=ds=#s8#, #a4#", "24.36%" },
@@ -4125,12 +4128,15 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 18379, "INV_Boots_Plate_06", "=q3=Odious Greaves", "=ds=#s12#, #a3#", "19.81%" },
 		{ 18370, "INV_Misc_StoneTablet_04", "=q3=Vigilance Charm", "=ds=#s14#", "6.30%" },
 		{ 18372, "INV_Weapon_ShortBlade_18", "=q3=Blade of the New Moon", "=ds=#h3#, #w4#", "6.99%" },
+		{ 70050, "inv_shoulder_11", "=q3=Shoulderplates of Misfortune", "=ds=#s3#, #a4#", "6%" },
+		{ 70055, "inv_chest_plate08", "=q3=Breastplate of Forgotten Valor", "", "6%" },
 	};
 	DMWHelnurath = {
 		{ 18757, "INV_Shoulder_25", "=q3=Diabolic Mantle", "=ds=#s3#, #a1#", "23.12%" },
 		{ 18754, "INV_Bracer_15", "=q3=Fel Hardened Bracers", "=ds=#s8#, #a4#", "19.24%" },
 		{ 18755, "INV_Weapon_Rifle_03", "=q3=Xorothian Firestick", "=ds=#w5#", "21.92%" },
 		{ 18756, "INV_Shield_17", "=q3=Dreadguard's Protector", "=ds=#w8#", "19.77%" },
+		{ 70052, "inv_belt_13", "=q3=Skorgrim's Lost Belt", "", "6%" },
 	};
 	DMWPrinceTortheldrin = {
 		{ 18382, "INV_Misc_Cape_14", "=q3=Fluctuating Cloak", "=ds=#s4# =q2=#e32#", "21.84%" },
@@ -4143,6 +4149,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 18396, "INV_Weapon_ShortBlade_22", "=q3=Mind Carver", "=ds=#h3#, #w10#", "14.62%" },
 		{ 18376, "INV_Mace_07", "=q3=Timeworn Mace", "=ds=#h1#, #w6#", "14.40%" },
 		{ 18392, "INV_Weapon_ShortBlade_05", "=q3=Distracting Dagger", "=ds=#h4#, #w4#", "14.70%" },
+		{ 70056, "inv_helmet_25", "=q3=Horned Helm of Ancient Kings", "", "6%" },
 	};
 	DMWShendralarProvisioner =		{ 
 		{ 18487, "INV_Scroll_03", "=q1=Pattern: Mooncloth Robe", "=ds=#p8# #m14#" },
@@ -4349,6 +4356,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 13395, "INV_Gauntlets_27", "=q3=Skul's Fingerbone Claws", "=ds=#s9#, #a2#", "36.52%" },
 		{ 13394, "INV_Chest_Chain_15", "=q3=Skul's Cold Embrace", "=ds=#s5#, #a4#", "24.16%" },
 		{ 13396, "INV_Misc_Bone_ElfSkull_01", "=q3=Skul's Ghastly Touch", "=ds=#w12#", "16.85%" },
+		{ 70060, "inv_pants_04", "=q3=Greaves of Servitude", "", "6%" },
 	};
 	STRATStratholmeCourier={
 		{ 13303, "INV_Misc_Key_03", "=q1=Crusaders' Square Postbox Key", "=ds=#e14#", "43.46%" },
@@ -4379,6 +4387,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 13405, "INV_Shoulder_25", "=q3=Wailing Nightbane Pauldrons", "=ds=#s3#, #a4#", "12.10%" },
 		{ 13409, "INV_Bracer_13", "=q3=Tearfall Bracers", "=ds=#s8#, #a1# =q2=#e31#", "14.62%" },
 		{ 13408, "INV_Weapon_Halberd_05", "=q3=Soul Breaker", "=ds=#h3#, #w1#", "19.33%" },
+		{ 70064, "inv_shoulder_11", "=q3=Epaulets of Courage", "", "6%" },
 	};
 	STRATTimmytheCruel = {
 		{ 16724, "INV_Gauntlets_19", "=q3=Lightforge Gauntlets", "=ds=#s9#, #a4# (D1, =q16=#c4#=ds=)", "10.42%" },
@@ -4387,6 +4396,17 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 13403, "INV_Belt_02", "=q3=Grimgore Noose", "=ds=#s10#, #a1#", "16.48%" },
 		{ 13402, "INV_Boots_01", "=q3=Timmy's Galoshes", "=ds=#s12#, #a3#", "16.74%" },
 		{ 13401, "INV_Misc_Bone_ElfSkull_01", "=q3=The Cruel Hand of Timmy", "=ds=#h1#, #w6#", "16.87%" },
+	};
+	STRATMalor = {
+		{ 81016, "inv_jewelry_necklace_15", "=q3=Bleeding Heart Talisman", "", "11%" },
+		{ 81017, "inv_belt_13", "=q3=Girdle of Fading Hope", "", "11%" },
+		{ 81018, "inv_sword_07", "=q3=Crimson Spellblade", "", "11%" },
+		{ 81019, "inv_gauntlets_26", "=q3=Gauntlets of the Myrimidon", "", "11%" },
+		{ 81122, "inv_misc_cape_18", "=q3=Bloodfallen Cloak", "", "11%" },
+		{ 81123, "inv_pants_mail_09", "=q3=Crimson Defender's Leggings", "", "11%" },
+		{ 81124, "inv_helmet_19", "=q3=Helmet of the Scarlet Avenger", "", "11%" },
+		{ 81125, "inv_misc_orb_03", "=q3=Inquisitor's Orb", "", "11%" },
+		{ 81131, "inv_helmet_19", "=q3=Helmet of the Scarlet Avenger", "", "11%" },
 	};
 	STRATMalorsStrongbox = {
 		{ 0, "INV_Box_01", "=q6=#cb13#", "" },
@@ -4417,6 +4437,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 22405, "INV_Shoulder_02", "=q3=Mantle of the Scarlet Crusade", "=ds=#s3#, #a1#", "16.03%" },
 		{ 18721, "INV_Belt_18", "=q3=Barrage Girdle", "=ds=#s10#, #a3#", "12.39%" },
 		{ 13381, "INV_Boots_Plate_09", "=q3=Master Cannoneer Boots", "=ds=#s12#, #a4#", "12.86%" },
+		{ 70058, "inv_chest_plate08", "=q3=Breastplate of Fortitutde", "", "6%" },
 		{ 13382, "INV_Misc_Bomb_04", "=q3=Cannonball Runner", "=ds=#s14#", "12.28%" },
 		{ 13380, "INV_Weapon_Rifle_07", "=q3=Willey's Portable Howitzer", "=ds=#w5#", "10.71%" },
 		{ 13377, "INV_Ammo_Bullet_02", "=q3=Miniature Cannon Balls", "=ds=#e6#", "66.61%" },
@@ -4435,6 +4456,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 13387, "INV_Belt_21", "=q3=Foresight Girdle", "=ds=#s10#, #a3# =q2=#e31#", "18.24%" },
 		{ 18716, "INV_Boots_08", "=q3=Ash Covered Boots", "=ds=#s12#, #a2#", "16.30%" },
 		{ 13385, "INV_Misc_Book_05", "=q3=Tome of Knowledge", "=ds=#s15#", "9.87%" },
+		{ 70062, "inv_gauntlets_09", "=q3=Gauntlets of Force", "", "6%" },
 		{ 0, "", "", "", "" },
 		{ 12811, "INV_Misc_Gem_Pearl_03", "=q2=Righteous Orb", "=ds=#e12#", "45.41%" },
 		{ 0, "", "", "", "" },
@@ -4452,6 +4474,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 12103, "INV_Jewelry_Talisman_08", "=q3=Star of Mystaria", "=ds=#s2#", "12.48%" },
 		{ 18720, "INV_Shoulder_23", "=q3=Shroud of the Nathrezim", "=ds=#s3#, #a1#", "10.54%" },
 		{ 13358, "INV_Shoulder_24", "=q3=Wyrmtongue Shoulders", "=ds=#s3#, #a2#", "11.58%" },
+		{ 70057, "inv_helmet_19", "=q3=Crown of Sacrifice", "", "6%" },
 		{ 13369, "INV_Boots_05", "=q3=Fire Striders", "=ds=#s12#, #a1#", "14.84%" },
 		{ 13360, "INV_Weapon_ShortBlade_15", "=q3=Gift of the Elven Magi", "=ds=#h1#, #w4#", "13.66%" },
 		{ 18717, "INV_Hammer_06", "=q3=Hammer of the Grand Crusader", "=ds=#h2#, #w6#", "11.91%" },
@@ -4538,6 +4561,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 13376, "INV_Misc_Cape_14", "=q3=Royal Tribunal Cloak", "=ds=#s4#", "12.44%" },
 		{ 18726, "INV_Bracer_11", "=q3=Magistrate's Cuffs", "=ds=#s8#, #a2#", "12.87%" },
 		{ 18722, "INV_Gauntlets_13", "=q3=Death Grips", "=ds=#s9#, #a4#", "15.34%" },
+		{ 70059, "inv_boots_plate_05", "=q3=Sabatons of Protection", "", "6%" },
 		{ 23198, "INV_Relics_IdolofFerocity", "=q3=Idol of Brutality", "=ds=#s16#, #e16# =q13=#c1#", "2.37%" },
 		{ 18725, "INV_Spear_07", "=q3=Peacemaker", "=ds=#w7#", "14.22%" },
 		{ 0, "", "", "", "" },

@@ -921,6 +921,7 @@ AL:RegisterTranslations("esES", function() return {
 	["Frostwhisper's Embalming Fluid"] = "Líquido de embalsamar Levescarcha",
 	["Unforged Rune Covered Breastplate"] = "Coraza cubierta de runas sin forjar",
 	["Malor's Strongbox"] = "Caja fuerte de Malor",
+	["Malor the Zealous"] = "Malor the Zealous",
 	["Unfinished Painting"] = "Pintura sin terminar", --Comprobar
 	["Felvine Shard"] = "Fragmento de gangrevid",
 	["Baelog's Chest"] = "Cofre de Baelog",

@@ -643,6 +643,7 @@ AL:RegisterTranslations("koKR", function() return {
     ["Frostwhisper's Embalming Fluid"] = "프로스트위스퍼의 불변의 영액",
     ["Unforged Rune Covered Breastplate"] = "버려지지 않은 룬문자 흉갑",
     ["Malor's Strongbox"] = "말로의 금고",
+    ["Malor the Zealous"] = "Malor the Zealous",
     ["Unfinished Painting"] = "완성되지 않은 그림",
     ["Felvine Shard"] = "악령덩쿨 조각",
     ["Baelog's Chest"] = "밸로그의 괴짝",

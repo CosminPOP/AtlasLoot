@@ -936,6 +936,7 @@ AL:RegisterTranslations("zhCN", function() return {
     ["Frostwhisper's Embalming Fluid"] = "莱斯·霜语的防腐液",
     ["Unforged Rune Covered Breastplate"] = "未铸造的符文覆饰胸甲",
     ["Malor's Strongbox"] = "玛洛尔的保险箱",
+    ["Malor the Zealous"] = "Malor the Zealous",
     ["Unfinished Painting"] = "未完成的油画",
     ["Felvine Shard"] = "魔藤碎片",
     ["Baelog's Chest"] = "巴尔洛戈的箱子",

@@ -940,6 +940,7 @@ AL:RegisterTranslations("frFR", function() return {
     ["Frostwhisper's Embalming Fluid"] = "Liquide d'embaumement de Murmegivre",
     ["Unforged Rune Covered Breastplate"] = "Plastron couvert de runes inachevé",
     ["Malor's Strongbox"] = "Coffre de Foi",
+    ["Malor the Zealous"] = "Malor the Zealous",
     ["Unfinished Painting"] = "Toile inachevée",
     ["Felvine Shard"] = "Fragment de la Gangrevigne",
     ["Baelog's Chest"] = "Coffre de Baelog",

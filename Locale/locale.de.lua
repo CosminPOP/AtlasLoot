@@ -920,6 +920,7 @@ AL:RegisterTranslations("deDE", function() return {
     ["Frostwhisper's Embalming Fluid"] = "Frostraunens Balsamierungsflüssigkeit",
     ["Unforged Rune Covered Breastplate"] = "Ungeschmiedete runenverzierte Brustplatte",
     ["Malor's Strongbox"] = "Malors Geldkassette",
+    ["Malor the Zealous"] = "Malor the Zealous",
     ["Unfinished Painting"] = "Unvollendetes Gemälde",
     ["Felvine Shard"] = "Teufelsrankensplitter",
     ["Baelog's Chest"] = "Baelogs Truhe",

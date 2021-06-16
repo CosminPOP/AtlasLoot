@@ -912,6 +912,7 @@ AL:RegisterTranslations("ruRU", function() return {
     ["Frostwhisper's Embalming Fluid"] = "Frostwhisper's Embalming Fluid",
     ["Unforged Rune Covered Breastplate"] = "Unforged Rune Covered Breastplate",
     ["Malor's Strongbox"] = "Malor's Strongbox",
+    ["Malor the Zealous"] = "Malor the Zealous",
     ["Unfinished Painting"] = "Unfinished Painting",
     ["Felvine Shard"] = "Felvine Shard",
     ["Baelog's Chest"] = "Baelog's Chest",

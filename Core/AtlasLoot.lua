@@ -2594,6 +2594,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Hearthsinger Forresten"].." ("..AL["Rare"]..")", "STRATHearthsingerForresten" },
 		{ AL["The Unforgiven"], "STRATTheUnforgiven" },
 		{ AL["Timmy the Cruel"], "STRATTimmytheCruel" },
+		{ AL["Malor the Zealous"], "STRATMalor" },
 		{ AL["Malor's Strongbox"], "STRATMalorsStrongbox" },
 		{ AL["Crimson Hammersmith"], "STRATCrimsonHammersmith" },
 		{ AL["Cannon Master Willey"], "STRATCannonMasterWilley" },
