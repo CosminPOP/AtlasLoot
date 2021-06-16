@@ -4086,7 +4086,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	DMWTendrisWarpwood = {
 		{ 18393, "INV_Belt_34", "=q3=Warpwood Binding", "=ds=#s10#, #a3#", "19.81%" },
 		{ 18390, "INV_Pants_14", "=q3=Tanglemoss Leggings", "=ds=#s11#, #a2#", "22.55%" },
-		{ 70054, "INV_Pants_14", "=q3=Wyrmheart Boots", "", "6%" },
+		{ 70054, "inv_boots_plate_05", "=q3=Wyrmheart Boots", "", "6%" },
 		{ 0, "", "", "" },
 		{ 18352, "INV_Shield_18", "=q2=Petrified Bark Shield", "=ds=#w8#", "21.67%" },
 		{ 18353, "INV_Staff_08", "=q2=Stoneflower Staff", "=ds=#w9#", "23.46%" },
@@ -4406,7 +4406,6 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 81123, "inv_pants_mail_09", "=q3=Crimson Defender's Leggings", "", "11%" },
 		{ 81124, "inv_helmet_19", "=q3=Helmet of the Scarlet Avenger", "", "11%" },
 		{ 81125, "inv_misc_orb_03", "=q3=Inquisitor's Orb", "", "11%" },
-		{ 81131, "inv_helmet_19", "=q3=Helmet of the Scarlet Avenger", "", "11%" },
 	};
 	STRATMalorsStrongbox = {
 		{ 0, "INV_Box_01", "=q6=#cb13#", "" },
