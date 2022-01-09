@@ -618,6 +618,41 @@ AtlasLootBossButtons = {
 		"IRONWEAVE";
 		"T0SET";
 	};
+	TheCrescentGrove = {
+		"";
+		"";
+        "TCGGrovetenderEngryss";
+        "TCGKeeperRanathos";
+        "TCGHighPriestessAlathea";
+        "TCGFenektistheDeceiver";
+        "TCGMasterRaxxieth";
+	};
+	KarazhanCrypt = {
+		"";
+		"";
+        "KCMarrowspike";
+        "KCHivaxxis";
+        "KCCorpsemuncher";
+        "KCArchlichEnkhraz";
+        "KCAlarus";
+	};
+	CavernsOfTimeBlackMorass = {
+		"";
+		"";
+        "COTBMChronar";
+        "COTBMTimeLordEpochronos";
+        "COTBMAntnormi";
+	};
+	StormwindVault = {
+		"";
+		"";
+        "SWVAszoshGrimflame";
+        "SWVThamGrarr";
+        "SWVBlackBride";
+        "SWVDamian";
+        "SWVVolkanCruelblade";
+        "SWVArctiras";
+	};
 	TheDeadmines = {
 		"";
 		"";
@@ -2689,6 +2724,166 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 10413, "INV_Gauntlets_18", "=q2=Gloves of the Fang", "=ds=#s9#, #a2# =q7=#x4#", "1.20%" },
 		{ 0, "", "", "" },
 		{ 80807, "", "=q2=", "", "0.02%" },
+	};
+	TCGGrovetenderEngryss = {
+		{ 83220, "INV_jewelry_necklace_09", "=q3=Groveweald Tribal Necklace", "=ds=#s2#", "24%" },
+		{ 83221, "INV_hammer_16", "=q3=Thornroot Maul", "=ds=#h2#, #w6#", "24%" },
+		{ 83222, "INV_bracer_12", "=q3=Groveweald Elder Cuffs", "=ds=#s8#, #a1#", "24%" },
+		{ 83223, "INV_gauntlets_24", "=q3=Furbolg Battle Grips", "=ds=#s9#, #a2#", "24%" },
+		{ 83224, "INV_misc_horn_03", "=q3=Horn of Engryss", "=ds=#s14#", "5%" },
+		{ 0, "", "", "" },
+		{ 60176, "INV_misc_coin_13", "=q1=Groveweald Badge", "=ds=#m3#", "100%" },
+	};
+	TCGKeeperRanathos = {
+		{ 83225, "INV_weapon_bow_11", "=q3=Bow of the Grove", "=ds=#w2#", "24%" },
+		{ 83226, "INV_bracer_12", "=q3=Bands of Ranathos", "=ds=#s8#, #a2#", "24%" },
+		{ 83228, "INV_boots_03", "=q3=Treads of the Keeper", "=ds=#s12#, #a3#", "24%" },
+		{ 83229, "INV_jewelry_ring_08", "=q3=Circlet of Cenarius", "=ds=#s13#", "5%" },
+	};
+	TCGHighPriestessAlathea = {
+		{ 83208, "INV_belt_22", "=q3=Circlet of the Crescent Moon", "=ds=#s1#, #a1#", "30%" },
+		{ 83209, "INV_axe_12", "=q3=Sentinel's Moonslicer", "=ds=#h2#, #w1#", "30%" },
+		{ 83211, "INV_shoulder_05", "=q3=Moontouched Shoulders", "=ds=#s3#, #a2#", "30%" },
+	};
+	TCGFenektistheDeceiver = {
+		{ 83212, "INV_misc_orb_04", "=q3=Felflame Shard", "=ds=#s15#", "25%" },
+		{ 83213, "INV_bracer_12", "=q3=Trickster's Wraps", "=ds=#s8#, #a2#", "25%" },
+		{ 83214, "INV_weapon_shortblade_20", "=q3=Betrayer", "=ds=#h1#, #w4#", "25%" },
+		{ 83215, "INV_wand_01", "=q3=Blackflame Wand", "=ds=#w12#", "25%" },
+	};
+	TCGMasterRaxxieth = {
+		{ 60258, "INV_helmet_08", "=q4=Crown of Corruption", "=ds=#s1#, #a2#", "0.5%" },
+		{ 0, "", "", "" },
+		{ 83216, "INV_helmet_17", "=q3=Bloodforged Helm", "=ds=#s1#, #a3#", "25%" },
+		{ 83217, "INV_jewelry_ring_16", "=q3=Ring of Demonic Fury", "=ds=#s13#", "25%" },
+		{ 83218, "INV_misc_cape_19", "=q3=Shadowthread Cloak", "=ds=#s4#, #a1#", "25%" },
+		{ 83219, "INV_sword_18", "=q3=Slayer's Edge", "=ds=#h1#, #w10#", "25%" },
+	};
+	KCMarrowspike = {
+		{ 83441, "INV_chest_chain_15", "=q3=Splintercage Breastplate", "=ds=#s5#, #a4#", "18%" },
+		{ 83442, "INV_boots_08", "=q3=Miasma Walkers", "=ds=#s12#, #a2#", "18%" },
+		{ 83443, "INV_helmet_06", "=q3=The Crown of Shattering", "=ds=#s1#, #a3#", "18%" },
+		{ 83444, "INV_shield_02", "=q3=Bonewall", "=ds=#h4#, #w8#", "18%" },
+		{ 83445, "INV_misc_monsterclaw_01", "=q3=Marrowclaw Knuckles", "=ds=#h3#, #w13#", "18%" },
+		{ 83440, "INV_mace_09", "=q3=Boneshatter Maul", "=ds=#h2#, #w6#", "10%" },
+	};
+	KCHivaxxis = {
+		{ 83447, "INV_belt_12", "=q3=Clutch of Hivaxxis", "=ds=#s10#, #a2#", "18%" },
+		{ 83448, "INV_shoulder_09", "=q3=Amice of the Webweaver", "=ds=#s3#, #a1#", "18%" },
+		{ 83449, "INV_jewelry_ring_24", "=q3=Darksoul Band", "=ds=#s13#", "18%" },
+		{ 83450, "INV_misc_gem_pearl_06", "=q3=Soul of the Spider", "=ds=#s14#", "18%" },
+		{ 83451, "INV_helmet_41", "=q3=Cowl of Mivax", "=ds=#s1#, #a1#", "18%" },
+		{ 83446, "INV_weapon_shortblade_16", "=q3=Venom's Touch", "=ds=#h1#, #w4#", "10%" },
+	};
+	KCCorpsemuncher = {
+		{ 83459, "INV_bracer_03", "=q3=Consumer Shackles", "=ds=#s8#, #a4#", "18%" },
+		{ 83460, "INV_jewelry_ring_26", "=q3=Deepearth Signet", "=ds=#s13#", "18%" },
+		{ 83461, "INV_spear_06", "=q3=Cryptkeeper's Pike", "=ds=#h2#, #w7#", "18%" },
+		{ 83462, "INV_chest_plate08", "=q3=Cadaverlink Vest", "=ds=#s5#, #a3#", "18%" },
+		{ 83463, "INV_gauntlets_23", "=q3=Rotworm Grips", "=ds=#s9#, #a2#", "18%" },
+		{ 83458, "INV_misc_organ_01", "=q3=Wormheart", "=ds=#s2#", "10%" },
+	};
+	KCArchlichEnkhraz = {
+		{ 83453, "INV_misc_book_09", "=q3=Tome of Shivering Secrets", "=ds=#h4#", "18%" },
+		{ 83454, "INV_pants_11", "=q3=Deathrune Leggings", "=ds=#s11#, #a2#", "18%" },
+		{ 83455, "INV_boots_plate_02", "=q3=Frostchain Greaves", "=ds=#s12#, #a3#", "18%" },
+		{ 83456, "INV_chest_cloth_14", "=q3=Shroud of the Archlich", "=ds=#s4#, #a1#", "18%" },
+		{ 83457, "INV_jewelry_necklace_03", "=q3=Glacier Pendant", "=ds=#s2#", "18%" },
+		{ 83452, "INV_weapon_bow_01", "=q3=Windbreaker", "=ds=#w2#", "10%" },
+		{ 0, "", "", "" },
+		{ 80010, "INV_box_petcarrier_01", "=q1=Midnight", "=ds=#e15#", "5%" },
+	};
+	KCAlarus = {
+		{ 83465, "INV_misc_cape_21", "=q3=Shroud of Haunted Torment", "=ds=#s4#, #a1#", "13%" },
+		{ 83466, "INV_pants_plate_20", "=q3=Baneforged Leggings", "=ds=#s11#, #a4#", "13%" },
+		{ 83467, "INV_wand_03", "=q3=Cryptwatcher's Call", "=ds=#w12#", "13%" },
+		{ 83468, "INV_jewelry_ring_09", "=q3=Corpsekeeper's Charge", "=ds=#s13#", "13%" },
+		{ 83469, "INV_crown_01", "=q3=Cryptstone Circlet", "=ds=#s1#, #a1#", "13%" },
+		{ 83470, "INV_pants_03", "=q3=Wraithscale Leggings", "=ds=#s11#, #a3#", "13%" },
+		{ 83471, "INV_staff_08", "=q3=Staff of Alarus", "=ds=#h2#, #w9#", "13%" },
+		{ 83472, "INV_helmet_15", "=q3=Cover of the Necromancer", "=ds=#s1#, #a1#", "13%" },
+		{ 0, "", "", "" },
+		{ 83464, "INV_shoulder_11", "=q4=Mantle of Twisted Damnation", "=ds=#s3#, #a1#", "0.25%" },
+	};
+	COTBMChronar = {
+		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
+		{ 0, "", "", "" },
+		{ 61016, "INV_sword_10", "=q3=Time-Lost Claymore", "=ds=#h2#, #w10#", "17%" },
+		{ 61018, "INV_misc_cape_02", "=q3=Cloak of Elemental Warding", "=ds=#s4#, #a1#", "17%" },
+		{ 61019, "INV_wand_05", "=q3=Wand of the Eclipse", "=ds=#w12#", "17%" },
+		{ 61036, "INV_boots_01", "=q3=Boots of the Riftwalker", "=ds=#s12#, #a4#", "17%" },
+		{ 61047, "INV_helmet_22", "=q3=Monolith Headguard", "=ds=#s1#, #a4#", "17%" },
+		{ 61048, "INV_belt_10", "=q3=Girdle of Distant Stars", "=ds=#s10#, #a2#", "17%" },
+		{ 0, "", "", "" },
+		{ 60496, "INV_misc_head_dragon_black", "=q1=Head of Chronar", "=ds=#m3#", "100%" },
+	};
+	COTBMTimeLordEpochronos = {
+		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
+		{ 0, "", "", "" },
+		{ 50428, "INV_belt_06", "=q3=Ancient Clutch", "=ds=#s10#, #a4#", "12%" },
+		{ 50430, "INVmisc_cape_16", "=q3=Magic-infused Cloak", "=ds=#s4#, #a1#", "12%" },
+		{ 61017, "INV_shoulder_27", "=q3=Shoulderguards of the Defiler", "=ds=#s3#, #a3#", "12%" },
+		{ 61021, "INV_bracer_09", "=q3=Shadowshifter Armguards", "=ds=#s10#, #a2#", "12%" },
+		{ 61028, "INV_shield_03", "=q3=Bulwark of the Crimson Guard", "=ds=#h4#, #w8#", "12%" },
+		{ 61054, "INV_pants_03", "=q3=Azurite Legguards", "=ds=#s11#, #a3#", "12%" },
+		{ 61058, "INV_pants_04", "=q3=Leggings of the Nullifier", "=ds=#s11#, #a4#", "12%" },
+		{ 0, "", "", "" },
+		{ 61049, "INV_sword_19", "=q4=Chronobreaker", "=ds=#h2#, #w10#", "0.95%" },
+	};
+	COTBMAntnormi = {
+		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
+		{ 0, "", "", "" },
+		{ 50427, "INV_chest_leather_08", "=q3=Time-blackened Chestpiece", "=ds=#s5#, #a2#", "50%" },
+		{ 61053, "INV_helmet_24", "=q3=Timeloop Headguard", "=ds=#s1#, #a3#", "50%" },
+		{ 61046, "INV_axe_08", "=q3=Shadowreaper", "=ds=#h1#, #w1#", "33%" },
+		{ 61031, "INV_staff_07", "=q3=Riftweaver", "=ds=#h2#, #w9#", "33%" },
+		{ 50429, "INV_spear_07", "=q3=Spear of the Endless Hunt", "=ds=#h2#, #w7#", "33%" },
+		{ 61037, "INV_chest_plate09", "=q3=Breastplate of the Lost Champion", "=ds=#s5#, #a4#", "33%" },
+		{ 61027, "INV_shoulder_24", "=q3=Epaulets of the Forgotten Past", "=ds=#s3#, #a1#", "33%" },
+		{ 61040, "INV_gauntlets_05", "=q3=Gloves of the Unknown", "=ds=#s9#, #a1#", "33%" },
+		{ 0, "", "", "" },
+		{ 51044, "INV_misc_head_dragon_black", "=q1=Antnormi's Head", "=ds=#m3#", "100%" },
+	};
+	SWVAszoshGrimflame = {
+		{ 60504, "INV_gauntlets_18", "=q3=Dreadskin Gloves", "=ds=#s9#, #a2#", "17%" },
+		{ 60418, "INV_staff_14", "=q3=Sealbreaker Staff", "=ds=#h2#, #w9#", "17%" },
+		{ 60419, "INV_helmet_15", "=q3=Necrolyte's Visage", "=ds=#s1#, #a1#", "17%" },
+		{ 60425, "INV_chest_cloth_48", "=q3=Shadowguard Robe", "=ds=#s5#, #a1#", "17%" },
+		{ 60431, "INV_misc_book_06", "=q3=Almanac of Savagery", "=ds=#h4#", "17%" },
+		{ 60434, "INV_gauntlets_17", "=q3=Greaves of the Elite Guard", "=ds=#s11#, #a4#", "17%" },
+	};
+	SWVThamGrarr = {
+		{ 60502, "INV_belt_26", "=q3=Unstable Belt", "=ds=#s10#, #a2#", "17%" },
+		{ 60415, "INV_jewelry_ring_20", "=q3=Ring of Twin Regeneration", "=ds=#s13#", "17%" },
+		{ 60416, "INV_misc_bone_elfskull_01", "=q3=Skull of Grarr", "=ds=#h3#, #w6#", "17%" },
+		{ 60417, "INV_misc_bone_orcskull_01", "=q3=Skull of Tham", "=ds=#h4#", "17%" },
+		{ 60424, "INV_gauntlets_05", "=q3=Grellskin Gloves", "=ds=#s9#, #a1#", "17%" },
+		{ 60435, "INV_boots_02", "=q3=Sabatons of the Elite Guard", "=ds=#s12#, #a4#", "17%" },
+	};
+	SWVBlackBride = {
+		{ 60408, "INV_crown_01", "=q3=Crown of Lost Memories", "=ds=#s1#, #a1#", "20%" },
+		{ 60409, "INV_misc_cape_19", "=q3=Banshee's Veil", "=ds=#s4#, #a1#", "20%" },
+		{ 60410, "INV_weapon_shortblade_16", "=q3=Willbreaker", "=ds=#h3#, #w13#", "20%" },
+		{ 60411, "INV_boots_cloth_03", "=q3=Boots of Crying Rivers", "=ds=#s12#, #a1#", "20%" },
+		{ 60436, "INV_helmet_41", "=q3=Sightless Leather Hood", "=ds=#s1#, #a2#", "20%" },
+	};
+	SWVDamian = {
+		{ 60421, "INV_chest_leather_02", "=q3=Damien's Sorrow", "=ds=#s5#, #a2#", "20%" },
+		{ 60423, "INV_bracer_07", "=q3=Bracers of Lost Souls", "=ds=#s8#, #a2#", "20%" },
+		{ 60427, "INV_misc_bone_elfskull_01", "=q3=Skullrattler", "=ds=#w12#", "20%" },
+		{ 60433, "INV_shoulder_24", "=q3=Pauldrons of the Elite Guard", "=ds=#s3#, #a4#", "20%" },
+		{ 60500, "INV_misc_cape_11", "=q3=Cloak of Atonement", "=ds=#s4#, #a1#", "20%" },
+		{ 0, "", "", "" },
+		{ 60422, "INV_sword_31", "=q4=The Ripper", "=ds=#h1#, #w4#", "1%" },
+	};
+	SWVVolkanCruelblade = {
+		{ 60412, "INV_jewelry_necklace_09", "=q3=Blackteeth Necklace", "=ds=#s2#", "20%" },
+		{ 60413, "INV_sword_20", "=q3=The Cruel Blade", "=ds=#h2#, #w7#", "20%" },
+		{ 60414, "INV_misc_bandana_03", "=q3=Blademaster's Blindfold", "=ds=#s1#, #a2#", "20%" },
+		{ 60432, "INV_gauntlets_05", "=q3=Gauntlets of the Elite Guard", "=ds=#s9#, #a4#", "20%" },
+		{ 60503, "INV_pants_03", "=q3=Leggings of Alacrity", "=ds=#s11#, #a3#", "20%" },
+	};
+	SWVArctiras = {
 	};
 	DMRhahkZor = {
 		{ 872, "INV_ThrowingAxe_01", "=q2=Rockslicer", "=ds=#h2#, #w1#", "3.13%" },

@@ -2176,6 +2176,9 @@ AtlasLoot_DewDropDown = {
 				{ AL["Razorfen Kraul"], "RazorfenKraul", "Submenu" },
 			},
 			[9] = { 
+				{ AL["The Crescent Grove"], "TheCrescentGrove", "Submenu" },
+			},
+			[10] = { 
 				[AL["Scarlet Monastery"]] = {
 					{ AL["Scarlet Monastery"].." "..AL["Graveyard"], "SMGraveyard", "Submenu" },
 					{ AL["Scarlet Monastery"].." "..AL["Library"], "SMLibrary", "Submenu" },
@@ -2183,62 +2186,71 @@ AtlasLoot_DewDropDown = {
 					{ AL["Scarlet Monastery"].." "..AL["Cathedral"], "SMCathedral", "Submenu" },
 				},
 			},
-			[10] = { 
+			[11] = { 
 				{ AL["Razorfen Downs"], "RazorfenDowns", "Submenu" },
 			},
-			[11] = { 
+			[12] = { 
 				{ AL["Uldaman"], "Uldaman", "Submenu" },
 			},
-			[12] = { 
+			[13] = { 
 				{ AL["Maraudon"], "Maraudon", "Submenu" },
 			},
-			[13] = { 
+			[14] = { 
 				{ AL["Zul'Farrak"], "ZulFarrak", "Submenu" },
 			},
-			[14] = { 
+			[15] = { 
 				{ AL["The Sunken Temple"], "SunkenTemple", "Submenu" },
 			},
-			[15] = { 
+			[16] = { 
 				{ AL["Blackrock Depths"], "BlackrockDepths", "Submenu" },
 			},
-			[16] = { 
+			[17] = { 
 				[AL["Dire Maul"]] = {
 					{ AL["Dire Maul"].." "..AL["East"], "DireMaulEast", "Submenu" },
 					{ AL["Dire Maul"].." "..AL["West"], "DireMaulWest", "Submenu" },
 					{ AL["Dire Maul"].." "..AL["North"], "DireMaulNorth", "Submenu" },
 				}, 
 			},
-			[17] = { 
+			[18] = { 
 				{ AL["Scholomance"], "Scholomance", "Submenu" },
 			},
-			[18] = { 
+			[19] = { 
 				{ AL["Stratholme"], "Stratholme", "Submenu" },
 			},
-			[19] = { 
+			[20] = { 
 				{ AL["Lower Blackrock Spire"], "LowerBlackrock", "Submenu" },
 			},
-			[20] = { 
+			[21] = { 
 				{ AL["Upper Blackrock Spire"], "UpperBlackrock", "Submenu" },
 			},
-			[21] = { 
-				{ AL["Zul'Gurub"], "ZulGurub", "Submenu" },
-			},
 			[22] = { 
-				{ AL["Ruins of Ahn'Qiraj"], "RuinsofAQ", "Submenu" },
+				{ AL["Karazhan Crypt"], "KarazhanCrypt", "Submenu" },
 			},
 			[23] = { 
-				{ AL["Molten Core"], "MoltenCore", "Submenu" },
+				{ AL["Caverns of Time: Black Morass"], "CavernsOfTimeBlackMorass", "Submenu" },
 			},
 			[24] = { 
-				{ AL["Onyxia's Lair"], "Onyxia", "Submenu" },
+				{ AL["Stormwind Vault"], "StormwindVault", "Submenu" },
 			},
 			[25] = { 
-				{ AL["Blackwing Lair"], "BlackwingLair", "Submenu" },
+				{ AL["Zul'Gurub"], "ZulGurub", "Submenu" },
 			},
 			[26] = { 
-				{ AL["Temple of Ahn'Qiraj"], "TempleofAQ", "Submenu" },
+				{ AL["Ruins of Ahn'Qiraj"], "RuinsofAQ", "Submenu" },
 			},
 			[27] = { 
+				{ AL["Molten Core"], "MoltenCore", "Submenu" },
+			},
+			[28] = { 
+				{ AL["Onyxia's Lair"], "Onyxia", "Submenu" },
+			},
+			[29] = { 
+				{ AL["Blackwing Lair"], "BlackwingLair", "Submenu" },
+			},
+			[30] = { 
+				{ AL["Temple of Ahn'Qiraj"], "TempleofAQ", "Submenu" },
+			},
+			[31] = { 
 				{ AL["Naxxramas"], "Naxxramas", "Submenu" },
 			},
 		},
@@ -2456,6 +2468,26 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["General Drakkisath"], "UBRSDrakkisath" },
 		{ AL["Trash Mobs"], "UBRSTrash" },
 	},
+	["KarazhanCrypt"] = {
+		{ AL["Marrowspike"], "KCMarrowspike" },
+		{ AL["Hivaxxis"], "KCHivaxxis" },
+		{ AL["Corpsemuncher"], "KCCorpsemuncher" },
+		{ AL["Archlich Enkhraz"], "KCArchlichEnkhraz" },
+		{ AL["Alarus"], "KCAlarus" },
+	},
+	["CavernsOfTimeBlackMorass"] = {
+		{ AL["Chronar"], "COTBMChronar" },
+		{ AL["Time-Lord Epochronos"], "COTBMTimeLordEpochronos" },
+		{ AL["Antnormi"], "COTBMAntnormi" },
+	},
+	["StormwindVault"] = {
+		{ AL["Aszosh Grimflame"], "SWVAszoshGrimflame" },
+		{ AL["Tham'Grarr"], "SWVThamGrarr" },
+		{ AL["Black Bride"], "SWVBlackBride" },
+		{ AL["Damian"], "SWVDamian" },
+		{ AL["Volkan Cruelblade"], "SWVVolkanCruelblade" },
+		{ AL["Arc'tiras"], "SWVArctiras" },
+	},
 	["BlackwingLair"] = {
 		{ AL["Razorgore the Untamed"], "BWLRazorgore" },
 		{ AL["Vaelastrasz the Corrupt"], "BWLVaelastrasz" },
@@ -2478,6 +2510,13 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Captain Greenskin"], "DMCaptainGreenskin" },
 		{ AL["Edwin VanCleef"], "DMVanCleef" },
 		{ AL["Trash Mobs"], "DMTrash" },
+	},
+	["TheCrescentGrove"] = {
+		{ AL["Grovetender Engryss"], "TCGGrovetenderEngryss" },
+		{ AL["Keeper Ranathos"], "TCGKeeperRanathos" },
+		{ AL["High Priestess A'lathea"], "TCGHighPriestessAlathea" },
+		{ AL["Fenektis the Deceiver"], "TCGFenektistheDeceiver" },
+		{ AL["Master Raxxieth"], "TCGMasterRaxxieth" },
 	},
 	["Gnomeregan"] = {
 		{ AL["Grubbis"], "GnGrubbis" },

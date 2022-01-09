@@ -355,6 +355,29 @@ AtlasLoot_TableNames = {
     ["STHazzas"] = { AL["Hazzas"], "AtlasLootItems" },
     ["STEranikus"] = { AL["Shade of Eranikus"], "AtlasLootItems" },
     ["STTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Sunken Temple"] .. ")", "AtlasLootItems" },
+	-- The Cresant Grove
+    ["TCGGrovetenderEngryss"] = { AL["Grovetender Engryss"], "AtlasLootItems" },
+	["TCGKeeperRanathos"] = { AL["Keeper Ranathos"], "AtlasLootItems" },
+	["TCGHighPriestessAlathea"] = { AL["High Priestess A'lathea"], "AtlasLootItems" },
+	["TCGFenektistheDeceiver"] = { AL["Fenektis the Deceiver"], "AtlasLootItems" },
+	["TCGMasterRaxxieth"] = { AL["Master Raxxieth"], "AtlasLootItems" },
+	-- Karazhan Crypt
+    ["KCMarrowspike"] = { AL["Marrowspike"], "AtlasLootItems" },
+    ["KCHivaxxis"] = { AL["Hivaxxis"], "AtlasLootItems" },
+    ["KCCorpsemuncher"] = { AL["Corpsemuncher"], "AtlasLootItems" },
+    ["KCArchlichEnkhraz"] = { AL["Archlich Enkhraz"], "AtlasLootItems" },
+    ["KCAlarus"] = { AL["Alarus"], "AtlasLootItems" },
+	-- Caverns of Time: Black Morass
+    ["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
+    ["COTBMTimeLordEpochronos"] = { AL["Time-Lord Epochronos"], "AtlasLootItems" },
+    ["COTBMAntnormi"] = { AL["Antnormi"], "AtlasLootItems" },
+	-- Stormwind Vault
+    ["SWVAszoshGrimflame"] = { AL["Aszosh Grimflame"], "AtlasLootItems" },
+    ["SWVThamGrarr"] = { AL["Tham'Grarr"], "AtlasLootItems" },
+    ["SWVBlackBride"] = { AL["Black Bride"], "AtlasLootItems" },
+    ["SWVDamian"] = { AL["Damian"], "AtlasLootItems" },
+    ["SWVVolkanCruelblade"] = { AL["Volkan Cruelblade"], "AtlasLootItems" },
+    ["SWVArctiras"] = { AL["Arc'tiras"], "AtlasLootItems" },
     --Temple of Ahn'Qiraj
     ["AQ40Skeram"] = { AL["The Prophet Skeram"], "AtlasLootItems" },
     ["AQ40Trio"] = { AL["The Bug Family"], "AtlasLootItems" },
@@ -939,6 +962,33 @@ AtlasLoot_TableNamesBoss = {
         ["DMMarisaduPaige"] = { AL["Marisa du'Paige"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
         ["DMBrainwashedNoble"] = { AL["Brainwashed Noble"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
         ["DMForemanThistlenettle"] = { AL["Foreman Thistlenettle"], "AtlasLootItems" },
+    },
+    ["The Crescent Grove"] = {
+        ["TCGGrovetenderEngryss"] = { AL["Grovetender Engryss"], "AtlasLootItems" },
+		["TCGKeeperRanathos"] = { AL["Keeper Ranathos"], "AtlasLootItems" },
+		["TCGHighPriestessAlathea"] = { AL["High Priestess A'lathea"], "AtlasLootItems" },
+		["TCGFenektistheDeceiver"] = { AL["Fenektis the Deceiver"], "AtlasLootItems" },
+		["TCGMasterRaxxieth"] = { AL["Master Raxxieth"], "AtlasLootItems" },
+    },
+    ["Karazhan Crypt"] = {
+        ["KCMarrowspike"] = { AL["Marrowspike"], "AtlasLootItems" },
+        ["KCHivaxxis"] = { AL["Hivaxxis"], "AtlasLootItems" },
+        ["KCCorpsemuncher"] = { AL["Corpsemuncher"], "AtlasLootItems" },
+        ["KCArchlichEnkhraz"] = { AL["Archlich Enkhraz"], "AtlasLootItems" },
+        ["KCAlarus"] = { AL["Alarus"], "AtlasLootItems" },
+    },
+    ["Caverns of Time: Black Morass"] = {
+        ["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
+		["COTBMTimeLordEpochronos"] = { AL["Time-Lord Epochronos"], "AtlasLootItems" },
+		["COTBMAntnormi"] = { AL["Antnormi"], "AtlasLootItems" },
+    },
+    ["Stormwind Vault"] = {
+        ["SWVAszoshGrimflame"] = { AL["Aszosh Grimflame"], "AtlasLootItems" },
+        ["SWVThamGrarr"] = { AL["Tham'Grarr"], "AtlasLootItems" },
+        ["SWVBlackBride"] = { AL["Black Bride"], "AtlasLootItems" },
+        ["SWVDamian"] = { AL["Damian"], "AtlasLootItems" },
+        ["SWVVolkanCruelblade"] = { AL["Volkan Cruelblade"], "AtlasLootItems" },
+        ["SWVArctiras"] = { AL["Arc'tiras"], "AtlasLootItems" },
     },
     ["The Deadmines"] = {
         ["DMRhahkZor"] = { AL["Rhahk'Zor"], "AtlasLootItems" },
