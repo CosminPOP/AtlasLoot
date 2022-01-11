@@ -1404,6 +1404,10 @@ AtlasLoot_TableNamesBoss = {
     },
     --Crafted Sets - Tailoring
     ["Crafted Sets - Tailoring"] = {
+		["AugerersAttire"] = { AL["Augerer's Attire"], "AtlasLootCrafting" },
+		["ShadoweaveSet"] = { AL["Shadoweave"], "AtlasLootCrafting" },
+		["DivinersGarments"] = { AL["Diviner's Garments"], "AtlasLootCrafting" },
+		["PillagersGarb"] = { AL["Pillager's Garb"], "AtlasLootCrafting" },
         ["BloodvineG"] = { AL["Bloodvine Garb"], "AtlasLootCrafting" },
     },
     --Crafted Sets - Leatherworking
