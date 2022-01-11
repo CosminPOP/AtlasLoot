@@ -498,6 +498,10 @@ AtlasLoot_TableNames = {
     ["TheDarksoul"] = { AL["The Darksoul"], "AtlasLootCrafting" },
     ["BloodsoulEmbrace"] = { AL["Bloodsoul Embrace"], "AtlasLootCrafting" },
     --Crafted Sets - Tailoring
+	["AugerersAttire"] = { AL["Augerer's Attire"], "AtlasLootCrafting" },
+	["ShadoweaveSet"] = { AL["Shadoweave"], "AtlasLootCrafting" },
+	["DivinersGarments"] = { AL["Diviner's Garments"], "AtlasLootCrafting" },
+	["PillagersGarb"] = { AL["Pillager's Garb"], "AtlasLootCrafting" },
     ["BloodvineG"] = { AL["Bloodvine Garb"], "AtlasLootCrafting" },
     --Crafted Sets - Leatherworking
     ["VolcanicArmor"] = { AL["Volcanic Armor"], "AtlasLootCrafting" },

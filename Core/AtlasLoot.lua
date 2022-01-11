@@ -2883,6 +2883,12 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Blue Dragon Mail"], "BlueDragonM" },
 		{ AL["Black Dragon Mail"], "BlackDragonM" },
 	},
+	["CraftSetTailoring"] = {
+		{ AL["Augerer's Attire"], "AugerersAttire" },
+		{ AL["Diviner's Garments"], "DivinersGarments" },
+		{ AL["Pillager's Garb"], "PillagersGarb" },
+		{ AL["Bloodvine Garb"], "BloodvineG" },
+	},
 	["DungeonSets12"] = {
 		{ "|cffffffff"..AL["Priest"], "T0Priest" },
 		{ "|cff68ccef"..AL["Mage"], "T0Mage" },
