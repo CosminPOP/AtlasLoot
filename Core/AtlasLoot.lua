@@ -2395,7 +2395,7 @@ AtlasLoot_DewDropDown = {
 				[AL["Crafted Sets"]] = {
 					{ (AL["Blacksmithing"]), "CraftSetBlacksmith", "Submenu" },
 					{ (AL["Leatherworking"]), "CraftSetLeatherwork", "Submenu" },
-					{ (AL["Tailoring"]), "BloodvineG", "Table" },
+					{ (AL["Tailoring"]), "CraftSetTailoring", "Submenu" },
 				}, 
 			},
 			[13] = { { AL["Crafted Epic Weapons"], "CraftedWeapons1", "Table" }, },
@@ -2885,6 +2885,13 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Green Dragon Mail"], "GreenDragonM" },
 		{ AL["Blue Dragon Mail"], "BlueDragonM" },
 		{ AL["Black Dragon Mail"], "BlackDragonM" },
+	},
+	["CraftSetTailoring"] = {
+		{ AL["Augerer's Attire"], "AugerersAttire" },
+		{ AL["Shadoweave"], "ShadoweaveSet" },
+		{ AL["Diviner's Garments"], "DivinersGarments" },
+		{ AL["Pillager's Garb"], "PillagersGarb" },
+		{ AL["Bloodvine Garb"], "BloodvineG" },
 	},
 	["DungeonSets12"] = {
 		{ "|cffffffff"..AL["Priest"], "T0Priest" },
