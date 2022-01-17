@@ -369,8 +369,10 @@ AtlasLoot_TableNames = {
     ["KCAlarus"] = { AL["Alarus"], "AtlasLootItems" },
 	-- Caverns of Time: Black Morass
     ["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
+    ["COTBMHarbingerAphygth"] = { AL["Harbinger Aph'ygth"], "AtlasLootItems" },
     ["COTBMTimeLordEpochronos"] = { AL["Time-Lord Epochronos"], "AtlasLootItems" },
     ["COTBMAntnormi"] = { AL["Antnormi"], "AtlasLootItems" },
+    ["COTBMInfiniteChromie"] = { AL["Infinite Chromie"], "AtlasLootItems" },
 	-- Stormwind Vault
     ["SWVAszoshGrimflame"] = { AL["Aszosh Grimflame"], "AtlasLootItems" },
     ["SWVThamGrarr"] = { AL["Tham'Grarr"], "AtlasLootItems" },
@@ -378,6 +380,7 @@ AtlasLoot_TableNames = {
     ["SWVDamian"] = { AL["Damian"], "AtlasLootItems" },
     ["SWVVolkanCruelblade"] = { AL["Volkan Cruelblade"], "AtlasLootItems" },
     ["SWVArctiras"] = { AL["Arc'tiras"], "AtlasLootItems" },
+    ["SWVVaultArmoryEquipment"] = { AL["Vault Armory Equipment"], "AtlasLootItems" },
     --Temple of Ahn'Qiraj
     ["AQ40Skeram"] = { AL["The Prophet Skeram"], "AtlasLootItems" },
     ["AQ40Trio"] = { AL["The Bug Family"], "AtlasLootItems" },
@@ -979,8 +982,10 @@ AtlasLoot_TableNamesBoss = {
     },
     ["Caverns of Time: Black Morass"] = {
         ["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
+		["COTBMHarbingerAphygth"] = { AL["Harbinger Aph'ygth"], "AtlasLootItems" },
 		["COTBMTimeLordEpochronos"] = { AL["Time-Lord Epochronos"], "AtlasLootItems" },
 		["COTBMAntnormi"] = { AL["Antnormi"], "AtlasLootItems" },
+		["COTBMInfiniteChromie"] = { AL["Infinite Chromie"], "AtlasLootItems" },
     },
     ["Stormwind Vault"] = {
         ["SWVAszoshGrimflame"] = { AL["Aszosh Grimflame"], "AtlasLootItems" },
@@ -989,6 +994,7 @@ AtlasLoot_TableNamesBoss = {
         ["SWVDamian"] = { AL["Damian"], "AtlasLootItems" },
         ["SWVVolkanCruelblade"] = { AL["Volkan Cruelblade"], "AtlasLootItems" },
         ["SWVArctiras"] = { AL["Arc'tiras"], "AtlasLootItems" },
+        ["SWVVaultArmoryEquipment"] = { AL["Vault Armory Equipment"], "AtlasLootItems" },
     },
     ["The Deadmines"] = {
         ["DMRhahkZor"] = { AL["Rhahk'Zor"], "AtlasLootItems" },

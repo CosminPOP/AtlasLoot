@@ -640,8 +640,10 @@ AtlasLootBossButtons = {
 		"";
 		"";
         "COTBMChronar";
+		"COTBMHarbingerAphygth";
         "COTBMTimeLordEpochronos";
         "COTBMAntnormi";
+		"COTBMInfiniteChromie";
 	};
 	StormwindVault = {
 		"";
@@ -652,6 +654,7 @@ AtlasLootBossButtons = {
         "SWVDamian";
         "SWVVolkanCruelblade";
         "SWVArctiras";
+        "SWVVaultArmoryEquipment";
 	};
 	TheDeadmines = {
 		"";
@@ -2817,6 +2820,19 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "" },
 		{ 60496, "INV_misc_head_dragon_black", "=q1=Head of Chronar", "=ds=#m3#", "100%" },
 	};
+	COTBMHarbingerAphygth = {
+		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
+		{ 0, "", "", "" },
+		{ 61015, "INV_jewelry_necklace_04", "=q3=Hollowbone Choker", "=ds=#s2#", "14%" },
+		{ 61024, "INV_boots_01", "=q3=Greaves of the Ceaseless Expanse", "=ds=#s12#, #a3#", "14%" },
+		{ 61033, "INV_pants_06", "=q3=Void-Warped Leggings", "=ds=#s11#, #a1#", "14%" },
+		{ 61038, "INV_shoulder_09", "=q3=Pauldrons of the Black Empire", "=ds=#s3#, #a4#", "14%" },
+		{ 61042, "INV_gauntlets_11", "=q3=Stormfist", "=ds=#h1#, #w13#", "14%" },
+		{ 61044, "INV_hammer_04", "=q3=Gavel of Aqir Superiority", "=ds=#h2#, #w6#", "14%" },
+		{ 61057, "INV_gauntlets_24", "=q3=Arcanic Gloves", "=ds=#s9#, #a2#", "14%" },
+		{ 0, "", "", "" },
+		{ 61020, "INV_wand_02", "=q4=Voidstar", "=ds=#w12#", "0.95%" },
+	};
 	COTBMTimeLordEpochronos = {
 		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
 		{ 0, "", "", "" },
@@ -2843,6 +2859,20 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61040, "INV_gauntlets_05", "=q3=Gloves of the Unknown", "=ds=#s9#, #a1#", "33%" },
 		{ 0, "", "", "" },
 		{ 51044, "INV_misc_head_dragon_black", "=q1=Antnormi's Head", "=ds=#m3#", "100%" },
+	};
+	COTBMInfiniteChromie = {
+		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
+		{ 0, "", "", "" },
+		{ 50431, "INV_bracer_13", "=q3=Extremely Well Crafted Cuffs", "=ds=#s8#, #a1#", "12%" },
+		{ 61032, "INV_jewelry_ring_48naxxramas", "=q3=Band of Infinite Possibilities", "=ds=#s13#", "12%" },
+		{ 61035, "INV_pants_plate_16", "=q3=Legguards of the Last Stand", "=ds=#s11#, #a4#", "12%" },
+		{ 61039, "INV_gizmo_newgoggles", "=q3=Timeless Artificier's Optics", "=ds=#s1#, #a1#", "12%" },
+		{ 61041, "INV_belt_28", "=q3=Imbued Planar Belt", "=ds=#s8#, #a3#", "12%" },
+		{ 61045, "INV_shoulder_07", "=q3=Nexus Shoulderpads", "=ds=#s3#, #a2#", "12%" },
+		{ 61055, "INV_misc_book_01", "=q3=Tome of Riftmancy", "=ds=#h4#", "12%" },
+		{ 61056, "INV_boots_07", "=q3=Arcanoweave Boots", "=ds=#s12#, #a1#", "12%" },
+		{ 0, "", "", "" },
+		{ 61043, "spell_shadow_soulgem", "=q4=Eye of the Abyss", "=ds=#s2#", "1%" },
 	};
 	SWVAszoshGrimflame = {
 		{ 60504, "INV_gauntlets_18", "=q3=Dreadskin Gloves", "=ds=#s9#, #a2#", "17%" },
@@ -2884,6 +2914,15 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 60503, "INV_pants_03", "=q3=Leggings of Alacrity", "=ds=#s11#, #a3#", "20%" },
 	};
 	SWVArctiras = {
+	};
+	SWVVaultArmoryEquipment = {
+		{ 40003, "INV_shield_06", "=q3=Vault's Defender", "=ds=#h4#, #w8#", "25%" },
+		{ 60505, "INV_jewelry_ring_27", "=q3=Ring of the Elder Warden", "=ds=#s13#", "25%" },
+		{ 60506, "INV_weapon_crossbow_05", "=q3=Vigilance", "=ds=#w3#", "25%" },
+		{ 60420, "INV_jewelry_necklace_16", "=q3=Amulet of Warding", "=ds=#s2#", "25%" },
+		{ 60426, "INV_Chest_Plate08", "=q3=Guard-Captain's Chestplate", "=ds=#s5#, #a4#", "25%" },
+		{ 60429, "INV_bracer_19", "=q3=Arcanite Shackles", "=ds=#s8#, #a4#", "25%" },
+		{ 60430, "INV_boots_05", "=q3=Runewarder's Boots", "=ds=#s12#, #a1#", "25%" },
 	};
 	DMRhahkZor = {
 		{ 872, "INV_ThrowingAxe_01", "=q2=Rockslicer", "=ds=#h2#, #w1#", "3.13%" },

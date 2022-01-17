@@ -2477,8 +2477,10 @@ AtlasLoot_DewDropDown_SubTables = {
 	},
 	["CavernsOfTimeBlackMorass"] = {
 		{ AL["Chronar"], "COTBMChronar" },
+		{ AL["Harbinger Aph'ygth"], "COTBMHarbingerAphygth" },
 		{ AL["Time-Lord Epochronos"], "COTBMTimeLordEpochronos" },
 		{ AL["Antnormi"], "COTBMAntnormi" },
+		{ AL["Infinite Chromie"], "COTBMInfiniteChromie" },
 	},
 	["StormwindVault"] = {
 		{ AL["Aszosh Grimflame"], "SWVAszoshGrimflame" },
@@ -2487,6 +2489,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Damian"], "SWVDamian" },
 		{ AL["Volkan Cruelblade"], "SWVVolkanCruelblade" },
 		{ AL["Arc'tiras"], "SWVArctiras" },
+		{ AL["Vault Armory Equipment"], "SWVVaultArmoryEquipment" },
 	},
 	["BlackwingLair"] = {
 		{ AL["Razorgore the Untamed"], "BWLRazorgore" },
