@@ -615,6 +615,21 @@ AtlasLoot_TableNames = {
     ["DYsondre"] = { AL["Ysondre"], "AtlasLootWBItems" },
     ["DTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Emerald Dragons"] .. ")", "AtlasLootWBItems" },
 
+
+    --------------------------
+    --- Rare Spawns (1.16) ---
+    --------------------------
+    ["Tarangos"] = { "Tarangos The Dampener", "AtlasLootWBItems" },
+    ["Kargron"] = { "Blademaster Kargron", "AtlasLootWBItems" },
+    ["Xalvic"] = { "Xalvic Blackclaw", "AtlasLootWBItems" },
+    ["Mallon"] = { "Mallon The Moontouched", "AtlasLootWBItems" },
+    ["Grugthok"] = { "Grug'thok the Seer", "AtlasLootWBItems" },
+    ["WanderingKnight"] = { "The Wandering Knight", "AtlasLootWBItems" },
+    ["CrusaderLarsarius"] = { "Crusader Larsarius The Scarlet Crusade", "AtlasLootWBItems" },
+    ["Zareth"] = { "Zareth Terrorblade Demon Hunter", "AtlasLootWBItems" },
+    ["Jalakar"] = { "Jal'akar Dire Troll", "AtlasLootWBItems" },
+    ["Ashbeard"] = { "Explorer Ashbeard", "AtlasLootWBItems" },
+
     --------------
     --- Events ---
     --------------
