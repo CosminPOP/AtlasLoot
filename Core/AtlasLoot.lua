@@ -2259,6 +2259,9 @@ AtlasLoot_DewDropDown = {
 		{ AL["World Bosses"], "WorldBosses", "Submenu" },
 	},
 	[3] = {
+		{ "Rare Spawns", "RareSpawns", "Submenu" },
+	},
+	[4] = {
 		[AL["PvP Rewards"]] = {
 			[1] = { 
 				{ AL["PvP Armor Sets"], "PvPArmorSets", "Submenu" },
@@ -2283,7 +2286,7 @@ AtlasLoot_DewDropDown = {
 			},
 		},
 	},
-	[4] = {
+	[5] = {
 		[AL["Sets/Collections"]] = {
 			[1] = { 
 				{ AL["Pre 60 Sets"], "Pre60Sets", "Submenu" },
@@ -2332,10 +2335,10 @@ AtlasLoot_DewDropDown = {
 			},
 		},
 	},
-	[5] = {
+	[6] = {
 		{ AL["Reputation Factions"], "Factions", "Submenu" },
 	},
-	[6] = {
+	[7] = {
 		[AL["World Events"]] = {
 			[1] = { 
 				{ AL["Abyssal Council"], "AbyssalCouncil1", "Submenu" },
@@ -2378,7 +2381,7 @@ AtlasLoot_DewDropDown = {
 			},
 		},
 	},
-	[7] = {
+	[8] = {
 		[AL["Crafting"]] = {
 			[1] = { { AL["Alchemy"], "Alchemy", "Submenu" }, },
 			[2] = { { (AL["Blacksmithing"]), "Blacksmithing", "Submenu" }, },
@@ -2841,6 +2844,18 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ "Turtlhu, the Black Turtle of Doom", "Turtlhu" },
 		{ "Nerubian Overseer", "Nerubian" },
 		{ "Dark Reaver of Karazhan", "Reaver" },
+	},
+	["RareSpawns"] = {
+		{ "Tarangos The Dampener", "Tarangos" },
+		{ "Blademaster Kargron", "Kargron" },
+		{ "Xalvic Blackclaw", "Xalvic" },
+		{ "Mallon The Moontouched", "Mallon" },
+		{ "Grug'thok the Seer", "Grugthok" },
+		{ "The Wandering Knight", "WanderingKnight" },
+		{ "Crusader Larsarius The Scarlet Crusade", "CrusaderLarsarius" },
+		{ "Zareth Terrorblade Demon Hunter", "Zareth" },
+		{ "Jal'akar Dire Troll", "Jalakar" },
+		{ "Explorer Ashbeard", "Ashbeard" },
 	},
 	["AbyssalCouncil1"] = {
 		{ AL["Abyssal Council"].." - "..AL["Templars"], "AbyssalTemplars" },
