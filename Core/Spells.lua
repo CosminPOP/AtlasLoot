@@ -3721,7 +3721,7 @@ GetSpellInfoVanillaDB = {
 			["tools"] = "",
 			["castTime"] = 60,
 			["text"] = "",
-			["craftItem"] = 83281,
+			["craftItem"] = 83296,
 			["craftQuantityMin"] = "",
 			["craftQuantityMax"] = "",
 			["reagents"] = {
@@ -4667,8 +4667,8 @@ GetSpellInfoVanillaDB = {
 			["craftQuantityMax"] = "",
 			["reagents"] = {
 				[1] = {14048, 4},
-				[2] = {2577, 2},
-				[3] = {14227},
+				[2] = {3577, 2},
+				[3] = {14341},
 			},
 		},
 		[18414] = {
@@ -4682,8 +4682,8 @@ GetSpellInfoVanillaDB = {
 			["craftQuantityMax"] = "",
 			["reagents"] = {
 				[1] = {14048, 5},
-				[2] = {2577, 2},
-				[3] = {14227},
+				[2] = {3577, 2},
+				[3] = {14341},
 			},
 		},
 		[18412] = {
@@ -4698,7 +4698,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = {
 				[1] = {14048, 4},
 				[2] = {7077, 3},
-				[3] = {14227},
+				[3] = {14341},
 			},
 		},
 		[18413] = {
@@ -4730,7 +4730,7 @@ GetSpellInfoVanillaDB = {
 				[1] = {14048, 2},
 				[2] = {8170, 4},
 				[3] = {18240},
-				[4] = {14227},
+				[4] = {14341},
 			},
 		},
 		[18422] = {
@@ -5057,7 +5057,7 @@ GetSpellInfoVanillaDB = {
 			["craftQuantityMax"] = "",
 			["reagents"] = {
 				[1] = {14048, 6},
-				[2] = {3577, 4},
+				[2] = {2577, 4},
 				[3] = {14227},
 				[4] = {14341},
 			},
