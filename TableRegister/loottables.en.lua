@@ -355,6 +355,32 @@ AtlasLoot_TableNames = {
     ["STHazzas"] = { AL["Hazzas"], "AtlasLootItems" },
     ["STEranikus"] = { AL["Shade of Eranikus"], "AtlasLootItems" },
     ["STTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Sunken Temple"] .. ")", "AtlasLootItems" },
+	-- The Cresant Grove
+    ["TCGGrovetenderEngryss"] = { AL["Grovetender Engryss"], "AtlasLootItems" },
+	["TCGKeeperRanathos"] = { AL["Keeper Ranathos"], "AtlasLootItems" },
+	["TCGHighPriestessAlathea"] = { AL["High Priestess A'lathea"], "AtlasLootItems" },
+	["TCGFenektistheDeceiver"] = { AL["Fenektis the Deceiver"], "AtlasLootItems" },
+	["TCGMasterRaxxieth"] = { AL["Master Raxxieth"], "AtlasLootItems" },
+	-- Karazhan Crypt
+    ["KCMarrowspike"] = { AL["Marrowspike"], "AtlasLootItems" },
+    ["KCHivaxxis"] = { AL["Hivaxxis"], "AtlasLootItems" },
+    ["KCCorpsemuncher"] = { AL["Corpsemuncher"], "AtlasLootItems" },
+    ["KCArchlichEnkhraz"] = { AL["Archlich Enkhraz"], "AtlasLootItems" },
+    ["KCAlarus"] = { AL["Alarus"], "AtlasLootItems" },
+	-- Caverns of Time: Black Morass
+    ["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
+    ["COTBMHarbingerAphygth"] = { AL["Harbinger Aph'ygth"], "AtlasLootItems" },
+    ["COTBMTimeLordEpochronos"] = { AL["Time-Lord Epochronos"], "AtlasLootItems" },
+    ["COTBMAntnormi"] = { AL["Antnormi"], "AtlasLootItems" },
+    ["COTBMInfiniteChromie"] = { AL["Infinite Chromie"], "AtlasLootItems" },
+	-- Stormwind Vault
+    ["SWVAszoshGrimflame"] = { AL["Aszosh Grimflame"], "AtlasLootItems" },
+    ["SWVThamGrarr"] = { AL["Tham'Grarr"], "AtlasLootItems" },
+    ["SWVBlackBride"] = { AL["Black Bride"], "AtlasLootItems" },
+    ["SWVDamian"] = { AL["Damian"], "AtlasLootItems" },
+    ["SWVVolkanCruelblade"] = { AL["Volkan Cruelblade"], "AtlasLootItems" },
+    ["SWVArctiras"] = { AL["Arc'tiras"], "AtlasLootItems" },
+    ["SWVVaultArmoryEquipment"] = { AL["Vault Armory Equipment"], "AtlasLootItems" },
     --Temple of Ahn'Qiraj
     ["AQ40Skeram"] = { AL["The Prophet Skeram"], "AtlasLootItems" },
     ["AQ40Trio"] = { AL["The Bug Family"], "AtlasLootItems" },
@@ -475,6 +501,10 @@ AtlasLoot_TableNames = {
     ["TheDarksoul"] = { AL["The Darksoul"], "AtlasLootCrafting" },
     ["BloodsoulEmbrace"] = { AL["Bloodsoul Embrace"], "AtlasLootCrafting" },
     --Crafted Sets - Tailoring
+	["AugerersAttire"] = { AL["Augerer's Attire"], "AtlasLootCrafting" },
+	["ShadoweaveSet"] = { AL["Shadoweave"], "AtlasLootCrafting" },
+	["DivinersGarments"] = { AL["Diviner's Garments"], "AtlasLootCrafting" },
+	["PillagersGarb"] = { AL["Pillager's Garb"], "AtlasLootCrafting" },
     ["BloodvineG"] = { AL["Bloodvine Garb"], "AtlasLootCrafting" },
     --Crafted Sets - Leatherworking
     ["VolcanicArmor"] = { AL["Volcanic Armor"], "AtlasLootCrafting" },
@@ -584,6 +614,21 @@ AtlasLoot_TableNames = {
     ["DTaerar"] = { AL["Taerar"], "AtlasLootWBItems" },
     ["DYsondre"] = { AL["Ysondre"], "AtlasLootWBItems" },
     ["DTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Emerald Dragons"] .. ")", "AtlasLootWBItems" },
+
+
+    --------------------------
+    --- Rare Spawns (1.16) ---
+    --------------------------
+    ["Tarangos"] = { "Tarangos The Dampener", "AtlasLootWBItems" },
+    ["Kargron"] = { "Blademaster Kargron", "AtlasLootWBItems" },
+    ["Xalvic"] = { "Xalvic Blackclaw", "AtlasLootWBItems" },
+    ["Mallon"] = { "Mallon The Moontouched", "AtlasLootWBItems" },
+    ["Grugthok"] = { "Grug'thok the Seer", "AtlasLootWBItems" },
+    ["WanderingKnight"] = { "The Wandering Knight", "AtlasLootWBItems" },
+    ["CrusaderLarsarius"] = { "Crusader Larsarius The Scarlet Crusade", "AtlasLootWBItems" },
+    ["Zareth"] = { "Zareth Terrorblade Demon Hunter", "AtlasLootWBItems" },
+    ["Jalakar"] = { "Jal'akar Dire Troll", "AtlasLootWBItems" },
+    ["Ashbeard"] = { "Explorer Ashbeard", "AtlasLootWBItems" },
 
     --------------
     --- Events ---
@@ -939,6 +984,36 @@ AtlasLoot_TableNamesBoss = {
         ["DMMarisaduPaige"] = { AL["Marisa du'Paige"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
         ["DMBrainwashedNoble"] = { AL["Brainwashed Noble"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
         ["DMForemanThistlenettle"] = { AL["Foreman Thistlenettle"], "AtlasLootItems" },
+    },
+    ["The Crescent Grove"] = {
+        ["TCGGrovetenderEngryss"] = { AL["Grovetender Engryss"], "AtlasLootItems" },
+		["TCGKeeperRanathos"] = { AL["Keeper Ranathos"], "AtlasLootItems" },
+		["TCGHighPriestessAlathea"] = { AL["High Priestess A'lathea"], "AtlasLootItems" },
+		["TCGFenektistheDeceiver"] = { AL["Fenektis the Deceiver"], "AtlasLootItems" },
+		["TCGMasterRaxxieth"] = { AL["Master Raxxieth"], "AtlasLootItems" },
+    },
+    ["Karazhan Crypt"] = {
+        ["KCMarrowspike"] = { AL["Marrowspike"], "AtlasLootItems" },
+        ["KCHivaxxis"] = { AL["Hivaxxis"], "AtlasLootItems" },
+        ["KCCorpsemuncher"] = { AL["Corpsemuncher"], "AtlasLootItems" },
+        ["KCArchlichEnkhraz"] = { AL["Archlich Enkhraz"], "AtlasLootItems" },
+        ["KCAlarus"] = { AL["Alarus"], "AtlasLootItems" },
+    },
+    ["Caverns of Time: Black Morass"] = {
+        ["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
+		["COTBMHarbingerAphygth"] = { AL["Harbinger Aph'ygth"], "AtlasLootItems" },
+		["COTBMTimeLordEpochronos"] = { AL["Time-Lord Epochronos"], "AtlasLootItems" },
+		["COTBMAntnormi"] = { AL["Antnormi"], "AtlasLootItems" },
+		["COTBMInfiniteChromie"] = { AL["Infinite Chromie"], "AtlasLootItems" },
+    },
+    ["Stormwind Vault"] = {
+        ["SWVAszoshGrimflame"] = { AL["Aszosh Grimflame"], "AtlasLootItems" },
+        ["SWVThamGrarr"] = { AL["Tham'Grarr"], "AtlasLootItems" },
+        ["SWVBlackBride"] = { AL["Black Bride"], "AtlasLootItems" },
+        ["SWVDamian"] = { AL["Damian"], "AtlasLootItems" },
+        ["SWVVolkanCruelblade"] = { AL["Volkan Cruelblade"], "AtlasLootItems" },
+        ["SWVArctiras"] = { AL["Arc'tiras"], "AtlasLootItems" },
+        ["SWVVaultArmoryEquipment"] = { AL["Vault Armory Equipment"], "AtlasLootItems" },
     },
     ["The Deadmines"] = {
         ["DMRhahkZor"] = { AL["Rhahk'Zor"], "AtlasLootItems" },
@@ -1350,6 +1425,10 @@ AtlasLoot_TableNamesBoss = {
     },
     --Crafted Sets - Tailoring
     ["Crafted Sets - Tailoring"] = {
+		["AugerersAttire"] = { AL["Augerer's Attire"], "AtlasLootCrafting" },
+		["ShadoweaveSet"] = { AL["Shadoweave"], "AtlasLootCrafting" },
+		["DivinersGarments"] = { AL["Diviner's Garments"], "AtlasLootCrafting" },
+		["PillagersGarb"] = { AL["Pillager's Garb"], "AtlasLootCrafting" },
         ["BloodvineG"] = { AL["Bloodvine Garb"], "AtlasLootCrafting" },
     },
     --Crafted Sets - Leatherworking

@@ -69,7 +69,7 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 --Establish version number and compatible version of Atlas
 local VERSION_MAJOR = "1";
 local VERSION_MINOR = "0";
-local VERSION_BOSSES = "1";
+local VERSION_BOSSES = "2";
 ATLASLOOT_VERSION = "|cffFF8400AtlasLoot TW Edition v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
@@ -2176,6 +2176,9 @@ AtlasLoot_DewDropDown = {
 				{ AL["Razorfen Kraul"], "RazorfenKraul", "Submenu" },
 			},
 			[9] = { 
+				{ AL["The Crescent Grove"], "TheCrescentGrove", "Submenu" },
+			},
+			[10] = { 
 				[AL["Scarlet Monastery"]] = {
 					{ AL["Scarlet Monastery"].." "..AL["Graveyard"], "SMGraveyard", "Submenu" },
 					{ AL["Scarlet Monastery"].." "..AL["Library"], "SMLibrary", "Submenu" },
@@ -2183,62 +2186,71 @@ AtlasLoot_DewDropDown = {
 					{ AL["Scarlet Monastery"].." "..AL["Cathedral"], "SMCathedral", "Submenu" },
 				},
 			},
-			[10] = { 
+			[11] = { 
 				{ AL["Razorfen Downs"], "RazorfenDowns", "Submenu" },
 			},
-			[11] = { 
+			[12] = { 
 				{ AL["Uldaman"], "Uldaman", "Submenu" },
 			},
-			[12] = { 
+			[13] = { 
 				{ AL["Maraudon"], "Maraudon", "Submenu" },
 			},
-			[13] = { 
+			[14] = { 
 				{ AL["Zul'Farrak"], "ZulFarrak", "Submenu" },
 			},
-			[14] = { 
+			[15] = { 
 				{ AL["The Sunken Temple"], "SunkenTemple", "Submenu" },
 			},
-			[15] = { 
+			[16] = { 
 				{ AL["Blackrock Depths"], "BlackrockDepths", "Submenu" },
 			},
-			[16] = { 
+			[17] = { 
 				[AL["Dire Maul"]] = {
 					{ AL["Dire Maul"].." "..AL["East"], "DireMaulEast", "Submenu" },
 					{ AL["Dire Maul"].." "..AL["West"], "DireMaulWest", "Submenu" },
 					{ AL["Dire Maul"].." "..AL["North"], "DireMaulNorth", "Submenu" },
 				}, 
 			},
-			[17] = { 
+			[18] = { 
 				{ AL["Scholomance"], "Scholomance", "Submenu" },
 			},
-			[18] = { 
+			[19] = { 
 				{ AL["Stratholme"], "Stratholme", "Submenu" },
 			},
-			[19] = { 
+			[20] = { 
 				{ AL["Lower Blackrock Spire"], "LowerBlackrock", "Submenu" },
 			},
-			[20] = { 
+			[21] = { 
 				{ AL["Upper Blackrock Spire"], "UpperBlackrock", "Submenu" },
 			},
-			[21] = { 
-				{ AL["Zul'Gurub"], "ZulGurub", "Submenu" },
-			},
 			[22] = { 
-				{ AL["Ruins of Ahn'Qiraj"], "RuinsofAQ", "Submenu" },
+				{ AL["Karazhan Crypt"], "KarazhanCrypt", "Submenu" },
 			},
 			[23] = { 
-				{ AL["Molten Core"], "MoltenCore", "Submenu" },
+				{ AL["Caverns of Time: Black Morass"], "CavernsOfTimeBlackMorass", "Submenu" },
 			},
 			[24] = { 
-				{ AL["Onyxia's Lair"], "Onyxia", "Submenu" },
+				{ AL["Stormwind Vault"], "StormwindVault", "Submenu" },
 			},
 			[25] = { 
-				{ AL["Blackwing Lair"], "BlackwingLair", "Submenu" },
+				{ AL["Zul'Gurub"], "ZulGurub", "Submenu" },
 			},
 			[26] = { 
-				{ AL["Temple of Ahn'Qiraj"], "TempleofAQ", "Submenu" },
+				{ AL["Ruins of Ahn'Qiraj"], "RuinsofAQ", "Submenu" },
 			},
 			[27] = { 
+				{ AL["Molten Core"], "MoltenCore", "Submenu" },
+			},
+			[28] = { 
+				{ AL["Onyxia's Lair"], "Onyxia", "Submenu" },
+			},
+			[29] = { 
+				{ AL["Blackwing Lair"], "BlackwingLair", "Submenu" },
+			},
+			[30] = { 
+				{ AL["Temple of Ahn'Qiraj"], "TempleofAQ", "Submenu" },
+			},
+			[31] = { 
 				{ AL["Naxxramas"], "Naxxramas", "Submenu" },
 			},
 		},
@@ -2247,6 +2259,9 @@ AtlasLoot_DewDropDown = {
 		{ AL["World Bosses"], "WorldBosses", "Submenu" },
 	},
 	[3] = {
+		{ "Rare Spawns", "RareSpawns", "Submenu" },
+	},
+	[4] = {
 		[AL["PvP Rewards"]] = {
 			[1] = { 
 				{ AL["PvP Armor Sets"], "PvPArmorSets", "Submenu" },
@@ -2271,7 +2286,7 @@ AtlasLoot_DewDropDown = {
 			},
 		},
 	},
-	[4] = {
+	[5] = {
 		[AL["Sets/Collections"]] = {
 			[1] = { 
 				{ AL["Pre 60 Sets"], "Pre60Sets", "Submenu" },
@@ -2320,10 +2335,10 @@ AtlasLoot_DewDropDown = {
 			},
 		},
 	},
-	[5] = {
+	[6] = {
 		{ AL["Reputation Factions"], "Factions", "Submenu" },
 	},
-	[6] = {
+	[7] = {
 		[AL["World Events"]] = {
 			[1] = { 
 				{ AL["Abyssal Council"], "AbyssalCouncil1", "Submenu" },
@@ -2366,7 +2381,7 @@ AtlasLoot_DewDropDown = {
 			},
 		},
 	},
-	[7] = {
+	[8] = {
 		[AL["Crafting"]] = {
 			[1] = { { AL["Alchemy"], "Alchemy", "Submenu" }, },
 			[2] = { { (AL["Blacksmithing"]), "Blacksmithing", "Submenu" }, },
@@ -2383,7 +2398,7 @@ AtlasLoot_DewDropDown = {
 				[AL["Crafted Sets"]] = {
 					{ (AL["Blacksmithing"]), "CraftSetBlacksmith", "Submenu" },
 					{ (AL["Leatherworking"]), "CraftSetLeatherwork", "Submenu" },
-					{ (AL["Tailoring"]), "BloodvineG", "Table" },
+					{ (AL["Tailoring"]), "CraftSetTailoring", "Submenu" },
 				}, 
 			},
 			[13] = { { AL["Crafted Epic Weapons"], "CraftedWeapons1", "Table" }, },
@@ -2456,6 +2471,29 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["General Drakkisath"], "UBRSDrakkisath" },
 		{ AL["Trash Mobs"], "UBRSTrash" },
 	},
+	["KarazhanCrypt"] = {
+		{ AL["Marrowspike"], "KCMarrowspike" },
+		{ AL["Hivaxxis"], "KCHivaxxis" },
+		{ AL["Corpsemuncher"], "KCCorpsemuncher" },
+		{ AL["Archlich Enkhraz"], "KCArchlichEnkhraz" },
+		{ AL["Alarus"], "KCAlarus" },
+	},
+	["CavernsOfTimeBlackMorass"] = {
+		{ AL["Chronar"], "COTBMChronar" },
+		{ AL["Harbinger Aph'ygth"], "COTBMHarbingerAphygth" },
+		{ AL["Time-Lord Epochronos"], "COTBMTimeLordEpochronos" },
+		{ AL["Antnormi"], "COTBMAntnormi" },
+		{ AL["Infinite Chromie"], "COTBMInfiniteChromie" },
+	},
+	["StormwindVault"] = {
+		{ AL["Aszosh Grimflame"], "SWVAszoshGrimflame" },
+		{ AL["Tham'Grarr"], "SWVThamGrarr" },
+		{ AL["Black Bride"], "SWVBlackBride" },
+		{ AL["Damian"], "SWVDamian" },
+		{ AL["Volkan Cruelblade"], "SWVVolkanCruelblade" },
+		{ AL["Arc'tiras"], "SWVArctiras" },
+		{ AL["Vault Armory Equipment"], "SWVVaultArmoryEquipment" },
+	},
 	["BlackwingLair"] = {
 		{ AL["Razorgore the Untamed"], "BWLRazorgore" },
 		{ AL["Vaelastrasz the Corrupt"], "BWLVaelastrasz" },
@@ -2478,6 +2516,13 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Captain Greenskin"], "DMCaptainGreenskin" },
 		{ AL["Edwin VanCleef"], "DMVanCleef" },
 		{ AL["Trash Mobs"], "DMTrash" },
+	},
+	["TheCrescentGrove"] = {
+		{ AL["Grovetender Engryss"], "TCGGrovetenderEngryss" },
+		{ AL["Keeper Ranathos"], "TCGKeeperRanathos" },
+		{ AL["High Priestess A'lathea"], "TCGHighPriestessAlathea" },
+		{ AL["Fenektis the Deceiver"], "TCGFenektistheDeceiver" },
+		{ AL["Master Raxxieth"], "TCGMasterRaxxieth" },
 	},
 	["Gnomeregan"] = {
 		{ AL["Grubbis"], "GnGrubbis" },
@@ -2800,6 +2845,18 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ "Nerubian Overseer", "Nerubian" },
 		{ "Dark Reaver of Karazhan", "Reaver" },
 	},
+	["RareSpawns"] = {
+		{ "Tarangos The Dampener", "Tarangos" },
+		{ "Blademaster Kargron", "Kargron" },
+		{ "Xalvic Blackclaw", "Xalvic" },
+		{ "Mallon The Moontouched", "Mallon" },
+		{ "Grug'thok the Seer", "Grugthok" },
+		{ "The Wandering Knight", "WanderingKnight" },
+		{ "Crusader Larsarius The Scarlet Crusade", "CrusaderLarsarius" },
+		{ "Zareth Terrorblade Demon Hunter", "Zareth" },
+		{ "Jal'akar Dire Troll", "Jalakar" },
+		{ "Explorer Ashbeard", "Ashbeard" },
+	},
 	["AbyssalCouncil1"] = {
 		{ AL["Abyssal Council"].." - "..AL["Templars"], "AbyssalTemplars" },
 		{ AL["Abyssal Council"].." - "..AL["Dukes"], "AbyssalDukes" },
@@ -2843,6 +2900,13 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Green Dragon Mail"], "GreenDragonM" },
 		{ AL["Blue Dragon Mail"], "BlueDragonM" },
 		{ AL["Black Dragon Mail"], "BlackDragonM" },
+	},
+	["CraftSetTailoring"] = {
+		{ AL["Augerer's Attire"], "AugerersAttire" },
+		{ AL["Shadoweave"], "ShadoweaveSet" },
+		{ AL["Diviner's Garments"], "DivinersGarments" },
+		{ AL["Pillager's Garb"], "PillagersGarb" },
+		{ AL["Bloodvine Garb"], "BloodvineG" },
 	},
 	["DungeonSets12"] = {
 		{ "|cffffffff"..AL["Priest"], "T0Priest" },

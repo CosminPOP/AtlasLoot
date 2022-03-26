@@ -70,15 +70,63 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 --- Tailoring Sets ---
 ----------------------
 
-	BloodvineG = {
+	AugerersAttire = {
 		{ 0, "", "", "" },
 		{ 0, "INV_Box_01", "=q6=#craftt1#", "" },
+		{ 0, "", "", "" },
+		{ 83288, "INV_Boots_05", "=q2=Augerer's Boots", "=ds=#s12#, #a1#" },
+		{ 83289, "INV_Gauntlets_06", "=q2=Augerer's Gloves", "=ds=#s9#, #a1#" },
+		{ 83290, "INV_Shoulder_02", "=q2=Augerer's Mantle", "=ds=#s3#, #a1#" },
+		{ 83291, "INV_Pants_08", "=q2=Augerer's Trousers", "=ds=#s11#, #a1#" },
+		{ 83286, "INV_Helmet_11", "=q2=Augerer's Hat", "=ds=#s1#, #a1#" },
+		{ 83287, "inv_chest_cloth_22", "=q2=Augerer's Robe", "=ds=#s5#, #a1#" },
+	};
+	
+	ShadoweaveSet = {
+		{ 0, "", "", "" },
+		{ 0, "INV_Box_01", "=q6=#craftt2#", "" },
+		{ 0, "", "", "" },
+		{ 10002, "inv_pants_11", "=q2=Shadoweave Pants", "=ds=#s11#, #a1#" },
+		{ 10004, "inv_chest_cloth_38", "=q2=Shadoweave Robe", "=ds=#s5#, #a1#" },
+		{ 10023, "inv_gauntlets_09", "=q2=Shadoweave Gloves", "=ds=#s9#, #a1#" },
+		{ 10028, "inv_shoulder_25", "=q2=Shadoweave Shoulders", "=ds=#s3#, #a1#" },
+		{ 10031, "inv_boots_05", "=q2=Shadoweave Boots", "=ds=#s12#, #a1#" },
+		{ 10025, "inv_helmet_27", "=q2=Shadoweave Mask", "=ds=#s1#, #a1#" },
+	};
+
+	DivinersGarments = {
+		{ 0, "", "", "" },
+		{ 0, "INV_Box_01", "=q6=#craftt3#", "" },
+		{ 0, "", "", "" },
+		{ 83283, "inv_boots_09", "=q2=Diviner's Boots", "=ds=#s12#, #a1#" },
+		{ 83284, "inv_gauntlets_23", "=q2=Diviner's Mitts", "=ds=#s9#, #a1#" },
+		{ 83285, "inv_shoulder_02", "=q2=Diviner's Epaulets", "=ds=#s3#, #a1#" },
+		{ 83280, "inv_pants_07", "=q2=Diviner's Pantaloons", "=ds=#s11#, #a1#" },
+		{ 83282, "inv_helmet_33", "=q2=Diviner's Cowl", "=ds=#s1#, #a1#" },
+		{ 83281, "inv_chest_cloth_22", "=q2=Diviner's Robes", "=ds=#s5#, #a1#" },
+	};
+
+	PillagersGarb = {
+		{ 0, "", "", "" },
+		{ 0, "INV_Box_01", "=q6=#craftt4#", "" },
+		{ 0, "", "", "" },
+		{ 83296, "inv_boots_09", "=q2=Pillager's Shoes", "=ds=#s12#, #a1#" },
+		{ 83295, "inv_gauntlets_15", "=q2=Pillager's Grips", "=ds=#s9#, #a1#" },
+		{ 83297, "inv_pants_06", "=q2=Pillager's Pantaloons", "=ds=#s11#, #a1#" },
+		{ 83293, "inv_shoulder_02", "=q2=Pillager's Amice", "=ds=#s3#, #a1#" },
+		{ 83292, "inv_helmet_28", "=q2=Pillager's Hood", "=ds=#s1#, #a1#" },
+		{ 83294, "inv_chest_cloth_22", "=q2=Pillager's Robe", "=ds=#s5#, #a1#" },
+	};
+
+	BloodvineG = {
+		{ 0, "", "", "" },
+		{ 0, "INV_Box_01", "=q6=#craftt5#", "" },
 		{ 0, "", "", "" },
 		{ 19682, "INV_Chest_Cloth_07", "=q3=Bloodvine Vest", "=ds=#s5#, #a1#" },
 		{ 19683, "INV_Pants_Cloth_14", "=q3=Bloodvine Leggings", "=ds=#s11#, #a1#" },
 		{ 19684, "INV_Boots_Cloth_02","=q3=Bloodvine Boots", "=ds=#s12#, #a1#" },
 	};
-
+	
 -----------------------------------
 --- Leatherworking Leather Sets ---
 -----------------------------------
@@ -1144,9 +1192,15 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 
 	TailoringExpert2 = {
 		{ "s3862", "inv_misc_cape_04", "=q3=Icy Cloak", "=ds=#sr# =so1=200 =so2=220 =so3=235 =so4=250" },
+		{ "s69420", "INV_Boots_05", "=q2=Augerer's Boots", "=ds=#sr# =so1=200 =so2=200 =so3=200 =so4=200" },
+		{ "s69421", "INV_Gauntlets_06", "=q2=Augerer's Gloves", "=ds=#sr# =so1=200 =so2=200 =so3=200 =so4=200" },
+		{ "s69422", "INV_Shoulder_02", "=q2=Augerer's Mantle", "=ds=#sr# =so1=205 =so2=205 =so3=205 =so4=205" },
+		{ "s69423", "INV_Pants_08", "=q2=Augerer's Trousers", "=ds=#sr# =so1=205 =so2=205 =so3=205 =so4=205" },
+		{ "s69424", "INV_Helmet_11", "=q2=Augerer's Hat", "=ds=#sr# =so1=205 =so2=205 =so3=205 =so4=205" },
 		{ "s12049", "inv_pants_09", "=q2=Black Mageweave Leggings", "=ds=#sr# =so1=205 =so2=220 =so3=235 =so4=250" },
 		{ "s12048", "inv_chest_leather_03", "=q2=Black Mageweave Vest", "=ds=#sr# =so1=205 =so2=220 =so3=235 =so4=250" },
 		{ "s8802", "inv_chest_cloth_25", "=q2=Crimson Silk Robe", "=ds=#sr# =so1=205 =so2=220 =so3=235 =so4=250" },
+		{ "s69425", "inv_chest_cloth_22", "=q3=Augerer's Robe", "=ds=#sr# =so1=210 =so2=210 =so3=210 =so4=210" },
 		{ "s12050", "inv_chest_cloth_13", "=q2=Black Mageweave Robe", "=ds=#sr# =so1=210 =so2=225 =so3=240 =so4=255" },
 		{ "s8804", "inv_gauntlets_05", "=q2=Crimson Silk Gloves", "=ds=#sr# =so1=210 =so2=225 =so3=240 =so4=255" },
 		{ "s12052", "inv_pants_11", "=q2=Shadoweave Pants", "=ds=#sr# =so1=210 =so2=225 =so3=240 =so4=255" },
@@ -1164,13 +1218,19 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s12071", "inv_gauntlets_09", "=q2=Shadoweave Gloves", "=ds=#sr# =so1=225 =so2=240 =so3=255 =so4=270" },
 		{ "s12067", "inv_gauntlets_18", "=q3=Dreamweave Gloves", "=ds=#sr# =so1=225 =so2=240 =so3=255 =so4=270" },
 		{ "s12070", "inv_chest_cloth_42", "=q3=Dreamweave Vest", "=ds=#sr# =so1=225 =so2=240 =so3=255 =so4=270" },
+		{ "s69426", "inv_boots_09", "=q2=Diviner's Boots", "=ds=#sr# =so1=225 =so2=225 =so3=225 =so4=225" },
+		{ "s69427", "inv_gauntlets_23", "=q2=Diviner's Mitts", "=ds=#sr# =so1=225 =so2=225 =so3=225 =so4=225" },
+		{ "s69428", "inv_shoulder_02", "=q2=Diviner's Epaulets", "=ds=#sr# =so1=230 =so2=230 =so3=230 =so4=230" },
 	};
 
 	TailoringArtisan1 = {
+		{ "s69429", "inv_pants_07", "=q2=Diviner's Pantaloons", "=ds=#sr# =so1=230 =so2=230 =so3=230 =so4=230" },
+		{ "s69430", "inv_helmet_33", "=q2=Diviner's Cowl", "=ds=#sr# =so1=230 =so2=230 =so3=230 =so4=230" },
 		{ "s12075", "inv_shirt_purple_01", "=q1=Lavender Mageweave Shirt", "=ds=#sr# =so1=230 =so2=235 =so3=240 =so4=245" },
 		{ "s12073", "inv_boots_05", "=q2=Black Mageweave Boots", "=ds=#sr# =so1=230 =so2=245 =so3=260 =so4=275" },
 		{ "s12072", "inv_misc_bandana_01", "=q2=Black Mageweave Headband", "=ds=#sr# =so1=230 =so2=245 =so3=260 =so4=275" },
 		{ "s12074", "inv_shoulder_25", "=q2=Black Mageweave Shoulders", "=ds=#sr# =so1=230 =so2=245 =so3=260 =so4=275" },
+		{ "s69431", "inv_chest_cloth_22", "=q3=Diviner's Robes", "=ds=#sr# =so1=235 =so2=235 =so3=235 =so4=235" },
 		{ "s12080", "inv_shirt_red_01", "=q1=Pink Mageweave Shirt", "=ds=#sr# =so1=235 =so2=240 =so3=245 =so4=250" },
 		{ "s12077", "inv_chest_cloth_21", "=q1=Simple Black Dress", "=ds=#sr# =so1=235 =so2=240 =so3=245 =so4=250" },
 		{ "s12079", "inv_misc_bag_10_red", "=q1=Red Mageweave Bag", "=ds=#sr# =so1=235 =so2=250 =so3=265 =so4=280" },
@@ -1193,17 +1253,23 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s18404", "inv_chest_cloth_03", "=q2=Frostweave Robe", "=ds=#sr# =so1=255 =so2=270 =so3=285 =so4=300" },
 		{ "s18403", "inv_chest_cloth_08", "=q2=Frostweave Tunic", "=ds=#sr# =so1=255 =so2=270 =so3=285 =so4=300" },
 		{ "s18402", "inv_belt_15", "=q2=Runecloth Belt", "=ds=#sr# =so1=255 =so2=270 =so3=285 =so4=300" },
+	};
+
+	TailoringArtisan2 = {
+		{ "s69432", "inv_boots_09", "=q2=Pillager's Shoes", "=ds=#sr# =so1=260 =so2=260 =so3=260 =so4=260" },
+		{ "s69433", "inv_gauntlets_15", "=q2=Pillager's Grips", "=ds=#sr# =so1=260 =so2=260 =so3=260 =so4=260" },
 		{ "s18405", "inv_misc_bag_19", "=q1=Runecloth Bag", "=ds=#sr# =so1=260 =so2=275 =so3=290 =so4=305" },
 		{ "s18408", "inv_chest_cloth_07", "=q2=Cindercloth Vest", "=ds=#sr# =so1=260 =so2=275 =so3=290 =so4=305" },
 		{ "s18406", "inv_chest_cloth_04", "=q2=Runecloth Robe", "=ds=#sr# =so1=260 =so2=275 =so3=290 =so4=305" },
 		{ "s18407", "inv_chest_cloth_04", "=q2=Runecloth Tunic", "=ds=#sr# =so1=260 =so2=275 =so3=290 =so4=305" },
-	};
-
-	TailoringArtisan2 = {
 		{ "s26085", "inv_misc_bag_soulbag", "=q2=Soul Pouch", "=ds=#sr# =so1=260 =so2=275 =so3=290 =so4=305" },
+		{ "s69434", "inv_shoulder_02", "=q2=Pillager's Amice", "=ds=#sr# =so1=265 =so2=265 =so3=265 =so4=265" },
+		{ "s69435", "inv_pants_06", "=q2=Pillager's Pantaloons", "=ds=#sr# =so1=265 =so2=265 =so3=265 =so4=265" },
+		{ "s69436", "inv_helmet_28", "=q2=Pillager's Hood", "=ds=#sr# =so1=265 =so2=265 =so3=265 =so4=265" },
 		{ "s18411", "inv_gauntlets_05", "=q2=Frostweave Gloves", "=ds=#sr# =so1=265 =so2=280 =so3=295 =so4=310" },
 		{ "s18410", "inv_belt_16", "=q2=Ghostweave Belt", "=ds=#sr# =so1=265 =so2=280 =so3=295 =so4=310" },
 		{ "s18409", "inv_misc_cape_10", "=q2=Runecloth Cloak", "=ds=#sr# =so1=265 =so2=280 =so3=295 =so4=310" },
+		{ "s69437", "inv_chest_cloth_22", "=q3=Pillager's Robe", "=ds=#sr# =so1=270 =so2=270 =so3=270 =so4=270" },
 		{ "s18415", "inv_gauntlets_21", "=q2=Brightcloth Gloves", "=ds=#sr# =so1=270 =so2=285 =so3=300 =so4=315" },
 		{ "s18414", "inv_chest_cloth_26", "=q2=Brightcloth Robe", "=ds=#sr# =so1=270 =so2=285 =so3=300 =so4=315" },
 		{ "s18412", "inv_gauntlets_05", "=q2=Cindercloth Gloves", "=ds=#sr# =so1=270 =so2=285 =so3=300 =so4=315" },
@@ -1220,6 +1286,9 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s18422", "inv_misc_cape_18", "=q3=Cloak of Fire", "=ds=#sr# =so1=275 =so2=290 =so3=305 =so4=320" },
 		{ "s18434", "inv_pants_06", "=q2=Cindercloth Pants", "=ds=#sr# =so1=280 =so2=295 =so3=310 =so4=325" },
 		{ "s18424", "inv_pants_08", "=q2=Frostweave Pants", "=ds=#sr# =so1=280 =so2=295 =so3=310 =so4=325" },
+	};
+
+	TailoringArtisan3 = {
 		{ "s18423", "inv_boots_05", "=q2=Runecloth Boots", "=ds=#sr# =so1=280 =so2=295 =so3=310 =so4=325" },
 		{ "s26086", "inv_misc_bag_felclothbag", "=q3=Felcloth Bag", "=ds=#sr# =so1=280 =so2=300 =so3=315 =so4=330" },
 		{ "s18437", "inv_boots_05", "=q2=Felcloth Boots", "=ds=#sr# =so1=285 =so2=300 =so3=315 =so4=330" },
@@ -1230,9 +1299,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	    { "s18442", "inv_helmet_34", "=q2=Felcloth Hood", "=ds=#sr# =so1=290 =so2=305 =so3=320 =so4=335" },
 		{ "s18441", "inv_pants_01", "=q2=Ghostweave Pants", "=ds=#sr# =so1=290 =so2=305 =so3=320 =so4=335" },
 		{ "s23664", "inv_boots_cloth_03", "=q3=Argent Boots", "=ds=#sr# =so1=290 =so2=305 =so3=320 =so4=335" },
-	};
-
-	TailoringArtisan3 = {
 		{ "s18440", "inv_pants_13", "=q3=Mooncloth Leggings", "=ds=#sr# =so1=290 =so2=305 =so3=320 =so4=335" },
 		{ "s23662", "inv_belt_09", "=q3=Wisdom of the Timbermaw", "=ds=#sr# =so1=290 =so2=305 =so3=320 =so4=335" },
 		{ "s18444", "inv_misc_bandana_03", "=q2=Runecloth Headband", "=ds=#sr# =so1=295 =so2=310 =so3=325 =so4=340" },
@@ -1253,6 +1319,9 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s22867", "inv_gauntlets_19", "=q3=Felcloth Gloves", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 		{ "s28210", "inv_misc_cape_17", "=q3=Gaea's Embrace", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 		{ "s22868", "inv_gauntlets_19", "=q3=Inferno Gloves", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
+	};
+
+	TailoringArtisan4 = {
 		{ "s23663", "inv_shoulder_19", "=q3=Mantle of the Timbermaw", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 		{ "s18452", "inv_misc_bandana_01", "=q3=Mooncloth Circlet", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 		{ "s22869", "inv_gauntlets_17", "=q3=Mooncloth Gloves", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
@@ -1263,9 +1332,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s24903", "inv_boots_05", "=q3=Runed Stygian Boots", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 		{ "s24901", "inv_pants_cloth_05", "=q3=Runed Stygian Leggings", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 		{ "s28481", "inv_crown_01", "=q3=Sylvan Crown", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
-	};
-
-	TailoringArtisan4 = {
 		{ "s28482", "inv_shoulder_18", "=q3=Sylvan Shoulders", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 		{ "s28480", "inv_chest_plate07", "=q3=Sylvan Vest", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 		{ "s22866", "inv_belt_31", "=q4=Belt of the Archmage", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
