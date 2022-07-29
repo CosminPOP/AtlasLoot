@@ -69,7 +69,7 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 --Establish version number and compatible version of Atlas
 local VERSION_MAJOR = "1";
 local VERSION_MINOR = "0";
-local VERSION_BOSSES = "2";
+local VERSION_BOSSES = "3";
 ATLASLOOT_VERSION = "|cffFF8400AtlasLoot TW Edition v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
@@ -2202,55 +2202,58 @@ AtlasLoot_DewDropDown = {
 				{ AL["The Sunken Temple"], "SunkenTemple", "Submenu" },
 			},
 			[16] = { 
-				{ AL["Blackrock Depths"], "BlackrockDepths", "Submenu" },
+				{ AL["Hateforge Quarry"], "HateforgeQuarry", "Submenu" },
 			},
 			[17] = { 
+				{ AL["Blackrock Depths"], "BlackrockDepths", "Submenu" },
+			},
+			[18] = { 
 				[AL["Dire Maul"]] = {
 					{ AL["Dire Maul"].." "..AL["East"], "DireMaulEast", "Submenu" },
 					{ AL["Dire Maul"].." "..AL["West"], "DireMaulWest", "Submenu" },
 					{ AL["Dire Maul"].." "..AL["North"], "DireMaulNorth", "Submenu" },
 				}, 
 			},
-			[18] = { 
+			[19] = { 
 				{ AL["Scholomance"], "Scholomance", "Submenu" },
 			},
-			[19] = { 
+			[20] = { 
 				{ AL["Stratholme"], "Stratholme", "Submenu" },
 			},
-			[20] = { 
+			[21] = { 
 				{ AL["Lower Blackrock Spire"], "LowerBlackrock", "Submenu" },
 			},
-			[21] = { 
+			[22] = { 
 				{ AL["Upper Blackrock Spire"], "UpperBlackrock", "Submenu" },
 			},
-			[22] = { 
+			[23] = { 
 				{ AL["Karazhan Crypt"], "KarazhanCrypt", "Submenu" },
 			},
-			[23] = { 
+			[24] = { 
 				{ AL["Caverns of Time: Black Morass"], "CavernsOfTimeBlackMorass", "Submenu" },
 			},
-			[24] = { 
+			[25] = { 
 				{ AL["Stormwind Vault"], "StormwindVault", "Submenu" },
 			},
-			[25] = { 
+			[26] = { 
 				{ AL["Zul'Gurub"], "ZulGurub", "Submenu" },
 			},
-			[26] = { 
+			[27] = { 
 				{ AL["Ruins of Ahn'Qiraj"], "RuinsofAQ", "Submenu" },
 			},
-			[27] = { 
+			[28] = { 
 				{ AL["Molten Core"], "MoltenCore", "Submenu" },
 			},
-			[28] = { 
+			[29] = { 
 				{ AL["Onyxia's Lair"], "Onyxia", "Submenu" },
 			},
-			[29] = { 
+			[30] = { 
 				{ AL["Blackwing Lair"], "BlackwingLair", "Submenu" },
 			},
-			[30] = { 
+			[31] = { 
 				{ AL["Temple of Ahn'Qiraj"], "TempleofAQ", "Submenu" },
 			},
-			[31] = { 
+			[32] = { 
 				{ AL["Naxxramas"], "Naxxramas", "Submenu" },
 			},
 		},
@@ -2409,6 +2412,13 @@ AtlasLoot_DewDropDown = {
 --This table defines all the subtables needed for the full menu
 --Each sub table entry contains the text entry and the loot table that goes wih it
 AtlasLoot_DewDropDown_SubTables = {
+	["HateforgeQuarry"] = {
+		{ AL["High Foreman Bargul Blackhammer"], "HQHighForemanBargulBlackhammer" },
+		{ AL["Engineer Figgles"], "HQEngineerFiggles" },
+		{ AL["Corrosis"], "HQCorrosis" },
+		{ AL["Hatereaver Annihilator"], "HQHatereaverAnnihilator" },
+		{ AL["Hargesh Doomcaller"], "HQHargeshDoomcaller" },
+	},
 	["BlackrockDepths"] = {
 		{ AL["Lord Roccor"], "BRDLordRoccor" },
 		{ AL["High Interrogator Gerstahn"], "BRDHighInterrogatorGerstahn" },

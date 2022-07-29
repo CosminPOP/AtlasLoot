@@ -355,6 +355,12 @@ AtlasLoot_TableNames = {
     ["STHazzas"] = { AL["Hazzas"], "AtlasLootItems" },
     ["STEranikus"] = { AL["Shade of Eranikus"], "AtlasLootItems" },
     ["STTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Sunken Temple"] .. ")", "AtlasLootItems" },
+	-- Hateforge Quarry
+    ["HQHighForemanBargulBlackhammer"] = { AL["High Foreman Bargul Blackhammer"], "AtlasLootItems" },
+	["HQEngineerFiggles"] = { AL["Engineer Figgles"], "AtlasLootItems" },
+	["HQCorrosis"] = { AL["Corrosis"], "AtlasLootItems" },
+	["HQHatereaverAnnihilator"] = { AL["Hatereaver Annihilator"], "AtlasLootItems" },
+	["HQHargeshDoomcaller"] = { AL["Hargesh Doomcaller"], "AtlasLootItems" },
 	-- The Cresant Grove
     ["TCGGrovetenderEngryss"] = { AL["Grovetender Engryss"], "AtlasLootItems" },
 	["TCGKeeperRanathos"] = { AL["Keeper Ranathos"], "AtlasLootItems" },
@@ -984,6 +990,13 @@ AtlasLoot_TableNamesBoss = {
         ["DMMarisaduPaige"] = { AL["Marisa du'Paige"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
         ["DMBrainwashedNoble"] = { AL["Brainwashed Noble"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
         ["DMForemanThistlenettle"] = { AL["Foreman Thistlenettle"], "AtlasLootItems" },
+    },
+    ["Hateforge Quarry"] = {
+        ["HQHighForemanBargulBlackhammer"] = { AL["High Foreman Bargul Blackhammer"], "AtlasLootItems" },
+		["HQEngineerFiggles"] = { AL["Engineer Figgles"], "AtlasLootItems" },
+		["HQCorrosis"] = { AL["Corrosis"], "AtlasLootItems" },
+		["HQHatereaverAnnihilator"] = { AL["Hatereaver Annihilator"], "AtlasLootItems" },
+		["HQHargeshDoomcaller"] = { AL["Hargesh Doomcaller"], "AtlasLootItems" },
     },
     ["The Crescent Grove"] = {
         ["TCGGrovetenderEngryss"] = { AL["Grovetender Engryss"], "AtlasLootItems" },
