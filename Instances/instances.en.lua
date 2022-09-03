@@ -633,6 +633,7 @@ AtlasLootBossButtons = {
         "KCMarrowspike";
         "KCHivaxxis";
         "KCCorpsemuncher";
+		"KCGuardCaptainGort";
         "KCArchlichEnkhraz";
         "KCAlarus";
 	};
@@ -2794,6 +2795,14 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 83462, "INV_chest_plate08", "=q3=Cadaverlink Vest", "=ds=#s5#, #a3#", "18%" },
 		{ 83463, "INV_gauntlets_23", "=q3=Rotworm Grips", "=ds=#s9#, #a2#", "18%" },
 		{ 83458, "INV_misc_organ_01", "=q3=Wormheart", "=ds=#s2#", "10%" },
+	};
+	KCGuardCaptainGort = {
+		{ 60792, "inv_shoulder_22", "=q3=Pauldrons of Elusiveness", "=ds=#s3#, #a3#", "17%" },
+		{ 60793, "inv_jewelry_ring_43", "=q3=Signet of Expertise", "=ds=#s13#", "17%" },
+		{ 60794, "inv_chest_cloth_04", "=q3=Battle Bishop's Robe", "=ds=#s5#, #a1#", "17%" },
+		{ 60795, "inv_bracer_09.png", "=q3=Naturalist Wristbands", "=ds=#s8#, #a2#", "17%" }, 
+		{ 60790, "inv_jewelry_necklace_04", "=q3=Memento of the Lost", "=ds=#s2#", "17%" }, 
+		{ 60791, "inv_gauntlets_31", "=q3=Skullcrushing Gauntlets", "=ds=#s9#, #a4#", "17%" }, 
 	};
 	KCArchlichEnkhraz = {
 		{ 83453, "INV_misc_book_09", "=q3=Tome of Shivering Secrets", "=ds=#h4#", "18%" },

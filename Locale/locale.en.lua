@@ -914,6 +914,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Marrowspike"] = true,
 	["Hivaxxis"] = true,
 	["Corpsemuncher"] = true,
+	["Guard Captain Gort"] = true,
 	["Archlich Enkhraz"] = true,
 	["Alarus"] = true,
 	["Caverns of Time: Black Morass"] = true,

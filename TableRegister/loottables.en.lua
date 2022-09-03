@@ -371,6 +371,7 @@ AtlasLoot_TableNames = {
     ["KCMarrowspike"] = { AL["Marrowspike"], "AtlasLootItems" },
     ["KCHivaxxis"] = { AL["Hivaxxis"], "AtlasLootItems" },
     ["KCCorpsemuncher"] = { AL["Corpsemuncher"], "AtlasLootItems" },
+	["KCGuardCaptainGort"] = { AL["Guard Captain Gort"], "AtlasLootItems" },
     ["KCArchlichEnkhraz"] = { AL["Archlich Enkhraz"], "AtlasLootItems" },
     ["KCAlarus"] = { AL["Alarus"], "AtlasLootItems" },
 	-- Caverns of Time: Black Morass

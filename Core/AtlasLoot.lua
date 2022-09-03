@@ -349,8 +349,10 @@ function AtlasLoot_OnVariablesLoaded()
 		--We also create a helper table here which store IDs that need to search for
 		local idsToSearch = {};
 		for i = 1, table.getn(AtlasLootCharDB["WishList"]) do
-			if (AtlasLootCharDB["WishList"][i][1] > 0 and not AtlasLootCharDB["WishList"][i][5]) then
-				tinsert(idsToSearch, i, AtlasLootCharDB["WishList"][i][1]);
+			if (type(AtlasLootCharDB["WishList"][i][1]) == "number") then
+				if (AtlasLootCharDB["WishList"][i][1] > 0 and not AtlasLootCharDB["WishList"][i][5]) then
+					tinsert(idsToSearch, i, AtlasLootCharDB["WishList"][i][1]);
+				end
 			end
 		end
 		if table.getn(idsToSearch) > 0 then
@@ -2485,6 +2487,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Marrowspike"], "KCMarrowspike" },
 		{ AL["Hivaxxis"], "KCHivaxxis" },
 		{ AL["Corpsemuncher"], "KCCorpsemuncher" },
+		{ AL["Guard Captain Gort"], "KCGuardCaptainGort" },
 		{ AL["Archlich Enkhraz"], "KCArchlichEnkhraz" },
 		{ AL["Alarus"], "KCAlarus" },
 	},
