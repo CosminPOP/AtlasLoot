@@ -28,6 +28,9 @@ AtlasLootWBBossButtons = {
     Reaver = {
         "Reaver";
     };
+	Ostarius = {
+		"Ostarius";
+	};
     RareSpawns = {
         "";
         "";
@@ -137,6 +140,35 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
         { 50202, "INV_Egg_03", "=q3=Egg of Turtlhu", "=ds=#e15#", "100%" },
         { 50203, "INV_Enchant_Dustsoul", "=q2=Corrupted Sand", "=ds=#e12#", "100%" },
     };
+	Ostarius = {
+		{ 83480, "inv_misc_book_07", "=q4=Tome of Infalliable Truth", "=ds=#h4#, #s15#", "17%" },
+		{ 83481, "inv_mace_08", "=q4=Failsafe Activation Key", "=ds=#h4#, #s15#", "17%" },
+		{ 83482, "inv_wand_06", "=q4=Distress Signal Pulser", "=ds=#h4#, #s15#", "17%" },
+		{ 0,"","","" },
+		{ 83530, "inv_helmet_63", "=q4=Turban of Veiled Mists", "=ds=#s1#, #a1#", "17%" },
+		{ 0,"","","" },
+		{ 83531, "inv_belt_17", "=q4=Clutch of Mending Winds", "=ds=#s10#, #a2#", "17%" },
+		{ 83532, "inv_bracer_07", "=q4=Bracers of the Crescent Moon", "=ds=#s8#, #a2#", "17%" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 83487, "inv_sword_01", "=q4=Blade of the Fallen Star", "=ds=#h3#, #w10#", "17%" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 83484, "inv_jewelry_necklace_14", "=q4=Desert Wind Talisman", "=ds=#s2#", "17%" },
+		{ 83486, "inv_misc_cape_07", "=q4=Sandstalker's Shroud", "=ds=#s4#", "17%" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 83488, "inv_boots_chain_02", "=q4=Uldum Construct Stompers", "=ds=#s12#, #a3#", "17%" },
+		{ 0,"","","" },
+		{ 83483, "inv_helmet_03", "=q4=Crown of Divine Justice", "=ds=#s1#, #a4#", "17%" },
+		{ 83485, "inv_gauntlets_16", "=q4=Fists of the Makers", "=ds=#s9#, #a4#", "17%" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 83235, "inv_misc_pocketwatch_03", "=q4=Ancient Locking Mechanism", "", "100%" },
+		{ 17962,"INV_Misc_Bag_10_Blue","=q2=Blue Sack of Gems","=ds=#m23# =q2=#e33#", "25%" },
+	};
     KKazzak = {
         { 18546, "INV_Helmet_18", "=q4=Infernal Headcage", "=ds=#s1#, #a3#", "9.39%" },
         { 17111, "INV_Jewelry_Talisman_01", "=q4=Blazefury Medallion", "=ds=#s2#", "10.95%" },

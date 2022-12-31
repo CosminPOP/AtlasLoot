@@ -521,6 +521,8 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "e23803", "Spell_Holy_GreaterHeal", "=ds=Enchant Weapon - Mighty Spirit", "=ds=#sr# =so1=300 =so2=320 =so3=340 =so4=360" },
 		{ "e22749", "Spell_Holy_GreaterHeal", "=ds=Enchant Weapon - Spell Power", "=ds=#sr# =so1=300 =so2=320 =so3=340 =so4=360" },
 		{ "e20031", "Spell_Holy_GreaterHeal", "=ds=Enchant Weapon - Superior Striking", "=ds=#sr# =so1=300 =so2=320 =so3=340 =so4=360" },
+		{ "e57030", "Spell_Holy_GreaterHeal", "=ds=Enchant Bracer - Greater Agility", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+		{ "e57028", "Spell_Holy_GreaterHeal", "=ds=Enchant Bracer - Spell Power", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
 	};
 
 ---------------------
@@ -1052,6 +1054,11 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s23710", "inv_belt_13", "=q4=Molten Belt", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s20854", "inv_helmet_08", "=q4=Molten Helm", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s22928", "inv_misc_cape_20", "=q4=Shifting Cloak", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s57016", "inv_helmet_13", "=q4=Depthstalker Helm", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+		{ "s57012", "inv_chest_leather_08", "=q4=Earthguard Tunic", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+		{ "s57014", "inv_pants_06", "=q4=Flamewrath Leggings", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+		{ "s57018", "inv_boots_05", "=q4=Windwalker Boots", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+		
 	};
 
 	Tribal1 = {

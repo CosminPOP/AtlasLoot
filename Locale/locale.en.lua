@@ -1446,6 +1446,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Darnassus"] = true,
 	["Stormwind"] = true,
 	["Gnomeregan Exiles"] = true,
+	["Darkspear Trolls"] = true,
 	["Durotar Labor Union"] = true,
 	["Undercity"] = true,
 	["Orgrimmar"] = true,

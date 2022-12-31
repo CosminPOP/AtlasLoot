@@ -1909,9 +1909,10 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "", "" },
 		{ 0, "", "", "", "" },
 		{ 0, "", "", "", "" },
-		{ 20077, "INV_Misc_ArmorKit_08", "=q3=Zandalar Signet of Might", "=ds=#s3# #e11#" },
-		{ 20076, "INV_Jewelry_Ring_46", "=q3=Zandalar Signet of Mojo", "=ds=#s3# #e11#" },
-		{ 20078, "Spell_Holy_PowerWordShield", "=q3=Zandalar Signet of Serenity", "=ds=#s3# #e11#" },
+		{ 20077, "INV_Misc_ArmorKit_08", "=q3=Zandalar Signet of Might", "=ds=#s3# #e11#", "", "", "", "", "", "15", "#zandalar#" },
+		{ 20076, "INV_Jewelry_Ring_46", "=q3=Zandalar Signet of Mojo", "=ds=#s3# #e11#", "", "", "", "", "", "15", "#zandalar#" },
+		{ 20078, "Spell_Holy_PowerWordShield", "=q3=Zandalar Signet of Serenity", "=ds=#s3# #e11#", "", "", "", "", "", "15", "#zandalar#" },
+		{ 65033, "spell_holy_devotionaura", "=q3=Zandalar Signet of Tenacity", "=ds=#s3# #e11#", "", "", "", "", "", "15", "#zandalar#" },
 		{ 0, "", "", "", "" },
 		{ 22635, "Spell_Nature_SpiritArmor", "=q3=Savage Guard", "=ds=#s1#/#s11# #e11#" },
 	};
@@ -2815,16 +2816,18 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 80010, "INV_box_petcarrier_01", "=q1=Midnight", "=ds=#e15#", "5%" },
 	};
 	KCAlarus = {
-		{ 83465, "INV_misc_cape_21", "=q3=Shroud of Haunted Torment", "=ds=#s4#, #a1#", "13%" },
-		{ 83466, "INV_pants_plate_20", "=q3=Baneforged Leggings", "=ds=#s11#, #a4#", "13%" },
-		{ 83467, "INV_wand_03", "=q3=Cryptwatcher's Call", "=ds=#w12#", "13%" },
-		{ 83468, "INV_jewelry_ring_09", "=q3=Corpsekeeper's Charge", "=ds=#s13#", "13%" },
-		{ 83469, "INV_crown_01", "=q3=Cryptstone Circlet", "=ds=#s1#, #a1#", "13%" },
-		{ 83470, "INV_pants_03", "=q3=Wraithscale Leggings", "=ds=#s11#, #a3#", "13%" },
-		{ 83471, "INV_staff_08", "=q3=Staff of Alarus", "=ds=#h2#, #w9#", "13%" },
-		{ 83472, "INV_helmet_15", "=q3=Cover of the Necromancer", "=ds=#s1#, #a1#", "13%" },
+		{ 83465, "INV_misc_cape_21", "=q3=Shroud of Haunted Torment", "=ds=#s4#, #a1#", "25%" },
+		{ 83466, "INV_pants_plate_20", "=q3=Baneforged Leggings", "=ds=#s11#, #a4#", "25%" },
+		{ 83467, "INV_wand_03", "=q3=Cryptwatcher's Call", "=ds=#w12#", "25%" },
+		{ 83468, "INV_jewelry_ring_09", "=q3=Corpsekeeper's Charge", "=ds=#s13#", "25%" },
+		{ 83469, "INV_crown_01", "=q3=Cryptstone Circlet", "=ds=#s1#, #a1#", "21%" },
+		{ 83470, "INV_pants_03", "=q3=Wraithscale Leggings", "=ds=#s11#, #a3#", "21%" },
+		{ 83471, "INV_staff_08", "=q3=Staff of Alarus", "=ds=#h2#, #w9#", "21%" },
+		{ 83472, "INV_helmet_15", "=q3=Cover of the Necromancer", "=ds=#s1#, #a1#", "21%" },
 		{ 0, "", "", "" },
-		{ 83464, "INV_shoulder_11", "=q4=Mantle of Twisted Damnation", "=ds=#s3#, #a1#", "0.25%" },
+		{ 83464, "INV_shoulder_11", "=q4=Mantle of Twisted Damnation", "=ds=#s3#, #a1#", "1%" },
+		{ 0, "", "", "" },
+		{ 83571, "inv_misc_book_05", "=q3=Codex: Shadow Mend", "=ds=#c5#", "15" },
 	};
 	COTBMChronar = {
 		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
@@ -2941,6 +2944,9 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 60426, "INV_Chest_Plate08", "=q3=Guard-Captain's Chestplate", "=ds=#s5#, #a4#", "25%" },
 		{ 60429, "INV_bracer_19", "=q3=Arcanite Shackles", "=ds=#s8#, #a4#", "25%" },
 		{ 60430, "INV_boots_05", "=q3=Runewarder's Boots", "=ds=#s12#, #a1#", "25%" },
+		{ 60501, "INV_Misc_Crop_01", "=q3=Whip of Encouragement", "=ds=#s14#", "25%" },
+		{ 0, "", "", "" },
+		{ 83570, "inv_scroll_02", "=q3=Technique: Die by the Sword", "=ds=#c9#", "15%" },
 	};
 	HQHighForemanBargulBlackhammer = {
 		{ 60565, "INV_axe_14", "=q3=Hateforged Cleaver", "=ds=#h1#, #w1#", "20%" },
@@ -2949,6 +2955,8 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 60568, "INV_boots_01", "=q3=Incendosaur Skin Boots", "=ds=#s12#, #a2#", "20%" },
 		{ 60569, "INV_jewelry_necklace_06", "=q3=Taskmaster's Tag", "=ds=#s2#", "20%" },
 		{ 60570, "INV_misc_net_01", "=q3=Dark Iron Hooked Net", "=ds=#s14#", "15%" },
+		{ 0, "", "", "" },
+		{ 60775, "inv_misc_book_10", "=q3=Manual: Intervene", "=ds=#c9#", "15%" },
 	};
 	HQEngineerFiggles = {
 		{ 60540, "INV_helmet_47", "=q3=The Creator's Goggles", "=ds=#s1#, #a1#", "20%" },

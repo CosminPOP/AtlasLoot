@@ -126,6 +126,11 @@ AtlasLoot_ButtonRegistry = {
         Back_Page = "REPMENU";
         Back_Title = AL["Factions"];
     };
+	["DarkspearTrolls"] = {
+		Title = AL["Darkspear Trolls"];
+		Back_Page = "REPMENU";
+		Back_Title = AL["Factions"];
+	};
     ["DurotarLaborUnion"] = {
         Title = AL["Durotar Labor Union"];
         Back_Page = "REPMENU";
