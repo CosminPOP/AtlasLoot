@@ -633,6 +633,14 @@ GetSpellInfoVanillaDB = {
 			["name"] = "Enchant 2H Weapon - Agility",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
+		[57030] = {
+			["name"] = "Enchant Bracer - Greater Agility",
+			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
+		},
+		[57028] = {
+			["name"] = "Enchant Bracer - Spell Power",
+			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
+		},
 	},
 	["craftspells"] = {
 		[6510] = {

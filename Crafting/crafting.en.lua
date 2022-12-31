@@ -521,6 +521,8 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "e23803", "Spell_Holy_GreaterHeal", "=ds=Enchant Weapon - Mighty Spirit", "=ds=#sr# =so1=300 =so2=320 =so3=340 =so4=360" },
 		{ "e22749", "Spell_Holy_GreaterHeal", "=ds=Enchant Weapon - Spell Power", "=ds=#sr# =so1=300 =so2=320 =so3=340 =so4=360" },
 		{ "e20031", "Spell_Holy_GreaterHeal", "=ds=Enchant Weapon - Superior Striking", "=ds=#sr# =so1=300 =so2=320 =so3=340 =so4=360" },
+		{ "e57030", "Spell_Holy_GreaterHeal", "=ds=Enchant Bracer - Greater Agility", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+		{ "e57028", "Spell_Holy_GreaterHeal", "=ds=Enchant Bracer - Spell Power", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
 	};
 
 ---------------------

@@ -69,7 +69,7 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 --Establish version number and compatible version of Atlas
 local VERSION_MAJOR = "1";
 local VERSION_MINOR = "0";
-local VERSION_BOSSES = "3";
+local VERSION_BOSSES = "4";
 ATLASLOOT_VERSION = "|cffFF8400AtlasLoot TW Edition v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
@@ -2863,6 +2863,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ "Turtlhu, the Black Turtle of Doom", "Turtlhu" },
 		{ "Nerubian Overseer", "Nerubian" },
 		{ "Dark Reaver of Karazhan", "Reaver" },
+		{ "Ostarius", "Ostarius" },
 	},
 	["RareSpawns"] = {
 		{ "Tarangos The Dampener", "Tarangos" },
@@ -2902,6 +2903,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Darnassus"], "Darnassus" },
 		{ AL["Stormwind"], "Stormwind" },
 		{ AL["Gnomeregan Exiles"], "GnomereganExiles" },
+		{ AL["Darkspear Trolls"], "DarkspearTrolls" },
 		{ AL["Durotar Labor Union"], "DurotarLaborUnion" },
 		{ AL["Undercity"], "Undercity" },
 		{ AL["Orgrimmar"], "Orgrimmar" },

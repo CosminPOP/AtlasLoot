@@ -612,6 +612,7 @@ AtlasLoot_TableNames = {
     ["Turtlhu"] = { "Turtlhu, the Black Turtle of Doom", "AtlasLootWBItems" },
     ["Nerubian"] = { "Nerubian Overseer", "AtlasLootWBItems" },
     ["Reaver"] = { "Dark Reaver of Karazhan", "AtlasLootWBItems" },
+	["Ostarius"] = { "Ostarius", "AtlasLootWBItems" },
     --Doom Lord Kazzak
     ["KKazzak"] = { AL["Lord Kazzak"], "AtlasLootWBItems" },
     --Emrald Dragons
@@ -713,6 +714,7 @@ AtlasLoot_TableNames = {
     ["Darnassus"] = { AL["Darnassus"], "AtlasLootRepItems" },
     ["Stormwind"] = { AL["Stormwind"], "AtlasLootRepItems" },
     ["GnomereganExiles"] = { AL["Gnomeregan Exiles"], "AtlasLootRepItems" },
+	["DarkspearTrolls"] = { AL["Darkspear Trolls"], "AtlasLootRepItems" },
     ["DurotarLaborUnion"] = { AL["Durotar Labor Union"], "AtlasLootRepItems" },
     ["Undercity"] = { AL["Undercity"], "AtlasLootRepItems" },
     ["Orgrimmar"] = { AL["Orgrimmar"], "AtlasLootRepItems" },
@@ -1558,6 +1560,7 @@ AtlasLoot_TableNamesBoss = {
         ["Turtlhu"] = { "Turtlhu, the Black Turtle of Doom", "AtlasLootWBItems" },
         ["Nerubian"] = { "Nerubian Overseer", "AtlasLootWBItems" },
         ["Reaver"] = { "Dark Reaver of Karazhan", "AtlasLootWBItems" },
+		["Ostarius"] = { "Ostarius", "AtlasLootWBItems" },
         --Doom Lord Kazzak
         ["KKazzak"] = { AL["Lord Kazzak"], "AtlasLootWBItems" },
         --Emrald Dragons
@@ -1647,6 +1650,7 @@ AtlasLoot_TableNamesBoss = {
         ["Darnassus"] = { AL["Darnassus"], "AtlasLootRepItems" },
         ["Stormwind"] = { AL["Stormwind"], "AtlasLootRepItems" },
         ["GnomereganExiles"] = { AL["Gnomeregan Exiles"], "AtlasLootRepItems" },
+		["DarkspearTrolls"] = { AL["Darkspear Trolls"], "AtlasLootRepItems" },
         ["DurotarLaborUnion"] = { AL["Durotar Labor Union"], "AtlasLootRepItems" },
         ["Undercity"] = { AL["Undercity"], "AtlasLootRepItems" },
         ["Orgrimmar"] = { AL["Orgrimmar"], "AtlasLootRepItems" },

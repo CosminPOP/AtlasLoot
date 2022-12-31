@@ -374,7 +374,7 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
         { 20131, "INV_Shirt_GuildTabard_01", "=q1=Battle Tabard of the Defilers", "=q1=#m4#: =ds=#s7#" },
     };
     GelkisClan1 = {
-		{ 5748, "", "=q2", "=ds=#w4#"},
+		{ 5748, "", "=q2", "=ds=#w2#"},
 		{ 0, "", "", "" },
         { 0, "INV_Misc_Head_Centaur_01", "=q6=#r2#", "" },
         { 6773, "INV_Chest_Chain_07", "=q2=Gelkis Marauder Chain", "=q1=#m4#: =ds=#s5#, #a3#" },
@@ -386,9 +386,9 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 		{ 60900, "", "=q2", "=ds=#s8#, #a2#"},
 		{ 60901, "", "=q2", "=ds=#s1#, #a3#"},
 		{ 0, "", "", "" },
-		{ 0, "", "", "" },
-		{ 0, "", "", "" },
-		{ 0, "", "", "" },
+		{ 60854, "", "=q2", "=q1=#m4#"},
+		{ 60860, "", "=q2", "=q1=#m4#"},
+		{ 60859, "INV_Misc_Gem_CystalCut_01", "=q2", "=q1=#m4#"},
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "INV_Misc_Head_Centaur_01", "=q6=#r4#", "" },
@@ -409,10 +409,34 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
         { 20132, "INV_Shirt_GuildTabard_01", "=q1=Arathor Battle Tabard", "=q1=#m4#: =ds=#s7#" },
     };
     MagramClan1 = {
-        { 0, "", "", "" },
+		{ 5748, "", "=q2", "=ds=#w2#"},
+		{ 0, "", "", "" },
         { 0, "INV_Misc_Head_Centaur_01", "=q6=#r2#", "" },
         { 6789, "INV_Misc_Cape_12", "=q2=Ceremonial Centaur Blanket", "=q1=#m4#: =ds=#s4#" },
         { 6788, "INV_Belt_11", "=q2=Magram Hunter's Belt", "=q1=#m4#: =ds=#s10#, #a2#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "INV_Misc_Head_Centaur_01", "=q6=#r3#", "" },
+		{ 60879, "", "=q2", "=ds=#s12#, #a2#"},
+		{ 60880, "", "=q2", "=ds=#s5#, #a3#"},
+		{ 60881, "", "=q2", "=ds=#s10#, #a1#"},
+		{ 0, "", "", "" },
+		{ 60853, "", "=q2", "=q1=#m4#"},
+		{ 60854, "", "=q2", "=q1=#m4#"},
+		{ 60855, "", "=q2", "=q1=#m4#"},
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "INV_Misc_Head_Centaur_01", "=q6=#r4#", "" },
+		{ 60884, "", "=q3", "=ds=#h1#, #w4#"},
+		{ 60883, "", "=q3", "=ds=#s9#, #a4#"},
+		{ 60882, "", "=q3", "=ds=#w2#"},
+		{ 0, "", "", "" },
+		{ 0, "INV_Misc_Head_Centaur_01", "=q6=#r5#", "" },
+		{ 60905, "", "=q4", "=ds=#w9#"},
+		{ 60968, "", "=q3", "=ds=#p7# (300)"},
+		{ 60967, "", "=q3", "=ds=#p8# (300)"},
+		{ 60969, "", "=q3", "=ds=#p4# (300)"},
+		
     };
     Helf = {
         { 0, "INV_Staff_13", "=q2=Cloaks", "" },
@@ -565,13 +589,13 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
         --{ 80647, "", "=q2=", "" },
     };
     Ironforge = {
-        { 0, "INV_Staff_13", "=q2=Honored", "" },
+		{ 0, "inv_drink_08", "=q6=#r3#", "" },
         { 81211, "", "=q2=", "" },
         { 81212, "", "=q2=", "" },
         { 81215, "", "=q2=", "" },
         { 81213, "", "=q2=", "" },
         { 0, "", "", "" },
-        { 0, "INV_Staff_13", "=q2=Exalted", "" },
+        { 0, "inv_drink_08", "=q6=#r5#", "" },
         { 80303, "", "=q2=", "" },
         { 81233, "", "=q2=", "" },
     };
@@ -603,6 +627,18 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
         { 81195, "", "=q2=", "" },
         { 80306, "", "=q2=", "" },
     };
+	DarkspearTrolls = {
+		{ 0, "inv_misc_head_troll_01", "=q6=#r4#", "" },
+		{ 80806, "", "=q3=", "" },
+		{ 80785, "", "=q3=", "" },
+		{ 80797, "", "=q3=", "" },
+		{ 0, "", "", "" },
+		{ 0, "inv_misc_head_troll_01", "=q6=#r5#", "" },
+		{ 83064, "", "=q3=", "" },
+		{ 81183, "", "=q1=", "" },
+		{ 80304, "", "=q1=", "" },
+		{ 81182, "", "=q4=", "" },
+	},
     DurotarLaborUnion = {
         { 0, "INV_Staff_13", "=q2=Friendly", "" },
         { 50068, "", "=q2=", "" },
@@ -616,7 +652,7 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
         { 81089, "", "=q2=", "" },
     };
     Undercity = {
-        { 0, "INV_Staff_13", "=q2=Exalted", "" },
+		{ 0, "inv_misc_head_undead_02", "=q6=#r5#", "" },
         { 81244, "", "=q2=", "" },
         { 81245, "", "=q2=", "" },
         { 81246, "", "=q2=", "" },
