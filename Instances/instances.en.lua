@@ -2512,7 +2512,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 9461, "INV_Misc_Gear_01", "=q3=Charged Gear", "=ds=#s13# =q2=#e31#", "28.49%" },
 		{ 9458, "INV_Shield_10", "=q3=Thermaplugg's Central Core", "=ds=#w8#", "28.61%" },
 		{ 9459, "INV_Axe_03", "=q3=Thermaplugg's Left Arm", "=ds=#h2#, #w1#", "18.05%" },
-		{ 0,"","","" },
+		{ 60098,"","=q3=", "50%" },
 		{ 0,"","","" },
 		{ 0,"","","" },
 		{ 0,"","","" },
@@ -3036,6 +3036,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "" },
 		{ 5192, "INV_Sword_24", "=q2=Thief's Blade", "=ds=#h1#, #w10#", "34.96%" },
 		{ 5196, "INV_Axe_22", "=q2=Smite's Reaver", "=ds=#h1#, #w1#", "33.95%" },
+		{ 81007, "", "=q2=", "20%" },
 	};
 	DMCookie = {
 		{ 5198, "INV_Staff_02", "=q3=Cookie's Stirring Rod", "=ds=#w12#", "30.90%" },
@@ -3052,6 +3053,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 81007, "", "=q1=", "", "0.02%" },
 		{ 80802, "", "=q1=", "", "1.5%" },
 		{ 80803, "", "=q1=", "", "1.5%" },
+		{ 1943, "", "=q1=", "", "4%" },
 	};
 	STBalconyMinibosses = {
 		{ 10783, "INV_Shoulder_18", "=q3=Atal'ai Spaulders", "=ds=#s3#, #a2# =q2=#e32#", "3.12%" },
@@ -3995,25 +3997,25 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "" },	
 		{ 11446, "INV_Misc_Note_05", "=q1=A Crumpled Up Note", "=ds=#m2#" },
 	};
-	RFCOggleflint = {
-		{ 80700, "", "=q3=", ""},
-		{ 80701, "", "=q3=", ""},
-		{ 80702, "", "=q3=", ""},
-	};
-	RFCBazzalan = {
-		{ 80705, "", "=q3=", ""},
-		{ 80704, "", "=q3=", ""},
-		{ 80703, "", "=q3=", ""},
-	};
 	RFCTaragaman = {
 		{ 14149, "INV_Misc_Cape_18", "=q2=Subterranean Cape", "=ds=#s4#", "31.59%" },
 		{ 14148, "INV_Bracer_13", "=q2=Crystalline Cuffs", "=ds=#s8#, #a1#", "33.91%" },
 		{ 14145, "INV_Weapon_ShortBlade_12", "=q2=Cursed Felblade", "=ds=#h3#, #w10#", "15.98%" },
 	};
+	RFCOggleflint = {
+		{ 80700, "", "=q3=", ""},
+		{ 80701, "", "=q3=", ""},
+		{ 80702, "", "=q3=", ""},
+	};
 	RFCJergosh = {
 		{ 14150, "INV_Chest_Cloth_24", "=q2=Robe of Evocation", "=ds=#s5#, #a1#", "36.40%" },
 		{ 14147, "INV_Bracer_07", "=q2=Cavedweller Bracers", "=ds=#s8#, #a3#", "34.35%" },
 		{ 14151, "INV_Weapon_ShortBlade_25", "=q2=Chanting Blade", "=ds=#h1#, #w4#", "17.10%" },
+	};
+	RFCBazzalan = {
+		{ 80705, "", "=q3=", ""},
+		{ 80704, "", "=q3=", ""},
+		{ 80703, "", "=q3=", ""},
 	};
 	SFKDeathswornCaptain = {
 		{ 6642, "INV_Chest_Chain_05", "=q3=Phantom Armor", "=ds=#s5#, #a3#", "30.49%" },

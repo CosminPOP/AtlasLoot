@@ -2638,7 +2638,11 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Trash Mobs"], "SFKTrash" },
 	},
 	["TheStockade"] = {
+		{ AL["Targorr the Dread"], "SWStTargorr" },
 		{ AL["Kam Deepfury"], "SWStKamDeepfury" },
+		{ AL["Hamhock"], "SWStHamhock" },
+		{ AL["Dextren Ward"], "SWStDextren" },
+		{ AL["Bazil Thredd"], "SWStBazil" },
 		{ AL["Bruegal Ironknuckle"].." ("..AL["Rare"]..")", "SWStBruegalIronknuckle" },
 		{ AL["Trash Mobs"], "SWStTrash" },
 	},
@@ -2775,7 +2779,9 @@ AtlasLoot_DewDropDown_SubTables = {
 	},
 	["RagefireChasm"] = {
 		{ AL["Taragaman the Hungerer"], "RFCTaragaman" },
+		{ AL["Oggleflint"], "RFCOggleflint" },
 		{ AL["Jergosh the Invoker"], "RFCJergosh" },
+		{ AL["Bazzalan"], "RFCBazzalan" },
 	},
 	["RazorfenDowns"] = {
 		{ AL["Tuten'kash"], "RFDTutenkash" },
@@ -2892,6 +2898,14 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Zandalar Tribe"], "Zandalar1" },
 		{ AL["Silvermoon Remnant"], "Helf" },
 		{ AL["Revantusk Trolls"], "Revantusk" },
+		{ AL["Ironforge"], "Ironforge" },
+		{ AL["Darnassus"], "Darnassus" },
+		{ AL["Stormwind"], "Stormwind" },
+		{ AL["Gnomeregan Exiles"], "GnomereganExiles" },
+		{ AL["Durotar Labor Union"], "DurotarLaborUnion" },
+		{ AL["Undercity"], "Undercity" },
+		{ AL["Orgrimmar"], "Orgrimmar" },
+		{ AL["Thunder Bluff"], "ThunderBluff" },
 	},
 	["BoEWorldEpics"] = {
 		{ AtlasLoot_TableNames["WorldEpics3"][1], "WorldEpics3" },

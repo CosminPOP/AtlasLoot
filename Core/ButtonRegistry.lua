@@ -106,6 +106,46 @@ AtlasLoot_ButtonRegistry = {
         Back_Page = "REPMENU";
         Back_Title = AL["Factions"];
     };
+    ["Ironforge"] = {
+        Title = AL["Ironforge"];
+        Back_Page = "REPMENU";
+        Back_Title = AL["Factions"];
+    };
+    ["Darnassus"] = {
+        Title = AL["Darnassus"];
+        Back_Page = "REPMENU";
+        Back_Title = AL["Factions"];
+    };
+    ["Stormwind"] = {
+        Title = AL["Stormwind"];
+        Back_Page = "REPMENU";
+        Back_Title = AL["Factions"];
+    };
+    ["GnomereganExiles"] = {
+        Title = AL["Gnomeregan Exiles"];
+        Back_Page = "REPMENU";
+        Back_Title = AL["Factions"];
+    };
+    ["DurotarLaborUnion"] = {
+        Title = AL["Durotar Labor Union"];
+        Back_Page = "REPMENU";
+        Back_Title = AL["Factions"];
+    };
+    ["Undercity"] = {
+        Title = AL["Undercity"];
+        Back_Page = "REPMENU";
+        Back_Title = AL["Factions"];
+    };
+    ["Orgrimmar"] = {
+        Title = AL["Orgrimmar"];
+        Back_Page = "REPMENU";
+        Back_Title = AL["Factions"];
+    };
+    ["ThunderBluff"] = {
+        Title = AL["Thunder Bluff"];
+        Back_Page = "REPMENU";
+        Back_Title = AL["Factions"];
+    };
     ["Helf"] = {
         Title = AL["Silvermoon Remnant"];
         Next_Page = "Helf2";

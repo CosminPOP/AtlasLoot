@@ -1442,4 +1442,12 @@ AL:RegisterTranslations("enUS", function() return {
 	["Leaded Vial"] = true,
 	["Silvermoon Remnant"] = true,
 	["Revantusk Trolls"] = true,
+	["Ironforge"] = true,
+	["Darnassus"] = true,
+	["Stormwind"] = true,
+	["Gnomeregan Exiles"] = true,
+	["Durotar Labor Union"] = true,
+	["Undercity"] = true,
+	["Orgrimmar"] = true,
+	["Thunder Bluff"] = true,
 	} end)

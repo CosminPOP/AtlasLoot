@@ -307,11 +307,10 @@ AtlasLoot_TableNames = {
     ["SFKTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Shadowfang Keep"] .. ")", "AtlasLootItems" },
     --The Stockade
     ["SWStTargorr"] = { AL["Targorr the Dread"], "AtlasLootItems" },
-    ["SWStHamhock"] = { AL["Hamhock"], "AtlasLootItems" },
-    ["SWStBazil"] = { AL["Bazil Thredd"], "AtlasLootItems" },
-    ["SWStDextren"] = { AL["Dextren Ward"], "AtlasLootItems"},
-
     ["SWStKamDeepfury"] = { AL["Kam Deepfury"], "AtlasLootItems" },
+    ["SWStHamhock"] = { AL["Hamhock"], "AtlasLootItems" },
+    ["SWStDextren"] = { AL["Dextren Ward"], "AtlasLootItems"},    
+    ["SWStBazil"] = { AL["Bazil Thredd"], "AtlasLootItems" },
     ["SWStBruegalIronknuckle"] = { AL["Bruegal Ironknuckle"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
     ["SWStTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Stockade"] .. ")", "AtlasLootItems" },
     --Stratholme
@@ -710,6 +709,14 @@ AtlasLoot_TableNames = {
 
     ["Helf"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
     ["Revantusk"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
+    ["Ironforge"] = { AL["Ironforge"], "AtlasLootRepItems" },
+    ["Darnassus"] = { AL["Darnassus"], "AtlasLootRepItems" },
+    ["Stormwind"] = { AL["Stormwind"], "AtlasLootRepItems" },
+    ["GnomereganExiles"] = { AL["Gnomeregan Exiles"], "AtlasLootRepItems" },
+    ["DurotarLaborUnion"] = { AL["Durotar Labor Union"], "AtlasLootRepItems" },
+    ["Undercity"] = { AL["Undercity"], "AtlasLootRepItems" },
+    ["Orgrimmar"] = { AL["Orgrimmar"], "AtlasLootRepItems" },
+    ["ThunderBluff"] = { AL["Thunder Bluff"], "AtlasLootRepItems" },
 
     --------------
     --- Trades ---
@@ -1153,9 +1160,10 @@ AtlasLoot_TableNamesBoss = {
         ["Onyxia"] = { AL["Onyxia"], "AtlasLootItems" },
     },
     ["Ragefire Chasm"] = {
-        ["RFCOggleflint"] = { AL["Oggleflint"], "AtlasLootItems" },
         ["RFCTaragaman"] = { AL["Taragaman the Hungerer"], "AtlasLootItems" },
+        ["RFCOggleflint"] = { AL["Oggleflint"], "AtlasLootItems" },
         ["RFCJergosh"] = { AL["Jergosh the Invoker"], "AtlasLootItems" },
+        ["RFCBazzalan"] = { AL["Bazzalan"], "AtlasLootItems" },
     },
     ["Razorfen Downs"] = {
         ["RFDTutenkash"] = { AL["Tuten'kash"], "AtlasLootItems" },
@@ -1635,6 +1643,14 @@ AtlasLoot_TableNamesBoss = {
 
         ["Helf"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
         ["Revantusk"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
+        ["Ironforge"] = { AL["Ironforge"], "AtlasLootRepItems" },
+        ["Darnassus"] = { AL["Darnassus"], "AtlasLootRepItems" },
+        ["Stormwind"] = { AL["Stormwind"], "AtlasLootRepItems" },
+        ["GnomereganExiles"] = { AL["Gnomeregan Exiles"], "AtlasLootRepItems" },
+        ["DurotarLaborUnion"] = { AL["Durotar Labor Union"], "AtlasLootRepItems" },
+        ["Undercity"] = { AL["Undercity"], "AtlasLootRepItems" },
+        ["Orgrimmar"] = { AL["Orgrimmar"], "AtlasLootRepItems" },
+        ["ThunderBluff"] = { AL["Thunder Bluff"], "AtlasLootRepItems" },
     },
 
     --------------
