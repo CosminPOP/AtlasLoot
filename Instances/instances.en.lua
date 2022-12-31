@@ -1909,9 +1909,10 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "", "" },
 		{ 0, "", "", "", "" },
 		{ 0, "", "", "", "" },
-		{ 20077, "INV_Misc_ArmorKit_08", "=q3=Zandalar Signet of Might", "=ds=#s3# #e11#" },
-		{ 20076, "INV_Jewelry_Ring_46", "=q3=Zandalar Signet of Mojo", "=ds=#s3# #e11#" },
-		{ 20078, "Spell_Holy_PowerWordShield", "=q3=Zandalar Signet of Serenity", "=ds=#s3# #e11#" },
+		{ 20077, "INV_Misc_ArmorKit_08", "=q3=Zandalar Signet of Might", "=ds=#s3# #e11#", "", "", "", "", "", "15", "#zandalar#" },
+		{ 20076, "INV_Jewelry_Ring_46", "=q3=Zandalar Signet of Mojo", "=ds=#s3# #e11#", "", "", "", "", "", "15", "#zandalar#" },
+		{ 20078, "Spell_Holy_PowerWordShield", "=q3=Zandalar Signet of Serenity", "=ds=#s3# #e11#", "", "", "", "", "", "15", "#zandalar#" },
+		{ 65033, "spell_holy_devotionaura", "=q3=Zandalar Signet of Tenacity", "=ds=#s3# #e11#", "", "", "", "", "", "15", "#zandalar#" },
 		{ 0, "", "", "", "" },
 		{ 22635, "Spell_Nature_SpiritArmor", "=q3=Savage Guard", "=ds=#s1#/#s11# #e11#" },
 	};
