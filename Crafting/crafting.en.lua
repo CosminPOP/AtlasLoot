@@ -1762,6 +1762,9 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s22761", "inv_misc_food_63", "=q1=Runn Tum Tuber Surprise", "=ds=#sr# =so1=275 =so2=315 =so3=335 =so4=355" },
 		{ "s24801", "inv_misc_food_64", "=q1=Smoked Desert Dumplings", "=ds=#sr# =so1=285 =so2=325 =so3=345 =so4=365" },
 		{ "s25659", "inv_misc_food_65", "=q1=Dirge's Kickin' Chimaerok Chops", "=ds=#sr# =so1=300 =so2=325 =so3=345 =so4=365" },
+		{ "s57031", "inv_misc_food_09", "=q1=Danonzo's Tel'Abim Surprise", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+		{ "s57032", "inv_misc_food_08", "=q1=Danonzo's Tel'abim Medley", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
+		{ "s57033", "inv_drink_17", "=q1=Danonzo's Tel'abim Delight", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
 	};
 
 --------------
