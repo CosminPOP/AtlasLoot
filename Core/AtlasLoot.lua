@@ -69,7 +69,7 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 --Establish version number and compatible version of Atlas
 local VERSION_MAJOR = "1";
 local VERSION_MINOR = "0";
-local VERSION_BOSSES = "4";
+local VERSION_BOSSES = "5";
 ATLASLOOT_VERSION = "|cffFF8400AtlasLoot TW Edition v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
@@ -3376,20 +3376,28 @@ function AtlasLootItem_OnClick(arg1)
 			end
 		elseif IsShiftKeyDown() and not iteminfo and this.itemID ~= 0 then
 			if AtlasLootCharDB.SafeLinks then
-				if ChatFrameEditBox:IsVisible() then
+				if WIM_EditBoxInFocus then
+					WIM_EditBoxInFocus:Insert("["..name.."]");
+				elseif ChatFrameEditBox:IsVisible() then
 					ChatFrameEditBox:Insert("["..name.."]");
 				else
 					AtlasLoot_SayItemReagents(this.itemID, nil, name, true)
 				end
 			elseif AtlasLootCharDB.AllLinks then
-				if ChatFrameEditBox:IsVisible() then
+				if WIM_EditBoxInFocus then
+					WIM_EditBoxInFocus:Insert("\124"..string.sub(color, 2).."|Hitem:"..this.itemID.."\124h["..name.."]|h|r");
+				elseif ChatFrameEditBox:IsVisible() then
 					ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..this.itemID.."\124h["..name.."]|h|r");
 				else
 					AtlasLoot_SayItemReagents(this.itemID, color, name)
 				end
 			end
-		elseif(ChatFrameEditBox:IsVisible() and iteminfo and IsShiftKeyDown()) and this.itemID ~= 0 then
-			ChatFrameEditBox:Insert(color.."|Hitem:"..this.itemID..":0:0:0|h["..name.."]|h|r");
+		elseif(iteminfo and IsShiftKeyDown()) and this.itemID ~= 0 then
+			if WIM_EditBoxInFocus then
+				WIM_EditBoxInFocus:Insert(color.."|Hitem:"..this.itemID..":0:0:0|h["..name.."]|h|r");
+			elseif ( ChatFrameEditBox:IsVisible() ) then 
+				ChatFrameEditBox:Insert(color.."|Hitem:"..this.itemID..":0:0:0|h["..name.."]|h|r");
+			end
 		elseif IsShiftKeyDown() and iteminfo and this.itemID ~= 0 then
 			AtlasLoot_SayItemReagents(this.itemID, color, name);
 		--If control-clicked, use the dressing room
@@ -3435,11 +3443,20 @@ function AtlasLootItem_OnClick(arg1)
 	elseif isSpell then
 		if IsShiftKeyDown() then
 			if tonumber(string.sub(this.itemID, 2)) < 100000 then
-				if ChatFrameEditBox:IsVisible() then
+				if WIM_EditBoxInFocus then
 					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
 					if craftitem ~= nil and craftitem ~= "" then
 						local craftname = GetItemInfo(craftitem)
-						ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem.."\124h["..craftname.."]|h|r");
+						WIM_EditBoxInFocus:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem.."\124h["..craftname.."]|h|r");
+					else
+						WIM_EditBoxInFocus:Insert(name);
+					end
+				elseif ChatFrameEditBox:IsVisible() then
+					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
+					if craftitem ~= nil and craftitem ~= "" then
+						local craftname = GetItemInfo(craftitem)
+						--ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem.."\124h["..craftname.."]|h|r");
+						ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem..":0:0:0\124h["..craftname.."]|h|r"); -- Fix for Gurky's discord chat bot
 					else
 						ChatFrameEditBox:Insert(name);
 					end
@@ -3447,7 +3464,15 @@ function AtlasLootItem_OnClick(arg1)
 					AtlasLoot_SayItemReagents(this.itemID)
 				end
 			else
-				if ChatFrameEditBox:IsVisible() then
+				if WIM_EditBoxInFocus then
+					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
+					if craftitem ~= nil and craftitem ~= "" then
+						local craftname = GetItemInfo(craftitem)
+						WIM_EditBoxInFocus:Insert(AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]));
+					else
+						WIM_EditBoxInFocus:Insert(name);
+					end
+				elseif ChatFrameEditBox:IsVisible() then
 					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
 					if craftitem ~= nil and craftitem ~= "" then
 						local craftname = GetItemInfo(craftitem)
@@ -3539,13 +3564,29 @@ end
 
 function AtlasLoot_SayItemReagents(id, color, name, safe)
 	if not id then return end
-	local channel, chatnumber = ChatFrameEditBox.chatType;
 	local chatline = "";
 	local itemCount = 0;
-	if channel == "WHISPER" then
-		chatnumber = ChatFrameEditBox.tellTarget
-	elseif channel == "CHANNEL" then
-		chatnumber = ChatFrameEditBox.channelTarget
+	
+	local tListActivity = {}
+	local tCount = 0
+
+    for key in WIM_IconItems do
+        table.insert(tListActivity, key)
+        tCount = tCount + 1
+    end
+
+    table.sort(tListActivity, WIM_Icon_SortByActivity)
+
+	if tListActivity[1] and WIM_Windows[tListActivity[1]].is_visible then
+		channel = "WHISPER";
+		chatnumber = tListActivity[1];
+	else
+		channel,chatnumber = ChatFrameEditBox.chatType;
+	    if channel=="WHISPER" then
+			chatnumber = ChatFrameEditBox.tellTarget
+		elseif channel=="CHANNEL" then
+			chatnumber = ChatFrameEditBox.channelTarget
+		end
 	end
 	if string.sub( id, 1, 1 ) == "s" then
 		local spellid = string.sub( id, 2 )
@@ -3600,7 +3641,14 @@ function AtlasLoot_SayItemReagents(id, color, name, safe)
 	elseif string.sub( id,1 ,1 ) == "e" then
 		local spellid = string.sub( id, 2 )
 		local name = GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["name"]
-		if ChatFrameEditBox:IsVisible() then
+		if tListActivity[1] and WIM_Windows[tListActivity[1]].is_visible then
+			if not GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"] then
+				SendChatMessage("|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r", channel, nil, chatnumber);
+			else
+				SendChatMessage(AL["To craft "]..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"])..AL[" you need this: "].."|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r",channel,nil,chatnumber);
+			end
+
+		elseif ChatFrameEditBox:IsVisible() then
 			if not GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"] then
 				ChatFrameEditBox:Insert("|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r", channel, nil, chatnumber);
 			else
