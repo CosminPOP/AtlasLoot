@@ -131,6 +131,30 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 --- Leatherworking Leather Sets ---
 -----------------------------------
 
+	GriftersArmor = {
+		{ 0, "", "", "" },
+		{ 0, "INV_Box_01", "=q6=#craftlwl7#", "" },
+		{ 0, "", "", "" },
+		{ "83400", "inv_helmet_33", "=q2=Grifter's Cover", "=ds=#s1#, #a2#" },
+		{ "83401", "inv_chest_leather_08", "=q2=Grifter's Tunic", "=ds=#s5#, #a2#" },
+		{ "83402", "inv_pants_12", "=q2=Grifter's Leggings", "=ds=#s11#, #a2#" },
+		{ "83404", "inv_gauntlets_15", "=q2=Grifter's Gauntlets", "=ds=#s9#, #a2#" },
+		{ "83403", "inv_belt_04", "=q2=Grifter's Belt", "=ds=#s10#, #a2#" },
+		{ "83405", "inv_boots_05", "=q2=Grifter's Boots", "=ds=#s12#, #a2#" },
+	};
+	
+	PrimalistsTrappings = {
+		{ 0, "", "", "" },
+		{ 0, "INV_Box_01", "=q6=#craftlwl8#", "" },
+		{ 0, "", "", "" },
+		{ "81063", "inv_helmet_04", "=q2=Primalist's Headdress", "=ds=#s1#, #a2#" },
+		{ "81062", "inv_shoulder_09", "=q2=Primalist's Shoulders", "=ds=#s10#, #a2#" },
+		{ "81066", "inv_chest_plate08", "=q3=Primalist's Vest", "=ds=#s5#, #a2#" },
+		{ "81064", "inv_pants_04", "=q2=Primalist's Pants", "=ds=#s11#, #a2#" },
+		{ "81061", "inv_gauntlets_09", "=q2=Primalist's Gloves", "=ds=#s9#, #a2#" },
+		{ "81065", "inv_boots_plate_05", "=q2=Primalist's Boots", "=ds=#s12#, #a2#" },
+	};
+
 	VolcanicArmor = {
 		{ 0, "", "", "" },
 		{ 0, "INV_Box_01", "=q6=#craftlwl1#", "=q1=#j6#" },
@@ -921,13 +945,19 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	};
 
 	LeatherExpert2 = {
+		{ "s46620", "inv_boots_05", "=q2=Grifter's Boots", "=ds=#sr# =so1=200 =so2=215 =so3=220 =so4=225" },
+		{ "s46621", "inv_gauntlets_15", "=q2=Grifter's Gauntlets", "=ds=#sr# =so1=200 =so2=215 =so3=220 =so4=225" },
+		{ "s46622", "inv_belt_04", "=q2=Grifter's Belt", "=ds=#sr# =so1=200 =so2=215 =so3=220 =so4=225" },
 		{ "s3779", "inv_belt_09", "=q2=Barbaric Belt", "=ds=#sr# =so1=200 =so2=220 =so3=230 =so4=240" },
 		{ "s10490", "inv_helmet_15", "=q2=Comfortable Leather Hat", "=ds=#sr# =so1=200 =so2=220 =so3=230 =so4=240" },
 		{ "s9207", "inv_boots_07", "=q2=Dusky Boots", "=ds=#sr# =so1=200 =so2=220 =so3=230 =so4=240" },
 		{ "s9208", "inv_boots_08", "=q2=Swift Boots", "=ds=#sr# =so1=200 =so2=220 =so3=230 =so4=240" },
+		{ "s46623", "inv_pants_12", "=q2=Grifter's Leggings", "=ds=#sr# =so1=205 =so2=225 =so3=230 =so4=235" },
 		{ "s10507", "inv_belt_24", "=q2=Nightscape Headband", "=ds=#sr# =so1=205 =so2=225 =so3=235 =so4=245" },
 		{ "s10499", "inv_chest_leather_03", "=q2=Nightscape Tunic", "=ds=#sr# =so1=205 =so2=225 =so3=235 =so4=245" },
 		{ "s10509", "inv_gauntlets_05", "=q2=Turtle Scale Gloves", "=ds=#sr# =so1=205 =so2=225 =so3=235 =so4=245" },
+		{ "s46625", "inv_helmet_33", "=q2=Grifter's Cover", "=ds=#sr# =so1=210 =so2=225 =so3=230 =so4=235" },
+		{ "s46624", "inv_chest_leather_08", "=q2=Grifter's Tunic", "=ds=#sr# =so1=210 =so2=235 =so3=240 =so4=245" },
 		{ "s10516", "inv_shoulder_07", "=q2=Nightscape Shoulders", "=ds=#sr# =so1=210 =so2=230 =so3=240 =so4=250" },
 		{ "s10518", "inv_bracer_06", "=q2=Turtle Scale Bracers", "=ds=#sr# =so1=210 =so2=230 =so3=240 =so4=250" },
 		{ "s10511", "inv_chest_chain_12", "=q2=Turtle Scale Breastplate", "=ds=#sr# =so1=210 =so2=230 =so3=240 =so4=250" },
@@ -957,6 +987,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s22331", "inv_misc_leatherscrap_02", "=q1=Rugged Leather", "=ds=#sr# =so1=250 =so2=250 =so3=250 =so4=250" },
 		{ "s19047", "inv_misc_pelt_bear_03", "=q1=Cured Rugged Hide", "=ds=#sr# =so1=250 =so2=250 =so3=255 =so4=260" },
 		{ "s19058", "inv_misc_armorkit_09", "=q1=Rugged Armor Kit", "=ds=#sr# =so1=250 =so2=255 =so3=265 =so4=275" },
+		{ "s10647", "inv_chest_leather_06", "=q3=Feathered Breastplate", "=ds=#sr# =so1=250 =so2=270 =so3=280 =so4=290" },
 		{ "s10570", "inv_helmet_20", "=q2=Tough Scorpid Helm", "=ds=#sr# =so1=250 =so2=270 =so3=280 =so4=290" },
 		{ "s10574", "inv_misc_cape_03", "=q2=Wild Leather Cloak", "=ds=#sr# =so1=250 =so2=270 =so3=280 =so4=290" },
 		{ "s10572", "inv_pants_14", "=q2=Wild Leather Leggings", "=ds=#sr# =so1=250 =so2=270 =so3=280 =so4=290" },
@@ -965,18 +996,25 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s19051", "inv_chest_chain_15", "=q2=Heavy Scorpid Vest", "=ds=#sr# =so1=265 =so2=285 =so3=295 =so4=305" },
 		{ "s19052", "inv_bracer_07", "=q2=Wicked Leather Bracers", "=ds=#sr# =so1=265 =so2=285 =so3=295 =so4=305" },
 		{ "s19055", "inv_gauntlets_31", "=q2=Runic Leather Gauntlets", "=ds=#sr# =so1=270 =so2=290 =so3=300 =so4=310" },
+		{ "s19055", "inv_gauntlets_31", "=q2=Runic Leather Gauntlets", "=ds=#sr# =so1=270 =so2=290 =so3=300 =so4=310" },
+		{ "s47020", "inv_boots_plate_05", "=q2=Primalist's Boots", "=ds=#sr# =so1=270 =so2=290 =so3=291 =so4=295" },
+		{ "s47015", "inv_gauntlets_09", "=q2=Primalist's Gloves ", "=ds=#sr# =so1=270 =so2=285 =so3=290 =so4=295" },
+		{ "s47017", "inv_helmet_04", "=q2=Primalist's Headdress", "=ds=#sr# =so1=270 =so2=290 =so3=291 =so4=295" },
 		{ "s22815", "inv_chest_chain_14", "=q2=Gordok Ogre Suit", "=ds=#sr# =so1=275 =so2=285 =so3=290 =so4=295" },
 		{ "s19064", "inv_gauntlets_24", "=q2=Heavy Scorpid Gauntlets", "=ds=#sr# =so1=275 =so2=295 =so3=305 =so4=315" },
 		{ "s19065", "inv_bracer_11", "=q2=Runic Leather Bracers", "=ds=#sr# =so1=275 =so2=295 =so3=305 =so4=315" },
+		{ "s47018", "inv_pants_04", "=q2=Primalist's Pants", "=ds=#sr# =so1=280 =so2=290 =so3=291 =so4=295" },
+		{ "s47016", "inv_shoulder_09", "=q2=Primalist's Shoulders", "=ds=#sr# =so1=280 =so2=285 =so3=290 =so4=295" },
 		{ "s19070", "inv_belt_03", "=q2=Heavy Scorpid Belt", "=ds=#sr# =so1=280 =so2=300 =so3=310 =so4=320" },
-		{ "s19072", "inv_belt_03", "=q2=Runic Leather Belt", "=ds=#sr# =so1=280 =so2=300 =so3=310 =so4=320" },
-		{ "s19071", "inv_misc_bandage_13", "=q2=Wicked Leather Headband", "=ds=#sr# =so1=280 =so2=300 =so3=310 =so4=320" },
-		{ "s19075", "inv_pants_12", "=q2=Heavy Scorpid Leggings", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
-		{ "s19082", "inv_misc_bandage_11", "=q2=Runic Leather Headband", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
-		{ "s19083", "inv_pants_12", "=q2=Wicked Leather Pants", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
 	};
 
 	LeatherArtisan2 = {
+		{ "s19072", "inv_belt_03", "=q2=Runic Leather Belt", "=ds=#sr# =so1=280 =so2=300 =so3=310 =so4=320" },
+		{ "s19071", "inv_misc_bandage_13", "=q2=Wicked Leather Headband", "=ds=#sr# =so1=280 =so2=300 =so3=310 =so4=320" },
+		{ "s47019", "inv_chest_plate08", "=q3=Primalist's Vest", "=ds=#sr# =so1=285 =so2=290 =so3=291 =so4=295" },
+		{ "s19075", "inv_pants_12", "=q2=Heavy Scorpid Leggings", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
+		{ "s19082", "inv_misc_bandage_11", "=q2=Runic Leather Headband", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
+		{ "s19083", "inv_pants_12", "=q2=Wicked Leather Pants", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
 		{ "s23705", "inv_boots_cloth_08", "=q3=Dawn Treaders", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
 		{ "s23703", "inv_belt_09", "=q3=Might of the Timbermaw", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
 		{ "s19088", "inv_helmet_20", "=q2=Heavy Scorpid Helm", "=ds=#sr# =so1=295 =so2=315 =so3=325 =so4=335" },
@@ -1000,16 +1038,16 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s24122", "inv_gauntlets_31", "=q3=Primal Batskin Gloves", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s24121", "inv_chest_leather_03", "=q3=Primal Batskin Jerkin", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s24849", "inv_bracer_12", "=q3=Sandstalker Bracers", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-		{ "s24851", "inv_chest_plate07", "=q3=Sandstalker Breastplate", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s24851", "inv_chest_plate07", "=q3=Sandstalker Breastplate", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },	
+	};
+
+	LeatherArtisan3 = {
 		{ "s24850", "inv_gauntlets_11", "=q3=Sandstalker Gauntlets", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s24846", "inv_bracer_05", "=q3=Spitfire Bracers", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s24848", "inv_chest_leather_02", "=q3=Spitfire Breastplate", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s24847", "inv_gauntlets_11", "=q3=Spitfire Gauntlets", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s22923", "inv_bracer_05", "=q3=Swift Flight Bracers", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s23704", "inv_gauntlets_26", "=q3=Timbermaw Brawlers", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-	};
-
-	LeatherArtisan3 = {
 		{ "s28224", "inv_bracer_07", "=q4=Icy Scale Bracers", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s28222", "inv_chest_plate09", "=q4=Icy Scale Breastplate", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s28223", "inv_gauntlets_28", "=q4=Icy Scale Gauntlets", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
@@ -1063,7 +1101,6 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 
 	Tribal1 = {
 		{ "s10621", "inv_helmet_04", "=q3=Wolfshead Helm", "=ds=#sr# =so1=225 =so2=245 =so3=255 =so4=265" },
-		{ "s10647", "inv_chest_leather_06", "=q3=Feathered Breastplate", "=ds=#sr# =so1=250 =so2=270 =so3=280 =so4=290" },
 		{ "s19053", "inv_gauntlets_23", "=q2=Chimeric Gloves", "=ds=#sr# =so1=265 =so2=270 =so3=280 =so4=290" },
 		{ "s19062", "inv_shoulder_06", "=q3=Ironfeather Shoulders", "=ds=#sr# =so1=270 =so2=290 =so3=300 =so4=310" },
 		{ "s19063", "inv_boots_07", "=q2=Chimeric Boots", "=ds=#sr# =so1=275 =so2=295 =so3=305 =so4=315" },

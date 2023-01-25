@@ -313,6 +313,8 @@ AL:RegisterTranslations("enUS", function() return {
 	["Primal Mooncloth"] = true,
 	["Shadow's Embrace"] = true,
 	["Wrath of Spellfire"] = true,
+	["Grifter's Armor"] = true,
+	["Primalist's Trappings"] = true,
 	["Volcanic Armor"] = true,
 	["Ironfeather Armor"] = true,
 	["Stormshroud Armor"] = true,

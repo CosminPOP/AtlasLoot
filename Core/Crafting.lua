@@ -150,102 +150,114 @@ function AtlasLootCraftedSetMenu()
 	AtlasLootMenuItem_6_Icon:SetTexture("Interface\\Icons\\INV_Pants_Cloth_14");
 	AtlasLootMenuItem_6.lootpage="BloodvineG";
 	AtlasLootMenuItem_6:Show();
-	--Leatherworking Leather Header
-	AtlasLootMenuItem_8_Name:SetText(RED..AL["Leatherworking"]);
-	AtlasLootMenuItem_8_Extra:SetText(WHITE..AL["Leather"]);
-	AtlasLootMenuItem_8_Icon:SetTexture("Interface\\Icons\\INV_Chest_Leather_04");
+	--Mail Blacksmithing Header
+	AtlasLootMenuItem_8_Name:SetText(RED..AL["Blacksmithing"]);
+	AtlasLootMenuItem_8_Extra:SetText(WHITE..AL["Mail"]);
+	AtlasLootMenuItem_8_Icon:SetTexture("Interface\\Icons\\INV_Chest_Chain_04");
 	AtlasLootMenuItem_8.isheader = true;
 	AtlasLootMenuItem_8:Show();
-	--Volcanic Armor
-	AtlasLootMenuItem_9_Name:SetText(AL["Volcanic Armor"]);
-	AtlasLootMenuItem_9_Extra:SetText(ORANGE..AL["Fire Resistance Gear"]);
-	AtlasLootMenuItem_9_Icon:SetTexture("Interface\\Icons\\INV_Pants_06");
-	AtlasLootMenuItem_9.lootpage="VolcanicArmor";
+	--Bloodsoul Embrace
+	AtlasLootMenuItem_9_Name:SetText(AL["Bloodsoul Embrace"]);
+	AtlasLootMenuItem_9_Extra:SetText("");
+	AtlasLootMenuItem_9_Icon:SetTexture("Interface\\Icons\\INV_Shoulder_15");
+	AtlasLootMenuItem_9.lootpage="BloodsoulEmbrace";
 	AtlasLootMenuItem_9:Show();
-	--Ironfeather Armor
-	AtlasLootMenuItem_10_Name:SetText(AL["Ironfeather Armor"]);
-	AtlasLootMenuItem_10_Extra:SetText("");
-	AtlasLootMenuItem_10_Icon:SetTexture("Interface\\Icons\\INV_Chest_Leather_06");
-	AtlasLootMenuItem_10.lootpage="IronfeatherArmor";
-	AtlasLootMenuItem_10:Show();
-	--Stormshroud Armor
-	AtlasLootMenuItem_11_Name:SetText(AL["Stormshroud Armor"]);
-	AtlasLootMenuItem_11_Extra:SetText("");
-	AtlasLootMenuItem_11_Icon:SetTexture("Interface\\Icons\\INV_Chest_Leather_08");
-	AtlasLootMenuItem_11.lootpage="StormshroudArmor";
+	--Plate Blacksmithing header
+	AtlasLootMenuItem_11_Name:SetText(RED..AL["Blacksmithing"]);
+	AtlasLootMenuItem_11_Extra:SetText(WHITE..AL["Plate"]);
+	AtlasLootMenuItem_11_Icon:SetTexture("Interface\\Icons\\INV_Chest_Plate10");
+	AtlasLootMenuItem_11.isheader = true;
 	AtlasLootMenuItem_11:Show();
-	--Devilsaur Armor
-	AtlasLootMenuItem_12_Name:SetText(AL["Devilsaur Armor"]);
+	--Imperial Plate
+	AtlasLootMenuItem_12_Name:SetText(AL["Imperial Plate"]);
 	AtlasLootMenuItem_12_Extra:SetText("");
-	AtlasLootMenuItem_12_Icon:SetTexture("Interface\\Icons\\INV_Pants_Wolf");
-	AtlasLootMenuItem_12.lootpage="DevilsaurArmor";
+	AtlasLootMenuItem_12_Icon:SetTexture("Interface\\Icons\\INV_Belt_01");
+	AtlasLootMenuItem_12.lootpage="ImperialPlate";
 	AtlasLootMenuItem_12:Show();
-	--Blood Tiger Harness
-	AtlasLootMenuItem_13_Name:SetText(AL["Blood Tiger Harness"]);
+	--The Darksoul
+	AtlasLootMenuItem_13_Name:SetText(AL["The Darksoul"]);
 	AtlasLootMenuItem_13_Extra:SetText("");
-	AtlasLootMenuItem_13_Icon:SetTexture("Interface\\Icons\\INV_Shoulder_23");
-	AtlasLootMenuItem_13.lootpage="BloodTigerH";
+	AtlasLootMenuItem_13_Icon:SetTexture("Interface\\Icons\\INV_Shoulder_01");
+	AtlasLootMenuItem_13.lootpage="TheDarksoul";
 	AtlasLootMenuItem_13:Show();
-	--Primal Batskin
-	AtlasLootMenuItem_14_Name:SetText(AL["Primal Batskin"]);
-	AtlasLootMenuItem_14_Extra:SetText("");
-	AtlasLootMenuItem_14_Icon:SetTexture("Interface\\Icons\\INV_Chest_Leather_03");
-	AtlasLootMenuItem_14.lootpage="PrimalBatskin";
-	AtlasLootMenuItem_14:Show();
-	--Mail Blacksmithing Header
-	AtlasLootMenuItem_16_Name:SetText(RED..AL["Blacksmithing"]);
-	AtlasLootMenuItem_16_Extra:SetText(WHITE..AL["Mail"]);
-	AtlasLootMenuItem_16_Icon:SetTexture("Interface\\Icons\\INV_Chest_Chain_04");
+		--Leatherworking Leather Header
+	AtlasLootMenuItem_16_Name:SetText(RED..AL["Leatherworking"]);
+	AtlasLootMenuItem_16_Extra:SetText(WHITE..AL["Leather"]);
+	AtlasLootMenuItem_16_Icon:SetTexture("Interface\\Icons\\INV_Chest_Leather_04");
 	AtlasLootMenuItem_16.isheader = true;
 	AtlasLootMenuItem_16:Show();
-	--Bloodsoul Embrace
-	AtlasLootMenuItem_17_Name:SetText(AL["Bloodsoul Embrace"]);
+	--Grifter's Armor
+	AtlasLootMenuItem_17_Name:SetText(AL["Grifter's Armor"]);
 	AtlasLootMenuItem_17_Extra:SetText("");
-	AtlasLootMenuItem_17_Icon:SetTexture("Interface\\Icons\\INV_Shoulder_15");
-	AtlasLootMenuItem_17.lootpage="BloodsoulEmbrace";
+	AtlasLootMenuItem_17_Icon:SetTexture("Interface\\Icons\\INV_Helmet_33");
+	AtlasLootMenuItem_17.lootpage="GriftersArmor";
 	AtlasLootMenuItem_17:Show();
-	--Plate Blacksmithing header
-	AtlasLootMenuItem_19_Name:SetText(RED..AL["Blacksmithing"]);
-	AtlasLootMenuItem_19_Extra:SetText(WHITE..AL["Plate"]);
-	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\INV_Chest_Plate10");
-	AtlasLootMenuItem_19.isheader = true;
+	--Primalist's Trappings
+	AtlasLootMenuItem_18_Name:SetText(AL["Primalist's Trappings"]);
+	AtlasLootMenuItem_18_Extra:SetText("");
+	AtlasLootMenuItem_18_Icon:SetTexture("Interface\\Icons\\INV_Helmet_04");
+	AtlasLootMenuItem_18.lootpage="PrimalistsTrappings";
+	AtlasLootMenuItem_18:Show();
+	--Volcanic Armor
+	AtlasLootMenuItem_19_Name:SetText(AL["Volcanic Armor"]);
+	AtlasLootMenuItem_19_Extra:SetText(ORANGE..AL["Fire Resistance Gear"]);
+	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\INV_Pants_06");
+	AtlasLootMenuItem_19.lootpage="VolcanicArmor";
 	AtlasLootMenuItem_19:Show();
-	--Imperial Plate
-	AtlasLootMenuItem_20_Name:SetText(AL["Imperial Plate"]);
+	--Ironfeather Armor
+	AtlasLootMenuItem_20_Name:SetText(AL["Ironfeather Armor"]);
 	AtlasLootMenuItem_20_Extra:SetText("");
-	AtlasLootMenuItem_20_Icon:SetTexture("Interface\\Icons\\INV_Belt_01");
-	AtlasLootMenuItem_20.lootpage="ImperialPlate";
+	AtlasLootMenuItem_20_Icon:SetTexture("Interface\\Icons\\INV_Chest_Leather_06");
+	AtlasLootMenuItem_20.lootpage="IronfeatherArmor";
 	AtlasLootMenuItem_20:Show();
-	--The Darksoul
-	AtlasLootMenuItem_21_Name:SetText(AL["The Darksoul"]);
+	--Stormshroud Armor
+	AtlasLootMenuItem_21_Name:SetText(AL["Stormshroud Armor"]);
 	AtlasLootMenuItem_21_Extra:SetText("");
-	AtlasLootMenuItem_21_Icon:SetTexture("Interface\\Icons\\INV_Shoulder_01");
-	AtlasLootMenuItem_21.lootpage="TheDarksoul";
+	AtlasLootMenuItem_21_Icon:SetTexture("Interface\\Icons\\INV_Chest_Leather_08");
+	AtlasLootMenuItem_21.lootpage="StormshroudArmor";
 	AtlasLootMenuItem_21:Show();
-	--Leatherworking Mail Header
-	AtlasLootMenuItem_23_Name:SetText(RED..AL["Leatherworking"]);
-	AtlasLootMenuItem_23_Extra:SetText(WHITE..AL["Mail"]);
-	AtlasLootMenuItem_23_Icon:SetTexture("Interface\\Icons\\INV_Chest_Chain_12");
-	AtlasLootMenuItem_23.isheader = true;
+	--Devilsaur Armor
+	AtlasLootMenuItem_22_Name:SetText(AL["Devilsaur Armor"]);
+	AtlasLootMenuItem_22_Extra:SetText("");
+	AtlasLootMenuItem_22_Icon:SetTexture("Interface\\Icons\\INV_Pants_Wolf");
+	AtlasLootMenuItem_22.lootpage="DevilsaurArmor";
+	AtlasLootMenuItem_22:Show();
+	--Blood Tiger Harness
+	AtlasLootMenuItem_23_Name:SetText(AL["Blood Tiger Harness"]);
+	AtlasLootMenuItem_23_Extra:SetText("");
+	AtlasLootMenuItem_23_Icon:SetTexture("Interface\\Icons\\INV_Shoulder_23");
+	AtlasLootMenuItem_23.lootpage="BloodTigerH";
 	AtlasLootMenuItem_23:Show();
-	--Green Dragon Mail
-	AtlasLootMenuItem_24_Name:SetText(AL["Green Dragon Mail"]);
-	AtlasLootMenuItem_24_Extra:SetText(ORANGE..AL["Nature Resistance Gear"]);
-	AtlasLootMenuItem_24_Icon:SetTexture("Interface\\Icons\\INV_Pants_05");
-	AtlasLootMenuItem_24.lootpage="GreenDragonM";
+	--Primal Batskin
+	AtlasLootMenuItem_24_Name:SetText(AL["Primal Batskin"]);
+	AtlasLootMenuItem_24_Extra:SetText("");
+	AtlasLootMenuItem_24_Icon:SetTexture("Interface\\Icons\\INV_Chest_Leather_03");
+	AtlasLootMenuItem_24.lootpage="PrimalBatskin";
 	AtlasLootMenuItem_24:Show();
-	--Blue Dragon Mail
-	AtlasLootMenuItem_25_Name:SetText(AL["Blue Dragon Mail"]);
-	AtlasLootMenuItem_25_Extra:SetText(ORANGE..AL["Arcane Resistance Gear"]);
-	AtlasLootMenuItem_25_Icon:SetTexture("Interface\\Icons\\INV_Chest_Chain_04");
-	AtlasLootMenuItem_25.lootpage="BlueDragonM";
-	AtlasLootMenuItem_25:Show();
-	--Black Dragon Mail
-	AtlasLootMenuItem_26_Name:SetText(AL["Black Dragon Mail"]);
-	AtlasLootMenuItem_26_Extra:SetText(ORANGE..AL["Fire Resistance Gear"]);
-	AtlasLootMenuItem_26_Icon:SetTexture("Interface\\Icons\\INV_Pants_03");
-	AtlasLootMenuItem_26.lootpage="BlackDragonM";
+	--Leatherworking Mail Header
+	AtlasLootMenuItem_26_Name:SetText(RED..AL["Leatherworking"]);
+	AtlasLootMenuItem_26_Extra:SetText(WHITE..AL["Mail"]);
+	AtlasLootMenuItem_26_Icon:SetTexture("Interface\\Icons\\INV_Chest_Chain_12");
+	AtlasLootMenuItem_26.isheader = true;
 	AtlasLootMenuItem_26:Show();
+	--Green Dragon Mail
+	AtlasLootMenuItem_27_Name:SetText(AL["Green Dragon Mail"]);
+	AtlasLootMenuItem_27_Extra:SetText(ORANGE..AL["Nature Resistance Gear"]);
+	AtlasLootMenuItem_27_Icon:SetTexture("Interface\\Icons\\INV_Pants_05");
+	AtlasLootMenuItem_27.lootpage="GreenDragonM";
+	AtlasLootMenuItem_27:Show();
+	--Blue Dragon Mail
+	AtlasLootMenuItem_28_Name:SetText(AL["Blue Dragon Mail"]);
+	AtlasLootMenuItem_28_Extra:SetText(ORANGE..AL["Arcane Resistance Gear"]);
+	AtlasLootMenuItem_28_Icon:SetTexture("Interface\\Icons\\INV_Chest_Chain_04");
+	AtlasLootMenuItem_28.lootpage="BlueDragonM";
+	AtlasLootMenuItem_28:Show();
+	--Black Dragon Mail
+	AtlasLootMenuItem_29_Name:SetText(AL["Black Dragon Mail"]);
+	AtlasLootMenuItem_29_Extra:SetText(ORANGE..AL["Fire Resistance Gear"]);
+	AtlasLootMenuItem_29_Icon:SetTexture("Interface\\Icons\\INV_Pants_03");
+	AtlasLootMenuItem_29.lootpage="BlackDragonM";
+	AtlasLootMenuItem_29:Show();
 	for i = 1, 30, 1 do
 		getglobal("AtlasLootMenuItem_"..i.."_Extra"):Show();
 	end

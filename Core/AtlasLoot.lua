@@ -2920,6 +2920,8 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Bloodsoul Embrace"], "BloodsoulEmbrace" },
 	},
 	["CraftSetLeatherwork"] = {
+		{ AL["Grifter's Armor"], "GriftersArmor" },
+		{ AL["Primalist's Trappings"], "PrimalistsTrappings" },
 		{ AL["Volcanic Armor"], "VolcanicArmor" },
 		{ AL["Ironfeather Armor"], "IronfeatherArmor" },
 		{ AL["Stormshroud Armor"], "StormshroudArmor" },

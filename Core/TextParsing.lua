@@ -286,6 +286,7 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#x93#", AL["Avalanchion"]);
     text = gsub(text, "#x94#", AL["Princess Tempestria"]);
     text = gsub(text, "#x95#", AL["The Windreaver"]);
+	text = gsub(text, "#x96#", AL["Mr. Smite"]);
 
 	-- Misc
     text = gsub(text, "#j1#", AL["Dungeon 1 Set"]);
@@ -320,6 +321,8 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#craftt5#", AL["Bloodvine Garb"]);
 
     -- Leatherworking Crafted Sets
+	text = gsub(text, "#craftlwl7#", AL["Grifter's Armor"]);
+	text = gsub(text, "#craftlwl8#", AL["Primalist's Trappings"]);
     text = gsub(text, "#craftlwl1#", AL["Volcanic Armor"]);
     text = gsub(text, "#craftlwl2#", AL["Ironfeather Armor"]);
     text = gsub(text, "#craftlwl3#", AL["Stormshroud Armor"]);

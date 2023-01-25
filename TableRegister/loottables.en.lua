@@ -513,6 +513,8 @@ AtlasLoot_TableNames = {
 	["PillagersGarb"] = { AL["Pillager's Garb"], "AtlasLootCrafting" },
     ["BloodvineG"] = { AL["Bloodvine Garb"], "AtlasLootCrafting" },
     --Crafted Sets - Leatherworking
+	["GriftersArmor"] = { AL["Grifter's Armor"], "AtlasLootCrafting" },
+	["PrimalistsTrappings"] = { AL["Primalist's Trappings"], "AtlasLootCrafting" },
     ["VolcanicArmor"] = { AL["Volcanic Armor"], "AtlasLootCrafting" },
     ["IronfeatherArmor"] = { AL["Ironfeather Armor"], "AtlasLootCrafting" },
     ["StormshroudArmor"] = { AL["Stormshroud Armor"], "AtlasLootCrafting" },
