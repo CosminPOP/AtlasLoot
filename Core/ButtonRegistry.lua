@@ -904,6 +904,11 @@ AtlasLoot_ButtonRegistry = {
         Back_Page = "PRE60SET";
         Back_Title = AL["Pre 60 Sets"];
     };
+    ["SteelPlate"] = {
+        Title = AL["Steel Plate"];
+        Back_Page = "CRAFTSET";
+        Back_Title = AL["Crafted Sets"];
+    };
     ["ImperialPlate"] = {
         Title = AL["Imperial Plate"];
         Back_Page = "CRAFTSET";

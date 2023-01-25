@@ -366,6 +366,7 @@ AtlasLoot_TableNames = {
 	["TCGHighPriestessAlathea"] = { AL["High Priestess A'lathea"], "AtlasLootItems" },
 	["TCGFenektistheDeceiver"] = { AL["Fenektis the Deceiver"], "AtlasLootItems" },
 	["TCGMasterRaxxieth"] = { AL["Master Raxxieth"], "AtlasLootItems" },
+	["TCGTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 	-- Karazhan Crypt
     ["KCMarrowspike"] = { AL["Marrowspike"], "AtlasLootItems" },
     ["KCHivaxxis"] = { AL["Hivaxxis"], "AtlasLootItems" },
@@ -503,6 +504,7 @@ AtlasLoot_TableNames = {
     ["RarePets1"] = { AL["Rare Pets"], "AtlasLootSetItems" },
     ["RarePets2"] = { AL["Rare Pets"], "AtlasLootSetItems" },
     --Crafted Sets - Blacksmithing
+	["SteelPlate"] = { AL["Steel Plate"], "AtlasLootCrafting" },
     ["ImperialPlate"] = { AL["Imperial Plate"], "AtlasLootCrafting" },
     ["TheDarksoul"] = { AL["The Darksoul"], "AtlasLootCrafting" },
     ["BloodsoulEmbrace"] = { AL["Bloodsoul Embrace"], "AtlasLootCrafting" },
@@ -615,6 +617,7 @@ AtlasLoot_TableNames = {
     ["Nerubian"] = { "Nerubian Overseer", "AtlasLootWBItems" },
     ["Reaver"] = { "Dark Reaver of Karazhan", "AtlasLootWBItems" },
 	["Ostarius"] = { "Ostarius", "AtlasLootWBItems" },
+	["Concavius"] = { "Concavius", "AtlasLootWBItems" },
     --Doom Lord Kazzak
     ["KKazzak"] = { AL["Lord Kazzak"], "AtlasLootWBItems" },
     --Emrald Dragons

@@ -31,6 +31,9 @@ AtlasLootWBBossButtons = {
 	Ostarius = {
 		"Ostarius";
 	};
+	Concavius = {
+		"Concavius";
+	};
     RareSpawns = {
         "";
         "";
@@ -168,6 +171,38 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
 		{ 0,"","","" },
 		{ 83235, "inv_misc_pocketwatch_03", "=q4=Ancient Locking Mechanism", "", "100%" },
 		{ 17962,"INV_Misc_Bag_10_Blue","=q2=Blue Sack of Gems","=ds=#m23# =q2=#e33#", "25%" },
+	};
+	Concavius = {
+		{ 83233, "", "=q4=Charm of Dark Domination", "=ds=#s2#", "17%" },
+		{ 83234, "", "=q4=Voidclaw Choker", "=ds=#s2#", "17%" },
+		{ 83237, "", "=q4=Band of Ancient Lethality", "=ds=#s13#", "17%" },
+		{ 83238, "", "=q4=Ring of the Abyss Watcher", "=ds=#s13#", "17%" },
+		{ 83239, "", "=q4=Signet of the Voidwalker", "=ds=#s13#", "17%" },
+		{ 83240, "", "=q4=Ring of the Whispering Mist", "=ds=#s13#", "17%" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 0,"","","" },
+		{ 83236, "", "=q4=Void-Linked Satchel of Goods", "=ds=#m23#", "100%" },
+		{ 7076, "", "=q2=Essence of Earth", "Group 1", "[1-2] 25%" },
+		{ 7078, "", "=q2=Essence of Fire", "Group 1", "[1-2] 25%" },
+		{ 7080, "", "=q2=Essence of Water", "Group 1", "[1-2] 25%" },
+		{ 7082, "", "=q2=Essence of Air", "Group 1", "[1-2] 25%" },
+		{ 7971, "", "=q2=Black Pearl", "Group 2", "[2-3] 20%" },
+		{ 12361, "", "=q2=Blue Sapphire", "Group 2", "[1-2] 20%" },
+		{ 12363, "", "=q2=Arcane Crystal", "Group 2", "[1-2] 20%" },
+		{ 12364, "", "=q2=Huge Emerald", "Group 2", "[1-2] 20%" },
+		{ 12800, "", "=q2=Azerothian Diamond", "Group 2", "[1-3] 20%" },
+		{ 11370, "", "=q1=Dark Iron Ore", "Group 3", "[3-6] 20%" },
+		{ 13468, "", "=q2=Black Lotus", "Group 3", "[1-3] 20%" },
+		{ 14256, "", "=q1=Felcloth", "Group 3", "[2-4] 20%" },
+		{ 15416, "", "=q1=Black Dragonscale", "Group 3", "[2-5] 20%" },
+		{ 20520, "", "=q2=Dark Rune", "Group 3", "[2-4] 20%" },
 	};
     KKazzak = {
         { 18546, "INV_Helmet_18", "=q4=Infernal Headcage", "=ds=#s1#, #a3#", "9.39%" },

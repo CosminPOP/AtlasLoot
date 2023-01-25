@@ -189,6 +189,7 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#m38#", AL["Coin"]);
     text = gsub(text, "#m39#", AL["Bijou"]);
     text = gsub(text, "#m40#", AL["Doll"]);
+	text = gsub(text, "#m41#", AL["(250)"]);
 	
 	-- Random names
     text = gsub(text, "#x1#", AL["Lord Cobrahn"]);
@@ -311,6 +312,7 @@ function AtlasLoot_FixText(text)
     -- Blacksmithing Crafted Sets
     text = gsub(text, "#craftbp1#", AL["Imperial Plate"]);
     text = gsub(text, "#craftbp2#", AL["The Darksoul"]);
+	text = gsub(text, "#craftbp3#", AL["Steel Plate"]);
     text = gsub(text, "#craftbm1#", AL["Bloodsoul Embrace"]);
 
     -- Tailoring Crafted Sets

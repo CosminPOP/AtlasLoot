@@ -168,18 +168,25 @@ function AtlasLootCraftedSetMenu()
 	AtlasLootMenuItem_11_Icon:SetTexture("Interface\\Icons\\INV_Chest_Plate10");
 	AtlasLootMenuItem_11.isheader = true;
 	AtlasLootMenuItem_11:Show();
-	--Imperial Plate
-	AtlasLootMenuItem_12_Name:SetText(AL["Imperial Plate"]);
+	--Steel Plate
+	AtlasLootMenuItem_12_Name:SetText(AL["Steel Plate"]);
 	AtlasLootMenuItem_12_Extra:SetText("");
-	AtlasLootMenuItem_12_Icon:SetTexture("Interface\\Icons\\INV_Belt_01");
-	AtlasLootMenuItem_12.lootpage="ImperialPlate";
+	AtlasLootMenuItem_12_Icon:SetTexture("Interface\\Icons\\INV_Helmet_25");
+	AtlasLootMenuItem_12.lootpage="SteelPlate";
 	AtlasLootMenuItem_12:Show();
-	--The Darksoul
-	AtlasLootMenuItem_13_Name:SetText(AL["The Darksoul"]);
+	--Imperial Plate
+	AtlasLootMenuItem_13_Name:SetText(AL["Imperial Plate"]);
 	AtlasLootMenuItem_13_Extra:SetText("");
-	AtlasLootMenuItem_13_Icon:SetTexture("Interface\\Icons\\INV_Shoulder_01");
-	AtlasLootMenuItem_13.lootpage="TheDarksoul";
+	AtlasLootMenuItem_13_Icon:SetTexture("Interface\\Icons\\INV_Belt_01");
+	AtlasLootMenuItem_13.lootpage="ImperialPlate";
 	AtlasLootMenuItem_13:Show();
+	--The Darksoul
+	AtlasLootMenuItem_14_Name:SetText(AL["The Darksoul"]);
+	AtlasLootMenuItem_14_Extra:SetText("");
+	AtlasLootMenuItem_14_Icon:SetTexture("Interface\\Icons\\INV_Shoulder_01");
+	AtlasLootMenuItem_14.lootpage="TheDarksoul";
+	AtlasLootMenuItem_14:Show();
+	AtlasLootMenuItem_14:Show();
 		--Leatherworking Leather Header
 	AtlasLootMenuItem_16_Name:SetText(RED..AL["Leatherworking"]);
 	AtlasLootMenuItem_16_Extra:SetText(WHITE..AL["Leather"]);

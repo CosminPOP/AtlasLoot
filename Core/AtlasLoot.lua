@@ -69,7 +69,7 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 --Establish version number and compatible version of Atlas
 local VERSION_MAJOR = "1";
 local VERSION_MINOR = "0";
-local VERSION_BOSSES = "5";
+local VERSION_BOSSES = "6";
 ATLASLOOT_VERSION = "|cffFF8400AtlasLoot TW Edition v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
@@ -2536,6 +2536,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["High Priestess A'lathea"], "TCGHighPriestessAlathea" },
 		{ AL["Fenektis the Deceiver"], "TCGFenektistheDeceiver" },
 		{ AL["Master Raxxieth"], "TCGMasterRaxxieth" },
+		{ AL["Trash Mobs"], "TCGTrash" },
 	},
 	["Gnomeregan"] = {
 		{ AL["Grubbis"], "GnGrubbis" },
@@ -2773,6 +2774,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Tinkerer Gizlock"], "MaraTinkererGizlock" },
 		{ AL["Rotgrip"], "MaraRotgrip" },
 		{ AL["Princess Theradras"], "MaraPrincessTheradras" },
+		{ AL["Trash Mobs"], "MaraTrash" },
 	},
 	["Onyxia"] = {
 		{ AL["Onyxia"], "Onyxia" },
@@ -2864,6 +2866,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ "Nerubian Overseer", "Nerubian" },
 		{ "Dark Reaver of Karazhan", "Reaver" },
 		{ "Ostarius", "Ostarius" },
+		{ "Concavius", "Concavius" },
 	},
 	["RareSpawns"] = {
 		{ "Tarangos The Dampener", "Tarangos" },
@@ -2915,6 +2918,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AtlasLoot_TableNames["WorldEpics1"][1], "WorldEpics1" },
 	},
 	["CraftSetBlacksmith"] = {
+		{ AL["Steel Plate"], "SteelPlate" },
 		{ AL["Imperial Plate"], "ImperialPlate" },
 		{ AL["The Darksoul"], "TheDarksoul" },
 		{ AL["Bloodsoul Embrace"], "BloodsoulEmbrace" },
@@ -3678,3 +3682,63 @@ function AtlasLoot_GetChatLink(id)
 	local e = string.sub(d, 2)
 	return "\124"..e.."\124H"..b.."\124h["..a.."]\124h\124r"
 end
+
+--pfUI.api.strsplit
+local function AtlasLoot_strsplit(delimiter, subject)
+  if not subject then return nil end
+  local delimiter, fields = delimiter or ":", {}
+  local pattern = string.format("([^%s]+)", delimiter)
+  string.gsub(subject, pattern, function(c) fields[table.getn(fields)+1] = c end)
+  return unpack(fields)
+end
+
+--Update announcing code taken from pfUI
+local major, minor, fix = AtlasLoot_strsplit(".", tostring(GetAddOnMetadata("AtlasLoot", "Version")))
+
+local alreadyshown = false
+local localversion  = tonumber(major*10000 + minor*100 + fix)
+local remoteversion = tonumber(AtlasLoot_updateavailable) or 0
+local loginchannels = { "BATTLEGROUND", "RAID", "GUILD" }
+local groupchannels = { "BATTLEGROUND", "RAID" }
+  
+AtlasLoot_updater = CreateFrame("Frame")
+AtlasLoot_updater:RegisterEvent("CHAT_MSG_ADDON")
+AtlasLoot_updater:RegisterEvent("PLAYER_ENTERING_WORLD")
+AtlasLoot_updater:RegisterEvent("PARTY_MEMBERS_CHANGED")
+AtlasLoot_updater:SetScript("OnEvent", function()
+	if event == "CHAT_MSG_ADDON" and arg1 == "AtlasLoot" then
+		local v, remoteversion = AtlasLoot_strsplit(":", arg2)
+		local remoteversion = tonumber(remoteversion)
+		if v == "VERSION" and remoteversion then
+			if remoteversion > localversion then
+				AtlasLoot_updateavailable = remoteversion
+				if not alreadyshown then
+					DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
+					alreadyshown = true
+				end
+			end
+		end
+	end
+
+	if event == "PARTY_MEMBERS_CHANGED" then
+		local groupsize = GetNumRaidMembers() > 0 and GetNumRaidMembers() or GetNumPartyMembers() > 0 and GetNumPartyMembers() or 0
+		if ( this.group or 0 ) < groupsize then
+			for _, chan in pairs(groupchannels) do
+				SendAddonMessage("AtlasLoot", "VERSION:" .. localversion, chan)
+			end
+		end
+		this.group = groupsize
+	end
+
+    if event == "PLAYER_ENTERING_WORLD" then
+      if not alreadyshown and localversion < remoteversion then
+        DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
+        AtlasLoot_updateavailable = localversion
+        alreadyshown = true
+      end
+
+      for _, chan in pairs(loginchannels) do
+        SendAddonMessage("AtlasLoot", "VERSION:" .. localversion, chan)
+      end
+    end
+  end)
