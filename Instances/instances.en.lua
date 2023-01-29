@@ -3331,7 +3331,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 9469, "INV_Chest_Chain_06", "=q3=Gahz'rilla Scale Armor", "=ds=#s5#, #a3#", "36.76%" },
 		{ 9467, "INV_Misc_MonsterFang_01", "=q2=Gahz'rilla Fang", "=ds=#h1#, #w4#", "36.83%" },
 		{ 0,"","","" },
-		{ 80747, "INV_Gauntlets_30", "=q3=Electrified Gloves", "50%"},
+		{ 80747, "INV_Gauntlets_30", "=q3=Electrified Gloves", "=ds=#s9#, #a2#", "50%" },
 	};
 	ZFChiefUkorzSandscalp = {
 		{ 9479, "Ability_Mount_WhiteDireWolf", "=q3=Embrace of the Lycan", "=ds=#s1#, #a2#", "8.97%" },
@@ -3548,7 +3548,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 10330, "INV_Pants_03", "=q3=Scarlet Leggings", "=ds=#s11#, #a3#", "12.95%" },
 		{ 7726, "INV_Shield_05", "=q3=Aegis of the Scarlet Commander", "=ds=#w8#", "38.37%" },
 		{ 7723, "INV_Mace_13", "=q3=Mograine's Might", "=ds=#h2#, #w6#", "17.13%" },
-		{ 51804, "INV_Misc_Book_10", "=q3=Libram of the Resolute", "=ds=#e20# =q12=#c6#", "7.5%" },
+		{ 51804, "INV_Misc_Book_10", "=q3=Libram of the Resolute", "=ds=#s16#, #e18# =q16=#c4#", "7.5%" },
 	};
 	SMWhitemane = {
 		{ 7720, "INV_Helmet_12", "=q3=Whitemane's Chapeau", "=ds=#s1#, #a1#", "34.01%" },
