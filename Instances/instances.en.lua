@@ -2764,6 +2764,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	TCGKeeperRanathos = {
 		{ 83225, "INV_weapon_bow_11", "=q3=Bow of the Grove", "=ds=#w2#", "24%" },
 		{ 83226, "INV_bracer_12", "=q3=Bands of Ranathos", "=ds=#s8#, #a2#", "24%" },
+		{ 83227, "", "=q3=Glademender's Robes", "=ds=#s8#, #a2#", "24%" },
 		{ 83228, "INV_boots_03", "=q3=Treads of the Keeper", "=ds=#s12#, #a3#", "24%" },
 		{ 83229, "INV_jewelry_ring_08", "=q3=Circlet of Cenarius", "=ds=#s13#", "5%" },
 	};
@@ -2771,6 +2772,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 83208, "INV_belt_22", "=q3=Circlet of the Crescent Moon", "=ds=#s1#, #a1#", "30%" },
 		{ 83209, "INV_axe_12", "=q3=Sentinel's Moonslicer", "=ds=#h2#, #w1#", "30%" },
 		{ 83211, "INV_shoulder_05", "=q3=Moontouched Shoulders", "=ds=#s3#, #a2#", "30%" },
+		{ 83210, "", "=q3=Crescent Sigil", "=ds=#s3#, #a2#", "10%" },
 	};
 	TCGFenektistheDeceiver = {
 		{ 83212, "INV_misc_orb_04", "=q3=Felflame Shard", "=ds=#s15#", "25%" },
@@ -3300,6 +3302,8 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	ZFWitchDoctorZumrah = {
 		{ 18083, "INV_Gauntlets_09", "=q3=Jumanza Grips", "=ds=#s9#, #a1#", "24.97%" },
 		{ 18082, "INV_Staff_10", "=q3=Zum'rah's Vexing Cane", "=ds=#w9#", "11.98%" },
+		{ 0,"","","" },
+		{ 51803, "Spell_Fire_Fire", "=q3=Totem of the Endless Flicker", "=ds=#s16#", "7.5%" },
 	};
 	ZFNekrumGutchewer = {
 		{ 9471, "INV_Jewelry_Amulet_01", "=q1=Nekrum's Medallion", "=ds=#m3#", "100%" },
@@ -3325,10 +3329,9 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	};
 	ZFGahzrilla = {
 		{ 9469, "INV_Chest_Chain_06", "=q3=Gahz'rilla Scale Armor", "=ds=#s5#, #a3#", "36.76%" },
-		{ 0,"","","" },
 		{ 9467, "INV_Misc_MonsterFang_01", "=q2=Gahz'rilla Fang", "=ds=#h1#, #w4#", "36.83%" },
 		{ 0,"","","" },
-		{ 80747, "", "=q1=", ""},
+		{ 80747, "INV_Gauntlets_30", "=q3=Electrified Gloves", "50%"},
 	};
 	ZFChiefUkorzSandscalp = {
 		{ 9479, "Ability_Mount_WhiteDireWolf", "=q3=Embrace of the Lycan", "=ds=#s1#, #a2#", "8.97%" },
@@ -3545,6 +3548,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 10330, "INV_Pants_03", "=q3=Scarlet Leggings", "=ds=#s11#, #a3#", "12.95%" },
 		{ 7726, "INV_Shield_05", "=q3=Aegis of the Scarlet Commander", "=ds=#w8#", "38.37%" },
 		{ 7723, "INV_Mace_13", "=q3=Mograine's Might", "=ds=#h2#, #w6#", "17.13%" },
+		{ 51804, "INV_Misc_Book_10", "=q3=Libram of the Resolute", "=ds=#e20# =q12=#c6#", "7.5%" },
 	};
 	SMWhitemane = {
 		{ 7720, "INV_Helmet_12", "=q3=Whitemane's Chapeau", "=ds=#s1#, #a1#", "34.01%" },
