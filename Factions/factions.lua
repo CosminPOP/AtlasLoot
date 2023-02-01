@@ -433,7 +433,7 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 		{ 60882, "", "=q3=Magram Windstriker", "=ds=#w2#"},
 		{ 0, "", "", "" },
 		{ 0, "INV_Misc_Head_Centaur_01", "=q6=#r5#", "" },
-		{ 60885, "", "=q4=Dar'kar of the Third Khan", "=ds=#w9#"},
+		{ 60885, "", "=q4=Dar'kar of the Third Khan", "=ds=#h2#, #w1#"},
 		{ 60968, "", "=q3=Pattern: Centaur Battle Harness", "=ds=#p7# (300)"},
 		{ 60967, "", "=q3=Pattern: Dustguider Sash", "=ds=#p8# (300)"},
 		{ 60969, "", "=q3=Formula: Enchant Bracer - Greater Agility", "=ds=#p4# (300)"},

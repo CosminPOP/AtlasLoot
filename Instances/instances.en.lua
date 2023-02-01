@@ -636,6 +636,7 @@ AtlasLootBossButtons = {
         "KCCorpsemuncher";
 		"KCGuardCaptainGort";
         "KCArchlichEnkhraz";
+		"KCCommanderAnderson";
         "KCAlarus";
 	};
 	CavernsOfTimeBlackMorass = {
@@ -2833,6 +2834,14 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 83452, "INV_weapon_bow_01", "=q3=Windbreaker", "=ds=#w2#", "10%" },
 		{ 0, "", "", "" },
 		{ 80010, "INV_box_petcarrier_01", "=q1=Midnight", "=ds=#e15#", "5%" },
+	};
+	KCCommanderAnderson = {
+		{ 50188, "INV_Belt_03", "=q3=Deathforge Belt", "=ds=#s10#, #a4#", "16% ?" },
+		{ 50189, "INV_Belt_27", "=q3=Ring of Authority", "=ds=#s13#", "16% ?" },
+		{ 50190, "INV_Boots_05", "=q3=Boots of the Holy Mentor", "=ds=#s12#, #a1#", "16% ?" },
+		{ 50191, "INV_Gauntlets_09", "=q3=Frostchain Gauntlets", "=ds=#s9#, #a3#", "16% ?" },
+		{ 50192, "INV_Jewelry_Ring_35", "=q3=Band of Arcane Dampening", "=ds=#s13#", "16% ?" },
+		{ 50193, "INV_Shoulder_24", "=q3=Gravewalker Pauldrons", "=ds=#s3#, #a2#", "16% ?" },
 	};
 	KCAlarus = {
 		{ 83465, "INV_misc_cape_21", "=q3=Shroud of Haunted Torment", "=ds=#s4#, #a1#", "25%" },

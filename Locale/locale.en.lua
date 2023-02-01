@@ -920,6 +920,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Corpsemuncher"] = true,
 	["Guard Captain Gort"] = true,
 	["Archlich Enkhraz"] = true,
+	["Commander Anderson"] = true,
 	["Alarus"] = true,
 	["Caverns of Time: Black Morass"] = true,
 	["Chronar"] = true,

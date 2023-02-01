@@ -373,6 +373,7 @@ AtlasLoot_TableNames = {
     ["KCCorpsemuncher"] = { AL["Corpsemuncher"], "AtlasLootItems" },
 	["KCGuardCaptainGort"] = { AL["Guard Captain Gort"], "AtlasLootItems" },
     ["KCArchlichEnkhraz"] = { AL["Archlich Enkhraz"], "AtlasLootItems" },
+	["KCCommanderAnderson"] = { AL["Commander Anderson"], "AtlasLootItems" },
     ["KCAlarus"] = { AL["Alarus"], "AtlasLootItems" },
 	-- Caverns of Time: Black Morass
     ["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
