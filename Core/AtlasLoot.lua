@@ -69,7 +69,7 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 --Establish version number and compatible version of Atlas
 local VERSION_MAJOR = "1";
 local VERSION_MINOR = "0";
-local VERSION_BOSSES = "7";
+local VERSION_BOSSES = "8";
 ATLASLOOT_VERSION = "|cffFF8400AtlasLoot TW Edition v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
@@ -2912,6 +2912,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Undercity"], "Undercity" },
 		{ AL["Orgrimmar"], "Orgrimmar" },
 		{ AL["Thunder Bluff"], "ThunderBluff" },
+		{ AL["Dalaran"], "Dalaran" },
 	},
 	["BoEWorldEpics"] = {
 		{ AtlasLoot_TableNames["WorldEpics3"][1], "WorldEpics3" },
@@ -2933,6 +2934,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Devilsaur Armor"], "DevilsaurArmor" },
 		{ AL["Blood Tiger Harness"], "BloodTigerH" },
 		{ AL["Primal Batskin"], "PrimalBatskin" },
+		{ AL["Red Dragon Mail"], "RedDragonM" },
 		{ AL["Green Dragon Mail"], "GreenDragonM" },
 		{ AL["Blue Dragon Mail"], "BlueDragonM" },
 		{ AL["Black Dragon Mail"], "BlackDragonM" },

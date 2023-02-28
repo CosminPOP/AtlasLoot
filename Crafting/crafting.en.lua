@@ -223,6 +223,16 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 --- Leatherworking Mail Sets ---
 --------------------------------
 
+	RedDragonM = {
+		{ 0, "", "", "" },
+		{ 0, "INV_Box_01", "=q6=#craftlwm4#", "=q1=#j6#" },
+		{ 0, "", "", "" },
+		{ 65001, "inv_shoulder_23", "=q3=Red Dragonscale Shoulders", "=ds=#s3#, #a3#" },
+		{ 15047, "inv_chest_chain_06", "=q3=Red Dragonscale Breastplate", "=ds=#s5#, #a3#" },
+		{ 65000, "inv_pants_mail_09", "=q3=Red Dragonscale Leggings", "=ds=#s11#, #a3#" },
+		{ 65002, "inv_boots_chain_13", "=q3=Red Dragonscale Boots", "=ds=#s9#, #a3#" },
+	};
+
 	GreenDragonM = {
 		{ 0, "", "", "" },
 		{ 0, "INV_Box_01", "=q6=#craftlwm1#", "=q1=#j8#" },
@@ -1077,6 +1087,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 
 	Dragonscale1 = {
 		{ "s10619", "inv_gauntlets_10", "=q3=Dragonscale Gauntlets", "=ds=#sr# =so1=225 =so2=245 =so3=255 =so4=265" },
+		{ "s46695", "inv_pants_02", "=q3=Dragonscale Leggings", "=ds=#sr# =so1=245 =so2=245 =so3=245 =so4=245" },
 		{ "s10650", "inv_chest_chain_07", "=q3=Dragonscale Breastplate", "=ds=#sr# =so1=255 =so2=275 =so3=285 =so4=295" },
 		{ "s19050", "inv_chest_chain_06", "=q3=Green Dragonscale Breastplate", "=ds=#sr# =so1=260 =so2=280 =so3=290 =so4=300" },
 		{ "s19060", "inv_pants_05", "=q3=Green Dragonscale Leggings", "=ds=#sr# =so1=270 =so2=290 =so3=300 =so4=310" },
@@ -1084,6 +1095,9 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s19077", "inv_chest_chain_04", "=q3=Blue Dragonscale Breastplate", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
 		{ "s19085", "inv_chest_plate06", "=q3=Black Dragonscale Breastplate", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
 		{ "s19089", "inv_shoulder_18", "=q3=Blue Dragonscale Shoulders", "=ds=#sr# =so1=295 =so2=315 =so3=325 =so4=335" },
+		{ "s46655", "inv_boots_chain_13", "=q4=Red Dragonscale Boots", "=ds=#sr# =so1=295 =so2=300 =so3=300 =so4=300" },
+		{ "s46653", "inv_pants_mail_09", "=q4=Red Dragonscale Leggings", "=ds=#sr# =so1=295 =so2=300 =so3=300 =so4=300" },
+		{ "s46654", "inv_shoulder_23", "=q4=Red Dragonscale Shoulders", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
 		{ "s19107", "inv_pants_03", "=q3=Black Dragonscale Leggings", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s24654", "inv_pants_mail_15", "=q3=Blue Dragonscale Leggings", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s19094", "inv_shoulder_01", "=q3=Black Dragonscale Shoulders", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
@@ -1092,6 +1106,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s22926", "inv_misc_cape_02", "=q4=Chromatic Cloak", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s23708", "inv_gauntlets_22", "=q4=Chromatic Gauntlets", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s24703", "inv_chest_plate08", "=q4=Dreamscale Breastplate", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s46659", "inv_pants_mail_15", "=q4=Stormscale Leggings", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
 	};
 
 	Elemental1 = {
@@ -1136,6 +1151,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s19097", "inv_pants_wolf", "=q3=Devilsaur Leggings", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s23709", "inv_belt_24", "=q4=Corehound Belt", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s22927", "inv_misc_cape_01", "=q4=Hide of the Wild", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s47035", "inv_chest_leather_08", "=q4=Verdant Dreamer's Breastplate", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
 	};
 
 ---------------
@@ -1411,6 +1427,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s18457", "inv_chest_cloth_38", "=q4=Robe of the Archmage", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 		{ "s18458", "inv_chest_cloth_51", "=q4=Robe of the Void", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
 		{ "s18456", "inv_chest_cloth_31", "=q4=Truefaith Vestments", "=ds=#sr# =so1=300 =so2=315 =so3=330 =so4=345" },
+		{ "s46656", "inv_chest_cloth_09", "=q4=Robe of Sacrifice", "=ds=#sr# =so1=300 =so2=300 =so3=300 =so4=300" },
 	};
 
 -----------------

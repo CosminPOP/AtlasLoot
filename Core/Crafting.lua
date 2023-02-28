@@ -242,10 +242,16 @@ function AtlasLootCraftedSetMenu()
 	AtlasLootMenuItem_24.lootpage="PrimalBatskin";
 	AtlasLootMenuItem_24:Show();
 	--Leatherworking Mail Header
-	AtlasLootMenuItem_26_Name:SetText(RED..AL["Leatherworking"]);
-	AtlasLootMenuItem_26_Extra:SetText(WHITE..AL["Mail"]);
-	AtlasLootMenuItem_26_Icon:SetTexture("Interface\\Icons\\INV_Chest_Chain_12");
-	AtlasLootMenuItem_26.isheader = true;
+	AtlasLootMenuItem_25_Name:SetText(RED..AL["Leatherworking"]);
+	AtlasLootMenuItem_25_Extra:SetText(WHITE..AL["Mail"]);
+	AtlasLootMenuItem_25_Icon:SetTexture("Interface\\Icons\\INV_Chest_Chain_12");
+	AtlasLootMenuItem_25.isheader = true;
+	AtlasLootMenuItem_25:Show();
+	--Red Dragon Mail
+	AtlasLootMenuItem_26_Name:SetText(AL["Red Dragon Mail"]);
+	AtlasLootMenuItem_26_Extra:SetText(ORANGE..AL["Fire Resistance Gear"]);
+	AtlasLootMenuItem_26_Icon:SetTexture("Interface\\Icons\\inv_chest_chain_06");
+	AtlasLootMenuItem_26.lootpage="RedDragonM";
 	AtlasLootMenuItem_26:Show();
 	--Green Dragon Mail
 	AtlasLootMenuItem_27_Name:SetText(AL["Green Dragon Mail"]);

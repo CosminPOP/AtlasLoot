@@ -524,6 +524,7 @@ AtlasLoot_TableNames = {
     ["DevilsaurArmor"] = { AL["Devilsaur Armor"], "AtlasLootCrafting" },
     ["BloodTigerH"] = { AL["Blood Tiger Harness"], "AtlasLootCrafting" },
     ["PrimalBatskin"] = { AL["Primal Batskin"], "AtlasLootCrafting" },
+	["RedDragonM"] = { AL["Red Dragon Mail"], "AtlasLootCrafting" },
     ["GreenDragonM"] = { AL["Green Dragon Mail"], "AtlasLootCrafting" },
     ["BlueDragonM"] = { AL["Blue Dragon Mail"], "AtlasLootCrafting" },
     ["BlackDragonM"] = { AL["Black Dragon Mail"], "AtlasLootCrafting" },
@@ -725,6 +726,7 @@ AtlasLoot_TableNames = {
     ["Undercity"] = { AL["Undercity"], "AtlasLootRepItems" },
     ["Orgrimmar"] = { AL["Orgrimmar"], "AtlasLootRepItems" },
     ["ThunderBluff"] = { AL["Thunder Bluff"], "AtlasLootRepItems" },
+	["Dalaran"] = { AL["Dalaran"], "AtlasLootRepItems" },
 
     --------------
     --- Trades ---

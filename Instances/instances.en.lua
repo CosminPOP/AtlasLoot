@@ -1510,7 +1510,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 16840, "INV_Bracer_16", "=q4=Earthfury Bracers", "=ds=#s8#, #a3# =q15=#c7#", "0.16%" },
 		{ 16857, "INV_Bracer_18", "=q4=Lawbringer Bracers", "=ds=#s8#, #a4# =q16=#c4#", "0.14%" },
 		{ 16861, "INV_Bracer_19", "=q4=Bracers of Might", "=ds=#s8#, #a4# =q17=#c9#", "0.24%" },
-		
+		{ 0,"","","" },
 		{ 81261, "", "=q4=Boots of Blistering Flames", "=ds=#s12#, #a1#", "0.2%" },
 		{ 81262, "", "=q4=Core Forged Helmet", "=ds=#s1#, #a4#", "0.2%" },
 		{ 81263, "", "=q4=Lost Dark Iron Chain", "=ds=#s2#", "0.2%" },
@@ -3241,11 +3241,12 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 17745, "INV_Wand_04", "=q3=Noxious Shooter", "=ds=#w12#", "17.53%" },
 	};
 	MaraRazorlash = {
-		{ 17749, "INV_Shoulder_06", "=q3=Phytoskin Spaulders", "=ds=#s3#, #a2#", "22.09%" },
-		{ 17748, "INV_Boots_05", "=q3=Vinerot Sandals", "=ds=#s12#, #a1#", "20.60%" },
+		{ 17749, "INV_Shoulder_06", "=q3=Phytoskin Spaulders", "=ds=#s3#, #a2#", "25%" },
+		{ 17748, "INV_Boots_05", "=q3=Vinerot Sandals", "=ds=#s12#, #a1#", "25%" },
+		{ 51802, "", "", "7.5%" },
 		{ 0, "", "", "" },
-		{ 17750, "INV_Belt_25", "=q2=Chloromesh Girdle", "=ds=#s10#, #a1#", "22.93%" },
-		{ 17751, "INV_Pants_05", "=q2=Brusslehide Leggings", "=ds=#s11#, #a2#", "21.65%" },
+		{ 17750, "INV_Belt_25", "=q2=Chloromesh Girdle", "=ds=#s10#, #a1#", "25%" },
+		{ 17751, "INV_Pants_05", "=q2=Brusslehide Leggings", "=ds=#s11#, #a2#", "25%" },
 	};
 	MaraLordVyletongue = {
 		{ 17755, "INV_Belt_24", "=q3=Satyrmane Sash", "=ds=#s10#, #a1#", "25.71%" },

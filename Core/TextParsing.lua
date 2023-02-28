@@ -334,6 +334,7 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#craftlwm1#", AL["Green Dragon Mail"]);
     text = gsub(text, "#craftlwm2#", AL["Blue Dragon Mail"]);
     text = gsub(text, "#craftlwm3#", AL["Black Dragon Mail"]);
+    text = gsub(text, "#craftlwm4#", AL["Red Dragon Mail"]);
     
 	-- Chests, boxes
     text = gsub(text, "#cb1#", AL["Doan's Strongbox"]);

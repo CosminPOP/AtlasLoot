@@ -151,6 +151,11 @@ AtlasLoot_ButtonRegistry = {
         Back_Page = "REPMENU";
         Back_Title = AL["Factions"];
     };
+	["Dalaran"] = {
+        Title = AL["Dalaran"];
+        Back_Page = "REPMENU";
+        Back_Title = AL["Factions"];
+    };
     ["Helf"] = {
         Title = AL["Silvermoon Remnant"];
         Next_Page = "Helf2";
@@ -986,6 +991,11 @@ AtlasLoot_ButtonRegistry = {
     };
     ["PrimalBatskin"] = {
         Title = AL["Primal Batskin"];
+        Back_Page = "CRAFTSET";
+        Back_Title = AL["Crafted Sets"];
+    };
+    ["RedDragonM"] = {
+        Title = AL["Red Dragon Mail"];
         Back_Page = "CRAFTSET";
         Back_Title = AL["Crafted Sets"];
     };
