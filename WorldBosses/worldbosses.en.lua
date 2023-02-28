@@ -371,7 +371,7 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
         { 18704, "INV_Misc_Bandage_04", "=q4=Mature Blue Dragon Sinew", "=ds=#m3#", "51.56%" },
         { 18714, "INV_Misc_Quiver_03", "=q4=Ancient Sinew Wrapped Lamina", "=q1=#m4# =ds=#m12# #e9# =q14=#c2#" },
 		{ 0, "", "", "", "" },
-		{ 83544, "", "=q4=", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340", "40%" },
+		{ 83544, "inv_scroll_04", "=q4=Pattern: Stormscale Leggings", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340", "40%" },
     };
     ASpiritA = {
         { 20949, "INV_Letter_16", "=q1=Magical Ledger", "=ds=#m2#", "" },

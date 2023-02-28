@@ -327,6 +327,8 @@ AL:RegisterTranslations("enUS", function() return {
 	["Thick Draenic Armor"] = true,
 	["Fel Skin"] = true,
 	["Strength of the Clefthoof"] = true,
+	["Dalaran"] = true,
+	["Red Dragon Mail"] = true,
 	["Green Dragon Mail"] = true,
 	["Blue Dragon Mail"] = true,
 	["Black Dragon Mail"] = true,
