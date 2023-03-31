@@ -189,6 +189,7 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#m38#", AL["Coin"]);
     text = gsub(text, "#m39#", AL["Bijou"]);
     text = gsub(text, "#m40#", AL["Doll"]);
+	text = gsub(text, "#m41#", AL["(250)"]);
 	
 	-- Random names
     text = gsub(text, "#x1#", AL["Lord Cobrahn"]);
@@ -286,6 +287,7 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#x93#", AL["Avalanchion"]);
     text = gsub(text, "#x94#", AL["Princess Tempestria"]);
     text = gsub(text, "#x95#", AL["The Windreaver"]);
+	text = gsub(text, "#x96#", AL["Mr. Smite"]);
 
 	-- Misc
     text = gsub(text, "#j1#", AL["Dungeon 1 Set"]);
@@ -310,6 +312,7 @@ function AtlasLoot_FixText(text)
     -- Blacksmithing Crafted Sets
     text = gsub(text, "#craftbp1#", AL["Imperial Plate"]);
     text = gsub(text, "#craftbp2#", AL["The Darksoul"]);
+	text = gsub(text, "#craftbp3#", AL["Steel Plate"]);
     text = gsub(text, "#craftbm1#", AL["Bloodsoul Embrace"]);
 
     -- Tailoring Crafted Sets
@@ -320,6 +323,8 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#craftt5#", AL["Bloodvine Garb"]);
 
     -- Leatherworking Crafted Sets
+	text = gsub(text, "#craftlwl7#", AL["Grifter's Armor"]);
+	text = gsub(text, "#craftlwl8#", AL["Primalist's Trappings"]);
     text = gsub(text, "#craftlwl1#", AL["Volcanic Armor"]);
     text = gsub(text, "#craftlwl2#", AL["Ironfeather Armor"]);
     text = gsub(text, "#craftlwl3#", AL["Stormshroud Armor"]);
@@ -329,6 +334,7 @@ function AtlasLoot_FixText(text)
     text = gsub(text, "#craftlwm1#", AL["Green Dragon Mail"]);
     text = gsub(text, "#craftlwm2#", AL["Blue Dragon Mail"]);
     text = gsub(text, "#craftlwm3#", AL["Black Dragon Mail"]);
+    text = gsub(text, "#craftlwm4#", AL["Red Dragon Mail"]);
     
 	-- Chests, boxes
     text = gsub(text, "#cb1#", AL["Doan's Strongbox"]);

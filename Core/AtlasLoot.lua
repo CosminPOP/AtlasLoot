@@ -69,7 +69,7 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 --Establish version number and compatible version of Atlas
 local VERSION_MAJOR = "1";
 local VERSION_MINOR = "0";
-local VERSION_BOSSES = "3";
+local VERSION_BOSSES = "8";
 ATLASLOOT_VERSION = "|cffFF8400AtlasLoot TW Edition v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
@@ -349,8 +349,10 @@ function AtlasLoot_OnVariablesLoaded()
 		--We also create a helper table here which store IDs that need to search for
 		local idsToSearch = {};
 		for i = 1, table.getn(AtlasLootCharDB["WishList"]) do
-			if (AtlasLootCharDB["WishList"][i][1] > 0 and not AtlasLootCharDB["WishList"][i][5]) then
-				tinsert(idsToSearch, i, AtlasLootCharDB["WishList"][i][1]);
+			if (type(AtlasLootCharDB["WishList"][i][1]) == "number") then
+				if (AtlasLootCharDB["WishList"][i][1] > 0 and not AtlasLootCharDB["WishList"][i][5]) then
+					tinsert(idsToSearch, i, AtlasLootCharDB["WishList"][i][1]);
+				end
 			end
 		end
 		if table.getn(idsToSearch) > 0 then
@@ -2485,7 +2487,9 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Marrowspike"], "KCMarrowspike" },
 		{ AL["Hivaxxis"], "KCHivaxxis" },
 		{ AL["Corpsemuncher"], "KCCorpsemuncher" },
+		{ AL["Guard Captain Gort"], "KCGuardCaptainGort" },
 		{ AL["Archlich Enkhraz"], "KCArchlichEnkhraz" },
+		{ AL["Commander Anderson"], "KCCommanderAnderson" },
 		{ AL["Alarus"], "KCAlarus" },
 	},
 	["CavernsOfTimeBlackMorass"] = {
@@ -2533,6 +2537,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["High Priestess A'lathea"], "TCGHighPriestessAlathea" },
 		{ AL["Fenektis the Deceiver"], "TCGFenektistheDeceiver" },
 		{ AL["Master Raxxieth"], "TCGMasterRaxxieth" },
+		{ AL["Trash Mobs"], "TCGTrash" },
 	},
 	["Gnomeregan"] = {
 		{ AL["Grubbis"], "GnGrubbis" },
@@ -2635,7 +2640,11 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Trash Mobs"], "SFKTrash" },
 	},
 	["TheStockade"] = {
+		{ AL["Targorr the Dread"], "SWStTargorr" },
 		{ AL["Kam Deepfury"], "SWStKamDeepfury" },
+		{ AL["Hamhock"], "SWStHamhock" },
+		{ AL["Dextren Ward"], "SWStDextren" },
+		{ AL["Bazil Thredd"], "SWStBazil" },
 		{ AL["Bruegal Ironknuckle"].." ("..AL["Rare"]..")", "SWStBruegalIronknuckle" },
 		{ AL["Trash Mobs"], "SWStTrash" },
 	},
@@ -2766,13 +2775,16 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Tinkerer Gizlock"], "MaraTinkererGizlock" },
 		{ AL["Rotgrip"], "MaraRotgrip" },
 		{ AL["Princess Theradras"], "MaraPrincessTheradras" },
+		{ AL["Trash Mobs"], "MaraTrash" },
 	},
 	["Onyxia"] = {
 		{ AL["Onyxia"], "Onyxia" },
 	},
 	["RagefireChasm"] = {
 		{ AL["Taragaman the Hungerer"], "RFCTaragaman" },
+		{ AL["Oggleflint"], "RFCOggleflint" },
 		{ AL["Jergosh the Invoker"], "RFCJergosh" },
+		{ AL["Bazzalan"], "RFCBazzalan" },
 	},
 	["RazorfenDowns"] = {
 		{ AL["Tuten'kash"], "RFDTutenkash" },
@@ -2854,6 +2866,8 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ "Turtlhu, the Black Turtle of Doom", "Turtlhu" },
 		{ "Nerubian Overseer", "Nerubian" },
 		{ "Dark Reaver of Karazhan", "Reaver" },
+		{ "Ostarius", "Ostarius" },
+		{ "Concavius", "Concavius" },
 	},
 	["RareSpawns"] = {
 		{ "Tarangos The Dampener", "Tarangos" },
@@ -2889,6 +2903,16 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Zandalar Tribe"], "Zandalar1" },
 		{ AL["Silvermoon Remnant"], "Helf" },
 		{ AL["Revantusk Trolls"], "Revantusk" },
+		{ AL["Ironforge"], "Ironforge" },
+		{ AL["Darnassus"], "Darnassus" },
+		{ AL["Stormwind"], "Stormwind" },
+		{ AL["Gnomeregan Exiles"], "GnomereganExiles" },
+		{ AL["Darkspear Trolls"], "DarkspearTrolls" },
+		{ AL["Durotar Labor Union"], "DurotarLaborUnion" },
+		{ AL["Undercity"], "Undercity" },
+		{ AL["Orgrimmar"], "Orgrimmar" },
+		{ AL["Thunder Bluff"], "ThunderBluff" },
+		{ AL["Dalaran"], "Dalaran" },
 	},
 	["BoEWorldEpics"] = {
 		{ AtlasLoot_TableNames["WorldEpics3"][1], "WorldEpics3" },
@@ -2896,17 +2920,21 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AtlasLoot_TableNames["WorldEpics1"][1], "WorldEpics1" },
 	},
 	["CraftSetBlacksmith"] = {
+		{ AL["Steel Plate"], "SteelPlate" },
 		{ AL["Imperial Plate"], "ImperialPlate" },
 		{ AL["The Darksoul"], "TheDarksoul" },
 		{ AL["Bloodsoul Embrace"], "BloodsoulEmbrace" },
 	},
 	["CraftSetLeatherwork"] = {
+		{ AL["Grifter's Armor"], "GriftersArmor" },
+		{ AL["Primalist's Trappings"], "PrimalistsTrappings" },
 		{ AL["Volcanic Armor"], "VolcanicArmor" },
 		{ AL["Ironfeather Armor"], "IronfeatherArmor" },
 		{ AL["Stormshroud Armor"], "StormshroudArmor" },
 		{ AL["Devilsaur Armor"], "DevilsaurArmor" },
 		{ AL["Blood Tiger Harness"], "BloodTigerH" },
 		{ AL["Primal Batskin"], "PrimalBatskin" },
+		{ AL["Red Dragon Mail"], "RedDragonM" },
 		{ AL["Green Dragon Mail"], "GreenDragonM" },
 		{ AL["Blue Dragon Mail"], "BlueDragonM" },
 		{ AL["Black Dragon Mail"], "BlackDragonM" },
@@ -3357,20 +3385,28 @@ function AtlasLootItem_OnClick(arg1)
 			end
 		elseif IsShiftKeyDown() and not iteminfo and this.itemID ~= 0 then
 			if AtlasLootCharDB.SafeLinks then
-				if ChatFrameEditBox:IsVisible() then
+				if WIM_EditBoxInFocus then
+					WIM_EditBoxInFocus:Insert("["..name.."]");
+				elseif ChatFrameEditBox:IsVisible() then
 					ChatFrameEditBox:Insert("["..name.."]");
 				else
 					AtlasLoot_SayItemReagents(this.itemID, nil, name, true)
 				end
 			elseif AtlasLootCharDB.AllLinks then
-				if ChatFrameEditBox:IsVisible() then
+				if WIM_EditBoxInFocus then
+					WIM_EditBoxInFocus:Insert("\124"..string.sub(color, 2).."|Hitem:"..this.itemID.."\124h["..name.."]|h|r");
+				elseif ChatFrameEditBox:IsVisible() then
 					ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..this.itemID.."\124h["..name.."]|h|r");
 				else
 					AtlasLoot_SayItemReagents(this.itemID, color, name)
 				end
 			end
-		elseif(ChatFrameEditBox:IsVisible() and iteminfo and IsShiftKeyDown()) and this.itemID ~= 0 then
-			ChatFrameEditBox:Insert(color.."|Hitem:"..this.itemID..":0:0:0|h["..name.."]|h|r");
+		elseif(iteminfo and IsShiftKeyDown()) and this.itemID ~= 0 then
+			if WIM_EditBoxInFocus then
+				WIM_EditBoxInFocus:Insert(color.."|Hitem:"..this.itemID..":0:0:0|h["..name.."]|h|r");
+			elseif ( ChatFrameEditBox:IsVisible() ) then 
+				ChatFrameEditBox:Insert(color.."|Hitem:"..this.itemID..":0:0:0|h["..name.."]|h|r");
+			end
 		elseif IsShiftKeyDown() and iteminfo and this.itemID ~= 0 then
 			AtlasLoot_SayItemReagents(this.itemID, color, name);
 		--If control-clicked, use the dressing room
@@ -3416,11 +3452,20 @@ function AtlasLootItem_OnClick(arg1)
 	elseif isSpell then
 		if IsShiftKeyDown() then
 			if tonumber(string.sub(this.itemID, 2)) < 100000 then
-				if ChatFrameEditBox:IsVisible() then
+				if WIM_EditBoxInFocus then
 					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
 					if craftitem ~= nil and craftitem ~= "" then
 						local craftname = GetItemInfo(craftitem)
-						ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem.."\124h["..craftname.."]|h|r");
+						WIM_EditBoxInFocus:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem.."\124h["..craftname.."]|h|r");
+					else
+						WIM_EditBoxInFocus:Insert(name);
+					end
+				elseif ChatFrameEditBox:IsVisible() then
+					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
+					if craftitem ~= nil and craftitem ~= "" then
+						local craftname = GetItemInfo(craftitem)
+						--ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem.."\124h["..craftname.."]|h|r");
+						ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem..":0:0:0\124h["..craftname.."]|h|r"); -- Fix for Gurky's discord chat bot
 					else
 						ChatFrameEditBox:Insert(name);
 					end
@@ -3428,7 +3473,15 @@ function AtlasLootItem_OnClick(arg1)
 					AtlasLoot_SayItemReagents(this.itemID)
 				end
 			else
-				if ChatFrameEditBox:IsVisible() then
+				if WIM_EditBoxInFocus then
+					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
+					if craftitem ~= nil and craftitem ~= "" then
+						local craftname = GetItemInfo(craftitem)
+						WIM_EditBoxInFocus:Insert(AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]));
+					else
+						WIM_EditBoxInFocus:Insert(name);
+					end
+				elseif ChatFrameEditBox:IsVisible() then
 					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
 					if craftitem ~= nil and craftitem ~= "" then
 						local craftname = GetItemInfo(craftitem)
@@ -3520,13 +3573,29 @@ end
 
 function AtlasLoot_SayItemReagents(id, color, name, safe)
 	if not id then return end
-	local channel, chatnumber = ChatFrameEditBox.chatType;
 	local chatline = "";
 	local itemCount = 0;
-	if channel == "WHISPER" then
-		chatnumber = ChatFrameEditBox.tellTarget
-	elseif channel == "CHANNEL" then
-		chatnumber = ChatFrameEditBox.channelTarget
+	
+	local tListActivity = {}
+	local tCount = 0
+
+    for key in WIM_IconItems do
+        table.insert(tListActivity, key)
+        tCount = tCount + 1
+    end
+
+    table.sort(tListActivity, WIM_Icon_SortByActivity)
+
+	if tListActivity[1] and WIM_Windows[tListActivity[1]].is_visible then
+		channel = "WHISPER";
+		chatnumber = tListActivity[1];
+	else
+		channel,chatnumber = ChatFrameEditBox.chatType;
+	    if channel=="WHISPER" then
+			chatnumber = ChatFrameEditBox.tellTarget
+		elseif channel=="CHANNEL" then
+			chatnumber = ChatFrameEditBox.channelTarget
+		end
 	end
 	if string.sub( id, 1, 1 ) == "s" then
 		local spellid = string.sub( id, 2 )
@@ -3581,7 +3650,14 @@ function AtlasLoot_SayItemReagents(id, color, name, safe)
 	elseif string.sub( id,1 ,1 ) == "e" then
 		local spellid = string.sub( id, 2 )
 		local name = GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["name"]
-		if ChatFrameEditBox:IsVisible() then
+		if tListActivity[1] and WIM_Windows[tListActivity[1]].is_visible then
+			if not GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"] then
+				SendChatMessage("|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r", channel, nil, chatnumber);
+			else
+				SendChatMessage(AL["To craft "]..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"])..AL[" you need this: "].."|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r",channel,nil,chatnumber);
+			end
+
+		elseif ChatFrameEditBox:IsVisible() then
 			if not GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"] then
 				ChatFrameEditBox:Insert("|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r", channel, nil, chatnumber);
 			else
@@ -3609,3 +3685,63 @@ function AtlasLoot_GetChatLink(id)
 	local e = string.sub(d, 2)
 	return "\124"..e.."\124H"..b.."\124h["..a.."]\124h\124r"
 end
+
+--pfUI.api.strsplit
+local function AtlasLoot_strsplit(delimiter, subject)
+  if not subject then return nil end
+  local delimiter, fields = delimiter or ":", {}
+  local pattern = string.format("([^%s]+)", delimiter)
+  string.gsub(subject, pattern, function(c) fields[table.getn(fields)+1] = c end)
+  return unpack(fields)
+end
+
+--Update announcing code taken from pfUI
+local major, minor, fix = AtlasLoot_strsplit(".", tostring(GetAddOnMetadata("AtlasLoot", "Version")))
+
+local alreadyshown = false
+local localversion  = tonumber(major*10000 + minor*100 + fix)
+local remoteversion = tonumber(AtlasLoot_updateavailable) or 0
+local loginchannels = { "BATTLEGROUND", "RAID", "GUILD" }
+local groupchannels = { "BATTLEGROUND", "RAID" }
+  
+AtlasLoot_updater = CreateFrame("Frame")
+AtlasLoot_updater:RegisterEvent("CHAT_MSG_ADDON")
+AtlasLoot_updater:RegisterEvent("PLAYER_ENTERING_WORLD")
+AtlasLoot_updater:RegisterEvent("PARTY_MEMBERS_CHANGED")
+AtlasLoot_updater:SetScript("OnEvent", function()
+	if event == "CHAT_MSG_ADDON" and arg1 == "AtlasLoot" then
+		local v, remoteversion = AtlasLoot_strsplit(":", arg2)
+		local remoteversion = tonumber(remoteversion)
+		if v == "VERSION" and remoteversion then
+			if remoteversion > localversion then
+				AtlasLoot_updateavailable = remoteversion
+				if not alreadyshown then
+					DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
+					alreadyshown = true
+				end
+			end
+		end
+	end
+
+	if event == "PARTY_MEMBERS_CHANGED" then
+		local groupsize = GetNumRaidMembers() > 0 and GetNumRaidMembers() or GetNumPartyMembers() > 0 and GetNumPartyMembers() or 0
+		if ( this.group or 0 ) < groupsize then
+			for _, chan in pairs(groupchannels) do
+				SendAddonMessage("AtlasLoot", "VERSION:" .. localversion, chan)
+			end
+		end
+		this.group = groupsize
+	end
+
+    if event == "PLAYER_ENTERING_WORLD" then
+      if not alreadyshown and localversion < remoteversion then
+        DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
+        AtlasLoot_updateavailable = localversion
+        alreadyshown = true
+      end
+
+      for _, chan in pairs(loginchannels) do
+        SendAddonMessage("AtlasLoot", "VERSION:" .. localversion, chan)
+      end
+    end
+  end)
