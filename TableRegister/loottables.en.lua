@@ -375,6 +375,7 @@ AtlasLoot_TableNames = {
     ["KCArchlichEnkhraz"] = { AL["Archlich Enkhraz"], "AtlasLootItems" },
 	["KCCommanderAnderson"] = { AL["Commander Anderson"], "AtlasLootItems" },
     ["KCAlarus"] = { AL["Alarus"], "AtlasLootItems" },
+	["KCTreasure"] = { AL["Half-Buried Treasure Chest"], "AtlasLootItems" },
 	-- Caverns of Time: Black Morass
     ["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
     ["COTBMHarbingerAphygth"] = { AL["Harbinger Aph'ygth"], "AtlasLootItems" },
@@ -620,6 +621,7 @@ AtlasLoot_TableNames = {
     ["Reaver"] = { "Dark Reaver of Karazhan", "AtlasLootWBItems" },
 	["Ostarius"] = { "Ostarius", "AtlasLootWBItems" },
 	["Concavius"] = { "Concavius", "AtlasLootWBItems" },
+	["CowKing"] = { "CowKing", "AtlasLootWBItems" },
     --Doom Lord Kazzak
     ["KKazzak"] = { AL["Lord Kazzak"], "AtlasLootWBItems" },
     --Emrald Dragons
@@ -643,6 +645,7 @@ AtlasLoot_TableNames = {
     ["Zareth"] = { "Zareth Terrorblade Demon Hunter", "AtlasLootWBItems" },
     ["Jalakar"] = { "Jal'akar Dire Troll", "AtlasLootWBItems" },
     ["Ashbeard"] = { "Explorer Ashbeard", "AtlasLootWBItems" },
+	["AdmiralBareanWestwind"] = { "Admiral Barean Westwind", "AtlasLootWBItems" },
 
     --------------
     --- Events ---
@@ -709,6 +712,8 @@ AtlasLoot_TableNames = {
     ["Thorium2"] = { AL["Thorium Brotherhood"] .. ": " .. AL["Revered"] .. "/" .. AL["Exalted"], "AtlasLootRepItems" },
     --Timbermaw Hold
     ["Timbermaw"] = { AL["Timbermaw Hold"], "AtlasLootRepItems" },
+	--Wardens of Time
+	["Warderns1"] = { AL["Wardens of Time"], "AtlasLootRepItems" },
     --Wintersaber Trainers
     ["Wintersaber1"] = { AL["Wintersaber Trainers"], "AtlasLootRepItems" },
     --Zandalar Tribe
@@ -806,6 +811,8 @@ AtlasLoot_TableNames = {
     ["CookingArtisan1"] = { AL["Cooking"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
     --FirstAid
     ["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },
+	--Survival
+	["Survival1"] = { AL["Survival"], "AtlasLootCrafting" },
     --Poisons
     ["Poisons1"] = { AL["Rogue"] .. ": " .. AL["Poisons"], "AtlasLootCrafting" },
 
@@ -814,6 +821,11 @@ AtlasLoot_TableNames = {
     -----------
 
     --Battlegrounds
+	--Blood Ring
+    ["BRRepFriendly"] = { AL["Blood Ring"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
+    ["BRRepHonored"] = { AL["Blood Ring"] .. " " .. AL["Honored Rewards"], "AtlasLootBGItems" },
+    ["BRRepRevered"] = { AL["Blood Ring"] .. " " .. AL["Revered Rewards"], "AtlasLootBGItems" },
+    ["BRRepExalted"] = { AL["Blood Ring"] .. " " .. AL["Exalted Rewards"], "AtlasLootBGItems" },
     --Alterac Valley
     ["AVRepFriendly"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Friendly Rewards"], "AtlasLootBGItems" },
     ["AVRepHonored"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Honored Rewards"], "AtlasLootBGItems" },
@@ -878,6 +890,7 @@ AtlasLoot_TableNames = {
     ["AVRepMenu"] = { "dummy", "dummy" },
     ["ABRepMenu"] = { "dummy", "dummy" },
     ["WSGRepMenu"] = { "dummy", "dummy" },
+	["BRRepMenu"] = { "dummy", "dummy" },
     ["AQ40SET"] = { "dummy", "dummy" },
     ["AQ20SET"] = { "dummy", "dummy" },
     ["ZGSET"] = { "dummy", "dummy" },
@@ -1646,6 +1659,8 @@ AtlasLoot_TableNamesBoss = {
         ["Thorium2"] = { AL["Thorium Brotherhood"] .. ": " .. AL["Revered"] .. "/" .. AL["Exalted"], "AtlasLootRepItems" },
         --Timbermaw Hold
         ["Timbermaw"] = { AL["Timbermaw Hold"], "AtlasLootRepItems" },
+		--Wardens of Time
+		["Warderns1"] = { AL["Wardens of Time"], "AtlasLootRepItems" },
         --Wintersaber Trainers
         ["Wintersaber1"] = { AL["Wintersaber Trainers"], "AtlasLootRepItems" },
         --Zandalar Tribe
@@ -1744,6 +1759,8 @@ AtlasLoot_TableNamesBoss = {
         ["CookingArtisan1"] = { AL["Cooking"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
         --FirstAid
         ["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },
+        --Survival
+        ["Survival1"] = { AL["Survival"], "AtlasLootCrafting" },
         --Poisons
         ["Poisons1"] = { AL["Rogue"] .. ": " .. AL["Poisons"], "AtlasLootCrafting" },
     },
@@ -1753,6 +1770,11 @@ AtlasLoot_TableNamesBoss = {
     -----------
 
     ["Battlegrounds"] = {
+        --Blood Ring
+        ["BRRepFriendly"] = { AL["Blood Ring"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
+        ["BRRepHonored"] = { AL["Blood Ring"] .. " " .. AL["Honored Rewards"], "AtlasLootBGItems" },
+        ["BRRepRevered"] = { AL["Blood Ring"] .. " " .. AL["Revered Rewards"], "AtlasLootBGItems" },
+        ["BRRepExalted"] = { AL["Blood Ring"] .. " " .. AL["Exalted Rewards"], "AtlasLootBGItems" },
         --Alterac Valley
         ["AVRepFriendly"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Friendly Rewards"], "AtlasLootBGItems" },
         ["AVRepHonored"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Honored Rewards"], "AtlasLootBGItems" },

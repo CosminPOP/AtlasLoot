@@ -69,7 +69,7 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 --Establish version number and compatible version of Atlas
 local VERSION_MAJOR = "1";
 local VERSION_MINOR = "0";
-local VERSION_BOSSES = "8";
+local VERSION_BOSSES = "9";
 ATLASLOOT_VERSION = "|cffFF8400AtlasLoot TW Edition v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
@@ -170,6 +170,7 @@ AtlasLoot_MenuList = {
 	"ABRepMenu",
 	"AVRepMenu",
 	"WSGRepMenu",
+	"BRRepMenu",
 	"PVPSET",
 	"SETMENU",
 	"AQ20SET",
@@ -532,6 +533,8 @@ function AtlasLoot_SlashCommand(msg)
 		AtlasLootOptions_Toggle();
 	else
 		AtlasLootDefaultFrame:Show();
+		DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r |cffddabffIf you find anything missing, please /w Lexie or message me on Discord Lexie#4024|r")
+
 	end
 end
 
@@ -1135,6 +1138,8 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 		AtlasLootT0SetMenu();
 	elseif(dataID=="PVPMENU") then
 		AtlasLootPvPMenu();
+	elseif(dataID=="BRRepMenu") then
+		AtlasLootBRRepMenu();
 	elseif(dataID=="WSGRepMenu") then
 		AtlasLootWSGRepMenu();
 	elseif(dataID=="ABRepMenu") then
@@ -2281,12 +2286,15 @@ AtlasLoot_DewDropDown = {
 				{ AL["PvP Mounts"], "PvPMountsPvP", "Table" },
 			},
 			[5] = { 
-				{ AL["Alterac Valley"], "AVRewards", "Submenu" },
+				{ AL["Blood Ring"], "BRRewards", "Submenu" },
 			},
 			[6] = { 
-				{ AL["Arathi Basin"], "ABRewards", "Submenu" },
+				{ AL["Alterac Valley"], "AVRewards", "Submenu" },
 			},
 			[7] = { 
+				{ AL["Arathi Basin"], "ABRewards", "Submenu" },
+			},
+			[8] = { 
 				{ AL["Warsong Gulch"], "WSGRewards", "Submenu" },
 			},
 		},
@@ -2398,15 +2406,16 @@ AtlasLoot_DewDropDown = {
 			[8] = { { (AL["Tailoring"]), "Tailoring", "Submenu" }, },
 			[9] = { { (AL["Cooking"]), "Cooking", "Submenu" }, },
 			[10] = { { (AL["First Aid"]), "FirstAid1", "Table" }, },
-			[11] = { { (AL["Poisons"]), "Poisons1", "Table" }, },
-			[12] = { 
+			[11] = { { (AL["Survival"]), "Survival1", "Table" }, },
+			[12] = { { (AL["Poisons"]), "Poisons1", "Table" }, },
+			[13] = { 
 				[AL["Crafted Sets"]] = {
 					{ (AL["Blacksmithing"]), "CraftSetBlacksmith", "Submenu" },
 					{ (AL["Leatherworking"]), "CraftSetLeatherwork", "Submenu" },
 					{ (AL["Tailoring"]), "CraftSetTailoring", "Submenu" },
 				}, 
 			},
-			[13] = { { AL["Crafted Epic Weapons"], "CraftedWeapons1", "Table" }, },
+			[14] = { { AL["Crafted Epic Weapons"], "CraftedWeapons1", "Table" }, },
 		},
 	},
 };
@@ -2491,6 +2500,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Archlich Enkhraz"], "KCArchlichEnkhraz" },
 		{ AL["Commander Anderson"], "KCCommanderAnderson" },
 		{ AL["Alarus"], "KCAlarus" },
+		{ AL["Half-Buried Treasure Chest"], "KCTreasure" },
 	},
 	["CavernsOfTimeBlackMorass"] = {
 		{ AL["Chronar"], "COTBMChronar" },
@@ -2868,6 +2878,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ "Dark Reaver of Karazhan", "Reaver" },
 		{ "Ostarius", "Ostarius" },
 		{ "Concavius", "Concavius" },
+		{ "There Is No Cow Level", "CowKing" },
 	},
 	["RareSpawns"] = {
 		{ "Tarangos The Dampener", "Tarangos" },
@@ -2880,6 +2891,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ "Zareth Terrorblade Demon Hunter", "Zareth" },
 		{ "Jal'akar Dire Troll", "Jalakar" },
 		{ "Explorer Ashbeard", "Ashbeard" },
+		{ "Admiral Barean Westwind", "AdmiralBareanWestwind" },
 	},
 	["AbyssalCouncil1"] = {
 		{ AL["Abyssal Council"].." - "..AL["Templars"], "AbyssalTemplars" },
@@ -2891,6 +2903,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Bloodsail Buccaneers"], "Bloodsail1" },
 		{ AL["Brood of Nozdormu"], "AQBroodRings" },
 		{ AL["Cenarion Circle"], "Cenarion1" },
+		{ AL["Dalaran"], "Dalaran" },
 		{ AL["Darkmoon Faire"], "Darkmoon" },
 		{ AL["Frostwolf Clan"], "Frostwolf1" },
 		{ AL["Gelkis Clan Centaur"], "GelkisClan1" },
@@ -2899,20 +2912,20 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Stormpike Guard"], "Stormpike1" },
 		{ AL["Thorium Brotherhood"], "Thorium1" },
 		{ AL["Timbermaw Hold"], "Timbermaw" },
+		{ AL["Wardens of Time"], "Warderns1" },
 		{ AL["Wintersaber Trainers"], "Wintersaber1" },
 		{ AL["Zandalar Tribe"], "Zandalar1" },
-		{ AL["Silvermoon Remnant"], "Helf" },
-		{ AL["Revantusk Trolls"], "Revantusk" },
-		{ AL["Ironforge"], "Ironforge" },
 		{ AL["Darnassus"], "Darnassus" },
-		{ AL["Stormwind"], "Stormwind" },
 		{ AL["Gnomeregan Exiles"], "GnomereganExiles" },
+		{ AL["Ironforge"], "Ironforge" },
+		{ AL["Silvermoon Remnant"], "Helf" },
+		{ AL["Stormwind"], "Stormwind" },
 		{ AL["Darkspear Trolls"], "DarkspearTrolls" },
 		{ AL["Durotar Labor Union"], "DurotarLaborUnion" },
-		{ AL["Undercity"], "Undercity" },
 		{ AL["Orgrimmar"], "Orgrimmar" },
+		{ AL["Revantusk Trolls"], "Revantusk" },
 		{ AL["Thunder Bluff"], "ThunderBluff" },
-		{ AL["Dalaran"], "Dalaran" },
+		{ AL["Undercity"], "Undercity" },
 	},
 	["BoEWorldEpics"] = {
 		{ AtlasLoot_TableNames["WorldEpics3"][1], "WorldEpics3" },
@@ -3042,6 +3055,12 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["The Postmaster"], "SCARLET" },
 		{ AL["The Twin Blades of Hakkari"], "HakkariBlades" },
 		{ AL["Zul'Gurub Rings"], "ZGRings" },
+	},
+	["BRRewards"] = {
+		{ AL["Exalted Reputation Rewards"], "BRRepExalted" },
+		{ AL["Revered Reputation Rewards"], "BRRepRevered" },
+		{ AL["Honored Reputation Rewards"], "BRRepHonored" },
+		{ AL["Friendly Reputation Rewards"], "BRRepFriendly" },
 	},
 	["AVRewards"] = {
 		{ AL["Exalted Reputation Rewards"], "AVRepExalted" },

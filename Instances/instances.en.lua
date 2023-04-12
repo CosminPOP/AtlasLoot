@@ -638,6 +638,7 @@ AtlasLootBossButtons = {
         "KCArchlichEnkhraz";
 		"KCCommanderAnderson";
         "KCAlarus";
+		"KCTreasure";
 	};
 	CavernsOfTimeBlackMorass = {
 		"";
@@ -2773,7 +2774,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 83208, "INV_belt_22", "=q3=Circlet of the Crescent Moon", "=ds=#s1#, #a1#", "30%" },
 		{ 83209, "INV_axe_12", "=q3=Sentinel's Moonslicer", "=ds=#h2#, #w1#", "30%" },
 		{ 83211, "INV_shoulder_05", "=q3=Moontouched Shoulders", "=ds=#s3#, #a2#", "30%" },
-		{ 83210, "", "=q3=Crescent Sigil", "=ds=#s3#, #a2#", "10%" },
+		{ 83210, "", "=q3=Crescent Sigil", "=ds=#s14#", "10%" },
 	};
 	TCGFenektistheDeceiver = {
 		{ 83212, "INV_misc_orb_04", "=q3=Felflame Shard", "=ds=#s15#", "25%" },
@@ -2846,7 +2847,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 50193, "INV_Shoulder_24", "=q3=Gravewalker Pauldrons", "=ds=#s3#, #a2#", "16% ?" },
 	};
 	KCAlarus = {
-		{ 83465, "INV_misc_cape_21", "=q3=Shroud of Haunted Torment", "=ds=#s4#, #a1#", "25%" },
+		{ 83465, "INV_misc_cape_21", "=q3=Shroud of Haunted Torment", "=ds=#s4#", "25%" },
 		{ 83466, "INV_pants_plate_20", "=q3=Baneforged Leggings", "=ds=#s11#, #a4#", "25%" },
 		{ 83467, "INV_wand_03", "=q3=Cryptwatcher's Call", "=ds=#w12#", "25%" },
 		{ 83468, "INV_jewelry_ring_09", "=q3=Corpsekeeper's Charge", "=ds=#s13#", "25%" },
@@ -2858,6 +2859,18 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 83464, "INV_shoulder_11", "=q4=Mantle of Twisted Damnation", "=ds=#s3#, #a1#", "1%" },
 		{ 0, "", "", "" },
 		{ 83571, "inv_misc_book_05", "=q3=Codex: Shadow Mend", "=ds=#c5#", "15" },
+	};
+	KCTreasure = {
+		{ 5823, "", "=q1=Poisonous Mushroom", "=ds=#m25#", "100%" },
+		{ 11938, "", "=q1=Sack of Gems", "", "100%" },
+		{ 13456, "", "=q1=Greater Frost Protection Potion", "=ds=#m25#", "100%" },
+		{ 60799, "", "=q3=Gauntlets of the Lost Crusader", "=ds=#s9#, #a4#", "14%" },
+		{ 60800, "", "=q2=Femur Club", "=ds=#h1#, #w6#", "14%" },
+		{ 60801, "", "=q2=Tome of Dark Powers", "=ds=#h4#", "14%" },
+		{ 60802, "", "=q2=Shawl of the Forgotten", "=ds=#s4#", "14%" },
+		{ 60796, "", "=q2=Blade of Rotting", "=ds=#h1#, #w10#", "14%" },
+		{ 60797, "", "=q2=Rotskin Leggings", "=ds=#s11#, #a2#", "14%" },
+		{ 60798, "", "=q3=Loop of the Forgotten", "=ds=#s13#", "14%" },
 	};
 	COTBMChronar = {
 		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
@@ -3273,6 +3286,9 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 17718, "INV_Shield_10", "=q3=Gizlock's Hypertech Buckler", "=ds=#w8#", "30.61%" },
 		{ 17717, "INV_Weapon_Rifle_05", "=q3=Megashot Rifle", "=ds=#w5#", "27.23%" },
 		{ 17719, "INV_Sword_14", "=q3=Inventor's Focal Sword", "=ds=#h3#, #w10#", "27.44%" },
+		{ 0,"","","" },
+		{ 51809, "inv_scroll_05", "=q4=Schematic: Battery-Powered Crowd Pummeler", "=ds=#p5#", "8%" },
+		
 	};
 	MaraRotgrip = {
 		{ 17732, "INV_Shoulder_05", "=q3=Rotgrip Mantle", "=ds=#s3#, #a1#", "25.73%" },

@@ -1551,6 +1551,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s19788", "inv_misc_ammo_gunpowder_01", "=q1=Dense Blasting Powder", "=ds=#sr# =so1=250 =so2=250 =so3=255 =so4=260" },
 		{ "s23070", "inv_misc_bomb_06", "=q1=Dense Dynamite", "=ds=#sr# =so1=250 =so2=250 =so3=260 =so4=270" },
 		{ "s23507", "spell_holy_holybolt", "=q1=Snake Burst Firework", "=ds=#sr# =so1=250 =so2=250 =so3=260 =so4=270" },
+		{ "s46610", "inv_mace_14", "=q4=Battery-Powered Crowd Pummeler", "=ds=#sr# =so1=250 =so2=? =so3=? =so4=?" },
 		{ "s19567", "inv_egg_05", "=q1=Salt Shaker", "=ds=#sr# =so1=250 =so2=270 =so3=280 =so4=290" },
 		{ "s12624", "inv_misc_head_dragon_01", "=q2=Mithril Mechanical Dragonling", "=ds=#sr# =so1=250 =so2=270 =so3=280 =so4=290" },
 		{ "s26011", "ability_hunter_pet_gorilla", "=q1=Tranquil Mechanical Yeti", "=ds=#sr# =so1=250 =so2=320 =so3=330 =so4=340" },
@@ -1571,10 +1572,10 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s19796", "inv_weapon_rifle_08", "=q3=Dark Iron Rifle", "=ds=#sr# =so1=275 =so2=295 =so3=305 =so4=315" },
 		{ "s19799", "inv_misc_bomb_05", "=q1=Dark Iron Bomb", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
 		{ "s19815", "inv_gizmo_07", "=q1=Delicate Arcanite Converter", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
-		{ "s19800", "inv_ammo_bullet_03", "=q2=Thorium Shells", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
 	};
 
 	EngineeringArtisan2 = {
+		{ "s19800", "inv_ammo_bullet_03", "=q2=Thorium Shells", "=ds=#sr# =so1=285 =so2=305 =so3=315 =so4=325" },
 		{ "s19825", "inv_helmet_47", "=q2=Master Engineer's Goggles", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
 		{ "s19819", "inv_jewelry_amulet_07", "=q2=Voice Amplification Modulator", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
 		{ "s23081", "inv_misc_enggizmos_04", "=q3=Hyper-Radiant Flame Reflector", "=ds=#sr# =so1=290 =so2=310 =so3=320 =so4=330" },
@@ -1864,6 +1865,26 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s18629", "inv_misc_bandage_11", "=q1=Runecloth Bandage", "=ds=#sr# =so1=260 =so2=260 =so3=290 =so4=320" },
 		{ "s18630", "inv_misc_bandage_12", "=q1=Heavy Runecloth Bandage", "=ds=#sr# =so1=290 =so2=290 =so3=320 =so4=350" },
 		{ "s23787", "inv_drink_14", "=q1=Powerful Anti-Venom", "=ds=#sr# =so1=300 =so2=300 =so3=330 =so4=360" },
+	};
+	
+--------------
+-- FirstAid --
+--------------
+
+	Survival1 = {
+		{ 0, "Trade_Survival", "=q6=#p16#", "" },
+		{ 0, "", "", "" },
+		{ "s46064", "inv_torch_lit", "=q1=Dim Torch", "=ds=#sr# =so1=1 =so2=30 =so3=45 =so4=60" },
+		{ 0, "", "", "" },
+		{ "s46075", "inv_misc_lantern_01", "=q2=Iron Lantern", "=ds=#sr# =so1=30 =so2=30 =so3=45 =so4=60" },
+		{ 0, "", "", "" },
+		{ "s46072", "Trade_Survival", "=q2=Traveler's Tent", "=ds=#sr# =so1=50 =so2=100 =so3=? =so4=?" },
+		{ 0, "", "", "" },
+		{ "s46074", "trade_herbalism", "=q2=Simple Woodern Planter", "=ds=#sr# =so1=75 =so2=100 =so3=112 =so4=125" },
+		{ "s46073", "inv_tradeskillitem_02", "=q2=Fishing Boat", "=ds=#sr# =so1=75 =so2=125 =so3=150 =so4=?" },
+		{ "s46066", "inv_boots_fabric_01", "=q2=Murloc's Flippers", "=ds=#sr# =so1=75 =so2=150 =so3=? =so4=?" },
+		{ 0, "", "", "" },
+		{ "s46077", "inv_misc_lantern_01", "=q3=Repaired Electro-Lantern", "=ds=#sr# =so1=90 =so2=120 =so3=135 =so4=150" },
 	};
 
 	Poisons1 = {

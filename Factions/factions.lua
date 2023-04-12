@@ -369,6 +369,32 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
         { 0, "INV_Helmet_66", "=q6=#r2#", "" },
         { 12185, "INV_Helmet_66", "=q2=Bloodsail Admiral's Hat", "=ds=#s1#, #a1#" },
     };
+	Warderns1 = {
+		{ 0, "inv_misc_head_dragon_01", "=q6=#r2#", "" },
+		{ 61000, "", "=q1=Time-Worn Rune", "" },
+		{ 0, "", "", "" },
+		{ 0, "inv_misc_head_dragon_01", "=q6=#r4#", "" },
+		{ 61001, "", "=q3=Claw of the Infinite", "=ds=#h1#, #w4#" },
+		{ 61013, "", "=q3=Gauntlets of Temporal Guidance", "=ds=#a3#, #s9#" },
+		{ 61002, "", "=q3=Robe of the Custodian", "=ds=#a1#, #s5#" },
+		{ 61004, "", "=q3=Sandswept Ring of Arcanum", "=ds=#s13#" },
+		{ 61003, "", "=q3=Timeskipper's Helm of Alacrity", "=ds=#a4#, #s1#" },
+		{ 51043, "", "=q2=Void-Linked Satchel", "=ds=#e10#" },
+		{ 50070, "", "=q1=Bronze Whelpling", "=ds=#e15#" },
+        { 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "inv_misc_head_dragon_01", "=q6=#r5#", "" },
+		{ 61007, "", "=q4=Temporal Bronze Boots", "=ds=#a4#, #s12#" },
+		{ 61009, "", "=q4=Time-Shifting Wheel", "=ds=#h4#, #w8#" },
+		{ 61010, "", "=q4=Wing of the Time-Lord", "=ds=#s4#" },
+		{ 61006, "", "=q4=Blade of Infinite Mysteries", "=ds=#w10#, #h3#" },
+		{ 61011, "INV_Weapon_Rifle_09", "=q4=Flintlocke's Hand Cannon", "=ds=#w5#" },
+		{ 61012, "", "=q4=Shard of Eternity", "=ds=#s2#" },
+		{ 51252, "", "=q4=Bronze Drake", "=ds=#e7#" },
+		{ 80300, "", "=q1=Time Warden's Tabard", "=ds=#s7#" },
+	};
     Defilers = {
         { 0, "", "", "" },
         { 0, "INV_Jewelry_Amulet_07", "=q6=#r5#", "" },
@@ -601,6 +627,7 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
     };
     Ironforge = {
 		{ 0, "inv_drink_08", "=q6=#r3#", "" },
+		{ 81214, "", "=q2=", "" },
         { 81211, "", "=q2=", "" },
         { 81212, "", "=q2=", "" },
         { 81215, "", "=q2=", "" },
@@ -627,7 +654,6 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
     };
     Stormwind = {
         { 0, "INV_Staff_13", "=q2=Exalted", "" },
-        { 81225, "", "=q2=", "" },
         { 80320, "", "=q2=", "" },
     };
     GnomereganExiles = {

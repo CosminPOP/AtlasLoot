@@ -554,7 +554,7 @@
 				this:SetMovable(1);
 				this:SetBackdropColor(0.75, 0, 0.75);
 				local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
-				getglobal("AtlasLootDefaultFrame_Notice"):SetText(AL["This is a loot browser only.  To view maps as well, install either Atlas or Alphamap."]);
+				getglobal("AtlasLootDefaultFrame_Notice"):SetText(AL["If you find anything missing, please /w Lexie or message me on Discord Lexie#4024"]);
 			</OnLoad>
 			<OnShow>
 				AtlasLootDefaultFrame_OnShow();
