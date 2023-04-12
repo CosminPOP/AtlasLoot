@@ -534,7 +534,6 @@ function AtlasLoot_SlashCommand(msg)
 	else
 		AtlasLootDefaultFrame:Show();
 		DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r |cffddabffIf you find anything missing, please /w Lexie or message me on Discord Lexie#4024|r")
-
 	end
 end
 
@@ -906,6 +905,7 @@ Legacy function used in Cosmos integration to open the loot browser
 ]]
 function AtlasLoot_ShowMenu()
 	AtlasLootDefaultFrame:Show();
+	DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r |cffddabffIf you find anything missing, please /w Lexie or message me on Discord Lexie#4024|r")
 end
 
 --[[
