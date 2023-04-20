@@ -2429,6 +2429,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Corrosis"], "HQCorrosis" },
 		{ AL["Hatereaver Annihilator"], "HQHatereaverAnnihilator" },
 		{ AL["Hargesh Doomcaller"], "HQHargeshDoomcaller" },
+		{ AL["Trash Mobs"], "HQTrash" },
 	},
 	["BlackrockDepths"] = {
 		{ AL["Lord Roccor"], "BRDLordRoccor" },

@@ -360,6 +360,7 @@ AtlasLoot_TableNames = {
 	["HQCorrosis"] = { AL["Corrosis"], "AtlasLootItems" },
 	["HQHatereaverAnnihilator"] = { AL["Hatereaver Annihilator"], "AtlasLootItems" },
 	["HQHargeshDoomcaller"] = { AL["Hargesh Doomcaller"], "AtlasLootItems" },
+	["HQTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 	-- The Cresant Grove
     ["TCGGrovetenderEngryss"] = { AL["Grovetender Engryss"], "AtlasLootItems" },
 	["TCGKeeperRanathos"] = { AL["Keeper Ranathos"], "AtlasLootItems" },
@@ -1028,6 +1029,7 @@ AtlasLoot_TableNamesBoss = {
 		["HQCorrosis"] = { AL["Corrosis"], "AtlasLootItems" },
 		["HQHatereaverAnnihilator"] = { AL["Hatereaver Annihilator"], "AtlasLootItems" },
 		["HQHargeshDoomcaller"] = { AL["Hargesh Doomcaller"], "AtlasLootItems" },
+		["HQTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
     },
     ["The Crescent Grove"] = {
         ["TCGGrovetenderEngryss"] = { AL["Grovetender Engryss"], "AtlasLootItems" },
