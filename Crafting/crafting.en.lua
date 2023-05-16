@@ -64,7 +64,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ 19693, "INV_Chest_Plate08", "=q3=Darksoul Breastplate", "=ds=#s5#, #a4#" },
 		{ 19694, "INV_Pants_Plate_21", "=q3=Darksoul Leggings", "=ds=#s11#, #a4#" },
 	};
-
+	
 -------------------------------
 --- Blacksmithing Mail Sets ---
 -------------------------------
