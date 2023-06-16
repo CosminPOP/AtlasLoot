@@ -368,6 +368,18 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
         { 0, "", "", "" },
         { 0, "INV_Helmet_66", "=q6=#r2#", "" },
         { 12185, "INV_Helmet_66", "=q2=Bloodsail Admiral's Hat", "=ds=#s1#, #a1#" },
+		{ 0, "", "", "" },
+		{ 0, "INV_Helmet_66", "=q6=#r4#", "" },
+		{ 83494, "", "=q2=Captain's Overcoat", "=ds=#s5#, #a2#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "INV_Helmet_66", "=q6=#r5#", "" },
+		{ 83493, "INV_Helmet_66", "=q2=Enforcer Captain's Hat", "=ds=#s1#, #a4#" },
+		{ 83490, "INV_Helmet_66", "=q2=Pillager Captain's Hat", "=ds=#s1#, #a1#" },
+		{ 83492, "INV_Helmet_66", "=q2=Raider Captain's Hat", "=ds=#s1#, #a3#" },
+		{ 83491, "INV_Helmet_66", "=q2=Swashbuckler Captain's Hat", "=ds=#s1#, #a2#" },
     };
 	Warderns1 = {
 		{ 0, "inv_misc_head_dragon_01", "=q6=#r2#", "" },
