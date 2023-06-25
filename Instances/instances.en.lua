@@ -4894,7 +4894,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 22405, "INV_Shoulder_02", "=q3=Mantle of the Scarlet Crusade", "=ds=#s3#, #a1#", "16.03%" },
 		{ 18721, "INV_Belt_18", "=q3=Barrage Girdle", "=ds=#s10#, #a3#", "12.39%" },
 		{ 13381, "INV_Boots_Plate_09", "=q3=Master Cannoneer Boots", "=ds=#s12#, #a4#", "12.86%" },
-		{ 70058, "inv_chest_plate08", "=q3=Breastplate of Fortitutde", "=ds=#s5#, #a4#, Currently off the Loot Table", "6%" },
+		--{ 70058, "inv_chest_plate08", "=q3=Breastplate of Fortitutde", "=ds=#s5#, #a4#, Currently off the Loot Table", "6%" },
 		{ 13382, "INV_Misc_Bomb_04", "=q3=Cannonball Runner", "=ds=#s14#", "12.28%" },
 		{ 13380, "INV_Weapon_Rifle_07", "=q3=Willey's Portable Howitzer", "=ds=#w5#", "10.71%" },
 		{ 13377, "INV_Ammo_Bullet_02", "=q3=Miniature Cannon Balls", "=ds=#e6#", "66.61%" },
