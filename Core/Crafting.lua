@@ -76,12 +76,18 @@ function AtlasLoot_CraftingMenu()
 	AtlasLootMenuItem_12_Icon:SetTexture("Interface\\Icons\\Spell_Holy_SealOfSacrifice");
 	AtlasLootMenuItem_12.lootpage="FirstAid1";
 	AtlasLootMenuItem_12:Show();
+	--Survival
+	AtlasLootMenuItem_13_Name:SetText(AL["Survival"]);
+	AtlasLootMenuItem_13_Extra:SetText("");
+	AtlasLootMenuItem_13_Icon:SetTexture("Interface\\Icons\\Trade_Survival");
+	AtlasLootMenuItem_13.lootpage="Survival1";
+	AtlasLootMenuItem_13:Show();
 	--Poisons
-	AtlasLootMenuItem_14_Name:SetText(AL["Poisons"]);
-	AtlasLootMenuItem_14_Extra:SetText("|cfffff468"..AL["Rogue"]);
-	AtlasLootMenuItem_14_Icon:SetTexture("Interface\\Icons\\Trade_BrewPoison");
-	AtlasLootMenuItem_14.lootpage="Poisons1";
-	AtlasLootMenuItem_14:Show();
+	AtlasLootMenuItem_15_Name:SetText(AL["Poisons"]);
+	AtlasLootMenuItem_15_Extra:SetText("|cfffff468"..AL["Rogue"]);
+	AtlasLootMenuItem_15_Icon:SetTexture("Interface\\Icons\\Trade_BrewPoison");
+	AtlasLootMenuItem_15.lootpage="Poisons1";
+	AtlasLootMenuItem_15:Show();
 	--Crafted Armor Sets
 	AtlasLootMenuItem_17_Name:SetText(AL["Crafted Sets"]);
 	AtlasLootMenuItem_17_Extra:SetText("");

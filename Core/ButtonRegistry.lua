@@ -464,9 +464,16 @@ AtlasLoot_ButtonRegistry = {
     };
     ["KCAlarus"] = {
         Title = AL["Alarus"];
+        Next_Page = "KCTreasure";
+        Next_Title = AL["Half-Buried Treasure Chest"];
         Prev_Page = "KCCommanderAnderson";
         Prev_Title = AL["Commander Anderson"];
     };
+	["KCTreasure"] = {
+		Title = AL["Half-Buried Treasure Chest"];
+        Prev_Page = "KCAlarus";
+        Prev_Title = AL["Alarus"];
+	};
     ["COTBMChronar"] = {
         Title = AL["Chronar"];
         Next_Page = "COTBMHarbingerAphygth";
@@ -2506,8 +2513,15 @@ AtlasLoot_ButtonRegistry = {
     };
     ["Concavius"] = {
         Title = "Concavius";
+		Next_Page = "CowKing";
+		Next_Title = "The Cow King";
         Prev_Page = "Ostarius";
         Prev_Title = "Ostarius";
+    };
+	["CowKing"] = {
+        Title = "There Is No Cow Level";
+        Prev_Page = "Concavius";
+        Prev_Title = "Concavius";
     };
     ["Tarangos"] = {
         Title = "Tarangos The Dampener";
@@ -2572,8 +2586,15 @@ AtlasLoot_ButtonRegistry = {
     };
     ["Ashbeard"] = {
         Title = "Explorer Ashbeard";
+        Next_Page = "AdmiralBareanWestwind";
+        Next_Title = "Admiral Barean Westwind";
         Prev_Page = "Jalakar";
         Prev_Title = "Jal'akar Dire Troll";
+    };
+    ["AdmiralBareanWestwind"] = {
+        Title = "Admiral Barean Westwind";
+        Prev_Page = "Ashbeard";
+        Prev_Title = "Explorer Ashbeard";
     };
 
 
@@ -2603,6 +2624,11 @@ AtlasLoot_ButtonRegistry = {
     };
     ["Bloodsail1"] = {
         Title = AL["Bloodsail Buccaneers"];
+        Back_Page = "REPMENU";
+        Back_Title = AL["Factions"];
+    };
+	["Warderns1"] = {
+		Title = "Wardens of Time";
         Back_Page = "REPMENU";
         Back_Title = AL["Factions"];
     };
@@ -2808,6 +2834,28 @@ AtlasLoot_ButtonRegistry = {
         Prev_Title = AL["Zandalar Tribe"] .. ": " .. AL["Friendly"] .. "/" .. AL["Honored"];
         Back_Page = "REPMENU";
         Back_Title = AL["Factions"];
+    };
+    ["BRRepFriendly"] = {
+        Title = "Blood Ring Friendly Rewards";
+        Back_Page = "BRRepMenu";
+        Next_Page = "BRRepHonored";
+    };
+    ["BRRepHonored"] = {
+        Title = "Blood Ring Honored Rewards";
+        Back_Page = "BRRepMenu";
+        Next_Page = "BRRepRevered";
+        Prev_Page = "BRRepFriendly";
+    };
+    ["BRRepRevered"] = {
+        Title = "Blood Ring Revered Rewards";
+        Back_Page = "BRRepMenu";
+        Next_Page = "BRRepExalted";
+        Prev_Page = "BRRepHonored";
+    };
+    ["BRRepExalted"] = {
+        Title = "Blood Ring Exalted Rewards";
+        Back_Page = "BRRepMenu";
+        Prev_Page = "BRRepRevered";
     };
     ["ABRepFriendly2029"] = {
         Title = "AB 20-29 Friendly Rewards";
@@ -4331,6 +4379,11 @@ AtlasLoot_ButtonRegistry = {
     };
     ["FirstAid1"] = {
         Title = AL["First Aid"];
+        Back_Page = "CRAFTINGMENU";
+        Back_Title = AL["Crafting"];
+    };
+    ["Survival1"] = {
+        Title = AL["Survival"];
         Back_Page = "CRAFTINGMENU";
         Back_Title = AL["Crafting"];
     };
