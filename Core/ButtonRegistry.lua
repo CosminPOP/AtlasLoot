@@ -39,8 +39,15 @@ AtlasLoot_ButtonRegistry = {
     };
     ["HQHargeshDoomcaller"] = {
         Title = AL["Hargesh Doomcaller"];
+        Next_Page = "HQTrash";
+        Next_Title = AL["Trash Mobs"];
         Prev_Page = "HQHatereaverAnnihilator";
         Prev_Title = AL["Hatereaver Annihilator"];
+    };
+    ["HQTrash"] = {
+        Title = AL["Trash Mobs"];
+        Prev_Page = "HQHargeshDoomcaller";
+        Prev_Title = AL["Hargesh Doomcaller"];
     };
     ["BRDLordRoccor"] = {
         Title = AL["Lord Roccor"];
@@ -2949,26 +2956,17 @@ AtlasLoot_ButtonRegistry = {
         Back_Page = "AVRepMenu";
         Prev_Page = "AVRepRevered";
     };
-    ["WSGRepFriendly2029"] = {
+    ["WSGRepFriendly"] = {
         Back_Page = "WSGRepMenu";
-        Title = "WSG 20-29 Friendly Rewards";
-        Next_Page = "WSGRepFriendly3039";
-    };
-    ["WSGRepFriendly3039"] = {
-        Back_Page = "WSGRepMenu";
-        Title = "WSG 30-39 Friendly Rewards";
-        Next_Page = "WSGRepFriendly4049";
-        Prev_Page = "WSGRepFriendly2029";
-    };
-    ["WSGRepFriendly4049"] = {
-        Back_Page = "WSGRepMenu";
-        Title = "WSG 40-49 Friendly Rewards";
-        Prev_Page = "WSGRepFriendly3039";
+        Title = "WSG Friendly Rewards";
+        Next_Page = "WSGRepHonored1019";
+        Prev_Page = "WSGRepExalted60";
     };
     ["WSGRepHonored1019"] = {
         Back_Page = "WSGRepMenu";
         Title = "WSG 10-19 Honored Rewards";
         Next_Page = "WSGRepHonored2029";
+		Prev_Page = "WSGRepFriendly";
     };
     ["WSGRepHonored2029"] = {
         Back_Page = "WSGRepMenu";
@@ -2991,12 +2989,14 @@ AtlasLoot_ButtonRegistry = {
     ["WSGRepHonored5059"] = {
         Back_Page = "WSGRepMenu";
         Title = "WSG 50-59 Honored Rewards";
+		Next_Page = "WSGRepRevered1019";
         Prev_Page = "WSGRepHonored4049";
     };
     ["WSGRepRevered1019"] = {
         Back_Page = "WSGRepMenu";
         Title = "WSG 10-19 Revered Rewards";
         Next_Page = "WSGRepRevered2029";
+		Prev_Page = "WSGRepHonored5059";
     };
     ["WSGRepRevered2029"] = {
         Back_Page = "WSGRepMenu";
@@ -3019,12 +3019,14 @@ AtlasLoot_ButtonRegistry = {
     ["WSGRepRevered5059"] = {
         Back_Page = "WSGRepMenu";
         Title = "WSG 50-59 Revered Rewards";
+		Next_Page = "WSGRepExalted4049";
         Prev_Page = "WSGRepRevered4049";
     };
     ["WSGRepExalted4049"] = {
         Back_Page = "WSGRepMenu";
         Title = "WSG 40-49 Exalted Rewards";
         Next_Page = "WSGRepExalted5059";
+		Prev_Page = "WSGRepRevered5059";
     };
     ["WSGRepExalted5059"] = {
         Back_Page = "WSGRepMenu";
@@ -3036,6 +3038,7 @@ AtlasLoot_ButtonRegistry = {
         Back_Page = "WSGRepMenu";
         Title = "WSG 60 Exalted Rewards";
         Prev_Page = "WSGRepExalted5059";
+		Next_Page = "WSGRepFriendly";
     };
     ["PvP60Accessories1"] = {
         Title = AL["PvP Trinkets"];

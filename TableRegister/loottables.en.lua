@@ -251,12 +251,12 @@ AtlasLoot_TableNames = {
     ["AQEnchants"] = { "AQ Enchants", "AtlasLootItems" },
     --Scarlet Monestery - Armory
     ["SMHerod"] = { AL["Herod"], "AtlasLootItems" },
-    ["SMATrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery"] .. " " .. AL["Armory"] .. ")", "AtlasLootItems" },
+    ["SMATrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Armory)"] .. ")", "AtlasLootItems" },
     --Scarlet Monestery - Cathedral
     ["SMFairbanks"] = { AL["High Inquisitor Fairbanks"], "AtlasLootItems" },
     ["SMMograine"] = { AL["Scarlet Commander Mograine"], "AtlasLootItems" },
     ["SMWhitemane"] = { AL["High Inquisitor Whitemane"], "AtlasLootItems" },
-    ["SMCTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery"] .. " " .. AL["Cathedral"] .. ")", "AtlasLootItems" },
+    ["SMCTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Cathedral)"] .. ")", "AtlasLootItems" },
     --Scarlet Monestery - Graveyard
     ["SMVishas"] = { AL["Interrogator Vishas"], "AtlasLootItems" },
     ["SMScorn"] = { AL["Scorn"] .. " (" .. AL["Scourge Invasion"] .. ")", "AtlasLootItems" },
@@ -264,12 +264,12 @@ AtlasLoot_TableNames = {
     ["SMAzshir"] = { AL["Azshir the Sleepless"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
     ["SMFallenChampion"] = { AL["Fallen Champion"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
     ["SMBloodmageThalnos"] = { AL["Bloodmage Thalnos"], "AtlasLootItems" },
-    ["SMGTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery"] .. " " .. AL["Graveyard"] .. ")", "AtlasLootItems" },
+    ["SMGTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Graveyard)"] .. ")", "AtlasLootItems" },
     --Scarlet Monestery - Library
     ["SMHoundmasterLoksey"] = { AL["Houndmaster Loksey"], "AtlasLootItems" },
     ["SMDoan"] = { AL["Arcanist Doan"], "AtlasLootItems" },
     ["SMDoansBox"] = { AL["Doan's Strongbox"], "AtlasLootItems" },
-    ["SMLTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery"] .. " " .. AL["Library"] .. ")", "AtlasLootItems" },
+    ["SMLTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Library)"] .. ")", "AtlasLootItems" },
     --Scholomance
     ["SCHOLOBlood"] = { AL["Blood Steward of Kirtonos"], "AtlasLootItems" },
     ["SCHOLOKirtonostheHerald"] = { AL["Kirtonos the Herald"], "AtlasLootItems" },
@@ -847,9 +847,7 @@ AtlasLoot_TableNames = {
     ["ABRepRevered5059"] = { AL["Arathi Basin"] .. " " .. AL["50-59 Revered Rewards"], "AtlasLootBGItems" },
     ["ABRepExalted"] = { AL["Arathi Basin"] .. " " .. AL["60 Exalted Rewards"], "AtlasLootBGItems" },
     --Warsong Gulch
-    ["WSGRepFriendly2029"] = { AL["Warsong Gulch"] .. " " .. AL["20-29 Friendly Rewards"], "AtlasLootBGItems" },
-    ["WSGRepFriendly3039"] = { AL["Warsong Gulch"] .. " " .. AL["30-39 Friendly Rewards"], "AtlasLootBGItems" },
-    ["WSGRepFriendly4049"] = { AL["Warsong Gulch"] .. " " .. AL["40-49 Friendly Rewards"], "AtlasLootBGItems" },
+	["WSGRepFriendly"] = { AL["Warsong Gulch"] .. " " .. AL["Friendly"], "AtlasLootBGItems" },
     ["WSGRepHonored1019"] = { AL["Warsong Gulch"] .. " " .. AL["10-19 Honored Rewards"], "AtlasLootBGItems" },
     ["WSGRepHonored2029"] = { AL["Warsong Gulch"] .. " " .. AL["20-29 Honored Rewards"], "AtlasLootBGItems" },
     ["WSGRepHonored3039"] = { AL["Warsong Gulch"] .. " " .. AL["30-39 Honored Rewards"], "AtlasLootBGItems" },
@@ -1231,13 +1229,13 @@ AtlasLoot_TableNamesBoss = {
     },
     ["Scarlet Monestery - Armory"] = {
         ["SMHerod"] = { AL["Herod"], "AtlasLootItems" },
-        ["SMATrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery"] .. " " .. AL["Armory"] .. ")", "AtlasLootItems" },
+        ["SMATrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Armory)"] .. ")", "AtlasLootItems" },
     },
     ["Scarlet Monestery - Cathedral"] = {
         ["SMFairbanks"] = { AL["High Inquisitor Fairbanks"], "AtlasLootItems" },
         ["SMMograine"] = { AL["Scarlet Commander Mograine"], "AtlasLootItems" },
         ["SMWhitemane"] = { AL["High Inquisitor Whitemane"], "AtlasLootItems" },
-        ["SMCTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery"] .. " " .. AL["Cathedral"] .. ")", "AtlasLootItems" },
+        ["SMCTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Cathedral)"] .. ")", "AtlasLootItems" },
     },
     ["Scarlet Monestery - Graveyard"] = {
         ["SMVishas"] = { AL["Interrogator Vishas"], "AtlasLootItems" },
@@ -1246,13 +1244,13 @@ AtlasLoot_TableNamesBoss = {
         ["SMAzshir"] = { AL["Azshir the Sleepless"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
         ["SMFallenChampion"] = { AL["Fallen Champion"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
         ["SMBloodmageThalnos"] = { AL["Bloodmage Thalnos"], "AtlasLootItems" },
-        ["SMGTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery"] .. " " .. AL["Graveyard"] .. ")", "AtlasLootItems" },
+        ["SMGTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Graveyard)"] .. ")", "AtlasLootItems" },
     },
     ["Scarlet Monestery - Library"] = {
         ["SMHoundmasterLoksey"] = { AL["Houndmaster Loksey"], "AtlasLootItems" },
         ["SMDoan"] = { AL["Arcanist Doan"], "AtlasLootItems" },
         ["SMDoansBox"] = { AL["Doan's Strongbox"], "AtlasLootItems" },
-        ["SMLTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery"] .. " " .. AL["Library"] .. ")", "AtlasLootItems" },
+        ["SMLTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Library)"] .. ")", "AtlasLootItems" },
     },
     ["Scholomance"] = {
         ["SCHOLOBlood"] = { AL["Blood Steward of Kirtonos"], "AtlasLootItems" },
@@ -1800,9 +1798,7 @@ AtlasLoot_TableNamesBoss = {
         ["ABRepRevered5059"] = { AL["Arathi Basin"] .. " " .. AL["50-59 Revered Rewards"], "AtlasLootBGItems" },
         ["ABRepExalted"] = { AL["Arathi Basin"] .. " " .. AL["60 Exalted Rewards"], "AtlasLootBGItems" },
         --Warsong Gulch
-        ["WSGRepFriendly2029"] = { AL["Warsong Gulch"] .. " " .. AL["20-29 Friendly Rewards"], "AtlasLootBGItems" },
-        ["WSGRepFriendly3039"] = { AL["Warsong Gulch"] .. " " .. AL["30-39 Friendly Rewards"], "AtlasLootBGItems" },
-        ["WSGRepFriendly4049"] = { AL["Warsong Gulch"] .. " " .. AL["40-49 Friendly Rewards"], "AtlasLootBGItems" },
+		["WSGRepFriendly"] = { AL["Warsong Gulch"] .. " " .. AL["Friendly"], "AtlasLootBGItems" },
         ["WSGRepHonored1019"] = { AL["Warsong Gulch"] .. " " .. AL["10-19 Honored Rewards"], "AtlasLootBGItems" },
         ["WSGRepHonored2029"] = { AL["Warsong Gulch"] .. " " .. AL["20-29 Honored Rewards"], "AtlasLootBGItems" },
         ["WSGRepHonored3039"] = { AL["Warsong Gulch"] .. " " .. AL["30-39 Honored Rewards"], "AtlasLootBGItems" },

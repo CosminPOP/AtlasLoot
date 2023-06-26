@@ -2415,15 +2415,15 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 22630, "INV_Staff_Medivh", "=q5=Atiesh, Greatstaff of the Guardian", "=q1=#m4# =ds=#w9# =q11=#c8#"},
 		{ 22632, "INV_Staff_Medivh", "=q5=Atiesh, Greatstaff of the Guardian", "=q1=#m4# =ds=#w9# =q13=#c1#"},
 	};
-	AQ40Trash1 = {
-		{ 21838, "INV_Chest_Cloth_48", "=q4=Garb of Royal Ascension", "=ds=#s5#, #a1#", "0.20%" },
-		{ 21888, "INV_Gauntlets_14", "=q4=Gloves of the Immortal", "=ds=#s9#, #a1#", "0.16%" },
-		{ 21890, "", "=q4=Gloves of the Fallen Prophet", "=ds=#s9#, #a3# =q16=#c7#", "0.36%" },
-		{ 21889, "INV_Gauntlets_19", "=q4=Gloves of the Redeemed Prophecy", "=ds=#s9#, #a4# =q16=#c4#", "0.39%" },
-		{ 21856, "INV_Axe_09", "=q4=Neretzek, The Blood Drinker", "=ds=#h2#, #w1#", "0.20%" },
-		{ 21837, "INV_Hammer_11", "=q4=Anubisath Warhammer", "=ds=#h1#, #w6#", "0.21%" },
-		{ 21836, "INV_Jewelry_Ring_34", "=q4=Ritssyn's Ring of Chaos", "=ds=#s13#", "0.18%" },
-		{ 21891, "INV_Misc_AhnQirajTrinket_04", "=q4=Shard of the Fallen Star", "=ds=#s14#", "0.59%" },
+	AQ40Trash1 = { --Drop Chances done 26/06/23
+		{ 21838, "INV_Chest_Cloth_48", "=q4=Garb of Royal Ascension", "=ds=#s5#, #a1#", "0.8% to 0.58%" },
+		{ 21888, "INV_Gauntlets_14", "=q4=Gloves of the Immortal", "=ds=#s9#, #a1#", "0.05% to 0.31%" },
+		{ 21890, "", "=q4=Gloves of the Fallen Prophet", "=ds=#s9#, #a3# =q16=#c7#", "0.11% to 1.76%" },
+		{ 21889, "INV_Gauntlets_19", "=q4=Gloves of the Redeemed Prophecy", "=ds=#s9#, #a4# =q16=#c4#", "0.11% to 1.76%" },
+		{ 21856, "INV_Axe_09", "=q4=Neretzek, The Blood Drinker", "=ds=#h2#, #w1#", "0.08% to 0.28%" },
+		{ 21837, "INV_Hammer_11", "=q4=Anubisath Warhammer", "=ds=#h1#, #w6#", "0.12% to 0.32%" },
+		{ 21836, "INV_Jewelry_Ring_34", "=q4=Ritssyn's Ring of Chaos", "=ds=#s13#", "0.08% to 0.34%" },
+		{ 21891, "INV_Misc_AhnQirajTrinket_04", "=q4=Shard of the Fallen Star", "=ds=#s14#", "0.11% to 0.82%" },
 		{ 0,"","","" },
 		{ 0,"","","" },
 		{ 0,"","","" },
@@ -2432,10 +2432,10 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0,"","","" },
 		{ 0,"","","" },
 		{ 0,"","","" },
-		{ 21218, "INV_Misc_QirajiCrystal_04", "=q3=Blue Qiraji Resonating Crystal", "=ds=#e7#", "10.64%" },
-		{ 21324, "INV_Misc_QirajiCrystal_01", "=q3=Yellow Qiraji Resonating Crystal", "=ds=#e7#", "12.15%" },
-		{ 21323, "INV_Misc_QirajiCrystal_03", "=q3=Green Qiraji Resonating Crystal", "=ds=#e7#", "11.62%" },
-		{ 21321, "INV_Misc_QirajiCrystal_02", "=q3=Red Qiraji Resonating Crystal", "=ds=#e7#", "1.39%" },
+		{ 21218, "INV_Misc_QirajiCrystal_04", "=q3=Blue Qiraji Resonating Crystal", "=ds=#e7#", "9% to 14%" },
+		{ 21324, "INV_Misc_QirajiCrystal_01", "=q3=Yellow Qiraji Resonating Crystal", "=ds=#e7#", "11% to 18%" },
+		{ 21323, "INV_Misc_QirajiCrystal_03", "=q3=Green Qiraji Resonating Crystal", "=ds=#e7#", "9% to 17%" },
+		{ 21321, "INV_Misc_QirajiCrystal_02", "=q3=Red Qiraji Resonating Crystal", "=ds=#e7#", "1.13% to 1.89%" },
 	};
 	AQ40Trash2 = {
 		{ 20876, "INV_QirajIdol_Death", "=q3=Idol of Death", "=q17=#c9#=ds=, =q9=#c5#=ds=, =q10=#c3#=ds=, =q11=#c8#", "0.26%" },
@@ -2729,13 +2729,13 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 10411, "INV_Boots_04", "=q2=Footpads of the Fang", "=ds=#s12#, #a2#", "19.07%" },
 		{ 6459, "INV_Boots_01", "=q2=Savage Trodders", "=ds=#s12#, #a3#", "24.39%" },
 	};
- WCVerdan = {
+	WCVerdan = {
 		{ 6630, "INV_Shield_10", "=q3=Seedcloud Buckler", "=ds=#w8#", "35.38%" },
 		{ 6631, "INV_Staff_25", "=q3=Living Root", "=ds=#w9#", "34.47%" },
 		{ 0, "", "", "" },
 		{ 6629, "INV_Misc_Cape_17", "=q2=Sporid Cape", "=ds=#s4#", "16.65%" },
 	};
- WCMutanus = {
+	WCMutanus = {
 		{ 6461, "INV_Shoulder_05", "=q3=Slime-encrusted Pads", "=ds=#s3#, #a1#", "22.96%" },
 		{ 6627, "INV_Chest_Plate08", "=q3=Mutant Scale Breastplate", "=ds=#s5#, #a3#", "18.33%" },
 		{ 6463, "INV_Jewelry_Ring_15", "=q3=Deep Fathom Ring", "=ds=#s13#", "21.99%" },
@@ -2746,7 +2746,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "" },
 		{ 81006, "", "=q2=Cowl of the Fang", "=ds=#s1#, #a1#", "5%" },
 	};
- WCDeviateFaerieDragon = {
+	WCDeviateFaerieDragon = {
 		{ 5243, "INV_Wand_11", "=q3=Firebelcher", "=ds=#w12#", "39.65%" };
 		{ 0, "", "", "" },
 		{ 6632, "INV_Misc_Cape_02", "=q2=Feyscale Cloak", "=ds=#s4#", "37.84%" };
@@ -5517,6 +5517,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	};
 	SCHOLOTheRavenian = {
 		{ 16716, "INV_Belt_15", "=q3=Wildheart Belt", "=ds=#s10#, #a2# (D1, =q13=#c1#=ds=)", "2.60%" },
+		{ 0, "", "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "5%" },
 		{ 0, "", "", "", "" },
 		{ 18681, "INV_Shoulder_05", "=q3=Burial Shawl", "=ds=#s3#, #a1#", "1.81%" },
@@ -5549,6 +5550,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	};
 	SCHOLOLordAlexeiBarov = {
 		{ 16722, "INV_Bracer_14", "=q3=Lightforge Bracers", "=ds=#s8#, #a4# (D1, =q16=#c4#=ds=)", "3.37%" },
+		{ 0, "", "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "5%" },
 		{ 0, "", "", "", "" },
 		{ 18681, "INV_Shoulder_05", "=q3=Burial Shawl", "=ds=#s3#, #a1#", "1.81%" },
@@ -5581,6 +5583,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	};
 	SCHOLOLadyIlluciaBarov = {
 		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "5%" },
+		{ 0, "", "", "", "" },
 		{ 0, "", "", "", "" },
 		{ 0, "", "", "", "" },
 		{ 18681, "INV_Shoulder_05", "=q3=Burial Shawl", "=ds=#s3#, #a1#", "1.81%" },

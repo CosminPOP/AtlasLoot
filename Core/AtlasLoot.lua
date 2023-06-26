@@ -253,6 +253,7 @@ function AtlasLootDefaultFrame_OnShow()
 	--Show the last displayed loot table
 	if AtlasLoot_IsLootTableAvailable(AtlasLootCharDB.LastBoss) then
 		AtlasLoot_ShowBossLoot(AtlasLootCharDB.LastBoss, AtlasLootCharDB.LastBossText, pFrame);
+		AtlasLoot_DewdropSubMenuRegister(AtlasLootCharDB.LastBoss);
 	else
 		AtlasLoot_ShowBossLoot("EmptyInstance", AL["AtlasLoot"], pFrame);
 	end
@@ -533,7 +534,6 @@ function AtlasLoot_SlashCommand(msg)
 		AtlasLootOptions_Toggle();
 	else
 		AtlasLootDefaultFrame:Show();
-		DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r |cffddabffIf you find anything missing, please /w Lexie or message me on Discord Lexie#4024|r")
 	end
 end
 
@@ -1834,7 +1834,10 @@ function AtlasLoot_NavButton_OnClick()
 		elseif string.sub(this.lootpage, 1, 12) == "WishListPage" then
 			AtlasLoot_ShowItemsFrame("WishList", this.lootpage, AL["WishList"], AtlasLootItemsFrame.refresh[4]);
 		else
+			AtlasLootCharDB.LastBoss = this.lootpage;
+			AtlasLootCharDB.LastBossText = this.title;
 			AtlasLoot_ShowItemsFrame(this.lootpage, AtlasLootItemsFrame.refresh[2], this.title, AtlasLootItemsFrame.refresh[4]);
+			
 		end
 	elseif AtlasLootItemsFrame.refresh and AtlasLootItemsFrame.refresh[2] then
 		AtlasLoot_ShowItemsFrame(this.lootpage, AtlasLootItemsFrame.refresh[2], this.title, AtlasFrame);
@@ -2187,10 +2190,10 @@ AtlasLoot_DewDropDown = {
 			},
 			[10] = {
 				[AL["Scarlet Monastery"]] = {
-					{ AL["Scarlet Monastery"].." "..AL["Graveyard"], "SMGraveyard", "Submenu" },
-					{ AL["Scarlet Monastery"].." "..AL["Library"], "SMLibrary", "Submenu" },
-					{ AL["Scarlet Monastery"].." "..AL["Armory"], "SMArmory", "Submenu" },
-					{ AL["Scarlet Monastery"].." "..AL["Cathedral"], "SMCathedral", "Submenu" },
+					{ AL["Scarlet Monastery (Graveyard)"], "SMGraveyard", "Submenu" },
+					{ AL["Scarlet Monastery (Library)"], "SMLibrary", "Submenu" },
+					{ AL["Scarlet Monastery (Armory)"], "SMArmory", "Submenu" },
+					{ AL["Scarlet Monastery (Cathedral)"], "SMCathedral", "Submenu" },
 				},
 			},
 			[11] = {
@@ -2216,9 +2219,9 @@ AtlasLoot_DewDropDown = {
 			},
 			[18] = {
 				[AL["Dire Maul"]] = {
-					{ AL["Dire Maul"].." "..AL["East"], "DireMaulEast", "Submenu" },
-					{ AL["Dire Maul"].." "..AL["West"], "DireMaulWest", "Submenu" },
-					{ AL["Dire Maul"].." "..AL["North"], "DireMaulNorth", "Submenu" },
+					{ AL["Dire Maul (East)"], "DireMaulEast", "Submenu" },
+					{ AL["Dire Maul (West)"], "DireMaulWest", "Submenu" },
+					{ AL["Dire Maul (North)"], "DireMaulNorth", "Submenu" },
 				},
 			},
 			[19] = {
@@ -2255,12 +2258,18 @@ AtlasLoot_DewDropDown = {
 				{ AL["Onyxia's Lair"], "Onyxia", "Submenu" },
 			},
 			[30] = {
-				{ AL["Blackwing Lair"], "BlackwingLair", "Submenu" },
+				{ AL["Lower Karazhan Halls"], "LowerKara", "Submenu" },
 			},
 			[31] = {
-				{ AL["Temple of Ahn'Qiraj"], "TempleofAQ", "Submenu" },
+				{ AL["Blackwing Lair"], "BlackwingLair", "Submenu" },
 			},
 			[32] = {
+				{ AL["Emerald Sanctum"], "EmeraldSanctum", "Submenu" },
+			},
+			[33] = {
+				{ AL["Temple of Ahn'Qiraj"], "TempleofAQ", "Submenu" },
+			},
+			[34] = {
 				{ AL["Naxxramas"], "Naxxramas", "Submenu" },
 			},
 		},
@@ -2354,7 +2363,7 @@ AtlasLoot_DewDropDown = {
 	[7] = {
 		[AL["World Events"]] = {
 			[1] = {
-				{ AL["Abyssal Council"], "AbyssalCouncil1", "Submenu" },
+				{ AL["Abyssal Council"], "AbyssalCouncil1", "Table" },
 			},
 			[2] = {
 				{ AL["Children's Week"], "ChildrensWeek", "Table" },
@@ -3058,22 +3067,22 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Zul'Gurub Rings"], "ZGRings" },
 	},
 	["BRRewards"] = {
-		{ AL["Exalted Reputation Rewards"], "BRRepExalted" },
-		{ AL["Revered Reputation Rewards"], "BRRepRevered" },
-		{ AL["Honored Reputation Rewards"], "BRRepHonored" },
 		{ AL["Friendly Reputation Rewards"], "BRRepFriendly" },
+		{ AL["Honored Reputation Rewards"], "BRRepHonored" },
+		{ AL["Revered Reputation Rewards"], "BRRepRevered" },
+		{ AL["Exalted Reputation Rewards"], "BRRepExalted" },
 	},
 	["AVRewards"] = {
-		{ AL["Exalted Reputation Rewards"], "AVRepExalted" },
-		{ AL["Revered Reputation Rewards"], "AVRepRevered" },
-		{ AL["Honored Reputation Rewards"], "AVRepHonored" },
 		{ AL["Friendly Reputation Rewards"], "AVRepFriendly" },
+		{ AL["Honored Reputation Rewards"], "AVRepHonored" },
+		{ AL["Revered Reputation Rewards"], "AVRepRevered" },
+		{ AL["Exalted Reputation Rewards"], "AVRepExalted" },
 	},
 	["ABRewards"] = {
-		{ AL["Exalted Reputation Rewards"], "ABRepExalted" },
-		{ AL["Revered Reputation Rewards"], "ABRepRevered5059" },
-		{ AL["Honored Reputation Rewards"], "ABRepHonored5059" },
 		{ AL["Friendly Reputation Rewards"], "ABRepFriendly5059" },
+		{ AL["Honored Reputation Rewards"], "ABRepHonored5059" },
+		{ AL["Revered Reputation Rewards"], "ABRepRevered5059" },
+		{ AL["Exalted Reputation Rewards"], "ABRepExalted" },
 	},
 	["PvPArmorSets"] = {
 		{ AL["Priest"], "PVPPriest" },
@@ -3087,10 +3096,11 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Warrior"], "PVPWarrior" },
 	},
 	["WSGRewards"] = {
-		{ AL["Exalted Reputation Rewards"], "WSGRepExalted60" },
-		{ AL["Revered Reputation Rewards"], "WSGRepRevered5059" },
+		{ "Warsong Gulch Meun", "WSGRepMenu" },
+		{ AL["Friendly Reputation Rewards"], "WSGRepFriendly" },
 		{ AL["Honored Reputation Rewards"], "WSGRepHonored5059" },
-		{ AL["Friendly Reputation Rewards"], "WSGRepFriendly4049" },
+		{ AL["Revered Reputation Rewards"], "WSGRepRevered5059" },
+		{ AL["Exalted Reputation Rewards"], "WSGRepExalted60" },
 	},
 	["Alchemy"] = {
 		{ AtlasLoot_TableNames["AlchemyApprentice1"][1], "AlchemyApprentice1" },

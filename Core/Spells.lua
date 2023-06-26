@@ -740,6 +740,20 @@ GetSpellInfoVanillaDB = {
 				[2] = {8925},
 			},
 		},
+		[65032] = {
+			["name"] = "Poisons: Agitating Poison I",
+			["requires"] = "",
+			["tools"] = "",
+			["castTime"] = 3,
+			["text"] = "Coats a weapon with poison that lasts for 30 minutes.\nEach strike has a 20% chance of poisoning the enemy which instantly inflicts 67 to 86 Nature damage, and causes additional threat. 115 charges.",
+			["craftItem"] = 65032,
+			["craftQuantityMin"] = "",
+			["craftQuantityMax"] = "",
+			["reagents"] = {
+				[1] = {2931, 2},
+				[2] = {3372},
+			},
+		},
 		[3420] = {
 			["name"] = "Poisons: Crippling Poison",
 			["requires"] = "",
@@ -18610,7 +18624,7 @@ GetSpellInfoVanillaDB = {
 				[2] = {17012, 12},
 				[3] = {12810, 10},
 				[4] = {15407, 4},
-				[5] = {14341, 4},
+				[5] = {14227, 4},
 			},
 		},
 		[22927] = {
