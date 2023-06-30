@@ -69,7 +69,7 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 --Establish version number and compatible version of Atlas
 local VERSION_MAJOR = "1";
 local VERSION_MINOR = "0";
-local VERSION_BOSSES = "2";
+local VERSION_BOSSES = "9";
 ATLASLOOT_VERSION = "|cffFF8400AtlasLoot TW Edition v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
@@ -170,6 +170,7 @@ AtlasLoot_MenuList = {
 	"ABRepMenu",
 	"AVRepMenu",
 	"WSGRepMenu",
+	"BRRepMenu",
 	"PVPSET",
 	"SETMENU",
 	"AQ20SET",
@@ -238,7 +239,7 @@ AtlasLootDefaultFrame_OnShow:
 Called whenever the loot browser is shown and sets up buttons and loot tables
 ]]
 function AtlasLootDefaultFrame_OnShow()
-	--Definition of where I want the loot table to be shown	
+	--Definition of where I want the loot table to be shown
 	pFrame = { "TOPLEFT", "AtlasLootDefaultFrame_LootBackground", "TOPLEFT", "2", "-2" };
 	--Having the Atlas and loot browser frames shown at the same time would
 	--cause conflicts, so I hide the Atlas frame when the loot browser appears
@@ -349,8 +350,10 @@ function AtlasLoot_OnVariablesLoaded()
 		--We also create a helper table here which store IDs that need to search for
 		local idsToSearch = {};
 		for i = 1, table.getn(AtlasLootCharDB["WishList"]) do
-			if (AtlasLootCharDB["WishList"][i][1] > 0 and not AtlasLootCharDB["WishList"][i][5]) then
-				tinsert(idsToSearch, i, AtlasLootCharDB["WishList"][i][1]);
+			if (type(AtlasLootCharDB["WishList"][i][1]) == "number") then
+				if (AtlasLootCharDB["WishList"][i][1] > 0 and not AtlasLootCharDB["WishList"][i][5]) then
+					tinsert(idsToSearch, i, AtlasLootCharDB["WishList"][i][1]);
+				end
 			end
 		end
 		if table.getn(idsToSearch) > 0 then
@@ -530,6 +533,7 @@ function AtlasLoot_SlashCommand(msg)
 		AtlasLootOptions_Toggle();
 	else
 		AtlasLootDefaultFrame:Show();
+		DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r |cffddabffIf you find anything missing, please /w Lexie or message me on Discord Lexie#4024|r")
 	end
 end
 
@@ -600,7 +604,7 @@ end
 
 --[[
 AtlasLoot_AtlasScrollBar_Update:
-Hooks the Atlas scroll frame.  
+Hooks the Atlas scroll frame.
 Required as the Atlas function cannot deal with the AtlasLoot button template or the added Atlasloot entries
 ]]
 function AtlasLoot_AtlasScrollBar_Update()
@@ -826,7 +830,7 @@ function AtlasLoot_Atlas_OnShow()
 		AtlasLootPanel:Hide();
 	else
 		AtlasLootPanel:Show();
-	end 
+	end
 	pFrame = AtlasFrame;
 end
 
@@ -856,7 +860,7 @@ function AtlasLootBoss_OnClick(name)
 		getglobal(name.."_Loot"):Show();
 		AtlasLootItemsFrame:Hide();
 		AtlasLootItemsFrame.activeBoss = nil;
-	else	
+	else
 		--If an loot table is associated with the button, show it.  Note multiple tables need to be checked due to the database structure
 		if (AtlasLootBossButtons[zoneID] ~= nil and AtlasLootBossButtons[zoneID][id] ~= nil and AtlasLootBossButtons[zoneID][id] ~= "") then
 			if AtlasLoot_IsLootTableAvailable(AtlasLootBossButtons[zoneID][id]) then
@@ -901,6 +905,7 @@ Legacy function used in Cosmos integration to open the loot browser
 ]]
 function AtlasLoot_ShowMenu()
 	AtlasLootDefaultFrame:Show();
+	DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r |cffddabffIf you find anything missing, please /w Lexie or message me on Discord Lexie#4024|r")
 end
 
 --[[
@@ -1133,6 +1138,8 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 		AtlasLootT0SetMenu();
 	elseif(dataID=="PVPMENU") then
 		AtlasLootPvPMenu();
+	elseif(dataID=="BRRepMenu") then
+		AtlasLootBRRepMenu();
 	elseif(dataID=="WSGRepMenu") then
 		AtlasLootWSGRepMenu();
 	elseif(dataID=="ABRepMenu") then
@@ -1225,7 +1232,7 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 					else
 						quantityFrame = getglobal("AtlasLootItem_"..i.."_Quantity");
 						quantityFrame:SetText("")
-					end					
+					end
 				end
 				--Store data about the state of the items frame to allow minor tweaks or a recall of the current loot page
 				AtlasLootItemsFrame.refresh = {dataID, dataSource_backup, boss, pFrame};
@@ -1523,7 +1530,7 @@ Called when a button in AtlasLoot_Dewdrop is clicked
 function AtlasLoot_DewDropClick(tablename, text, tabletype)
 	--Definition of where I want the loot table to be shown
 	pFrame = { "TOPLEFT", "AtlasLootDefaultFrame_LootBackground", "TOPLEFT", "2", "-2" };
-	
+
 	--If the button clicked was linked to a loot table
 	if tabletype == "Table" then
 		--Show the loot table
@@ -2034,7 +2041,7 @@ AtlasLootButton_UpdatePosition:
 Function to move the minimap button around the minimap.
 ]]
 function AtlasLootMinimapButton_UpdatePosition()
-	AtlasLootMinimapButtonFrame:SetPoint(	
+	AtlasLootMinimapButtonFrame:SetPoint(
 		"TOPLEFT",
 		"Minimap",
 		"TOPLEFT",
@@ -2093,10 +2100,10 @@ AtlasLootButton_BeingDragged:
 Function to move the minimap button around the minimap.
 ]]
 function AtlasLootMinimapButton_BeingDragged()
-	local xpos,ypos = GetCursorPosition() 
-	local xmin,ymin = Minimap:GetLeft(), Minimap:GetBottom() 
-	xpos = xmin-xpos/UIParent:GetScale()+70 
-	ypos = ypos/UIParent:GetScale()-ymin-70 
+	local xpos,ypos = GetCursorPosition()
+	local xmin,ymin = Minimap:GetLeft(), Minimap:GetBottom()
+	xpos = xmin-xpos/UIParent:GetScale()+70
+	ypos = ypos/UIParent:GetScale()-ymin-70
 	AtlasLootMinimapButton_SetPosition(math.deg(math.atan2(ypos,xpos)));
 end
 
@@ -2151,34 +2158,34 @@ end
 AtlasLoot_DewDropDown = {
 	[1] = {
 		[AL["Dungeons & Raids"]] = {
-			[1] = { 
+			[1] = {
 				{ AL["Ragefire Chasm"], "RagefireChasm", "Submenu" },
 			},
-			[2] = { 
+			[2] = {
 				{ AL["Wailing Caverns"], "WailingCaverns", "Submenu" },
 			},
-			[3] = { 
+			[3] = {
 				{ AL["The Deadmines"], "Deadmines", "Submenu" },
 			},
-			[4] = { 
+			[4] = {
 				{ AL["Shadowfang Keep"], "ShadowfangKeep", "Submenu" },
 			},
-			[5] = { 
+			[5] = {
 				{ AL["Blackfathom Deeps"], "BlackfathomDeeps", "Submenu" },
 			},
-			[6] = { 
+			[6] = {
 				{ AL["The Stockade"], "TheStockade", "Submenu" },
 			},
-			[7] = { 
+			[7] = {
 				{ AL["Gnomeregan"], "Gnomeregan", "Submenu" },
 			},
-			[8] = { 
+			[8] = {
 				{ AL["Razorfen Kraul"], "RazorfenKraul", "Submenu" },
 			},
-			[9] = { 
+			[9] = {
 				{ AL["The Crescent Grove"], "TheCrescentGrove", "Submenu" },
 			},
-			[10] = { 
+			[10] = {
 				[AL["Scarlet Monastery"]] = {
 					{ AL["Scarlet Monastery"].." "..AL["Graveyard"], "SMGraveyard", "Submenu" },
 					{ AL["Scarlet Monastery"].." "..AL["Library"], "SMLibrary", "Submenu" },
@@ -2186,71 +2193,74 @@ AtlasLoot_DewDropDown = {
 					{ AL["Scarlet Monastery"].." "..AL["Cathedral"], "SMCathedral", "Submenu" },
 				},
 			},
-			[11] = { 
+			[11] = {
 				{ AL["Razorfen Downs"], "RazorfenDowns", "Submenu" },
 			},
-			[12] = { 
+			[12] = {
 				{ AL["Uldaman"], "Uldaman", "Submenu" },
 			},
-			[13] = { 
+			[13] = {
 				{ AL["Maraudon"], "Maraudon", "Submenu" },
 			},
-			[14] = { 
+			[14] = {
 				{ AL["Zul'Farrak"], "ZulFarrak", "Submenu" },
 			},
-			[15] = { 
+			[15] = {
 				{ AL["The Sunken Temple"], "SunkenTemple", "Submenu" },
 			},
-			[16] = { 
+			[16] = {
+				{ AL["Hateforge Quarry"], "HateforgeQuarry", "Submenu" },
+			},
+			[17] = {
 				{ AL["Blackrock Depths"], "BlackrockDepths", "Submenu" },
 			},
-			[17] = { 
+			[18] = {
 				[AL["Dire Maul"]] = {
 					{ AL["Dire Maul"].." "..AL["East"], "DireMaulEast", "Submenu" },
 					{ AL["Dire Maul"].." "..AL["West"], "DireMaulWest", "Submenu" },
 					{ AL["Dire Maul"].." "..AL["North"], "DireMaulNorth", "Submenu" },
-				}, 
+				},
 			},
-			[18] = { 
+			[19] = {
 				{ AL["Scholomance"], "Scholomance", "Submenu" },
 			},
-			[19] = { 
+			[20] = {
 				{ AL["Stratholme"], "Stratholme", "Submenu" },
 			},
-			[20] = { 
+			[21] = {
 				{ AL["Lower Blackrock Spire"], "LowerBlackrock", "Submenu" },
 			},
-			[21] = { 
+			[22] = {
 				{ AL["Upper Blackrock Spire"], "UpperBlackrock", "Submenu" },
 			},
-			[22] = { 
+			[23] = {
 				{ AL["Karazhan Crypt"], "KarazhanCrypt", "Submenu" },
 			},
-			[23] = { 
+			[24] = {
 				{ AL["Caverns of Time: Black Morass"], "CavernsOfTimeBlackMorass", "Submenu" },
 			},
-			[24] = { 
+			[25] = {
 				{ AL["Stormwind Vault"], "StormwindVault", "Submenu" },
 			},
-			[25] = { 
+			[26] = {
 				{ AL["Zul'Gurub"], "ZulGurub", "Submenu" },
 			},
-			[26] = { 
+			[27] = {
 				{ AL["Ruins of Ahn'Qiraj"], "RuinsofAQ", "Submenu" },
 			},
-			[27] = { 
+			[28] = {
 				{ AL["Molten Core"], "MoltenCore", "Submenu" },
 			},
-			[28] = { 
+			[29] = {
 				{ AL["Onyxia's Lair"], "Onyxia", "Submenu" },
 			},
-			[29] = { 
+			[30] = {
 				{ AL["Blackwing Lair"], "BlackwingLair", "Submenu" },
 			},
-			[30] = { 
+			[31] = {
 				{ AL["Temple of Ahn'Qiraj"], "TempleofAQ", "Submenu" },
 			},
-			[31] = { 
+			[32] = {
 				{ AL["Naxxramas"], "Naxxramas", "Submenu" },
 			},
 		},
@@ -2263,62 +2273,65 @@ AtlasLoot_DewDropDown = {
 	},
 	[4] = {
 		[AL["PvP Rewards"]] = {
-			[1] = { 
+			[1] = {
 				{ AL["PvP Armor Sets"], "PvPArmorSets", "Submenu" },
 			},
-			[2] = { 
+			[2] = {
 				{ AL["PvP Accessories"], "PvP60Accessories1", "Table" },
 			},
-			[3] = { 
+			[3] = {
 				{ AL["Rank 14 Weapons"], "PVPWeapons1", "Table" },
 			},
-			[4] = { 
+			[4] = {
 				{ AL["PvP Mounts"], "PvPMountsPvP", "Table" },
 			},
-			[5] = { 
+			[5] = {
+				{ AL["Blood Ring"], "BRRewards", "Submenu" },
+			},
+			[6] = {
 				{ AL["Alterac Valley"], "AVRewards", "Submenu" },
 			},
-			[6] = { 
+			[7] = {
 				{ AL["Arathi Basin"], "ABRewards", "Submenu" },
 			},
-			[7] = { 
+			[8] = {
 				{ AL["Warsong Gulch"], "WSGRewards", "Submenu" },
 			},
 		},
 	},
 	[5] = {
 		[AL["Sets/Collections"]] = {
-			[1] = { 
+			[1] = {
 				{ AL["Pre 60 Sets"], "Pre60Sets", "Submenu" },
 			},
-			[2] = { 
+			[2] = {
 				{ AL["Dungeon 1/2 Sets"], "DungeonSets12", "Submenu" },
 			},
-			[3] = { 
+			[3] = {
 				{ AL["Ruins of Ahn'Qiraj Sets"], "AQ20Sets", "Submenu" },
 			},
-			[4] = { 
+			[4] = {
 				{ AL["Temple of Ahn'Qiraj Sets"], "AQ40Sets", "Submenu" },
 			},
-			[5] = { 
+			[5] = {
 				{ AL["Zul'Gurub Sets"], "ZGSets", "Submenu" },
 			},
-			[6] = { 
+			[6] = {
 				{ AL["Tier 1 Sets"], "T1Sets", "Submenu" },
 			},
-			[7] = { 
+			[7] = {
 				{ AL["Tier 2 Sets"], "T2Sets", "Submenu" },
 			},
-			[8] = { 
+			[8] = {
 				{ AL["Tier 3 Sets"], "T3Sets", "Submenu" },
 			},
-			[9] = { 
+			[9] = {
 				{ AL["Legendary Items"], "Legendaries", "Table" },
 			},
 			[10] = {
 				{ AL["Rare Pets"], "RarePets1", "Table" },
 			},
-			[11] = { 
+			[11] = {
 				{ AL["Rare Mounts"], "RareMounts", "Table" },
 			},
 			[12] = {
@@ -2340,43 +2353,43 @@ AtlasLoot_DewDropDown = {
 	},
 	[7] = {
 		[AL["World Events"]] = {
-			[1] = { 
+			[1] = {
 				{ AL["Abyssal Council"], "AbyssalCouncil1", "Submenu" },
 			},
-			[2] = { 
+			[2] = {
 				{ AL["Children's Week"], "ChildrensWeek", "Table" },
 			},
-			[3] = { 
+			[3] = {
 				{ AL["Elemental Invasion"], "ElementalInvasion", "Table" },
 			},
-			[4] = { 
+			[4] = {
 				{ AL["Feast of Winter Veil"], "Winterviel1", "Table" },
 			},
-			[5] = { 
+			[5] = {
 				{ AL["Gurubashi Arena Booty Run"], "GurubashiArena", "Table" },
 			},
-			[6] = { 
+			[6] = {
 				{ AL["Hallow's End"], "Halloween1", "Table" },
 			},
-			[7] = { 
+			[7] = {
 				{ AL["Harvest Festival"], "HarvestFestival", "Table" },
 			},
-			[8] = { 
+			[8] = {
 				{ AL["Love is in the Air"], "Valentineday", "Table" },
 			},
-			[9] = { 
+			[9] = {
 				{ AL["Lunar Festival"], "LunarFestival1", "Table" },
 			},
-			[10] = { 
+			[10] = {
 				{ AL["Midsummer Fire Festival"], "MidsummerFestival", "Table" },
 			},
-			[11] = { 
+			[11] = {
 				{ AL["Noblegarden"], "Noblegarden", "Table" },
 			},
-			[12] = { 
+			[12] = {
 				{ AL["Scourge Invasion"], "ScourgeInvasionEvent1", "Table" },
 			},
-			[13] = { 
+			[13] = {
 				{ AL["Stranglethorn Fishing Extravaganza"], "FishingExtravaganza", "Table" },
 			},
 		},
@@ -2393,15 +2406,16 @@ AtlasLoot_DewDropDown = {
 			[8] = { { (AL["Tailoring"]), "Tailoring", "Submenu" }, },
 			[9] = { { (AL["Cooking"]), "Cooking", "Submenu" }, },
 			[10] = { { (AL["First Aid"]), "FirstAid1", "Table" }, },
-			[11] = { { (AL["Poisons"]), "Poisons1", "Table" }, },
-			[12] = { 
+			[11] = { { (AL["Survival"]), "Survival1", "Table" }, },
+			[12] = { { (AL["Poisons"]), "Poisons1", "Table" }, },
+			[13] = {
 				[AL["Crafted Sets"]] = {
 					{ (AL["Blacksmithing"]), "CraftSetBlacksmith", "Submenu" },
 					{ (AL["Leatherworking"]), "CraftSetLeatherwork", "Submenu" },
 					{ (AL["Tailoring"]), "CraftSetTailoring", "Submenu" },
-				}, 
+				},
 			},
-			[13] = { { AL["Crafted Epic Weapons"], "CraftedWeapons1", "Table" }, },
+			[14] = { { AL["Crafted Epic Weapons"], "CraftedWeapons1", "Table" }, },
 		},
 	},
 };
@@ -2409,6 +2423,14 @@ AtlasLoot_DewDropDown = {
 --This table defines all the subtables needed for the full menu
 --Each sub table entry contains the text entry and the loot table that goes wih it
 AtlasLoot_DewDropDown_SubTables = {
+	["HateforgeQuarry"] = {
+		{ AL["High Foreman Bargul Blackhammer"], "HQHighForemanBargulBlackhammer" },
+		{ AL["Engineer Figgles"], "HQEngineerFiggles" },
+		{ AL["Corrosis"], "HQCorrosis" },
+		{ AL["Hatereaver Annihilator"], "HQHatereaverAnnihilator" },
+		{ AL["Hargesh Doomcaller"], "HQHargeshDoomcaller" },
+		{ AL["Trash Mobs"], "HQTrash" },
+	},
 	["BlackrockDepths"] = {
 		{ AL["Lord Roccor"], "BRDLordRoccor" },
 		{ AL["High Interrogator Gerstahn"], "BRDHighInterrogatorGerstahn" },
@@ -2475,8 +2497,11 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Marrowspike"], "KCMarrowspike" },
 		{ AL["Hivaxxis"], "KCHivaxxis" },
 		{ AL["Corpsemuncher"], "KCCorpsemuncher" },
+		{ AL["Guard Captain Gort"], "KCGuardCaptainGort" },
 		{ AL["Archlich Enkhraz"], "KCArchlichEnkhraz" },
+		{ AL["Commander Anderson"], "KCCommanderAnderson" },
 		{ AL["Alarus"], "KCAlarus" },
+		{ AL["Half-Buried Treasure Chest"], "KCTreasure" },
 	},
 	["CavernsOfTimeBlackMorass"] = {
 		{ AL["Chronar"], "COTBMChronar" },
@@ -2523,6 +2548,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["High Priestess A'lathea"], "TCGHighPriestessAlathea" },
 		{ AL["Fenektis the Deceiver"], "TCGFenektistheDeceiver" },
 		{ AL["Master Raxxieth"], "TCGMasterRaxxieth" },
+		{ AL["Trash Mobs"], "TCGTrash" },
 	},
 	["Gnomeregan"] = {
 		{ AL["Grubbis"], "GnGrubbis" },
@@ -2625,7 +2651,11 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Trash Mobs"], "SFKTrash" },
 	},
 	["TheStockade"] = {
+		{ AL["Targorr the Dread"], "SWStTargorr" },
 		{ AL["Kam Deepfury"], "SWStKamDeepfury" },
+		{ AL["Hamhock"], "SWStHamhock" },
+		{ AL["Dextren Ward"], "SWStDextren" },
+		{ AL["Bazil Thredd"], "SWStBazil" },
 		{ AL["Bruegal Ironknuckle"].." ("..AL["Rare"]..")", "SWStBruegalIronknuckle" },
 		{ AL["Trash Mobs"], "SWStTrash" },
 	},
@@ -2731,7 +2761,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Lord Hel'nurath"].." ("..AL["Rare"]..")", "DMWHelnurath" },
 		{ AL["Prince Tortheldrin"], "DMWPrinceTortheldrin" },
 		{ AL["Trash Mobs"], "DMWTrash" },
-		{ AL["Dire Maul Books"], "DMBooks" }, 
+		{ AL["Dire Maul Books"], "DMBooks" },
 	},
 	["DireMaulNorth"] = {
 		{ AL["Guard Mol'dar"], "DMNGuardMoldar" },
@@ -2756,13 +2786,16 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Tinkerer Gizlock"], "MaraTinkererGizlock" },
 		{ AL["Rotgrip"], "MaraRotgrip" },
 		{ AL["Princess Theradras"], "MaraPrincessTheradras" },
+		{ AL["Trash Mobs"], "MaraTrash" },
 	},
 	["Onyxia"] = {
 		{ AL["Onyxia"], "Onyxia" },
 	},
 	["RagefireChasm"] = {
 		{ AL["Taragaman the Hungerer"], "RFCTaragaman" },
+		{ AL["Oggleflint"], "RFCOggleflint" },
 		{ AL["Jergosh the Invoker"], "RFCJergosh" },
+		{ AL["Bazzalan"], "RFCBazzalan" },
 	},
 	["RazorfenDowns"] = {
 		{ AL["Tuten'kash"], "RFDTutenkash" },
@@ -2844,6 +2877,9 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ "Turtlhu, the Black Turtle of Doom", "Turtlhu" },
 		{ "Nerubian Overseer", "Nerubian" },
 		{ "Dark Reaver of Karazhan", "Reaver" },
+		{ "Ostarius", "Ostarius" },
+		{ "Concavius", "Concavius" },
+		{ "There Is No Cow Level", "CowKing" },
 	},
 	["RareSpawns"] = {
 		{ "Tarangos The Dampener", "Tarangos" },
@@ -2856,6 +2892,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ "Zareth Terrorblade Demon Hunter", "Zareth" },
 		{ "Jal'akar Dire Troll", "Jalakar" },
 		{ "Explorer Ashbeard", "Ashbeard" },
+		{ "Admiral Barean Westwind", "AdmiralBareanWestwind" },
 	},
 	["AbyssalCouncil1"] = {
 		{ AL["Abyssal Council"].." - "..AL["Templars"], "AbyssalTemplars" },
@@ -2867,6 +2904,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Bloodsail Buccaneers"], "Bloodsail1" },
 		{ AL["Brood of Nozdormu"], "AQBroodRings" },
 		{ AL["Cenarion Circle"], "Cenarion1" },
+		{ AL["Dalaran"], "Dalaran" },
 		{ AL["Darkmoon Faire"], "Darkmoon" },
 		{ AL["Frostwolf Clan"], "Frostwolf1" },
 		{ AL["Gelkis Clan Centaur"], "GelkisClan1" },
@@ -2875,10 +2913,20 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Stormpike Guard"], "Stormpike1" },
 		{ AL["Thorium Brotherhood"], "Thorium1" },
 		{ AL["Timbermaw Hold"], "Timbermaw" },
+		{ AL["Wardens of Time"], "Warderns1" },
 		{ AL["Wintersaber Trainers"], "Wintersaber1" },
 		{ AL["Zandalar Tribe"], "Zandalar1" },
+		{ AL["Darnassus"], "Darnassus" },
+		{ AL["Gnomeregan Exiles"], "GnomereganExiles" },
+		{ AL["Ironforge"], "Ironforge" },
 		{ AL["Silvermoon Remnant"], "Helf" },
+		{ AL["Stormwind"], "Stormwind" },
+		{ AL["Darkspear Trolls"], "DarkspearTrolls" },
+		{ AL["Durotar Labor Union"], "DurotarLaborUnion" },
+		{ AL["Orgrimmar"], "Orgrimmar" },
 		{ AL["Revantusk Trolls"], "Revantusk" },
+		{ AL["Thunder Bluff"], "ThunderBluff" },
+		{ AL["Undercity"], "Undercity" },
 	},
 	["BoEWorldEpics"] = {
 		{ AtlasLoot_TableNames["WorldEpics3"][1], "WorldEpics3" },
@@ -2886,17 +2934,21 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AtlasLoot_TableNames["WorldEpics1"][1], "WorldEpics1" },
 	},
 	["CraftSetBlacksmith"] = {
+		{ AL["Steel Plate"], "SteelPlate" },
 		{ AL["Imperial Plate"], "ImperialPlate" },
 		{ AL["The Darksoul"], "TheDarksoul" },
 		{ AL["Bloodsoul Embrace"], "BloodsoulEmbrace" },
 	},
 	["CraftSetLeatherwork"] = {
+		{ AL["Grifter's Armor"], "GriftersArmor" },
+		{ AL["Primalist's Trappings"], "PrimalistsTrappings" },
 		{ AL["Volcanic Armor"], "VolcanicArmor" },
 		{ AL["Ironfeather Armor"], "IronfeatherArmor" },
 		{ AL["Stormshroud Armor"], "StormshroudArmor" },
 		{ AL["Devilsaur Armor"], "DevilsaurArmor" },
 		{ AL["Blood Tiger Harness"], "BloodTigerH" },
 		{ AL["Primal Batskin"], "PrimalBatskin" },
+		{ AL["Red Dragon Mail"], "RedDragonM" },
 		{ AL["Green Dragon Mail"], "GreenDragonM" },
 		{ AL["Blue Dragon Mail"], "BlueDragonM" },
 		{ AL["Black Dragon Mail"], "BlackDragonM" },
@@ -3001,9 +3053,15 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Spider's Kiss"], "SpiderKiss" },
 		{ AL["Spirit of Eskhandar"], "SpiritofEskhandar" },
 		{ AL["The Gladiator"], "BLACKROCKD" },
-		{ AL["The Postmaster"], "SCARLET" },
+		{ AL["The Postmaster"], "STRAT" },
 		{ AL["The Twin Blades of Hakkari"], "HakkariBlades" },
 		{ AL["Zul'Gurub Rings"], "ZGRings" },
+	},
+	["BRRewards"] = {
+		{ AL["Exalted Reputation Rewards"], "BRRepExalted" },
+		{ AL["Revered Reputation Rewards"], "BRRepRevered" },
+		{ AL["Honored Reputation Rewards"], "BRRepHonored" },
+		{ AL["Friendly Reputation Rewards"], "BRRepFriendly" },
 	},
 	["AVRewards"] = {
 		{ AL["Exalted Reputation Rewards"], "AVRepExalted" },
@@ -3347,20 +3405,28 @@ function AtlasLootItem_OnClick(arg1)
 			end
 		elseif IsShiftKeyDown() and not iteminfo and this.itemID ~= 0 then
 			if AtlasLootCharDB.SafeLinks then
-				if ChatFrameEditBox:IsVisible() then
+				if WIM_EditBoxInFocus then
+					WIM_EditBoxInFocus:Insert("["..name.."]");
+				elseif ChatFrameEditBox:IsVisible() then
 					ChatFrameEditBox:Insert("["..name.."]");
 				else
 					AtlasLoot_SayItemReagents(this.itemID, nil, name, true)
 				end
 			elseif AtlasLootCharDB.AllLinks then
-				if ChatFrameEditBox:IsVisible() then
+				if WIM_EditBoxInFocus then
+					WIM_EditBoxInFocus:Insert("\124"..string.sub(color, 2).."|Hitem:"..this.itemID.."\124h["..name.."]|h|r");
+				elseif ChatFrameEditBox:IsVisible() then
 					ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..this.itemID.."\124h["..name.."]|h|r");
 				else
 					AtlasLoot_SayItemReagents(this.itemID, color, name)
 				end
 			end
-		elseif(ChatFrameEditBox:IsVisible() and iteminfo and IsShiftKeyDown()) and this.itemID ~= 0 then
-			ChatFrameEditBox:Insert(color.."|Hitem:"..this.itemID..":0:0:0|h["..name.."]|h|r");
+		elseif(iteminfo and IsShiftKeyDown()) and this.itemID ~= 0 then
+			if WIM_EditBoxInFocus then
+				WIM_EditBoxInFocus:Insert(color.."|Hitem:"..this.itemID..":0:0:0|h["..name.."]|h|r");
+			elseif ( ChatFrameEditBox:IsVisible() ) then
+				ChatFrameEditBox:Insert(color.."|Hitem:"..this.itemID..":0:0:0|h["..name.."]|h|r");
+			end
 		elseif IsShiftKeyDown() and iteminfo and this.itemID ~= 0 then
 			AtlasLoot_SayItemReagents(this.itemID, color, name);
 		--If control-clicked, use the dressing room
@@ -3406,11 +3472,20 @@ function AtlasLootItem_OnClick(arg1)
 	elseif isSpell then
 		if IsShiftKeyDown() then
 			if tonumber(string.sub(this.itemID, 2)) < 100000 then
-				if ChatFrameEditBox:IsVisible() then
+				if WIM_EditBoxInFocus then
 					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
 					if craftitem ~= nil and craftitem ~= "" then
 						local craftname = GetItemInfo(craftitem)
-						ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem.."\124h["..craftname.."]|h|r");
+						WIM_EditBoxInFocus:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem.."\124h["..craftname.."]|h|r");
+					else
+						WIM_EditBoxInFocus:Insert(name);
+					end
+				elseif ChatFrameEditBox:IsVisible() then
+					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
+					if craftitem ~= nil and craftitem ~= "" then
+						local craftname = GetItemInfo(craftitem)
+						--ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem.."\124h["..craftname.."]|h|r");
+						ChatFrameEditBox:Insert("\124"..string.sub(color, 2).."|Hitem:"..craftitem..":0:0:0\124h["..craftname.."]|h|r"); -- Fix for Gurky's discord chat bot
 					else
 						ChatFrameEditBox:Insert(name);
 					end
@@ -3418,7 +3493,15 @@ function AtlasLootItem_OnClick(arg1)
 					AtlasLoot_SayItemReagents(this.itemID)
 				end
 			else
-				if ChatFrameEditBox:IsVisible() then
+				if WIM_EditBoxInFocus then
+					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
+					if craftitem ~= nil and craftitem ~= "" then
+						local craftname = GetItemInfo(craftitem)
+						WIM_EditBoxInFocus:Insert(AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]));
+					else
+						WIM_EditBoxInFocus:Insert(name);
+					end
+				elseif ChatFrameEditBox:IsVisible() then
 					local craftitem = GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]
 					if craftitem ~= nil and craftitem ~= "" then
 						local craftname = GetItemInfo(craftitem)
@@ -3431,7 +3514,7 @@ function AtlasLootItem_OnClick(arg1)
 						chatnumber = ChatFrameEditBox.tellTarget
 					elseif channel == "CHANNEL" then
 						chatnumber = ChatFrameEditBox.channelTarget
-					end	
+					end
 					SendChatMessage(AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["craftspells"][tonumber(string.sub(this.itemID, 2))]["craftItem"]),channel,nil,chatnumber);
 				end
 			end
@@ -3475,7 +3558,7 @@ local function idFromLink(itemlink)
 		local _,_,id = string.find(itemlink, "|Hitem:([^:]+)%:")
 		return tonumber(id)
 	end
-	return nil	
+	return nil
 end
 
 function AtlasLoot_CheckBagsForItems(id, qty)
@@ -3510,13 +3593,31 @@ end
 
 function AtlasLoot_SayItemReagents(id, color, name, safe)
 	if not id then return end
-	local channel, chatnumber = ChatFrameEditBox.chatType;
 	local chatline = "";
 	local itemCount = 0;
-	if channel == "WHISPER" then
-		chatnumber = ChatFrameEditBox.tellTarget
-	elseif channel == "CHANNEL" then
-		chatnumber = ChatFrameEditBox.channelTarget
+
+	local tListActivity = {}
+	local tCount = 0
+
+	if (WIM_IconItems and WIM_Icon_SortByActivity) then
+		for key in WIM_IconItems do
+			table.insert(tListActivity, key)
+			tCount = tCount + 1
+		end
+
+		table.sort(tListActivity, WIM_Icon_SortByActivity)
+	end
+
+	if tListActivity[1] and WIM_Windows and WIM_Windows[tListActivity[1]].is_visible then
+		channel = "WHISPER";
+		chatnumber = tListActivity[1];
+	else
+		channel,chatnumber = ChatFrameEditBox.chatType;
+	    if channel=="WHISPER" then
+			chatnumber = ChatFrameEditBox.tellTarget
+		elseif channel=="CHANNEL" then
+			chatnumber = ChatFrameEditBox.channelTarget
+		end
 	end
 	if string.sub( id, 1, 1 ) == "s" then
 		local spellid = string.sub( id, 2 )
@@ -3571,7 +3672,14 @@ function AtlasLoot_SayItemReagents(id, color, name, safe)
 	elseif string.sub( id,1 ,1 ) == "e" then
 		local spellid = string.sub( id, 2 )
 		local name = GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["name"]
-		if ChatFrameEditBox:IsVisible() then
+		if tListActivity[1] and WIM_Windows[tListActivity[1]].is_visible then
+			if not GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"] then
+				SendChatMessage("|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r", channel, nil, chatnumber);
+			else
+				SendChatMessage(AL["To craft "]..AtlasLoot_GetChatLink(GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"])..AL[" you need this: "].."|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r",channel,nil,chatnumber);
+			end
+
+		elseif ChatFrameEditBox:IsVisible() then
 			if not GetSpellInfoVanillaDB["enchants"][tonumber(spellid)]["item"] then
 				ChatFrameEditBox:Insert("|cffFFd200|Henchant:"..spellid..":0:0:0|h["..name.."]|h|r", channel, nil, chatnumber);
 			else
@@ -3599,3 +3707,63 @@ function AtlasLoot_GetChatLink(id)
 	local e = string.sub(d, 2)
 	return "\124"..e.."\124H"..b.."\124h["..a.."]\124h\124r"
 end
+
+--pfUI.api.strsplit
+local function AtlasLoot_strsplit(delimiter, subject)
+  if not subject then return nil end
+  local delimiter, fields = delimiter or ":", {}
+  local pattern = string.format("([^%s]+)", delimiter)
+  string.gsub(subject, pattern, function(c) fields[table.getn(fields)+1] = c end)
+  return unpack(fields)
+end
+
+--Update announcing code taken from pfUI
+local major, minor, fix = AtlasLoot_strsplit(".", tostring(GetAddOnMetadata("AtlasLoot", "Version")))
+
+local alreadyshown = false
+local localversion  = tonumber(major*10000 + minor*100 + fix)
+local remoteversion = tonumber(AtlasLoot_updateavailable) or 0
+local loginchannels = { "BATTLEGROUND", "RAID", "GUILD" }
+local groupchannels = { "BATTLEGROUND", "RAID" }
+
+AtlasLoot_updater = CreateFrame("Frame")
+AtlasLoot_updater:RegisterEvent("CHAT_MSG_ADDON")
+AtlasLoot_updater:RegisterEvent("PLAYER_ENTERING_WORLD")
+AtlasLoot_updater:RegisterEvent("PARTY_MEMBERS_CHANGED")
+AtlasLoot_updater:SetScript("OnEvent", function()
+	if event == "CHAT_MSG_ADDON" and arg1 == "AtlasLoot" then
+		local v, remoteversion = AtlasLoot_strsplit(":", arg2)
+		local remoteversion = tonumber(remoteversion)
+		if v == "VERSION" and remoteversion then
+			if remoteversion > localversion then
+				AtlasLoot_updateavailable = remoteversion
+				if not alreadyshown then
+					DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
+					alreadyshown = true
+				end
+			end
+		end
+	end
+
+	if event == "PARTY_MEMBERS_CHANGED" then
+		local groupsize = GetNumRaidMembers() > 0 and GetNumRaidMembers() or GetNumPartyMembers() > 0 and GetNumPartyMembers() or 0
+		if ( this.group or 0 ) < groupsize then
+			for _, chan in pairs(groupchannels) do
+				SendAddonMessage("AtlasLoot", "VERSION:" .. localversion, chan)
+			end
+		end
+		this.group = groupsize
+	end
+
+    if event == "PLAYER_ENTERING_WORLD" then
+      if not alreadyshown and localversion < remoteversion then
+        DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
+        AtlasLoot_updateavailable = localversion
+        alreadyshown = true
+      end
+
+      for _, chan in pairs(loginchannels) do
+        SendAddonMessage("AtlasLoot", "VERSION:" .. localversion, chan)
+      end
+    end
+  end)

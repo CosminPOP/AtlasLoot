@@ -4,10 +4,11 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 0, "", "", "" },
 		{ 0,"INV_Box_01","=q6=#pre60s1#","" },
 		{ 0, "", "", "" },
-		{ 10399, "INV_Chest_Leather_08", "=q3=Blackened Defias Armor", "=ds=#s5#, #a2# =q7=#x6#", "14.77%" },
-		{ 10401, "INV_Gauntlets_18", "=q2=Blackened Defias Gloves", "=ds=#s9#, #a2# =q7=#x9#", "1.76%" },
-		{ 10403, "INV_Belt_26", "=q2=Blackened Defias Belt", "=ds=#s10#, #a2# =q7=#x8#", "23.26%" },
-		{ 10400, "INV_Pants_12", "=q2=Blackened Defias Leggings", "=ds=#s11#, #a2# =q7=#x9#", "1.64%" },
+		{ 81007, "INV_Misc_Bandana_03", "=q3=Blackened Defias Mask", "=ds=#s1#, #a2# =q7=#x96#", "20%" },
+		{ 10399, "INV_Chest_Leather_08", "=q3=Blackened Defias Armor", "=ds=#s5#, #a2# =q7=#x6#", "20%" },
+		{ 10401, "INV_Gauntlets_18", "=q2=Blackened Defias Gloves", "=ds=#s9#, #a2# =q7=#x9#", "1.75%" },
+		{ 10403, "INV_Belt_26", "=q2=Blackened Defias Belt", "=ds=#s10#, #a2# =q7=#x7#", "30%" },
+		{ 10400, "INV_Pants_12", "=q2=Blackened Defias Leggings", "=ds=#s11#, #a2# =q7=#x9#", "1.75%" },
 		{ 10402, "INV_Boots_05", "=q2=Blackened Defias Boots", "=ds=#s12#, #a2# =q7=#x8#", "1.23%" },
 	};
 	WAILING = {
@@ -19,6 +20,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 10412, "INV_Belt_30", "=q2=Belt of the Fang", "=ds=#s10#, #a2# =q7=#x2#", "8.64%" },
 		{ 10410, "INV_Pants_11", "=q3=Leggings of the Fang", "=ds=#s11#, #a2# =q7=#x1#", "16.03%" },
 		{ 10411, "INV_Boots_04", "=q2=Footpads of the Fang", "=ds=#s12#, #a2# =q7=#x3#", "19.08%" },
+		{ 81006, "", "=q2=Cowl of the Fang", "=ds=#s1#, #a1#", "5%" },
 	};
 	SCARLET = {
 		{ 0, "", "", "" },
