@@ -745,4 +745,11 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
         { 60724, "", "=q2=", "" },
         { 60725, "", "=q2=", "" },
     };
+	Wildhammer = {
+		{ 0, "inv_misc_tabard_wildhammerclan", "=q3=Exalted", "" },
+		{ 81185, "Ability_Mount_Gryphon_01", "=q3=Aerie Peak Gryphon", "=ds=#e7#" },
+        { 81186, "Ability_Mount_Gryphon_01", "=q3=Armored Aerie Peak Gryphon", "=ds=#e7#" },
+        { 81243, "inv_misc_birdbeck_01", "=q1=Beaky", "=ds=#e15#" },
+        { 80312, "inv_misc_tabard_wildhammerclan", "=q1=Wildhammer Tabard", "=ds=#s7#" },
+	};
 };

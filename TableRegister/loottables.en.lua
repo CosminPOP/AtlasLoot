@@ -389,8 +389,7 @@ AtlasLoot_TableNames = {
     ["SWVBlackBride"] = { AL["Black Bride"], "AtlasLootItems" },
     ["SWVDamian"] = { AL["Damian"], "AtlasLootItems" },
     ["SWVVolkanCruelblade"] = { AL["Volkan Cruelblade"], "AtlasLootItems" },
-    ["SWVArctiras"] = { AL["Arc'tiras"], "AtlasLootItems" },
-    ["SWVVaultArmoryEquipment"] = { AL["Vault Armory Equipment"], "AtlasLootItems" },
+    ["SWVVaultArmoryEquipment"] = { AL["Arc'tiras / Vault Armory Equipment"], "AtlasLootItems" },
     --Temple of Ahn'Qiraj
     ["AQ40Skeram"] = { AL["The Prophet Skeram"], "AtlasLootItems" },
     ["AQ40Trio"] = { AL["The Bug Family"], "AtlasLootItems" },
@@ -741,6 +740,7 @@ AtlasLoot_TableNames = {
     ["Orgrimmar"] = { AL["Orgrimmar"], "AtlasLootRepItems" },
     ["ThunderBluff"] = { AL["Thunder Bluff"], "AtlasLootRepItems" },
 	["Dalaran"] = { AL["Dalaran"], "AtlasLootRepItems" },
+	["Wildhammer"] = { AL["Wildhammer Clan"], "AtlasLootRepItems" },
 
     --------------
     --- Trades ---
@@ -1064,8 +1064,7 @@ AtlasLoot_TableNamesBoss = {
         ["SWVBlackBride"] = { AL["Black Bride"], "AtlasLootItems" },
         ["SWVDamian"] = { AL["Damian"], "AtlasLootItems" },
         ["SWVVolkanCruelblade"] = { AL["Volkan Cruelblade"], "AtlasLootItems" },
-        ["SWVArctiras"] = { AL["Arc'tiras"], "AtlasLootItems" },
-        ["SWVVaultArmoryEquipment"] = { AL["Vault Armory Equipment"], "AtlasLootItems" },
+        ["SWVVaultArmoryEquipment"] = { AL["Arc'tiras / Vault Armory Equipment"], "AtlasLootItems" },
     },
     ["The Deadmines"] = {
         ["DMRhahkZor"] = { AL["Rhahk'Zor"], "AtlasLootItems" },
@@ -1695,6 +1694,7 @@ AtlasLoot_TableNamesBoss = {
         ["Undercity"] = { AL["Undercity"], "AtlasLootRepItems" },
         ["Orgrimmar"] = { AL["Orgrimmar"], "AtlasLootRepItems" },
         ["ThunderBluff"] = { AL["Thunder Bluff"], "AtlasLootRepItems" },
+		["Wildhammer"] = { AL["Wildhammer Clan"], "AtlasLootRepItems" },
     },
 
     --------------

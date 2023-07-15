@@ -2549,8 +2549,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Black Bride"], "SWVBlackBride" },
 		{ AL["Damian"], "SWVDamian" },
 		{ AL["Volkan Cruelblade"], "SWVVolkanCruelblade" },
-		{ AL["Arc'tiras"], "SWVArctiras" },
-		{ AL["Vault Armory Equipment"], "SWVVaultArmoryEquipment" },
+		{ AL["Arc'tiras / Vault Armory Equipment"], "SWVVaultArmoryEquipment" },
 	},
 	["BlackwingLair"] = {
 		{ AL["Razorgore the Untamed"], "BWLRazorgore" },
@@ -2956,6 +2955,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Thorium Brotherhood"], "Thorium1" },
 		{ AL["Timbermaw Hold"], "Timbermaw" },
 		{ AL["Wardens of Time"], "Warderns1" },
+		{ AL["Wildhammer Clan"], "Wildhammer" },
 		{ AL["Wintersaber Trainers"], "Wintersaber1" },
 		{ AL["Zandalar Tribe"], "Zandalar1" },
 		{ AL["Darnassus"], "Darnassus" },

@@ -513,6 +513,8 @@ AtlasLoot_ButtonRegistry = {
         Prev_Title = AL["Antnormi"];
     };
     ["SWVAszoshGrimflame"] = {
+	    Prev_Page = "SWVVaultArmoryEquipment";
+        Prev_Title = AL["Arc'tiras / Vault Armory Equipment"];
         Title = AL["Aszosh Grimflame"];
         Next_Page = "SWVThamGrarr";
         Next_Title = AL["Tham'Grarr"];
@@ -540,22 +542,17 @@ AtlasLoot_ButtonRegistry = {
     };
     ["SWVVolkanCruelblade"] = {
         Title = AL["Volkan Cruelblade"];
-        Next_Page = "SWVArctiras";
-        Next_Title = AL["Arc'tiras"];
+        Next_Page = "SWVVaultArmoryEquipment";
+        Next_Title = AL["Arc'tiras / Vault Armory Equipment"];
         Prev_Page = "SWVDamian";
         Prev_Title = AL["Damian"];
     };
-    ["SWVArctiras"] = {
-        Title = AL["Arc'tiras"];
-        Next_Page = "SWVVaultArmoryEquipment";
-        Next_Title = AL["Vault Armory Equipment"];
+    ["SWVVaultArmoryEquipment"] = {
+        Title = AL["Arc'tiras / Vault Armory Equipment"];
         Prev_Page = "SWVVolkanCruelblade";
         Prev_Title = AL["Volkan Cruelblade"];
-    };
-    ["SWVVaultArmoryEquipment"] = {
-        Title = AL["Vault Armory Equipment"];
-        Prev_Page = "SWVArctiras";
-        Prev_Title = AL["Arc'tiras"];
+		Next_Page = "SWVAszoshGrimflame";
+        Next_Title = AL["Aszosh Grimflame"];
     };
     ["BWLRazorgore"] = {
         Title = AL["Razorgore the Untamed"];
@@ -2872,6 +2869,11 @@ AtlasLoot_ButtonRegistry = {
         Back_Page = "REPMENU";
         Back_Title = AL["Factions"];
     };
+	["Wildhammer"] = {
+		Title = AL["Wildhammer Clan"];
+        Back_Page = "REPMENU";
+        Back_Title = AL["Factions"];
+	};
     ["Wintersaber1"] = {
         Title = AL["Wintersaber Trainers"];
         Back_Page = "REPMENU";
