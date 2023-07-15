@@ -1620,6 +1620,55 @@ AtlasLoot_ButtonRegistry = {
         Prev_Page = "UldArchaedas";
         Prev_Title = AL["Archaedas"];
     };
+	["MatthiasHoltz"] = {
+	    Title = AL["Matthias Holtz"];
+        Next_Page = "JudgeSutherland";
+        Next_Title = AL["Judge Sutherland"];
+		Prev_Page = "GennGreymane";
+        Prev_Title = AL["Genn Greymane"];
+	};
+	["JudgeSutherland"] = {
+	    Title = AL["Judge Sutherland"];
+		Prev_Page = "MatthiasHoltz";
+        Prev_Title = AL["Matthias Holtz"];
+        Next_Page = "DustivanBlackcowl";
+        Next_Title = AL["Dustivan Blackcowl"];
+	};
+	["DustivanBlackcowl"] = {
+	    Title = AL["Dustivan Blackcowl"];
+		Prev_Page = "JudgeSutherland";
+        Prev_Title = AL["Judge Sutherland"];
+        Next_Page = "MarshalMagnusGreystone";
+        Next_Title = AL["Marshal Magnus Greystone"];
+	};
+	["MarshalMagnusGreystone"] = {
+	    Title = AL["Marshal Magnus Greystone"];
+		Prev_Page = "DustivanBlackcowl";
+        Prev_Title = AL["Dustivan Blackcowl"];
+        Next_Page = "CeliaHarlow";
+        Next_Title = AL["Celia Harlow"];
+	};
+	["CeliaHarlow"] = {
+	    Title = AL["Celia Harlow"];
+		Prev_Page = "MarshalMagnusGreystone";
+        Prev_Title = AL["Marshal Magnus Greystone"];
+        Next_Page = "MortimerHarlow";
+        Next_Title = AL["Mortimer Harlow"];
+	};
+	["MortimerHarlow"] = {
+	    Title = AL["Mortimer Harlow"];
+		Prev_Page = "CeliaHarlow";
+        Prev_Title = AL["Celia Harlow"];
+        Next_Page = "GennGreymane";
+        Next_Title = AL["Genn Greymane"];
+	};
+	["GennGreymane"] = {
+	    Title = AL["Genn Greymane"];
+		Prev_Page = "MortimerHarlow";
+        Prev_Title = AL["Mortimer Harlow"];
+        Next_Page = "MatthiasHoltz";
+        Next_Title = AL["Matthias Holtz"];
+	};
     ["ZGJeklik"] = {
         Title = AL["High Priestess Jeklik"];
         Next_Page = "ZGVenoxis";
@@ -2864,75 +2913,65 @@ AtlasLoot_ButtonRegistry = {
         Back_Page = "BRRepMenu";
         Prev_Page = "BRRepRevered";
     };
-    ["ABRepFriendly2029"] = {
-        Title = "AB 20-29 Friendly Rewards";
+    ["ABRepFriendly"] = {
         Back_Page = "ABRepMenu";
-        Next_Page = "ABRepFriendly3039";
-    };
-    ["ABRepFriendly3039"] = {
-        Title = "AB 30-39 Friendly Rewards";
-        Back_Page = "ABRepMenu";
-        Next_Page = "ABRepFriendly4049";
-        Prev_Page = "ABRepFriendly2029";
-    };
-    ["ABRepFriendly4049"] = {
-        Title = "AB 40-49 Friendly Rewards";
-        Back_Page = "ABRepMenu";
-        Next_Page = "ABRepFriendly5059";
-        Prev_Page = "ABRepFriendly3039";
-    };
-    ["ABRepFriendly5059"] = {
-        Title = "AB 50-59 Friendly Rewards";
-        Back_Page = "ABRepMenu";
-        Prev_Page = "ABRepFriendly4049";
+        Title = "AB Friendly Rewards";
+        Next_Page = "ABRepHonored2029";
+        Prev_Page = "ABRepExalted";
     };
     ["ABRepHonored2029"] = {
-        Title = "AB 20-29 Honored Rewards";
         Back_Page = "ABRepMenu";
+        Title = "AB 20-29 Honored Rewards";
         Next_Page = "ABRepHonored3039";
+        Prev_Page = "ABRepFriendly";
     };
     ["ABRepHonored3039"] = {
-        Title = "AB 30-39 Honored Rewards";
         Back_Page = "ABRepMenu";
+        Title = "AB 30-39 Honored Rewards";
         Next_Page = "ABRepHonored4049";
         Prev_Page = "ABRepHonored2029";
     };
     ["ABRepHonored4049"] = {
-        Title = "AB 40-49 Honored Rewards";
         Back_Page = "ABRepMenu";
+        Title = "AB 40-49 Honored Rewards";
         Next_Page = "ABRepHonored5059";
         Prev_Page = "ABRepHonored3039";
     };
     ["ABRepHonored5059"] = {
-        Title = "AB 50-59 Honored Rewards";
         Back_Page = "ABRepMenu";
+        Title = "AB 50-59 Honored Rewards";
+		Next_Page = "ABRepRevered2029";
         Prev_Page = "ABRepHonored4049";
     };
     ["ABRepRevered2029"] = {
-        Title = "AB 20-29 Revered Rewards";
         Back_Page = "ABRepMenu";
+        Title = "AB 20-29 Revered Rewards";
         Next_Page = "ABRepRevered3039";
+        Prev_Page = "ABRepHonored5059";
     };
     ["ABRepRevered3039"] = {
-        Title = "AB 30-39 Revered Rewards";
         Back_Page = "ABRepMenu";
+        Title = "AB 30-39 Revered Rewards";
         Next_Page = "ABRepRevered4049";
         Prev_Page = "ABRepRevered2029";
     };
     ["ABRepRevered4049"] = {
-        Title = "AB 40-49 Revered Rewards";
         Back_Page = "ABRepMenu";
+        Title = "AB 40-49 Revered Rewards";
         Next_Page = "ABRepRevered5059";
         Prev_Page = "ABRepRevered3039";
     };
     ["ABRepRevered5059"] = {
-        Title = "AB 50-59 Revered Rewards";
         Back_Page = "ABRepMenu";
+        Title = "AB 50-59 Revered Rewards";
+		Next_Page = "ABRepExalted";
         Prev_Page = "ABRepRevered4049";
     };
     ["ABRepExalted"] = {
-        Title = "AB Exalted Rewards";
         Back_Page = "ABRepMenu";
+        Title = "AB Exalted Rewards";
+        Prev_Page = "ABRepExalted5059";
+		Next_Page = "ABRepFriendly";
     };
     ["AVRepFriendly"] = {
         Title = "AV Friendly Rewards";

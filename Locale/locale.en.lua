@@ -1468,4 +1468,12 @@ AL:RegisterTranslations("enUS", function() return {
 	["Thunder Bluff"] = true,
 	["Lower Karazhan Halls"] = "|cffff0000[RAID]|cffffd200 Lower Karazhan Halls",
 	["Emerald Sanctum"] = "|cffff0000[RAID]|cffffd200 Emerald Sanctum",
+	["Gilneas City"] = "|cffffffff[42-50]|cffffd200 Gilneas City",
+	["Matthias Holtz"] = true,
+    ["Judge Sutherland"] = true,
+    ["Dustivan Blackcowl"] = true,
+    ["Marshal Magnus Greystone"] = true,
+    ["Celia Harlow"] = true,
+    ["Mortimer Harlow"] = true,
+    ["Genn Greymane"] = true,
 	} end)

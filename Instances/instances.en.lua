@@ -824,6 +824,15 @@ AtlasLootBossButtons = {
 		"UldGarrettFamilyChest";
 		"UldShovelphlange";
 	};
+	GilneasCity = {
+	    "MatthiasHoltz";
+        "JudgeSutherland";
+        "DustivanBlackcowl";
+        "MarshalMagnusGreystone";
+        "CeliaHarlow";
+        "MortimerHarlow";
+        "GennGreymane";
+	};
 	WailingCaverns = {
 		"";
 		"";
@@ -3584,6 +3593,27 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 9425, "INV_Weapon_Halberd_08", "=q3=Pendulum of Doom", "=ds=#h2#, #w1#", "0.01%" },
 		{ 9423, "INV_Hammer_07", "=q3=The Jackhammer", "=ds=#h2#, #w6#", "0.01%" },
 		{ 9391, "INV_Misc_Shovel_02", "=q3=The Shoveler", "=ds=#h2#, #w6# =q17=#c9#", "0.01%" },
+	};
+	MatthiasHoltz = {
+		{ 0, "", "", "" },
+	};
+	JudgeSutherland = {
+		{ 0, "", "", "" },
+	};
+	DustivanBlackcowl = {
+		{ 0, "", "", "" },
+	};
+	MarshalMagnusGreystone = {
+		{ 0, "", "", "" },
+	};
+	CeliaHarlow = {
+		{ 0, "", "", "" },
+	};
+	MortimerHarlow = {
+		{ 0, "", "", "" },
+	};
+	GennGreymane = {
+		{ 0, "", "", "" },
 	};
 	SMHoundmasterLoksey = {
 		{ 7710, "INV_Staff_18", "=q3=Loksey's Training Stick", "=ds=#w9#", "13.96%" },

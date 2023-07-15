@@ -135,47 +135,47 @@ function AtlasLootWSGRepMenu()
 	AtlasLootMenuItem_2.isheader = true;
 	AtlasLootMenuItem_2:Show();
 	--Friendly
-	AtlasLootMenuItem_4_Name:SetText("10-60");
-	AtlasLootMenuItem_4_Extra:SetText("");
-	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_4.lootpage="WSGRepFriendly";
-	AtlasLootMenuItem_4:Show();
+	AtlasLootMenuItem_3_Name:SetText("10-60");
+	AtlasLootMenuItem_3_Extra:SetText("");
+	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
+	AtlasLootMenuItem_3.lootpage="WSGRepFriendly";
+	AtlasLootMenuItem_3:Show();
 	--Honored Header
-	AtlasLootMenuItem_8_Name:SetText(RED..AL["Honored"]);
+	AtlasLootMenuItem_7_Name:SetText(RED..AL["Honored"]);
+	AtlasLootMenuItem_7_Extra:SetText("");
+	AtlasLootMenuItem_7_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
+	AtlasLootMenuItem_7.isheader = true;
+	AtlasLootMenuItem_7:Show();
+	--Honored 10-19
+	AtlasLootMenuItem_8_Name:SetText("10-19");
 	AtlasLootMenuItem_8_Extra:SetText("");
 	AtlasLootMenuItem_8_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_8.isheader = true;
+	AtlasLootMenuItem_8.lootpage="WSGRepHonored1019";
 	AtlasLootMenuItem_8:Show();
-	--Honored 10-19
-	AtlasLootMenuItem_10_Name:SetText("10-19");
+	--Honored 20-29
+	AtlasLootMenuItem_9_Name:SetText("20-29");
+	AtlasLootMenuItem_9_Extra:SetText("");
+	AtlasLootMenuItem_9_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
+	AtlasLootMenuItem_9.lootpage="WSGRepHonored2029";
+	AtlasLootMenuItem_9:Show();
+	--Honored 30-39
+	AtlasLootMenuItem_10_Name:SetText("30-39");
 	AtlasLootMenuItem_10_Extra:SetText("");
 	AtlasLootMenuItem_10_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_10.lootpage="WSGRepHonored1019";
+	AtlasLootMenuItem_10.lootpage="WSGRepHonored3039";
 	AtlasLootMenuItem_10:Show();
-	--Honored 20-29
-	AtlasLootMenuItem_11_Name:SetText("20-29");
+	--Honored 40-49
+	AtlasLootMenuItem_11_Name:SetText("40-49");
 	AtlasLootMenuItem_11_Extra:SetText("");
 	AtlasLootMenuItem_11_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_11.lootpage="WSGRepHonored2029";
+	AtlasLootMenuItem_11.lootpage="WSGRepHonored4049";
 	AtlasLootMenuItem_11:Show();
-	--Honored 30-39
-	AtlasLootMenuItem_12_Name:SetText("30-39");
+	--Honored 50-59
+	AtlasLootMenuItem_12_Name:SetText("50-59");
 	AtlasLootMenuItem_12_Extra:SetText("");
 	AtlasLootMenuItem_12_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_12.lootpage="WSGRepHonored3039";
+	AtlasLootMenuItem_12.lootpage="WSGRepHonored5059";
 	AtlasLootMenuItem_12:Show();
-	--Honored 40-49
-	AtlasLootMenuItem_13_Name:SetText("40-49");
-	AtlasLootMenuItem_13_Extra:SetText("");
-	AtlasLootMenuItem_13_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_13.lootpage="WSGRepHonored4049";
-	AtlasLootMenuItem_13:Show();
-	--Honored 50-59
-	AtlasLootMenuItem_14_Name:SetText("50-59");
-	AtlasLootMenuItem_14_Extra:SetText("");
-	AtlasLootMenuItem_14_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_14.lootpage="WSGRepHonored5059";
-	AtlasLootMenuItem_14:Show();
 	--Exalted Header
 	AtlasLootMenuItem_17_Name:SetText(RED..AL["Exalted"]);
 	AtlasLootMenuItem_17_Extra:SetText("");
@@ -183,59 +183,59 @@ function AtlasLootWSGRepMenu()
 	AtlasLootMenuItem_17.isheader = true;
 	AtlasLootMenuItem_17:Show();
 	--Exalted 40-49
-	AtlasLootMenuItem_19_Name:SetText("40-49");
+	AtlasLootMenuItem_18_Name:SetText("40-49");
+	AtlasLootMenuItem_18_Extra:SetText("");
+	AtlasLootMenuItem_18_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
+	AtlasLootMenuItem_18.lootpage="WSGRepExalted4049";
+	AtlasLootMenuItem_18:Show();
+	--Exalted 50-59
+	AtlasLootMenuItem_19_Name:SetText("50-59");
 	AtlasLootMenuItem_19_Extra:SetText("");
 	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_19.lootpage="WSGRepExalted4049";
+	AtlasLootMenuItem_19.lootpage="WSGRepExalted5059";
 	AtlasLootMenuItem_19:Show();
-	--Exalted 50-59
-	AtlasLootMenuItem_20_Name:SetText("50-59");
+	--Exalted 60-60
+	AtlasLootMenuItem_20_Name:SetText("60");
 	AtlasLootMenuItem_20_Extra:SetText("");
 	AtlasLootMenuItem_20_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_20.lootpage="WSGRepExalted5059";
+	AtlasLootMenuItem_20.lootpage="WSGRepExalted60";
 	AtlasLootMenuItem_20:Show();
-	--Exalted 60-60
-	AtlasLootMenuItem_21_Name:SetText("60");
-	AtlasLootMenuItem_21_Extra:SetText("");
-	AtlasLootMenuItem_21_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_21.lootpage="WSGRepExalted60";
-	AtlasLootMenuItem_21:Show();
 	--Revered Header
-	AtlasLootMenuItem_23_Name:SetText(RED..AL["Revered"]);
+	AtlasLootMenuItem_22_Name:SetText(RED..AL["Revered"]);
+	AtlasLootMenuItem_22_Extra:SetText("");
+	AtlasLootMenuItem_22_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
+	AtlasLootMenuItem_22.isheader = true;
+	AtlasLootMenuItem_22:Show();
+	--Revered 10-19
+	AtlasLootMenuItem_23_Name:SetText("10-19");
 	AtlasLootMenuItem_23_Extra:SetText("");
 	AtlasLootMenuItem_23_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_23.isheader = true;
+	AtlasLootMenuItem_23.lootpage="WSGRepRevered1019";
 	AtlasLootMenuItem_23:Show();
-	--Revered 10-19
-	AtlasLootMenuItem_25_Name:SetText("10-19");
+	--Revered 20-29
+	AtlasLootMenuItem_24_Name:SetText("20-29");
+	AtlasLootMenuItem_24_Extra:SetText("");
+	AtlasLootMenuItem_24_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
+	AtlasLootMenuItem_24.lootpage="WSGRepRevered2029";
+	AtlasLootMenuItem_24:Show();
+	--Revered 30-39
+	AtlasLootMenuItem_25_Name:SetText("30-39");
 	AtlasLootMenuItem_25_Extra:SetText("");
 	AtlasLootMenuItem_25_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_25.lootpage="WSGRepRevered1019";
+	AtlasLootMenuItem_25.lootpage="WSGRepRevered3039";
 	AtlasLootMenuItem_25:Show();
-	--Revered 20-29
-	AtlasLootMenuItem_26_Name:SetText("20-29");
+	--Revered 40-49
+	AtlasLootMenuItem_26_Name:SetText("40-49");
 	AtlasLootMenuItem_26_Extra:SetText("");
 	AtlasLootMenuItem_26_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_26.lootpage="WSGRepRevered2029";
+	AtlasLootMenuItem_26.lootpage="WSGRepRevered4049";
 	AtlasLootMenuItem_26:Show();
-	--Revered 30-39
-	AtlasLootMenuItem_27_Name:SetText("30-39");
+	--Revered 50-59
+	AtlasLootMenuItem_27_Name:SetText("50-59");
 	AtlasLootMenuItem_27_Extra:SetText("");
 	AtlasLootMenuItem_27_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_27.lootpage="WSGRepRevered3039";
+	AtlasLootMenuItem_27.lootpage="WSGRepRevered5059";
 	AtlasLootMenuItem_27:Show();
-	--Revered 40-49
-	AtlasLootMenuItem_28_Name:SetText("40-49");
-	AtlasLootMenuItem_28_Extra:SetText("");
-	AtlasLootMenuItem_28_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_28.lootpage="WSGRepRevered4049";
-	AtlasLootMenuItem_28:Show();
-	--Revered 50-59
-	AtlasLootMenuItem_29_Name:SetText("50-59");
-	AtlasLootMenuItem_29_Extra:SetText("");
-	AtlasLootMenuItem_29_Icon:SetTexture("Interface\\Icons\\INV_Misc_Rune_07");
-	AtlasLootMenuItem_29.lootpage="WSGRepRevered5059";
-	AtlasLootMenuItem_29:Show();
 	for i = 1, 30, 1 do
 		getglobal("AtlasLootMenuItem_"..i.."_Extra"):Show();
 	end
@@ -256,30 +256,90 @@ function AtlasLootABRepMenu()
 	getglobal("AtlasLootItemsFrame_NEXT"):Hide();
 	getglobal("AtlasLootItemsFrame_PREV"):Hide();
 	getglobal("AtlasLootServerQueryButton"):Hide();
-	--Friendly
-	AtlasLootMenuItem_2_Name:SetText(AL["Friendly Reputation Rewards"]);
+	--Friendly Header
+	AtlasLootMenuItem_2_Name:SetText(RED..AL["Friendly"]);
 	AtlasLootMenuItem_2_Extra:SetText("");
 	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
-	AtlasLootMenuItem_2.lootpage="ABRepFriendly5059";
+	AtlasLootMenuItem_2.isheader = true;
 	AtlasLootMenuItem_2:Show();
-	--Honored
-	AtlasLootMenuItem_3_Name:SetText(AL["Honored Reputation Rewards"]);
+	--Friendly
+	AtlasLootMenuItem_3_Name:SetText("10-60");
 	AtlasLootMenuItem_3_Extra:SetText("");
 	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
-	AtlasLootMenuItem_3.lootpage="ABRepHonored5059";
+	AtlasLootMenuItem_3.lootpage="ABRepFriendly";
 	AtlasLootMenuItem_3:Show();
-	--Revered
-	AtlasLootMenuItem_4_Name:SetText(AL["Revered Reputation Rewards"]);
-	AtlasLootMenuItem_4_Extra:SetText("");
-	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
-	AtlasLootMenuItem_4.lootpage="ABRepRevered5059";
-	AtlasLootMenuItem_4:Show();
-	--Exalted
-	AtlasLootMenuItem_5_Name:SetText(AL["Exalted Reputation Rewards"]);
+	--Honored Header
+	AtlasLootMenuItem_5_Name:SetText(RED..AL["Honored"]);
 	AtlasLootMenuItem_5_Extra:SetText("");
 	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
-	AtlasLootMenuItem_5.lootpage="ABRepExalted";
+	AtlasLootMenuItem_5.isheader = true;
 	AtlasLootMenuItem_5:Show();
+	--Honored 20-29
+	AtlasLootMenuItem_6_Name:SetText("20-29");
+	AtlasLootMenuItem_6_Extra:SetText("");
+	AtlasLootMenuItem_6_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
+	AtlasLootMenuItem_6.lootpage="ABRepHonored2029";
+	AtlasLootMenuItem_6:Show();
+	--Honored 30-39
+	AtlasLootMenuItem_7_Name:SetText("30-39");
+	AtlasLootMenuItem_7_Extra:SetText("");
+	AtlasLootMenuItem_7_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
+	AtlasLootMenuItem_7.lootpage="ABRepHonored3039";
+	AtlasLootMenuItem_7:Show();
+	--Honored 40-49
+	AtlasLootMenuItem_8_Name:SetText("40-49");
+	AtlasLootMenuItem_8_Extra:SetText("");
+	AtlasLootMenuItem_8_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
+	AtlasLootMenuItem_8.lootpage="ABRepHonored4049";
+	AtlasLootMenuItem_8:Show();
+	--Honored 50-59
+	AtlasLootMenuItem_9_Name:SetText("50-59");
+	AtlasLootMenuItem_9_Extra:SetText("");
+	AtlasLootMenuItem_9_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
+	AtlasLootMenuItem_9.lootpage="ABRepHonored5059";
+	AtlasLootMenuItem_9:Show();
+	--Exalted Header
+	AtlasLootMenuItem_17_Name:SetText(RED..AL["Exalted"]);
+	AtlasLootMenuItem_17_Extra:SetText("");
+	AtlasLootMenuItem_17_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
+	AtlasLootMenuItem_17.isheader = true;
+	AtlasLootMenuItem_17:Show();
+	--Exalted
+	AtlasLootMenuItem_18_Name:SetText("60");
+	AtlasLootMenuItem_18_Extra:SetText("");
+	AtlasLootMenuItem_18_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
+	AtlasLootMenuItem_18.lootpage="ABRepExalted";
+	AtlasLootMenuItem_18:Show();
+	--Revered Header
+	AtlasLootMenuItem_20_Name:SetText(RED..AL["Revered"]);
+	AtlasLootMenuItem_20_Extra:SetText("");
+	AtlasLootMenuItem_20_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
+	AtlasLootMenuItem_20.isheader = true;
+	AtlasLootMenuItem_20:Show();
+	--Revered 20-29
+	AtlasLootMenuItem_21_Name:SetText("20-29");
+	AtlasLootMenuItem_21_Extra:SetText("");
+	AtlasLootMenuItem_21_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
+	AtlasLootMenuItem_21.lootpage="ABRepRevered2029";
+	AtlasLootMenuItem_21:Show();
+	--Revered 30-39
+	AtlasLootMenuItem_22_Name:SetText("30-39");
+	AtlasLootMenuItem_22_Extra:SetText("");
+	AtlasLootMenuItem_22_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
+	AtlasLootMenuItem_22.lootpage="ABRepRevered3039";
+	AtlasLootMenuItem_22:Show();
+	--Revered 40-49
+	AtlasLootMenuItem_23_Name:SetText("40-49");
+	AtlasLootMenuItem_23_Extra:SetText("");
+	AtlasLootMenuItem_23_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
+	AtlasLootMenuItem_23.lootpage="ABRepRevered4049";
+	AtlasLootMenuItem_23:Show();
+	--Revered 50-59
+	AtlasLootMenuItem_24_Name:SetText("50-59");
+	AtlasLootMenuItem_24_Extra:SetText("");
+	AtlasLootMenuItem_24_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Amulet_07");
+	AtlasLootMenuItem_24.lootpage="ABRepRevered5059";
+	AtlasLootMenuItem_24:Show();							 
 	for i = 1, 30, 1 do
 		getglobal("AtlasLootMenuItem_"..i.."_Extra"):Show();
 	end

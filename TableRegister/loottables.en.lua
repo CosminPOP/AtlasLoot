@@ -424,6 +424,14 @@ AtlasLoot_TableNames = {
     ["UldGrimlok"] = { AL["Grimlok"], "AtlasLootItems" },
     ["UldArchaedas"] = { AL["Archaedas"], "AtlasLootItems" },
     ["UldTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Uldaman"] .. ")", "AtlasLootItems" },
+	--Gilneas City
+	["MatthiasHoltz"] = { AL["Matthias Holtz"], "AtlasLootItems" },
+    ["JudgeSutherland"] = { AL["Judge Sutherland"], "AtlasLootItems" },
+    ["DustivanBlackcowl"] = { AL["Dustivan Blackcowl"], "AtlasLootItems" },
+    ["MarshalMagnusGreystone"] = { AL["Marshal Magnus Greystone"], "AtlasLootItems" },
+    ["CeliaHarlow"] = { AL["Celia Harlow"], "AtlasLootItems" },
+    ["MortimerHarlow"] = { AL["Mortimer Harlow"], "AtlasLootItems" },
+    ["GennGreymane"] = { AL["Genn Greymane"], "AtlasLootItems" },
     --Wailing Caverns
     ["WCKalldanFelmoon"] = { AL["Kalldan Felmoon"], "AtlasLootItems" },
     ["WCMadMagglish"] = { AL["Mad Magglish"], "AtlasLootItems" },
@@ -833,10 +841,7 @@ AtlasLoot_TableNames = {
     ["AVRepRevered"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Revered Rewards"], "AtlasLootBGItems" },
     ["AVRepExalted"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Exalted Rewards"], "AtlasLootBGItems" },
     --Arathi Basin
-    ["ABRepFriendly2029"] = { AL["Arathi Basin"] .. " " .. AL["20-29 Friendly Rewards"], "AtlasLootBGItems" },
-    ["ABRepFriendly3039"] = { AL["Arathi Basin"] .. " " .. AL["30-39 Friendly Rewards"], "AtlasLootBGItems" },
-    ["ABRepFriendly4049"] = { AL["Arathi Basin"] .. " " .. AL["40-49 Friendly Rewards"], "AtlasLootBGItems" },
-    ["ABRepFriendly5059"] = { AL["Arathi Basin"] .. " " .. AL["50-59 Friendly Rewards"], "AtlasLootBGItems" },
+    ["ABRepFriendly"] = { AL["Arathi Basin"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
     ["ABRepHonored2029"] = { AL["Arathi Basin"] .. " " .. AL["20-29 Honored Rewards"], "AtlasLootBGItems" },
     ["ABRepHonored3039"] = { AL["Arathi Basin"] .. " " .. AL["30-39 Honored Rewards"], "AtlasLootBGItems" },
     ["ABRepHonored4049"] = { AL["Arathi Basin"] .. " " .. AL["40-49 Honored Rewards"], "AtlasLootBGItems" },
@@ -847,7 +852,7 @@ AtlasLoot_TableNames = {
     ["ABRepRevered5059"] = { AL["Arathi Basin"] .. " " .. AL["50-59 Revered Rewards"], "AtlasLootBGItems" },
     ["ABRepExalted"] = { AL["Arathi Basin"] .. " " .. AL["60 Exalted Rewards"], "AtlasLootBGItems" },
     --Warsong Gulch
-	["WSGRepFriendly"] = { AL["Warsong Gulch"] .. " " .. AL["Friendly"], "AtlasLootBGItems" },
+	["WSGRepFriendly"] = { AL["Warsong Gulch"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
     ["WSGRepHonored1019"] = { AL["Warsong Gulch"] .. " " .. AL["10-19 Honored Rewards"], "AtlasLootBGItems" },
     ["WSGRepHonored2029"] = { AL["Warsong Gulch"] .. " " .. AL["20-29 Honored Rewards"], "AtlasLootBGItems" },
     ["WSGRepHonored3039"] = { AL["Warsong Gulch"] .. " " .. AL["30-39 Honored Rewards"], "AtlasLootBGItems" },
@@ -1374,6 +1379,15 @@ AtlasLoot_TableNamesBoss = {
         ["UldArchaedas"] = { AL["Archaedas"], "AtlasLootItems" },
         ["UldTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Uldaman"] .. ")", "AtlasLootItems" },
     },
+	["Gilneas City"] = {
+	    ["MatthiasHoltz"] = { AL["Matthias Holtz"], "AtlasLootItems" },
+        ["JudgeSutherland"] = { AL["Judge Sutherland"], "AtlasLootItems" },
+        ["DustivanBlackcowl"] = { AL["Dustivan Blackcowl"], "AtlasLootItems" },
+        ["MarshalMagnusGreystone"] = { AL["Marshal Magnus Greystone"], "AtlasLootItems" },
+        ["CeliaHarlow"] = { AL["Celia Harlow"], "AtlasLootItems" },
+        ["MortimerHarlow"] = { AL["Mortimer Harlow"], "AtlasLootItems" },
+        ["GennGreymane"] = { AL["Genn Greymane"], "AtlasLootItems" },
+	},
     ["Wailing Caverns Entrance"] = {
         ["WCKalldanFelmoon"] = { AL["Kalldan Felmoon"], "AtlasLootItems" },
         ["WCMadMagglish"] = { AL["Mad Magglish"], "AtlasLootItems" },
@@ -1784,10 +1798,7 @@ AtlasLoot_TableNamesBoss = {
         ["AVRepRevered"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Revered Rewards"], "AtlasLootBGItems" },
         ["AVRepExalted"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Exalted Rewards"], "AtlasLootBGItems" },
         --Arathi Basin
-        ["ABRepFriendly2029"] = { AL["Arathi Basin"] .. " " .. AL["20-29 Friendly Rewards"], "AtlasLootBGItems" },
-        ["ABRepFriendly3039"] = { AL["Arathi Basin"] .. " " .. AL["30-39 Friendly Rewards"], "AtlasLootBGItems" },
-        ["ABRepFriendly4049"] = { AL["Arathi Basin"] .. " " .. AL["40-49 Friendly Rewards"], "AtlasLootBGItems" },
-        ["ABRepFriendly5059"] = { AL["Arathi Basin"] .. " " .. AL["50-59 Friendly Rewards"], "AtlasLootBGItems" },
+        ["ABRepFriendly"] = { AL["Arathi Basin"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
         ["ABRepHonored2029"] = { AL["Arathi Basin"] .. " " .. AL["20-29 Honored Rewards"], "AtlasLootBGItems" },
         ["ABRepHonored3039"] = { AL["Arathi Basin"] .. " " .. AL["30-39 Honored Rewards"], "AtlasLootBGItems" },
         ["ABRepHonored4049"] = { AL["Arathi Basin"] .. " " .. AL["40-49 Honored Rewards"], "AtlasLootBGItems" },
@@ -1798,7 +1809,7 @@ AtlasLoot_TableNamesBoss = {
         ["ABRepRevered5059"] = { AL["Arathi Basin"] .. " " .. AL["50-59 Revered Rewards"], "AtlasLootBGItems" },
         ["ABRepExalted"] = { AL["Arathi Basin"] .. " " .. AL["60 Exalted Rewards"], "AtlasLootBGItems" },
         --Warsong Gulch
-		["WSGRepFriendly"] = { AL["Warsong Gulch"] .. " " .. AL["Friendly"], "AtlasLootBGItems" },
+		["WSGRepFriendly"] = { AL["Warsong Gulch"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
         ["WSGRepHonored1019"] = { AL["Warsong Gulch"] .. " " .. AL["10-19 Honored Rewards"], "AtlasLootBGItems" },
         ["WSGRepHonored2029"] = { AL["Warsong Gulch"] .. " " .. AL["20-29 Honored Rewards"], "AtlasLootBGItems" },
         ["WSGRepHonored3039"] = { AL["Warsong Gulch"] .. " " .. AL["30-39 Honored Rewards"], "AtlasLootBGItems" },

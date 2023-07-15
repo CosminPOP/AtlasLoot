@@ -253,7 +253,7 @@ function AtlasLootDefaultFrame_OnShow()
 	--Show the last displayed loot table
 	if AtlasLoot_IsLootTableAvailable(AtlasLootCharDB.LastBoss) then
 		AtlasLoot_ShowBossLoot(AtlasLootCharDB.LastBoss, AtlasLootCharDB.LastBossText, pFrame);
-		AtlasLoot_DewdropSubMenuRegister(AtlasLootCharDB.LastBoss);
+		--AtlasLoot_DewdropSubMenuRegister(AtlasLootCharDB.LastBoss);
 	else
 		AtlasLoot_ShowBossLoot("EmptyInstance", AL["AtlasLoot"], pFrame);
 	end
@@ -421,6 +421,10 @@ function AtlasLoot_OnVariablesLoaded()
 	AtlasLootDefaultFrame_SelectedCategory:Show();
 	AtlasLootDefaultFrame_SelectedTable:Show();
 	AtlasLootDefaultFrame_SubMenu:Disable();
+	--Load the last loaded sebmenu
+	if AtlasLootCharDB["LastMenu"] then
+		AtlasLoot_DewDropClick(AtlasLootCharDB["LastMenu"][1],AtlasLootCharDB["LastMenu"][2],AtlasLootCharDB["LastMenu"][3])
+	end
 end
 
 --[[
@@ -1528,6 +1532,7 @@ tabletype - Whether the tablename indexes an actual table or needs to generate a
 Called when a button in AtlasLoot_Dewdrop is clicked
 ]]
 function AtlasLoot_DewDropClick(tablename, text, tabletype)
+	AtlasLootCharDB.LastMenu = { tablename, text, tabletype }
 	--Definition of where I want the loot table to be shown
 	pFrame = { "TOPLEFT", "AtlasLootDefaultFrame_LootBackground", "TOPLEFT", "2", "-2" };
 
@@ -1818,9 +1823,25 @@ AtlasLootMenuItem_OnClick:
 Requests the relevant loot page from a menu screen
 ]]
 function AtlasLootMenuItem_OnClick()
-	if this.isheader == nil or this.isheader == false then
-		AtlasLoot_ShowBossLoot(this.lootpage, getglobal(this:GetName().."_Name"):GetText(), AtlasLoot_AnchorFrame);
-	end
+    if this.isheader == nil or this.isheader == false then
+        local pagename = getglobal(this:GetName().."_Name"):GetText()
+        for k,v in ipairs(AtlasLoot_DewDropDown) do
+            if not (type(v[1]) == "table") then
+                for k2, v2 in pairs(v) do
+					for k3, v3 in pairs(v2) do
+						for k4, v4 in pairs(v3) do
+							if not (type(v4[1]) == "table") then
+								if v4[1] == pagename then
+									AtlasLoot_DewDropClick(v4[2],v4[1],v4[3])
+								end
+							end
+						end
+					end
+                end
+            end
+        end
+        AtlasLoot_ShowBossLoot(this.lootpage, pagename, AtlasLoot_AnchorFrame);
+    end
 end
 
 --[[
@@ -2203,73 +2224,76 @@ AtlasLoot_DewDropDown = {
 				{ AL["Uldaman"], "Uldaman", "Submenu" },
 			},
 			[13] = {
-				{ AL["Maraudon"], "Maraudon", "Submenu" },
+				{ AL["Gilneas City"], "GilneasCity", "Submenu" },
 			},
 			[14] = {
-				{ AL["Zul'Farrak"], "ZulFarrak", "Submenu" },
+				{ AL["Maraudon"], "Maraudon", "Submenu" },
 			},
 			[15] = {
-				{ AL["The Sunken Temple"], "SunkenTemple", "Submenu" },
+				{ AL["Zul'Farrak"], "ZulFarrak", "Submenu" },
 			},
 			[16] = {
-				{ AL["Hateforge Quarry"], "HateforgeQuarry", "Submenu" },
+				{ AL["The Sunken Temple"], "SunkenTemple", "Submenu" },
 			},
 			[17] = {
-				{ AL["Blackrock Depths"], "BlackrockDepths", "Submenu" },
+				{ AL["Hateforge Quarry"], "HateforgeQuarry", "Submenu" },
 			},
 			[18] = {
+				{ AL["Blackrock Depths"], "BlackrockDepths", "Submenu" },
+			},
+			[19] = {
 				[AL["Dire Maul"]] = {
 					{ AL["Dire Maul (East)"], "DireMaulEast", "Submenu" },
 					{ AL["Dire Maul (West)"], "DireMaulWest", "Submenu" },
 					{ AL["Dire Maul (North)"], "DireMaulNorth", "Submenu" },
 				},
 			},
-			[19] = {
+			[20] = {
 				{ AL["Scholomance"], "Scholomance", "Submenu" },
 			},
-			[20] = {
+			[21] = {
 				{ AL["Stratholme"], "Stratholme", "Submenu" },
 			},
-			[21] = {
+			[22] = {
 				{ AL["Lower Blackrock Spire"], "LowerBlackrock", "Submenu" },
 			},
-			[22] = {
+			[23] = {
 				{ AL["Upper Blackrock Spire"], "UpperBlackrock", "Submenu" },
 			},
-			[23] = {
+			[24] = {
 				{ AL["Karazhan Crypt"], "KarazhanCrypt", "Submenu" },
 			},
-			[24] = {
+			[25] = {
 				{ AL["Caverns of Time: Black Morass"], "CavernsOfTimeBlackMorass", "Submenu" },
 			},
-			[25] = {
+			[26] = {
 				{ AL["Stormwind Vault"], "StormwindVault", "Submenu" },
 			},
-			[26] = {
+			[27] = {
 				{ AL["Zul'Gurub"], "ZulGurub", "Submenu" },
 			},
-			[27] = {
+			[28] = {
 				{ AL["Ruins of Ahn'Qiraj"], "RuinsofAQ", "Submenu" },
 			},
-			[28] = {
+			[29] = {
 				{ AL["Molten Core"], "MoltenCore", "Submenu" },
 			},
-			[29] = {
+			[30] = {
 				{ AL["Onyxia's Lair"], "Onyxia", "Submenu" },
 			},
-			[30] = {
+			[31] = {
 				{ AL["Lower Karazhan Halls"], "LowerKara", "Submenu" },
 			},
-			[31] = {
+			[32] = {
 				{ AL["Blackwing Lair"], "BlackwingLair", "Submenu" },
 			},
-			[32] = {
+			[33] = {
 				{ AL["Emerald Sanctum"], "EmeraldSanctum", "Submenu" },
 			},
-			[33] = {
+			[34] = {
 				{ AL["Temple of Ahn'Qiraj"], "TempleofAQ", "Submenu" },
 			},
-			[34] = {
+			[35] = {
 				{ AL["Naxxramas"], "Naxxramas", "Submenu" },
 			},
 		},
@@ -2363,7 +2387,7 @@ AtlasLoot_DewDropDown = {
 	[7] = {
 		[AL["World Events"]] = {
 			[1] = {
-				{ AL["Abyssal Council"], "AbyssalCouncil1", "Table" },
+				{ AL["Abyssal Council"], "AbyssalCouncil", "Submenu" },
 			},
 			[2] = {
 				{ AL["Children's Week"], "ChildrensWeek", "Table" },
@@ -2721,6 +2745,15 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Archaedas"], "UldArchaedas" },
 		{ AL["Trash Mobs"], "UldTrash" },
 	},
+	["GilneasCity"] = {
+		{ AL["Matthias Holtz"], "MatthiasHoltz" },
+        { AL["Judge Sutherland"], "JudgeSutherland" },
+        { AL["Dustivan Blackcowl"], "DustivanBlackcowl" },
+        { AL["Marshal Magnus Greystone"], "MarshalMagnusGreystone" },
+        { AL["Celia Harlow"], "CeliaHarlow" },
+        { AL["Mortimer Harlow"], "MortimerHarlow" },
+        { AL["Genn Greymane"], "GennGreymane" },
+	},
 	["ZulGurub"] = {
 		{ AL["High Priestess Jeklik"], "ZGJeklik" },
 		{ AL["High Priest Venoxis"], "ZGVenoxis" },
@@ -2903,7 +2936,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ "Explorer Ashbeard", "Ashbeard" },
 		{ "Admiral Barean Westwind", "AdmiralBareanWestwind" },
 	},
-	["AbyssalCouncil1"] = {
+	["AbyssalCouncil"] = {
 		{ AL["Abyssal Council"].." - "..AL["Templars"], "AbyssalTemplars" },
 		{ AL["Abyssal Council"].." - "..AL["Dukes"], "AbyssalDukes" },
 		{ AL["Abyssal Council"].." - "..AL["High Council"], "AbyssalLords" },
@@ -3079,7 +3112,8 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Exalted Reputation Rewards"], "AVRepExalted" },
 	},
 	["ABRewards"] = {
-		{ AL["Friendly Reputation Rewards"], "ABRepFriendly5059" },
+		{ "Arathi Basin Menu", "ABRepMenu" },
+		{ AL["Friendly Reputation Rewards"], "ABRepFriendly" },
 		{ AL["Honored Reputation Rewards"], "ABRepHonored5059" },
 		{ AL["Revered Reputation Rewards"], "ABRepRevered5059" },
 		{ AL["Exalted Reputation Rewards"], "ABRepExalted" },
@@ -3096,7 +3130,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Warrior"], "PVPWarrior" },
 	},
 	["WSGRewards"] = {
-		{ "Warsong Gulch Meun", "WSGRepMenu" },
+		{ "Warsong Gulch Menu", "WSGRepMenu" },
 		{ AL["Friendly Reputation Rewards"], "WSGRepFriendly" },
 		{ AL["Honored Reputation Rewards"], "WSGRepHonored5059" },
 		{ AL["Revered Reputation Rewards"], "WSGRepRevered5059" },
@@ -3742,6 +3776,9 @@ AtlasLoot_updater:RegisterEvent("PLAYER_ENTERING_WORLD")
 AtlasLoot_updater:RegisterEvent("PARTY_MEMBERS_CHANGED")
 AtlasLoot_updater:SetScript("OnEvent", function()
 	if event == "CHAT_MSG_ADDON" and arg1 == "AtlasLoot" then
+		if UnitName("player") == "Lexie" then
+			--print(arg1.." "..arg2.." "..arg3.." "..arg4)
+		end
 		local v, remoteversion = AtlasLoot_strsplit(":", arg2)
 		local remoteversion = tonumber(remoteversion)
 		if v == "VERSION" and remoteversion then
