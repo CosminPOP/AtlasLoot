@@ -2929,7 +2929,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ "Mallon The Moontouched", "Mallon" },
 		{ "Grug'thok the Seer", "Grugthok" },
 		{ "The Wandering Knight", "WanderingKnight" },
-		{ "Crusader Larsarius The Scarlet Crusade", "CrusaderLarsarius" },
+		{ "Crusader Larsarius", "CrusaderLarsarius" },
 		{ "Zareth Terrorblade Demon Hunter", "Zareth" },
 		{ "Jal'akar Dire Troll", "Jalakar" },
 		{ "Explorer Ashbeard", "Ashbeard" },

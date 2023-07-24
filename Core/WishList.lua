@@ -248,7 +248,7 @@ function AtlasLoot_CategorizeWishList(wlTable)
 			table.insert(categories[subheadings[dataID]], v);
 		end
 	end
-
+	
 	-- Sort and flatten categories
 	for k, v in pairs(categories) do
 		-- Add a empty line between categories when in a same column

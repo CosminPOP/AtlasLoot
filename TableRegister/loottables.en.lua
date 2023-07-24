@@ -729,7 +729,11 @@ AtlasLoot_TableNames = {
     ["Zandalar2"] = { AL["Zandalar Tribe"] .. ": " .. AL["Revered"] .. "/" .. AL["Exalted"], "AtlasLootRepItems" },
 
     ["Helf"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
+	["Helf2"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
+	["Helf3"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
     ["Revantusk"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
+	["Revantusk2"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
+	["Revantusk3"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
     ["Ironforge"] = { AL["Ironforge"], "AtlasLootRepItems" },
     ["Darnassus"] = { AL["Darnassus"], "AtlasLootRepItems" },
     ["Stormwind"] = { AL["Stormwind"], "AtlasLootRepItems" },
@@ -1607,6 +1611,23 @@ AtlasLoot_TableNamesBoss = {
         ["DYsondre"] = { AL["Ysondre"], "AtlasLootWBItems" },
         ["DTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Emerald Dragons"] .. ")", "AtlasLootWBItems" },
     },
+	
+	--------------------------
+    --- Rare Spawns (1.16) ---
+    --------------------------
+	["Rare Spawns"] = {
+		["Tarangos"] = { "Tarangos The Dampener", "AtlasLootWBItems" },
+		["Kargron"] = { "Blademaster Kargron", "AtlasLootWBItems" },
+		["Xalvic"] = { "Xalvic Blackclaw", "AtlasLootWBItems" },
+		["Mallon"] = { "Mallon The Moontouched", "AtlasLootWBItems" },
+		["Grugthok"] = { "Grug'thok the Seer", "AtlasLootWBItems" },
+		["WanderingKnight"] = { "The Wandering Knight", "AtlasLootWBItems" },
+		["CrusaderLarsarius"] = { "Crusader Larsarius The Scarlet Crusade", "AtlasLootWBItems" },
+		["Zareth"] = { "Zareth Terrorblade Demon Hunter", "AtlasLootWBItems" },
+		["Jalakar"] = { "Jal'akar Dire Troll", "AtlasLootWBItems" },
+		["Ashbeard"] = { "Explorer Ashbeard", "AtlasLootWBItems" },
+		["AdmiralBareanWestwind"] = { "Admiral Barean Westwind", "AtlasLootWBItems" },
+	},
 
     --------------
     --- Events ---
@@ -1684,7 +1705,11 @@ AtlasLoot_TableNamesBoss = {
         ["Zandalar2"] = { AL["Zandalar Tribe"] .. ": " .. AL["Revered"] .. "/" .. AL["Exalted"], "AtlasLootRepItems" },
 
         ["Helf"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
+		["Helf2"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
+		["Helf3"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
         ["Revantusk"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
+		["Revantusk2"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
+		["Revantusk3"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
         ["Ironforge"] = { AL["Ironforge"], "AtlasLootRepItems" },
         ["Darnassus"] = { AL["Darnassus"], "AtlasLootRepItems" },
         ["Stormwind"] = { AL["Stormwind"], "AtlasLootRepItems" },

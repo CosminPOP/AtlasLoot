@@ -1226,7 +1226,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 
 	TailoringJourneyman2 = {
 		{ "s3856", "inv_boots_03", "=q2=Spider Silk Slippers", "=ds=#sr# =so1=140 =so2=160 =so3=175 =so4=190" },
-		{ "s8760", "inv_helmet_29", "=q1=Azure Silk Hood", "=ds=#sr# =so1=145 =so2=155 =so3=160 =so4=165" },
+		{ "s8760", "inv_helmet_29", "=q2=Azure Silk Hood", "=ds=#sr# =so1=145 =so2=155 =so3=160 =so4=165" },
 		{ "s3854", "inv_gauntlets_17", "=q2=Azure Silk Gloves", "=ds=#sr# =so1=145 =so2=165 =so3=180 =so4=195" },
 		{ "s8780", "inv_gauntlets_22", "=q2=Hands of Darkness", "=ds=#sr# =so1=145 =so2=165 =so3=180 =so4=195" },
 		{ "s3813", "inv_misc_bag_07", "=q1=Small Silk Pack", "=ds=#sr# =so1=150 =so2=170 =so3=185 =so4=200" },
