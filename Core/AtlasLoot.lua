@@ -3783,6 +3783,7 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 		local remoteversion = tonumber(remoteversion)
 		if v == "VERSION" and remoteversion then
 			if remoteversion > localversion then
+			print(arg4.." is using "..remoteversion.." of AtlasLoot")
 				AtlasLoot_updateavailable = remoteversion
 				if not alreadyshown then
 					DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
