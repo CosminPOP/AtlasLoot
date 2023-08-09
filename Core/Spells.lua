@@ -7186,7 +7186,7 @@ GetSpellInfoVanillaDB = {
 				[3] = {3372},
 			},
 		},
-	    [11457] = {
+		[11457] = {
 			["name"] = "Alchemy: Superior Healing Potion",
 			["requires"] = "",
 			["tools"] = "",

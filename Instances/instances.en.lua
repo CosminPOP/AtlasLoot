@@ -621,53 +621,53 @@ AtlasLootBossButtons = {
 	TheCrescentGrove = {
 		"";
 		"";
-        "TCGGrovetenderEngryss";
-        "TCGKeeperRanathos";
-        "TCGHighPriestessAlathea";
-        "TCGFenektistheDeceiver";
-        "TCGMasterRaxxieth";
+		"TCGGrovetenderEngryss";
+		"TCGKeeperRanathos";
+		"TCGHighPriestessAlathea";
+		"TCGFenektistheDeceiver";
+		"TCGMasterRaxxieth";
 		"TCGTrash";
 	};
 	KarazhanCrypt = {
 		"";
 		"";
-        "KCMarrowspike";
-        "KCHivaxxis";
-        "KCCorpsemuncher";
+		"KCMarrowspike";
+		"KCHivaxxis";
+		"KCCorpsemuncher";
 		"KCGuardCaptainGort";
-        "KCArchlichEnkhraz";
+		"KCArchlichEnkhraz";
 		"KCCommanderAnderson";
-        "KCAlarus";
+		"KCAlarus";
 		"KCTreasure";
 	};
 	CavernsOfTimeBlackMorass = {
 		"";
 		"";
-        "COTBMChronar";
+		"COTBMChronar";
 		"COTBMHarbingerAphygth";
-        "COTBMTimeLordEpochronos";
-        "COTBMAntnormi";
+		"COTBMTimeLordEpochronos";
+		"COTBMAntnormi";
 		"COTBMInfiniteChromie";
 	};
 	StormwindVault = {
 		"";
 		"";
-        "SWVAszoshGrimflame";
-        "SWVThamGrarr";
-        "SWVBlackBride";
-        "SWVDamian";
-        "SWVVolkanCruelblade";
-        "SWVArctiras";
-        "SWVVaultArmoryEquipment";
+		"SWVAszoshGrimflame";
+		"SWVThamGrarr";
+		"SWVBlackBride";
+		"SWVDamian";
+		"SWVVolkanCruelblade";
+		"SWVArctiras";
+		"SWVVaultArmoryEquipment";
 	};
 	HateforgeQuarry = {
 		"";
 		"";
-        "HQHighForemanBargulBlackhammer";
-        "HQEngineerFiggles";
-        "HQCorrosis";
-        "HQHatereaverAnnihilator";
-        "HQHargeshDoomcaller";
+		"HQHighForemanBargulBlackhammer";
+		"HQEngineerFiggles";
+		"HQCorrosis";
+		"HQHatereaverAnnihilator";
+		"HQHargeshDoomcaller";
 		"HQTrash";
 	};
 	TheDeadmines = {
@@ -825,13 +825,13 @@ AtlasLootBossButtons = {
 		"UldShovelphlange";
 	};
 	GilneasCity = {
-	    "MatthiasHoltz";
-        "JudgeSutherland";
-        "DustivanBlackcowl";
-        "MarshalMagnusGreystone";
-        "CeliaHarlow";
-        "MortimerHarlow";
-        "GennGreymane";
+		"MatthiasHoltz";
+		"JudgeSutherland";
+		"DustivanBlackcowl";
+		"MarshalMagnusGreystone";
+		"CeliaHarlow";
+		"MortimerHarlow";
+		"GennGreymane";
 	};
 	WailingCaverns = {
 		"";
@@ -2701,19 +2701,19 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 10412, "INV_Belt_30", "=q2=Belt of the Fang", "=ds=#s10#, #a2#", "33%" },
 		{  5404, "INV_Shoulder_08", "=q1=Serpent's Shoulders", "=ds=#s3#, #a2#", "33%" },
 		{  6446, "INV_Misc_Bag_12", "=q1=Snakeskin Bag", "=ds=#m13# #e10#", "33%" },
-		{     0, "", "", "" },
+		{	 0, "", "", "" },
 		{ 80709, "INV_STAFF_28", "=q3=Guardian Staff", "=ds=#h2#, #w9#", "60%" },
 	};
 	WCKresh = {
 		{ 13245, "INV_Shield_18", "=q3=Kresh's Back", "=ds=#w8#", "50%" },
 		{  6447, "INV_Shield_21", "=q1=Worn Turtle Shell Shield", "=ds=#w8#", "50%" },
-		{     0, "", "", "" },
+		{	 0, "", "", "" },
 		{ 80710, "INV_SHOULDER_18", "=q2=Turtle Scale Shoulderguards", "=ds=#s3#, #a3#", "50%" },
 	};
 	WCLordPythas = {
 		{ 6472, "INV_Wand_10", "=q3=Stinging Viper", "=ds=#h1#, #w6#", "50%" },
 		{ 6473, "INV_Shirt_16", "=q2=Armor of the Fang", "=ds=#s5#, #a2#", "50%" },
-		{    0, "", "", "" },
+		{	0, "", "", "" },
 		{ 80711, "INV_BRACER_12", "=q3=Bracers of Wild Growth", "=ds=#s8#, #a2#", "60%" },
 	};
 	WCSkum = {

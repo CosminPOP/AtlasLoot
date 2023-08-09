@@ -1823,11 +1823,11 @@ AtlasLootMenuItem_OnClick:
 Requests the relevant loot page from a menu screen
 ]]
 function AtlasLootMenuItem_OnClick()
-    if this.isheader == nil or this.isheader == false then
-        local pagename = getglobal(this:GetName().."_Name"):GetText()
-        for k,v in ipairs(AtlasLoot_DewDropDown) do
-            if not (type(v[1]) == "table") then
-                for k2, v2 in pairs(v) do
+	if this.isheader == nil or this.isheader == false then
+		local pagename = getglobal(this:GetName().."_Name"):GetText()
+		for k,v in ipairs(AtlasLoot_DewDropDown) do
+			if not (type(v[1]) == "table") then
+				for k2, v2 in pairs(v) do
 					for k3, v3 in pairs(v2) do
 						for k4, v4 in pairs(v3) do
 							if not (type(v4[1]) == "table") then
@@ -1837,11 +1837,11 @@ function AtlasLootMenuItem_OnClick()
 							end
 						end
 					end
-                end
-            end
-        end
-        AtlasLoot_ShowBossLoot(this.lootpage, pagename, AtlasLoot_AnchorFrame);
-    end
+				end
+			end
+		end
+		AtlasLoot_ShowBossLoot(this.lootpage, pagename, AtlasLoot_AnchorFrame);
+	end
 end
 
 --[[
@@ -2746,12 +2746,12 @@ AtlasLoot_DewDropDown_SubTables = {
 	},
 	["GilneasCity"] = {
 		{ AL["Matthias Holtz"], "MatthiasHoltz" },
-        { AL["Judge Sutherland"], "JudgeSutherland" },
-        { AL["Dustivan Blackcowl"], "DustivanBlackcowl" },
-        { AL["Marshal Magnus Greystone"], "MarshalMagnusGreystone" },
-        { AL["Celia Harlow"], "CeliaHarlow" },
-        { AL["Mortimer Harlow"], "MortimerHarlow" },
-        { AL["Genn Greymane"], "GennGreymane" },
+		{ AL["Judge Sutherland"], "JudgeSutherland" },
+		{ AL["Dustivan Blackcowl"], "DustivanBlackcowl" },
+		{ AL["Marshal Magnus Greystone"], "MarshalMagnusGreystone" },
+		{ AL["Celia Harlow"], "CeliaHarlow" },
+		{ AL["Mortimer Harlow"], "MortimerHarlow" },
+		{ AL["Genn Greymane"], "GennGreymane" },
 	},
 	["ZulGurub"] = {
 		{ AL["High Priestess Jeklik"], "ZGJeklik" },
@@ -2915,7 +2915,7 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AL["Taerar"], "DTaerar" },
 		{ AL["Ysondre"], "DYsondre" },
 		{ AL["Lord Kazzak"], "KKazzak"},
-		{ "Turtlhu, the Black Turtle of Doom", "Turtlhu" },
+		--{ "Turtlhu, the Black Turtle of Doom", "Turtlhu" },
 		{ "Nerubian Overseer", "Nerubian" },
 		{ "Dark Reaver of Karazhan", "Reaver" },
 		{ "Ostarius", "Ostarius" },
@@ -2923,17 +2923,41 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ "There Is No Cow Level", "CowKing" },
 	},
 	["RareSpawns"] = {
-		{ "Tarangos The Dampener", "Tarangos" },
-		{ "Blademaster Kargron", "Kargron" },
-		{ "Xalvic Blackclaw", "Xalvic" },
-		{ "Mallon The Moontouched", "Mallon" },
-		{ "Grug'thok the Seer", "Grugthok" },
-		{ "The Wandering Knight", "WanderingKnight" },
-		{ "Crusader Larsarius", "CrusaderLarsarius" },
-		{ "Zareth Terrorblade Demon Hunter", "Zareth" },
-		{ "Jal'akar Dire Troll", "Jalakar" },
-		{ "Explorer Ashbeard", "Ashbeard" },
-		{ "Admiral Barean Westwind", "AdmiralBareanWestwind" },
+		{ "|cffffffff[17]|cffffd200 Earthcaller Rezengal |cffffffff(Stonetalon)", "EarthcallerRezengal" },
+		{ "|cffffffff[17]|cffffd200 Shade Mage |cffffffff(Tirisfal Uplands)", "ShadeMage" },
+		{ "|cffffffff[18]|cffffd200 Graypaw Alpha |cffffffff(Tirisfal Uplands)", "GraypawAlpha" },
+		{ "|cffffffff[24]|cffffd200 Blazespark |cffffffff(Stonetalon)", "Blazespark" },
+		{ "|cffffffff[35]|cffffd200 Witch Doctor Tan'zo |cffffffff(Ruins of Zul'Rasaz)", "WitchDoctorTanzo" },
+		{ "|cffffffff[40]|cffffd200 Dawnhowl |cffffffff(Gilneas)", "Dawnhowl" },
+		{ "|cffffffff[43]|cffffd200 Maltimor's Prototype |cffffffff(Gilneas)", "MaltimorsPrototype" },
+		{ "|cffffffff[44]|cffffd200 Bonecruncher |cffffffff(Gilneas)", "Bonecruncher" },
+		{ "|cffffffff[44]|cffffd200 Duskskitter |cffffffff(Gilneas)", "Duskskitter" },
+		{ "|cffffffff[45]|cffffd200 Baron Perenolde |cffffffff(Gilneas)", "BaronPerenolde" },
+		{ "|cffffffff[47]|cffffd200 Grug'thok the Seer |cffffffff(Feralas)", "Grugthok" },
+		{ "|cffffffff[49]|cffffd200 Explorer Ashbeard |cffffffff(Searing Gorge)", "Ashbeard" },
+		{ "|cffffffff[50]|cffffd200 Jal'akar |cffffffff(Hinterlands)", "Jalakar" },
+		{ "|cffffffff[51]|cffffd200 Embereye |cffffffff(Gilijim Isle)", "Embereye" },
+		{ "|cffffffff[51]|cffffd200 Ruk'thok the Pyromancer |cffffffff(Lapidis Isle)", "Rukthok" },
+		{ "|cffffffff[51]|cffffd200 Tarangos |cffffffff(Azshara)", "Tarangos" },
+		{ "|cffffffff[51-52]|cffffd200 Ripjaw |cffffffff(Lapidis Isle)", "Ripjaw" },
+		{ "|cffffffff[53]|cffffd200 Xalvic Blackclaw |cffffffff(Felwood)", "Xalvic" },
+		{ "|cffffffff[54]|cffffd200 Aquitus |cffffffff(Gilijim Isle)", "Aquitus" },
+		{ "|cffffffff[55]|cffffd200 Firstborn of Arugal |cffffffff(Gilneas)", "FirstbornofArugal" },
+		{ "|cffffffff[55]|cffffd200 Letashaz |cffffffff(Gilijim Isle)", "Letashaz" },
+		{ "|cffffffff[55]|cffffd200 Margon the Mighty |cffffffff(Lapidis Isle)", "MargontheMighty" },
+		{ "|cffffffff[55]|cffffd200 The Wandering Knight |cffffffff(WPL)", "WanderingKnight" },
+		{ "|cffffffff[56]|cffffd200 Stoneshell |cffffffff(Tel'abim)", "Stoneshell" },
+		{ "|cffffffff[57]|cffffd200 Zareth Terrorblade |cffffffff(Blasted Lands)", "Zareth" },
+		{ "|cffffffff[58]|cffffd200 Highvale Silverback |cffffffff(Tel'abim)", "HighvaleSilverback" },
+		{ "|cffffffff[58]|cffffd200 Mallon The Moontouched |cffffffff(Winterspring)", "Mallon" },
+		{ "|cffffffff[59]|cffffd200 Blademaster Kargron |cffffffff(Burning Steppes)", "Kargron" },
+		{ "|cffffffff[60]|cffffd200 Admiral Barean Westwind |cffffffff(Sarlet Enclave)", "AdmiralBareanWestwind" },
+		{ "|cffffffff[60]|cffffd200 Azurebeak |cffffffff(Hyjal)", "Azurebeak" },
+		{ "|cffffffff[60]|cffffd200 Barkskin Fisher |cffffffff(Hyjal)", "BarkskinFisher" },
+		{ "|cffffffff[61]|cffffd200 Crusader Larsarius |cffffffff(EPL)", "CrusaderLarsarius" },
+		{ "|cffffffff[61]|cffffd200 Shadeflayer Goliath |cffffffff(Hyjal)", "ShadeflayerGoliath" },
+		{ "|cffffffff[??]|cffffd200 Widow of the Woods |cffffffff(Gilneas)", "WidowoftheWoods" },
+		{ "|cffffffff[??]|cffffd200 M-0L1Y |cffffffff(???)", "M0L1Y" },
 	},
 	["AbyssalCouncil"] = {
 		{ AL["Abyssal Council"].." - "..AL["Templars"], "AbyssalTemplars" },
@@ -3657,7 +3681,7 @@ function AtlasLoot_SayItemReagents(id, color, name, safe)
 		chatnumber = tListActivity[1];
 	else
 		channel,chatnumber = ChatFrameEditBox.chatType;
-	    if channel=="WHISPER" then
+		if channel=="WHISPER" then
 			chatnumber = ChatFrameEditBox.tellTarget
 		elseif channel=="CHANNEL" then
 			chatnumber = ChatFrameEditBox.channelTarget
@@ -3803,15 +3827,15 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 		this.group = groupsize
 	end
 
-    if event == "PLAYER_ENTERING_WORLD" then
-      if not alreadyshown and localversion < remoteversion then
-        DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
-        AtlasLoot_updateavailable = localversion
-        alreadyshown = true
-      end
+	if event == "PLAYER_ENTERING_WORLD" then
+	  if not alreadyshown and localversion < remoteversion then
+		DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
+		AtlasLoot_updateavailable = localversion
+		alreadyshown = true
+	  end
 
-      for _, chan in pairs(loginchannels) do
-        SendAddonMessage("AtlasLoot", "VERSION:" .. localversion, chan)
-      end
-    end
+	  for _, chan in pairs(loginchannels) do
+		SendAddonMessage("AtlasLoot", "VERSION:" .. localversion, chan)
+	  end
+	end
   end)
