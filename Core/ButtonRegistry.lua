@@ -4140,6 +4140,15 @@ AtlasLoot_ButtonRegistry = {
 		Back_Title = AL["Blacksmithing"];
 		Prev_Page = "SmithingExpert1";
 		Prev_Title = AL["Blacksmithing"] .. ": " .. AL["Expert"];
+		Next_Page = "SmithingExpert3";
+		Next_Title = AL["Blacksmithing"] .. ": " .. AL["Expert"];
+	};
+	["SmithingExpert3"] = {
+		Title = AL["Blacksmithing"] .. ": " .. AL["Expert"];
+		Back_Page = "SMITHINGMENU";
+		Back_Title = AL["Blacksmithing"];
+		Prev_Page = "SmithingExpert2";
+		Prev_Title = AL["Blacksmithing"] .. ": " .. AL["Expert"];
 		Next_Page = "SmithingArtisan1";
 		Next_Title = AL["Blacksmithing"] .. ": " .. AL["Artisan"];
 	};
@@ -4147,7 +4156,7 @@ AtlasLoot_ButtonRegistry = {
 		Title = AL["Blacksmithing"] .. ": " .. AL["Artisan"];
 		Back_Page = "SMITHINGMENU";
 		Back_Title = AL["Blacksmithing"];
-		Prev_Page = "SmithingExpert2";
+		Prev_Page = "SmithingExpert3";
 		Prev_Title = AL["Blacksmithing"] .. ": " .. AL["Expert"];
 		Next_Page = "SmithingArtisan2";
 		Next_Title = AL["Blacksmithing"] .. ": " .. AL["Artisan"];
@@ -4606,8 +4615,21 @@ AtlasLoot_ButtonRegistry = {
 	};
 	["Survival1"] = {
 		Title = AL["Survival"];
-		Back_Page = "CRAFTINGMENU";
-		Back_Title = AL["Crafting"];
+		Back_Page = "SURVIVALMENU";
+		Back_Title = AL["Survival"];
+		Prev_Page = "Survival2";
+		Prev_Title = AL["Garderning"];
+		Next_Page = "Survival2";
+		Next_Title = AL["Garderning"];
+	};
+	["Survival2"] = {
+		Title = AL["Garderning"];
+		Back_Page = "SURVIVALMENU";
+		Back_Title = AL["Survival"];
+		Prev_Page = "Survival1";
+		Prev_Title = AL["Survival"];
+		Next_Page = "Survival1";
+		Next_Title = AL["Survival"];
 	};
 	["Poisons1"] = {
 		Title = AL["Poisons"];

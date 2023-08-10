@@ -195,6 +195,7 @@ AtlasLoot_MenuList = {
 	"TAILORINGMENU",
 	"CRAFTSET",
 	"COOKINGMENU",
+	"SURVIVALMENU",
 };
 
 --entrance maps to instance maps NOT NEEDED FOR ATLAS 1.12
@@ -1182,6 +1183,8 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 		AtlasLoot_TailoringMenu();
 	elseif(dataID=="COOKINGMENU") then
 		AtlasLoot_CookingMenu();
+	elseif(dataID=="SURVIVALMENU") then
+		AtlasLoot_SurvivalMenu();
 	else
 		--Iterate through each item object and set its properties
 		for i = 1, 30, 1 do
@@ -2439,7 +2442,7 @@ AtlasLoot_DewDropDown = {
 			[8] = { { (AL["Tailoring"]), "Tailoring", "Submenu" }, },
 			[9] = { { (AL["Cooking"]), "Cooking", "Submenu" }, },
 			[10] = { { (AL["First Aid"]), "FirstAid1", "Table" }, },
-			[11] = { { (AL["Survival"]), "Survival1", "Table" }, },
+			[11] = { { (AL["Survival"]), "Survival", "Submenu" }, },
 			[12] = { { (AL["Poisons"]), "Poisons1", "Table" }, },
 			[13] = {
 				[AL["Crafted Sets"]] = {
@@ -3216,6 +3219,10 @@ AtlasLoot_DewDropDown_SubTables = {
 		{ AtlasLoot_TableNames["TailoringExpert1"][1], "TailoringExpert1" },
 		{ AtlasLoot_TableNames["TailoringArtisan1"][1], "TailoringArtisan1" },
 	},
+	["Survival"] = {
+		{ AtlasLoot_TableNames["Survival1"][1], "Survival1" },
+		{ AtlasLoot_TableNames["Survival2"][1], "Survival2" },
+	},
 };
 
 --------------------------------------------------------------------------------
@@ -3805,6 +3812,7 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 		end
 		local v, remoteversion = AtlasLoot_strsplit(":", arg2)
 		local remoteversion = tonumber(remoteversion)
+		if remoteversion == 40701 then remoteversion = 0 end --Block for people using some version from another version of WoW.
 		if v == "VERSION" and remoteversion then
 			if remoteversion > localversion then
 			print(arg4.." is using "..remoteversion.." of AtlasLoot")

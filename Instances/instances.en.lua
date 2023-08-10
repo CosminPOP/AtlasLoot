@@ -2554,23 +2554,23 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0,"","","" },
 		{ 0,"","","" },
 		{ 0,"","","" },
-		{ 0,"","","" },
-		{ 0,"","","" },
-		{ 0,"","","" },
 		{ 4415,"INV_Scroll_03","=q3=Schematic: Craftsman's Monocle","=ds=#p5# #m26#", "2%" },
 		{ 4393,"INV_Helmet_44","=q2=Craftsman's Monocle","=ds=#s1#, #a1#" },
-		{ 0,"","","" },
+		{ 0, "", "", "" },
 		{ 4413,"INV_Scroll_06","=q2=Schematic: Discombobulator Ray","=ds=#p5# #m27#", "2%" },
 		{ 4388,"INV_Misc_Spyglass_02","=q1=Discombobulator Ray","=ds=#m25#" },
-		{ 0,"","","" },
+		{ 0, "", "", "" },
 		{ 4411,"INV_Scroll_03","=q2=Schematic: Flame Deflector","=ds=#p5# #m28#", "2%" },
 		{ 4376,"INV_Gizmo_01","=q1=Flame Deflector","=ds=#m25#" },
-		{ 0,"","","" },
+		{ 0, "", "", "" },
 		{ 7742,"INV_Scroll_03","=q1=Schematic: Gnomish Cloaking Device","=ds=#p5# #m29#", "2%" },
 		{ 4397,"INV_Gizmo_01","=q1=Gnomish Cloaking Device","=ds=#s14#" },
 		{ 0,"","","" },
 		{ 51801,"INV_Scroll_05","=q3=Schematic: Hypertech Battery Pack","=ds=#p5# #m41#", "4%" },
 		{ 60098,"","=q2=Hypertech Battery Pack","=ds=#m33#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "1%" },
 	};
 	GnTrash = {
 		{ 9508, "INV_Shirt_14", "=q3=Mechbuilder's Overalls", "=ds=#s5#, #a1#", "0.04%" },
@@ -2931,12 +2931,13 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
 		{ 0, "", "", "" },
 		{ 50428, "INV_belt_06", "=q3=Ancient Clutch", "=ds=#s10#, #a4#", "12%" },
-		{ 50430, "INVmisc_cape_16", "=q3=Magic-infused Cloak", "=ds=#s4#, #a1#", "12%" },
+		{ 50430, "inv_misc_cape_16", "=q3=Magic-infused Cloak", "=ds=#s4#, #a1#", "12%" },
 		{ 61017, "INV_shoulder_27", "=q3=Shoulderguards of the Defiler", "=ds=#s3#, #a3#", "12%" },
 		{ 61021, "INV_bracer_09", "=q3=Shadowshifter Armguards", "=ds=#s10#, #a2#", "12%" },
 		{ 61028, "INV_shield_03", "=q3=Bulwark of the Crimson Guard", "=ds=#h4#, #w8#", "12%" },
 		{ 61054, "INV_pants_03", "=q3=Azurite Legguards", "=ds=#s11#, #a3#", "12%" },
 		{ 61058, "INV_pants_04", "=q3=Leggings of the Nullifier", "=ds=#s11#, #a4#", "12%" },
+		{ 61022, "INV_Weapon_Shortblade_38", "=q3=Dagger of the Currents", "=ds=#h4#, #w4#", "12%" },
 		{ 0, "", "", "" },
 		{ 61049, "INV_sword_19", "=q4=Chronobreaker", "=ds=#h2#, #w10#", "0.95%" },
 	};
@@ -2953,6 +2954,8 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61040, "INV_gauntlets_05", "=q3=Gloves of the Unknown", "=ds=#s9#, #a1#", "33%" },
 		{ 0, "", "", "" },
 		{ 51044, "INV_misc_head_dragon_black", "=q1=Antnormi's Head", "=ds=#m3#", "100%" },
+		{ 0, "", "", "", "" },
+		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#, Quantity of 2", "100%" },
 	};
 	COTBMInfiniteChromie = {
 		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
@@ -3459,6 +3462,8 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 9477, "INV_Staff_Goldfeathered_01", "=q3=The Chief's Enforcer", "=ds=#w9#", "20%" },
 		{ 11086, "INV_Sword_43", "=q3=Jang'thraze the Protector", "=ds=#h3#, #w10#", "20%" },
 		{ 9372, "INV_Sword_40", "=q4=Sul'thraze the Lasher", "=ds=#h2# #w10#" },
+		{ 0, "", "", "" },
+		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "5%" },
 	};
 	ZFTrash = {
 		{ 9512, "INV_Misc_Cape_05", "=q3=Blackmetal Cape", "=ds=#s4#", "0.02%" },
@@ -4167,6 +4172,8 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 11934, "INV_Jewelry_Ring_24", "=q3=Emperor's Seal", "=ds=#s13# =q2=#e31#", "20%" },
 		{ 11928, "INV_Mace_13", "=q3=Thaurissan's Royal Scepter", "=ds=#s15#", "20%" },
 		{ 11932, "INV_Staff_30", "=q3=Guiding Stave of Wisdom", "=ds=#w9#", "20%" },
+		{ 0, "", "", "" },
+		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "5%" },
 	};
 	BRDPrincess = {
 		{ 12557, "INV_Shoulder_25", "=q3=Ebonsteel Spaulders", "=ds=#s3#, #a4#", "25%" },
@@ -4349,7 +4356,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 18305, "INV_Pants_04", "=q2=Breakwater Legguards", "=ds=#s11#, #a4#", "20%" },
 		{ 18307, "INV_Boots_05", "=q2=Riptide Shoes", "=ds=#s12#, #a1#", "20%" },
 		{ 0, "", "", "" },
-		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "2%" },
+		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "5%" },
 	};
 	DMEAlzzin = {
 		{ 18328, "INV_Misc_Cape_17", "=q3=Shadewood Cloak", "=ds=#s4#", "10%" },
@@ -4806,6 +4813,8 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 12940,"INV_Sword_43","=q3=Dal'Rend's Sacred Charge","=ds=#h3#, #w10#", "8%" },
 		{ 12939,"INV_Sword_40","=q3=Dal'Rend's Tribal Guardian","=ds=#h4#, #w10#", "8%" },
 		{ 12583,"INV_Weapon_Halberd_04","=q3=Blackhand Doomsaw","=ds=#w7# ", "8%" },
+		{ 0, "", "", "" },
+        { 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "5%" },
 	};
 	UBRSGyth = {
 		{ 12871,"INV_Shield_21","=q4=Chromatic Carapace","=ds=#m3#", "4%" },
@@ -4818,6 +4827,8 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 12952,"INV_Helmet_23","=q3=Gyth's Skull","=ds=#s1#, #a4# =q2=#e32#", "20%" },
 		{ 0,"","","" },
 		{ 13522,"INV_Scroll_06","=q2=Recipe: Flask of Chromatic Resistance", "=ds=#p1# #m14#", "3%" },
+		{ 0, "", "", "" },
+        { 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "5%" },
 	};
 	UBRSBeast = {
 		{ 12731, "INV_Misc_MonsterScales_15", "=q4=Pristine Hide of the Beast", "=ds=#m33#", "1.896%" },
@@ -5578,6 +5589,8 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 23200, "INV_Relics_TotemofLife", "=q3=Totem of Sustaining", "=ds=#s16#, #e17# =q15=#c7#", "4%" },
 		{ 18680, "INV_Weapon_Bow_08", "=q3=Ancient Bone Bow", "=ds=#w2#", "4%" },
 		{ 18683, "INV_Hammer_13", "=q3=Hammer of the Vesper", "=ds=#h1#, #w6#", "4%" },
+		{ 0, "", "", "", "" },
+		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "5%" },
 	};
 	SCHOLOLorekeeperPolkelt ={
 		{ 16705, "INV_Gauntlets_32", "=q3=Dreadmist Wraps", "=ds=#s9#, #a1# (D1, =q11=#c8#=ds=)", "17%" },

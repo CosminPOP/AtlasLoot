@@ -790,6 +790,7 @@ AtlasLoot_TableNames = {
 	["SmithingJourneyman2"] = { AL["Blacksmithing"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
 	["SmithingExpert1"] = { AL["Blacksmithing"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
 	["SmithingExpert2"] = { AL["Blacksmithing"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["SmithingExpert3"] = { AL["Blacksmithing"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
 	["SmithingArtisan1"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 	["SmithingArtisan2"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 	["SmithingArtisan3"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
@@ -854,8 +855,10 @@ AtlasLoot_TableNames = {
 	["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },
 	--Survival
 	["Survival1"] = { AL["Survival"], "AtlasLootCrafting" },
+	["Survival2"] = { AL["Garderning"], "AtlasLootCrafting" },
 	--Poisons
 	["Poisons1"] = { AL["Rogue"] .. ": " .. AL["Poisons"], "AtlasLootCrafting" },
+	
 
 	-----------
 	--- PvP ---
@@ -952,6 +955,7 @@ AtlasLoot_TableNames = {
 	["TAILORINGMENU"] = { "dummy", "dummy" },
 	["COOKINGMENU"] = { "dummy", "dummy" },
 	["FIRSTAIDMENU"] = { "dummy", "dummy" },
+	["SURVIVALMENU"] = { "dummy", "dummy" },
 	["WishList"] = { AL["WishList"], "AtlasLootCharDB" },
 	--If all else fails!
 	["EmptyInstance"] = { "AtlasLoot", "AtlasLootFallback" },
@@ -1791,6 +1795,7 @@ AtlasLoot_TableNamesBoss = {
 		["SmithingJourneyman2"] = { AL["Blacksmithing"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
 		["SmithingExpert1"] = { AL["Blacksmithing"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
 		["SmithingExpert2"] = { AL["Blacksmithing"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["SmithingExpert3"] = { AL["Blacksmithing"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
 		["SmithingArtisan1"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 		["SmithingArtisan2"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 		["SmithingArtisan3"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
@@ -1855,6 +1860,7 @@ AtlasLoot_TableNamesBoss = {
 		["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },
 		--Survival
 		["Survival1"] = { AL["Survival"], "AtlasLootCrafting" },
+		["Survival2"] = { AL["Garderning"], "AtlasLootCrafting" },
 		--Poisons
 		["Poisons1"] = { AL["Rogue"] .. ": " .. AL["Poisons"], "AtlasLootCrafting" },
 	},

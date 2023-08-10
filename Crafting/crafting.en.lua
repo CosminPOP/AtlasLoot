@@ -705,9 +705,13 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s9995", "inv_axe_03", "=q2=Blue Glittering Axe", "=ds=#sr# =so1=220 =so2=245 =so3=257 =so4=270" },
 		{ "s46626", "inv_boots_plate_01", "=q2=Steel Plate Boots", "=ds=#sr# =so1=220 =so2=220 =so3=220 =so4=220" },
 		{ "s46627", "inv_gauntlets_31", "=q2=Steel Plate Gauntlets", "=ds=#sr# =so1=220 =so2=220 =so3=220 =so4=220" },
+		{ "s9942", "inv_gauntlets_31", "=q2=Mithril Scale Gloves", "=ds=#sr# =so1=220 =so2=240 =so3=250 =so4=260" },
 		{ "s9952", "inv_shoulder_09", "=q2=Ornate Mithril Shoulders", "=ds=#sr# =so1=225 =so2=245 =so3=255 =so4=265" },
 		{ "s9997", "inv_sword_10", "=q2=Wicked Mithril Blade", "=ds=#sr# =so1=225 =so2=250 =so3=262 =so4=275" },
 		{ "s46629", "inv_chest_chain_10", "=q2=Steel Plate Armor", "=ds=#sr# =so1=225 =so2=225 =so3=225 =so4=225" },
+	};
+	
+	SmithingExpert3 = {
 		{ "s46628", "inv_pants_04", "=q2=Steel Plate Legguards", "=ds=#sr# =so1=225 =so2=225 =so3=225 =so4=225" },
 	};
 
@@ -834,30 +838,31 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 	};
 
 	Axesmith1 = {
-	{ "s16970", "inv_axe_05", "=q3=Dawn's Edge", "=ds=#sr# =so1=275 =so2=300 =so3=312 =so4=325" },
-	{ "s16991", "inv_axe_12", "=q3=Annihilator", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-	{ "s16994", "inv_axe_09", "=q3=Arcanite Reaper", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-	{ "s20897", "inv_axe_12", "=q3=Dark Iron Destroyer", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-	{ "s23653", "inv_axe_12", "=q4=Nightfall", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s16970", "inv_axe_05", "=q3=Dawn's Edge", "=ds=#sr# =so1=275 =so2=300 =so3=312 =so4=325" },
+		{ "s16991", "inv_axe_12", "=q3=Annihilator", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s16994", "inv_axe_09", "=q3=Arcanite Reaper", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s20897", "inv_axe_12", "=q3=Dark Iron Destroyer", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s23653", "inv_axe_12", "=q4=Nightfall", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 	};
 
 	Hammersmith1 = {
-	{ "s16973", "inv_hammer_05", "=q3=Enchanted Battlehammer", "=ds=#sr# =so1=280 =so2=305 =so3=317 =so4=330" },
-	{ "s16983", "inv_mace_02", "=q3=Serenity", "=ds=#sr# =so1=285 =so2=310 =so3=322 =so4=335" },
-	{ "s16988", "inv_hammer_09", "=q3=Hammer of the Titans", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-	{ "s16993", "inv_hammer_04", "=q3=Masterwork Stormhammer", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-	{ "s23650", "inv_hammer_19", "=q4=Ebon Hand", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-	{ "s27830", "inv_hammer_08", "=q4=Persuader", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s16973", "inv_hammer_05", "=q3=Enchanted Battlehammer", "=ds=#sr# =so1=280 =so2=305 =so3=317 =so4=330" },
+		{ "s16983", "inv_mace_02", "=q3=Serenity", "=ds=#sr# =so1=285 =so2=310 =so3=322 =so4=335" },
+		{ "s16988", "inv_hammer_09", "=q3=Hammer of the Titans", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s16993", "inv_hammer_04", "=q3=Masterwork Stormhammer", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s23650", "inv_hammer_19", "=q4=Ebon Hand", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s27830", "inv_hammer_08", "=q4=Persuader", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 	};
 
 	Swordsmith1 = {
-	{ "s16978", "inv_sword_30", "=q3=Blazing Rapier", "=ds=#sr# =so1=280 =so2=305 =so3=317 =so4=330" },
-	{ "s16985", "inv_sword_07", "=q3=Corruption", "=ds=#sr# =so1=290 =so2=315 =so3=327 =so4=340" },
-	{ "s16990", "inv_sword_39", "=q3=Arcanite Champion", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-	{ "s16992", "inv_sword_11", "=q3=Frostguard", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-	{ "s20890", "inv_sword_48", "=q3=Dark Iron Reaver", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-	{ "s23652", "inv_sword_39", "=q4=Blackguard", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-	{ "s27832", "inv_sword_51", "=q4=Sageblade", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s16978", "inv_sword_30", "=q3=Blazing Rapier", "=ds=#sr# =so1=280 =so2=305 =so3=317 =so4=330" },
+		{ "s16985", "inv_sword_07", "=q3=Corruption", "=ds=#sr# =so1=290 =so2=315 =so3=327 =so4=340" },
+		{ "s16990", "inv_sword_39", "=q3=Arcanite Champion", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s16992", "inv_sword_11", "=q3=Frostguard", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s20890", "inv_sword_48", "=q3=Dark Iron Reaver", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s23652", "inv_sword_39", "=q4=Blackguard", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s27832", "inv_sword_51", "=q4=Sageblade", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
+		{ "s46661", "inv_sword_31", "=q4=Dream's Herald", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 	};
 
 --------------------
@@ -1465,6 +1470,8 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s3941", "inv_misc_bomb_09", "=q1=Small Bronze Bomb", "=ds=#sr# =so1=120 =so2=120 =so3=145 =so4=170" },
 		{ "s3939", "inv_weapon_rifle_07", "=q2=Lovingly Crafted Boomstick", "=ds=#sr# =so1=120 =so2=145 =so3=157 =so4=170" },
 		{ "s3940", "inv_helmet_47", "=q2=Shadow Goggles", "=ds=#sr# =so1=120 =so2=145 =so3=157 =so4=170" },
+		{ "s47027", "inv_gizmo_06", "=q1=Portable Wormhole Generator: Stormwind", "=ds=#sr# =so1=120 =so2=145 =so3=157 =so4=170" },
+		{ "s47028", "inv_gizmo_06", "=q1=Portable Wormhole Generator: Orgrimmar", "=ds=#sr# =so1=120 =so2=145 =so3=157 =so4=170" },
 		{ "s3947", "inv_ammo_bullet_02", "=q1=Crafted Solid Shot", "=ds=#sr# =so1=125 =so2=125 =so3=135 =so4=145" },
 		{ "s3945", "inv_misc_dust_06", "=q1=Heavy Blasting Powder", "=ds=#sr# =so1=125 =so2=125 =so3=135 =so4=145" },
 		{ "s3946", "inv_misc_bomb_06", "=q1=Heavy Dynamite", "=ds=#sr# =so1=125 =so2=125 =so3=135 =so4=145" },
@@ -1480,11 +1487,11 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s3952", "inv_gizmo_07", "=q2=Minor Recombobulator", "=ds=#sr# =so1=140 =so2=165 =so3=177 =so4=190" },
 		{ "s3953", "inv_gizmo_bronzeframework_01", "=q1=Bronze Framework", "=ds=#sr# =so1=145 =so2=145 =so3=170 =so4=195" },
 		{ "s3954", "inv_weapon_rifle_06", "=q2=Moonsight Rifle", "=ds=#sr# =so1=145 =so2=170 =so3=182 =so4=195" },
-		{ "s9271", "inv_misc_food_26", "=q1=Aquadynamic Fish Attractor", "=ds=#sr# =so1=150 =so2=150 =so3=160 =so4=170" },
-		{ "s23067", "spell_ice_magicdamage", "=q1=Blue Firework", "=ds=#sr# =so1=150 =so2=150 =so3=162 =so4=175" },
 	};
 	
 	EngineeringJourneyman2 = {	
+		{ "s9271", "inv_misc_food_26", "=q1=Aquadynamic Fish Attractor", "=ds=#sr# =so1=150 =so2=150 =so3=160 =so4=170" },
+		{ "s23067", "spell_ice_magicdamage", "=q1=Blue Firework", "=ds=#sr# =so1=150 =so2=150 =so3=162 =so4=175" },
 		{ "s23068", "spell_nature_abolishmagic", "=q1=Green Firework", "=ds=#sr# =so1=150 =so2=150 =so3=162 =so4=175" },
 		{ "s23066", "spell_fire_fireball02", "=q1=Red Firework", "=ds=#sr# =so1=150 =so2=150 =so3=162 =so4=175" },
 		{ "s12584", "inv_battery_02", "=q1=Gold Power Core", "=ds=#sr# =so1=150 =so2=150 =so3=170 =so4=190" },
@@ -1885,6 +1892,35 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s46066", "inv_boots_fabric_01", "=q2=Murloc's Flippers", "=ds=#sr# =so1=75 =so2=150 =so3=? =so4=?" },
 		{ 0, "", "", "" },
 		{ "s46077", "inv_misc_lantern_01", "=q3=Repaired Electro-Lantern", "=ds=#sr# =so1=90 =so2=120 =so3=135 =so4=150" },
+	};
+	
+	Survival2 = {
+		{ 0, "", "", "" },
+		{ 0, "trade_herbalism", "=q6=#p17#", "" },
+		{ 0, "", "", "" },
+		{ 51706, "inv_misc_bag_03", "=q1=Country Pumpkin Seeds", "", "" },
+		{ 51713, "inv_misc_food_25", "=q1=Plump Country Pumpkin", "3-8", "" },
+		{ 51710, "inv_misc_food_25", "=q1=Plump Country Pumpkin", "3-8", "" },
+		{ 0, "", "", "" },
+		{ 51707, "inv_misc_bag_04", "=q1=Mountain Berry Bush Seeds", "3-8", "" },
+		{ 51711, "inv_misc_food_40", "=q1=Sweet Mountain Berry", "3-8", "" },
+		{ 51714, "inv_misc_food_40", "=q1=Sweet Mountain Berry", "3-8", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 51708, "inv_misc_bag_06", "=q1=Striped Melon Seeds", "", "" },
+		{ 51718, "inv_misc_food_22", "=q1=Juicy Striped Melon", "3-8", "" },
+		{ 51712, "inv_misc_food_22", "=q1=Juicy Striped Melon", "3-8", "" },
+		{ 0, "", "", "" },
+		{ 51716, "inv_misc_bag_04", "=q1=Magic Mushroom Spores", "", "" },
+		{ 51720, "inv_mushroom_11", "=q1=Power Mushroom", "2-6", "" },
+		{ 51717, "inv_mushroom_11", "=q1=Hardened Mushroom", "2-6", "" },
+		
 	};
 
 	Poisons1 = {
