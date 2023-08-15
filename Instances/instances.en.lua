@@ -1523,7 +1523,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 16858, "INV_Belt_27", "=q4=Lawbringer Belt", "=ds=#s10#, #a4# =q16=#c4#", "0.3%" },
 		{ 16864, "INV_Belt_09", "=q4=Belt of Might", "=ds=#s10#, #a4# =q17=#c9#", "0.3%" },
 		{ 0,"","","" },
-		{ 81260, "INV_Axe_23"", "=q4=Lavashard Axe", "=ds=#h1#, #w1#", "0.2%" },
+		{ 81260, "INV_Axe_23", "=q4=Lavashard Axe", "=ds=#h1#, #w1#", "0.2%" },
 		{ 17011, "Spell_Nature_Earthquake","=q3=Lava Core","=ds=#m31#", "15%" },
 		{ 17010, "Spell_Fire_FlameBolt","=q3=Fiery Core","=ds=#m31#", "35%" },
 		{ 11382, "INV_Misc_Gem_Bloodstone_03","=q2=Blood of the Mountain","=ds=#m31# =q7=#x63#", "0.02%" },

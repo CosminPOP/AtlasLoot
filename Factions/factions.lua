@@ -746,7 +746,7 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 		{ 60729, "INV_Gauntlets_09", "=q3=Skulker's Gloves", "=ds=#s9#, #a2#" },
 		{ 0, "", "", "" },
 		{ 0, "INV_Staff_13", "=q3=Exalted", "" },
-		{ 60724, "INV_Helmet_11", "=q4=Dalarani Conjurer's Hat", "=ds=#s1#, #a1#" }
+		{ 60724, "INV_Helmet_11", "=q4=Dalarani Conjurer's Hat", "=ds=#s1#, #a1#" },
 		{ 60725, "INV_Jewelry_Ring_34", "=q4=Ring of Flowing Leylines", "=ds=#s13#" },
 	};
 	Wildhammer = {
