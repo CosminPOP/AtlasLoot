@@ -380,7 +380,11 @@ AtlasLoot_TableNames = {
 	-- Caverns of Time: Black Morass
 	["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
 	["COTBMHarbingerAphygth"] = { AL["Harbinger Aph'ygth"], "AtlasLootItems" },
+	["COTBMEpidamu"] = { AL["Epidamu"], "AtlasLootItems" },
+	["COTBMDriftingAvatar"] = { AL["Drifting Avatar of Time"], "AtlasLootItems" },
 	["COTBMTimeLordEpochronos"] = { AL["Time-Lord Epochronos"], "AtlasLootItems" },
+	["COTBMMossheart"] = { AL["Mossheart"], "AtlasLootItems" },
+	["COTBMRotmaw"] = { AL["Rotmaw"], "AtlasLootItems" },
 	["COTBMAntnormi"] = { AL["Antnormi"], "AtlasLootItems" },
 	["COTBMInfiniteChromie"] = { AL["Infinite Chromie"], "AtlasLootItems" },
 	-- Stormwind Vault
@@ -480,6 +484,16 @@ AtlasLoot_TableNames = {
 	["ZGTrash1"] = { AL["Trash Mobs"] .. " (" .. AL["Zul'Gurub"] .. ")", "AtlasLootItems" },
 	["ZGTrash2"] = { AL["Trash Mobs"] .. " (" .. AL["Zul'Gurub"] .. ")", "AtlasLootItems" },
 	["ZGEnchants"] = { "ZG Enchants", "AtlasLootItems" },
+	--Emerald Sanctum
+	["ESErennius"] = { AL["Erennius"], "AtlasLootItems" },
+	["ESSolnius"] = { AL["Solnius the Awakener"], "AtlasLootItems" },
+	--Lower Karazhan Halls
+	["LKHBoss1"] = { AL["LKHBoss1"], "AtlasLootItems" },
+	["LKHBroodQueenAraxxna"] = { AL["Erennius"], "AtlasLootItems" },
+	["LKHLordBlackwaldII"] = { AL["Lord Blackwald II"], "AtlasLootItems" },
+	["LKHClawlordHowlfang"] = { AL["Clawlord Howlfang"], "AtlasLootItems" },
+	["LKHGrizikil"] = { AL["Grizikil"], "AtlasLootItems" },
+	["LKHMoroes"] = { AL["Moroes"], "AtlasLootItems" },
 
 	------------
 	--- Sets ---
@@ -1090,7 +1104,11 @@ AtlasLoot_TableNamesBoss = {
 	["Caverns of Time: Black Morass"] = {
 		["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
 		["COTBMHarbingerAphygth"] = { AL["Harbinger Aph'ygth"], "AtlasLootItems" },
+		["COTBMEpidamu"] = { AL["Epidamu"], "AtlasLootItems" },
+		["COTBMDriftingAvatar"] = { AL["Drifting Avatar of Time"], "AtlasLootItems" },
 		["COTBMTimeLordEpochronos"] = { AL["Time-Lord Epochronos"], "AtlasLootItems" },
+		["COTBMMossheart"] = { AL["Mossheart"], "AtlasLootItems" },
+		["COTBMRotmaw"] = { AL["Rotmaw"], "AtlasLootItems" },
 		["COTBMAntnormi"] = { AL["Antnormi"], "AtlasLootItems" },
 		["COTBMInfiniteChromie"] = { AL["Infinite Chromie"], "AtlasLootItems" },
 	},
@@ -1476,6 +1494,18 @@ AtlasLoot_TableNamesBoss = {
 		["ZGTrash1"] = { AL["Trash Mobs"] .. " (" .. AL["Zul'Gurub"] .. ")", "AtlasLootItems" },
 		["ZGTrash2"] = { AL["Trash Mobs"] .. " (" .. AL["Zul'Gurub"] .. ")", "AtlasLootItems" },
 		["ZGEnchants"] = { "ZG Enchants", "AtlasLootItems" },
+	},
+	["Emerald Sanctum"] = {
+		["ESErennius"] = { AL["Erennius"], "AtlasLootItems" },
+		["ESSolnius"] = { AL["Solnius the Awakener"], "AtlasLootItems" },
+	},
+	["Lower Karazhan Halls"] = {
+		["LKHBoss1"] = { AL["LKHBoss1"], "AtlasLootItems" },
+		["LKHBroodQueenAraxxna"] = { AL["Erennius"], "AtlasLootItems" },
+		["LKHLordBlackwaldII"] = { AL["Lord Blackwald II"], "AtlasLootItems" },
+		["LKHClawlordHowlfang"] = { AL["Clawlord Howlfang"], "AtlasLootItems" },
+		["LKHGrizikil"] = { AL["Grizikil"], "AtlasLootItems" },
+		["LKHMoroes"] = { AL["Moroes"], "AtlasLootItems" },
 	},
 
 	------------

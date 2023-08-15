@@ -1,21 +1,21 @@
 --[[
-Name: Dewdrop-2.0
+Name: Hewdrop-2.0
 Revision: $Rev: 17882 $
 Author(s): ckknight (ckknight@gmail.com)
 Website: http://ckknight.wowinterface.com/
-Documentation: http://wiki.wowace.com/index.php/Dewdrop-2.0
-SVN: http://svn.wowace.com/root/trunk/DewdropLib/Dewdrop-2.0
+Documentation: http://wiki.wowace.com/index.php/Hewdrop-2.0
+SVN: http://svn.wowace.com/root/trunk/HewdropLib/Hewdrop-2.0
 Description: A library to provide a clean dropdown menu interface.
 Dependencies: AceLibrary
 ]]
 
-local MAJOR_VERSION = "Dewdrop-2.0"
+local MAJOR_VERSION = "Hewdrop-2.0"
 local MINOR_VERSION = "$Revision: 17882 $"
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 if not AceLibrary:IsNewVersion(MAJOR_VERSION, MINOR_VERSION) then return end
 
-local Dewdrop = {}
+local Hewdrop = {}
 
 local VALIDATION_ERROR = "Validation error"
 local RESET_KEYBINDING_DESC = "Hit escape to clear the keybinding."
@@ -340,7 +340,7 @@ local function AcquireButton(self, level)
 	local button
 	if table.getn(buttons) == 0 then
 		numButtons = numButtons + 1
-		button = CreateFrame("Button", "Dewdrop20Button" .. numButtons, nil)
+		button = CreateFrame("Button", "Hewdrop20Button" .. numButtons, nil)
 		button:SetFrameStrata("FULLSCREEN_DIALOG")
 		button:SetHeight(16)
 		local highlight = button:CreateTexture(nil, "BACKGROUND")
@@ -579,7 +579,7 @@ local function AcquireLevel(self, level)
 		for i = table.getn(levels) + 1, level, -1 do
 			local i = i
 			numLevels = numLevels + 1
-			local frame = CreateFrame("Button", "Dewdrop20Level" .. numLevels, nil)
+			local frame = CreateFrame("Button", "Hewdrop20Level" .. numLevels, nil)
 			if i == 1 then
 				if lua51 then
 					local old_CloseSpecialWindows = CloseSpecialWindows
@@ -622,7 +622,7 @@ local function AcquireLevel(self, level)
 			local backdrop = CreateFrame("Frame", nil, frame)
 			backdrop:SetAllPoints(frame)
 			backdrop:SetBackdrop(tmp(
-				'bgFile', "Interface\\Tooltips\\UI-Tooltip-Background",
+				'bgFile', "Interface\\ChatFrame\\ChatFrameBackground",
 				'edgeFile', "Interface\\Tooltips\\UI-Tooltip-Border",
 				'tile', true,
 				'insets', tmp2(
@@ -635,7 +635,7 @@ local function AcquireLevel(self, level)
 				'edgeSize', 16
 			))
 			backdrop:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g, TOOLTIP_DEFAULT_COLOR.b)
-			backdrop:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r, TOOLTIP_DEFAULT_BACKGROUND_COLOR.g, TOOLTIP_DEFAULT_BACKGROUND_COLOR.b)
+			backdrop:SetBackdropColor(0, 0, 0, 1)
 			frame:SetScript("OnClick", function()
 				self:Close(i)
 			end)
@@ -937,10 +937,10 @@ local othersort_validate
 
 local baseFunc, currentLevel
 
-function Dewdrop:FeedAceOptionsTable(options, difference)
+function Hewdrop:FeedAceOptionsTable(options, difference)
 	self:argCheck(options, 2, "table")
 	self:argCheck(difference, 3, "nil", "number")
-	self:assert(currentLevel, "Cannot call `FeedAceOptionsTable' outside of a Dewdrop declaration")
+	self:assert(currentLevel, "Cannot call `FeedAceOptionsTable' outside of a Hewdrop declaration")
 	if not difference then
 		difference = 0
 	end
@@ -952,9 +952,9 @@ function Dewdrop:FeedAceOptionsTable(options, difference)
 
 		if err then
 			if position then
-				Dewdrop:error(position .. ": " .. err)
+				Hewdrop:error(position .. ": " .. err)
 			else
-				Dewdrop:error(err)
+				Hewdrop:error(err)
 			end
 		end
 
@@ -1071,7 +1071,7 @@ function Dewdrop:FeedAceOptionsTable(options, difference)
 						checked = v.get(passValue)
 					else
 						if not handler[v.get] then
-							Dewdrop:error("Handler %q not available", v.get)
+							Hewdrop:error("Handler %q not available", v.get)
 						end
 						checked = handler[v.get](handler, passValue)
 					end
@@ -1086,7 +1086,7 @@ function Dewdrop:FeedAceOptionsTable(options, difference)
 						end
 					else
 						if not handler[v.set] then
-							Dewdrop:error("Handler %q not available", v.set)
+							Hewdrop:error("Handler %q not available", v.set)
 						end
 						func = handler[v.set]
 						arg1 = handler
@@ -1121,7 +1121,7 @@ function Dewdrop:FeedAceOptionsTable(options, difference)
 						arg1 = passValue
 					else
 						if not handler[v.func] then
-							Dewdrop:error("Handler %q not available", v.func)
+							Hewdrop:error("Handler %q not available", v.func)
 						end
 						func = handler[v.func]
 						arg1 = handler
@@ -1150,7 +1150,7 @@ function Dewdrop:FeedAceOptionsTable(options, difference)
 						sliderValue = v.get(passValue)
 					else
 						if not handler[v.get] then
-							Dewdrop:error("Handler %q not available", v.get)
+							Hewdrop:error("Handler %q not available", v.get)
 						end
 						sliderValue = handler[v.get](handler, passValue)
 					end
@@ -1160,7 +1160,7 @@ function Dewdrop:FeedAceOptionsTable(options, difference)
 						sliderArg1 = passValue
 					else
 						if not handler[v.set] then
-							Dewdrop:error("Handler %q not available", v.set)
+							Hewdrop:error("Handler %q not available", v.set)
 						end
 						sliderFunc = handler[v.set]
 						sliderArg1 = handler
@@ -1195,7 +1195,7 @@ function Dewdrop:FeedAceOptionsTable(options, difference)
 						r,g,b,a = v.get(passValue)
 					else
 						if not handler[v.get] then
-							Dewdrop:error("Handler %q not available", v.get)
+							Hewdrop:error("Handler %q not available", v.get)
 						end
 						r,g,b,a = handler[v.get](handler, passValue)
 					end
@@ -1205,7 +1205,7 @@ function Dewdrop:FeedAceOptionsTable(options, difference)
 						colorArg1 = passValue
 					else
 						if not handler[v.set] then
-							Dewdrop:error("Handler %q not available", v.set)
+							Hewdrop:error("Handler %q not available", v.set)
 						end
 						colorFunc = handler[v.set]
 						colorArg1 = handler
@@ -1252,7 +1252,7 @@ function Dewdrop:FeedAceOptionsTable(options, difference)
 							editBoxText = nil
 						else
 							if not handler[v.get] then
-								Dewdrop:error("Handler %q not available", v.get)
+								Hewdrop:error("Handler %q not available", v.get)
 							end
 							editBoxText = handler[v.get](handler, passValue)
 						end
@@ -1262,7 +1262,7 @@ function Dewdrop:FeedAceOptionsTable(options, difference)
 							editBoxArg1 = passValue
 						else
 							if not handler[v.set] then
-								Dewdrop:error("Handler %q not available", v.set)
+								Hewdrop:error("Handler %q not available", v.set)
 							end
 							editBoxFunc = handler[v.set]
 							editBoxArg1 = handler
@@ -1276,7 +1276,7 @@ function Dewdrop:FeedAceOptionsTable(options, difference)
 								editBoxValidateFunc = v.validate
 							else
 								if not handler[v.validate] then
-									Dewdrop:error("Handler %q not available", v.validate)
+									Hewdrop:error("Handler %q not available", v.validate)
 								end
 								editBoxValidateFunc = handler[v.validate]
 								editBoxValidateArg1 = handler
@@ -1363,7 +1363,7 @@ function Dewdrop:FeedAceOptionsTable(options, difference)
 			current = options.get(passValue)
 		elseif options.get ~= false then
 			if not handler[options.get] then
-				Dewdrop:error("Handler %q not available", options.get)
+				Hewdrop:error("Handler %q not available", options.get)
 			end
 			current = handler[options.get](handler, passValue)
 		end
@@ -1400,7 +1400,7 @@ function Dewdrop:FeedAceOptionsTable(options, difference)
 				end
 			else
 				if not handler[options.set] then
-					Dewdrop:error("Handler %q not available", options.set)
+					Hewdrop:error("Handler %q not available", options.set)
 				end
 				func = handler[options.set]
 				arg1 = handler
@@ -1490,7 +1490,7 @@ function Refresh(self, level)
 	end
 end
 
-function Dewdrop:Refresh(level)
+function Hewdrop:Refresh(level)
 	self:argCheck(level, 2, "number")
 	Refresh(self, levels[level])
 end
@@ -2088,22 +2088,22 @@ function OpenEditBox(self, parent)
 	end
 end
 
-function Dewdrop:IsOpen(parent)
+function Hewdrop:IsOpen(parent)
 	self:argCheck(parent, 2, "table", "nil")
 	return levels[1] and levels[1]:IsShown() and (not parent or parent == levels[1].parent or parent == levels[1]:GetParent())
 end
 
-function Dewdrop:GetOpenedParent()
+function Hewdrop:GetOpenedParent()
 	return (levels[1] and levels[1]:IsShown()) and (levels[1].parent or levels[1]:GetParent())
 end
 
 function Open(self, parent, func, level, value, point, relativePoint, cursorX, cursorY)
 	self:Close(level)
-	if DewdropLib then
-		local d = DewdropLib:GetInstance('1.0')
+	if HewdropLib then
+		local d = HewdropLib:GetInstance('1.0')
 		local ret, val = pcall(d, IsOpen, d)
 		if ret and val then
-			DewdropLib:GetInstance('1.0'):Close()
+			HewdropLib:GetInstance('1.0'):Close()
 		end
 	end
 	parent:GetCenter()
@@ -2254,12 +2254,12 @@ function Open(self, parent, func, level, value, point, relativePoint, cursorX, c
 	StartCounting(self, level)
 end
 
-function Dewdrop:IsRegistered(parent)
+function Hewdrop:IsRegistered(parent)
 	self:argCheck(parent, 2, "table")
 	return not not self.registry[parent]
 end
 
-function Dewdrop:Register(parent, k1, v1, k2, v2, k3, v3, k4, v4, k5, v5, k6, v6, k7, v7, k8, v8, k9, v9, k10, v10, k11, v11, k12, v12, k13, v13, k14, v14, k15, v15, k16, v16, k17, v17, k18, v18, k19, v19, k20, v20)
+function Hewdrop:Register(parent, k1, v1, k2, v2, k3, v3, k4, v4, k5, v5, k6, v6, k7, v7, k8, v8, k9, v9, k10, v10, k11, v11, k12, v12, k13, v13, k14, v14, k15, v15, k16, v16, k17, v17, k18, v18, k19, v19, k20, v20)
 	self:argCheck(parent, 2, "table")
 	if self.registry[parent] then
 		self:Unregister(parent)
@@ -2270,9 +2270,9 @@ function Dewdrop:Register(parent, k1, v1, k2, v2, k3, v3, k4, v4, k5, v5, k6, v6
 
 		if err then
 			if position then
-				Dewdrop:error(position .. ": " .. err)
+				Hewdrop:error(position .. ": " .. err)
 			else
-				Dewdrop:error(err)
+				Hewdrop:error(err)
 			end
 		end
 	end
@@ -2308,12 +2308,12 @@ function Dewdrop:Register(parent, k1, v1, k2, v2, k3, v3, k4, v4, k5, v5, k6, v6
 	self.onceRegistered[parent] = true
 end
 
-function Dewdrop:Unregister(parent)
+function Hewdrop:Unregister(parent)
 	self:argCheck(parent, 2, "table")
 	self.registry[parent] = nil
 end
 
-function Dewdrop:Open(parent, k1, v1, k2, v2, k3, v3, k4, v4, k5, v5, k6, v6, k7, v7, k8, v8, k9, v9, k10, v10, k11, v11, k12, v12, k13, v13, k14, v14, k15, v15, k16, v16, k17, v17, k18, v18, k19, v19, k20, v20)
+function Hewdrop:Open(parent, k1, v1, k2, v2, k3, v3, k4, v4, k5, v5, k6, v6, k7, v7, k8, v8, k9, v9, k10, v10, k11, v11, k12, v12, k13, v13, k14, v14, k15, v15, k16, v16, k17, v17, k18, v18, k19, v19, k20, v20)
 	self:argCheck(parent, 2, "table")
 	local info
 	if type(k1) == "table" and k1[0] and k1.IsFrameType and self.registry[k1] then
@@ -2358,15 +2358,15 @@ function Clear(self, level)
 	end
 end
 
-function Dewdrop:Close(level)
+function Hewdrop:Close(level)
 	if DropDownList1:IsShown() then
 		DropDownList1:Hide()
 	end
-	if DewdropLib then
-		local d = DewdropLib:GetInstance('1.0')
+	if HewdropLib then
+		local d = HewdropLib:GetInstance('1.0')
 		local ret, val = pcall(d, IsOpen, d)
 		if ret and val then
-			DewdropLib:GetInstance('1.0'):Close()
+			HewdropLib:GetInstance('1.0'):Close()
 		end
 	end
 	self:argCheck(level, 2, "number", "nil")
@@ -2398,7 +2398,7 @@ function Dewdrop:Close(level)
 	end
 end
 
-function Dewdrop:AddLine(k1, v1, k2, v2, k3, v3, k4, v4, k5, v5, k6, v6, k7, v7, k8, v8, k9, v9, k10, v10, k11, v11, k12, v12, k13, v13, k14, v14, k15, v15, k16, v16, k17, v17, k18, v18, k19, v19, k20, v20)
+function Hewdrop:AddLine(k1, v1, k2, v2, k3, v3, k4, v4, k5, v5, k6, v6, k7, v7, k8, v8, k9, v9, k10, v10, k11, v11, k12, v12, k13, v13, k14, v14, k15, v15, k16, v16, k17, v17, k18, v18, k19, v19, k20, v20)
 	local info = tmp(k1, v1, k2, v2, k3, v3, k4, v4, k5, v5, k6, v6, k7, v7, k8, v8, k9, v9, k10, v10, k11, v11, k12, v12, k13, v13, k14, v14, k15, v15, k16, v16, k17, v17, k18, v18, k19, v19, k20, v20)
 	local level = info.level or currentLevel
 	info.level = nil
@@ -2584,7 +2584,7 @@ function Dewdrop:AddLine(k1, v1, k2, v2, k3, v3, k4, v4, k5, v5, k6, v6, k7, v7,
 	end
 end
 
-function Dewdrop:InjectAceOptionsTable(handler, options)
+function Hewdrop:InjectAceOptionsTable(handler, options)
 	self:argCheck(handler, 2, "table")
 	self:argCheck(options, 3, "table")
 	if string.lower(tostring(options.type)) ~= "group" then
@@ -2632,7 +2632,7 @@ function Dewdrop:InjectAceOptionsTable(handler, options)
 end
 
 local function activate(self, oldLib, oldDeactivate)
-	Dewdrop = self
+	Hewdrop = self
 	if oldLib and oldLib.registry then
 		self.registry = oldLib.registry
 		self.onceRegistered = oldLib.onceRegistered
@@ -2725,4 +2725,4 @@ local function activate(self, oldLib, oldDeactivate)
 	end
 end
 
-AceLibrary:Register(Dewdrop, MAJOR_VERSION, MINOR_VERSION, activate)
+AceLibrary:Register(Hewdrop, MAJOR_VERSION, MINOR_VERSION, activate)

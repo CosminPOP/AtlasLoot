@@ -645,7 +645,11 @@ AtlasLootBossButtons = {
 		"";
 		"COTBMChronar";
 		"COTBMHarbingerAphygth";
+		"COTBMEpidamu";
+		"COTBMDriftingAvatar";
 		"COTBMTimeLordEpochronos";
+		"COTBMMossheart";
+		"COTBMRotmaw";
 		"COTBMAntnormi";
 		"COTBMInfiniteChromie";
 	};
@@ -924,6 +928,18 @@ AtlasLootBossButtons = {
 		"ZGSET";
 		"ZGEnchants";
 	};
+	LowerKara = {
+		"LKHBoss1";
+		"LKHBroodQueenAraxxna";
+		"LKHLordBlackwaldII";
+		"LKHClawlordHowlfang";
+		"LKHGrizikil";
+		"LKHMoroes";
+	};
+	EmeraldSanctum = {
+		"ESErennius";
+		"ESSolnius";
+	}
 };
 --------------------------------------------------------------------------------
 -- ItemIDs (default english)
@@ -1306,7 +1322,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0,"","","" },
 		{ 0,"","","" },
 		{ 0,"","","" },
-		{ 17782, "", "=q5=Talisman of Binding Shard", "=q1=#s2#", "5%" },
+		{ 17782, "INV_Jewelry_Amulet_04", "=q5=Talisman of Binding Shard", "=q1=#s2#", "5%" },
 		{ 18564, "Spell_Ice_Lament", "=q5=Bindings of the Windseeker", "=q1=#m3# =ds=#m9#", "5%" },
 		{ 19019, "INV_Sword_39", "=q5=Thunderfury, Blessed Blade of the Windseeker", "=q1=#m4# =ds=#h1#, #w10#" },
 		{ 18829, "INV_Shoulder_04", "=q4=Deep Earth Spaulders", "=ds=#s3#, #a3#", "5%" },
@@ -1507,11 +1523,11 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 16858, "INV_Belt_27", "=q4=Lawbringer Belt", "=ds=#s10#, #a4# =q16=#c4#", "0.3%" },
 		{ 16864, "INV_Belt_09", "=q4=Belt of Might", "=ds=#s10#, #a4# =q17=#c9#", "0.3%" },
 		{ 0,"","","" },
-		{ 81260, "", "=q4=Lavashard Axe", "=ds=#h1#, #w1#", "0.2%" },
-		{ 17011,"Spell_Nature_Earthquake","=q3=Lava Core","=ds=#m31#", "15%" },
-		{ 17010,"Spell_Fire_FlameBolt","=q3=Fiery Core","=ds=#m31#", "35%" },
-		{ 11382,"INV_Misc_Gem_Bloodstone_03","=q2=Blood of the Mountain","=ds=#m31# =q7=#x63#", "0.02%" },
-		{ 17012,"INV_Ammo_FireTar","=q1=Core Leather","=ds=#m31#" },
+		{ 81260, "INV_Axe_23"", "=q4=Lavashard Axe", "=ds=#h1#, #w1#", "0.2%" },
+		{ 17011, "Spell_Nature_Earthquake","=q3=Lava Core","=ds=#m31#", "15%" },
+		{ 17010, "Spell_Fire_FlameBolt","=q3=Fiery Core","=ds=#m31#", "35%" },
+		{ 11382, "INV_Misc_Gem_Bloodstone_03","=q2=Blood of the Mountain","=ds=#m31# =q7=#x63#", "0.02%" },
+		{ 17012, "INV_Ammo_FireTar","=q1=Core Leather","=ds=#m31#" },
 		{ 16819, "INV_Bracer_09", "=q4=Vambraces of Prophecy", "=ds=#s8#, #a1# =q9=#c5#", "0.3%" },
 		{ 16799, "INV_Belt_29", "=q4=Arcanist Bindings", "=ds=#s8#, #a1# =q10=#c3#", "0.3%" },
 		{ 16804, "INV_Bracer_07", "=q4=Felheart Bracers", "=ds=#s8#, #a1# =q11=#c8#", "0.3%" },
@@ -2427,7 +2443,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	AQ40Trash1 = { --Drop Chances done 26/06/23
 		{ 21838, "INV_Chest_Cloth_48", "=q4=Garb of Royal Ascension", "=ds=#s5#, #a1#", "0.8% to 0.58%" },
 		{ 21888, "INV_Gauntlets_14", "=q4=Gloves of the Immortal", "=ds=#s9#, #a1#", "0.05% to 0.31%" },
-		{ 21890, "", "=q4=Gloves of the Fallen Prophet", "=ds=#s9#, #a3# =q16=#c7#", "0.11% to 1.76%" },
+		{ 21890, "INV_Gauntlets_11", "=q4=Gloves of the Fallen Prophet", "=ds=#s9#, #a3# =q16=#c7#", "0.11% to 1.76%" },
 		{ 21889, "INV_Gauntlets_19", "=q4=Gloves of the Redeemed Prophecy", "=ds=#s9#, #a4# =q16=#c4#", "0.11% to 1.76%" },
 		{ 21856, "INV_Axe_09", "=q4=Neretzek, The Blood Drinker", "=ds=#h2#, #w1#", "0.08% to 0.28%" },
 		{ 21837, "INV_Hammer_11", "=q4=Anubisath Warhammer", "=ds=#h1#, #w6#", "0.12% to 0.32%" },
@@ -2554,20 +2570,20 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0,"","","" },
 		{ 0,"","","" },
 		{ 0,"","","" },
-		{ 4415,"INV_Scroll_03","=q3=Schematic: Craftsman's Monocle","=ds=#p5# #m26#", "2%" },
-		{ 4393,"INV_Helmet_44","=q2=Craftsman's Monocle","=ds=#s1#, #a1#" },
+		{ 4415,"INV_Scroll_03", "=q3=Schematic: Craftsman's Monocle", "=ds=#p5# #m26#", "2%" },
+		{ 4393,"INV_Helmet_44", "=q2=Craftsman's Monocle", "=ds=#s1#, #a1#" },
 		{ 0, "", "", "" },
-		{ 4413,"INV_Scroll_06","=q2=Schematic: Discombobulator Ray","=ds=#p5# #m27#", "2%" },
-		{ 4388,"INV_Misc_Spyglass_02","=q1=Discombobulator Ray","=ds=#m25#" },
+		{ 4413, "INV_Scroll_06", "=q2=Schematic: Discombobulator Ray", "=ds=#p5# #m27#", "2%" },
+		{ 4388, "INV_Misc_Spyglass_02","=q1=Discombobulator Ray", "=ds=#m25#" },
 		{ 0, "", "", "" },
-		{ 4411,"INV_Scroll_03","=q2=Schematic: Flame Deflector","=ds=#p5# #m28#", "2%" },
-		{ 4376,"INV_Gizmo_01","=q1=Flame Deflector","=ds=#m25#" },
+		{ 4411, "INV_Scroll_03", "=q2=Schematic: Flame Deflector","=ds=#p5# #m28#", "2%" },
+		{ 4376, "INV_Gizmo_01", "=q1=Flame Deflector", "=ds=#m25#" },
 		{ 0, "", "", "" },
-		{ 7742,"INV_Scroll_03","=q1=Schematic: Gnomish Cloaking Device","=ds=#p5# #m29#", "2%" },
-		{ 4397,"INV_Gizmo_01","=q1=Gnomish Cloaking Device","=ds=#s14#" },
+		{ 7742, "INV_Scroll_03", "=q1=Schematic: Gnomish Cloaking Device", "=ds=#p5# #m29#", "2%" },
+		{ 4397 ,"INV_Gizmo_01", "=q1=Gnomish Cloaking Device", "=ds=#s14#" },
 		{ 0,"","","" },
-		{ 51801,"INV_Scroll_05","=q3=Schematic: Hypertech Battery Pack","=ds=#p5# #m41#", "4%" },
-		{ 60098,"","=q2=Hypertech Battery Pack","=ds=#m33#" },
+		{ 51801,"INV_Scroll_05","=q3=Schematic: Hypertech Battery Pack", "=ds=#p5# #m41#", "4%" },
+		{ 60098 ,"INV_Misc_EngGizmos_04", "=q2=Hypertech Battery Pack", "=ds=#m33#" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "1%" },
@@ -2891,19 +2907,19 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#, Quantity of 2", "100%" },
 	};
 	KCTreasure = {
-		{ 5823, "", "=q1=Poisonous Mushroom", "=ds=#m25#", "100%" },
-		{ 11938, "", "=q1=Sack of Gems", "", "100%" },
-		{ 13456, "", "=q1=Greater Frost Protection Potion", "=ds=#m25#", "100%" },
-		{ 60799, "", "=q3=Gauntlets of the Lost Crusader", "=ds=#s9#, #a4#", "14%" },
-		{ 60800, "", "=q2=Femur Club", "=ds=#h1#, #w6#", "14%" },
-		{ 60801, "", "=q2=Tome of Dark Powers", "=ds=#h4#", "14%" },
-		{ 60802, "", "=q2=Shawl of the Forgotten", "=ds=#s4#", "14%" },
-		{ 60796, "", "=q2=Blade of Rotting", "=ds=#h1#, #w10#", "14%" },
-		{ 60797, "", "=q2=Rotskin Leggings", "=ds=#s11#, #a2#", "14%" },
-		{ 60798, "", "=q3=Loop of the Forgotten", "=ds=#s13#", "14%" },
+		{ 5823, "INV_Mushroom_06", "=q1=Poisonous Mushroom", "=ds=#m25#", "100%" },
+		{ 11938, "INV_Misc_Bag_10_Red", "=q1=Sack of Gems", "", "100%" },
+		{ 13456, "INV_Potion_20", "=q1=Greater Frost Protection Potion", "=ds=#m25#", "100%" },
+		{ 60799, "INV_Gauntlets_09", "=q3=Gauntlets of the Lost Crusader", "=ds=#s9#, #a4#", "14%" },
+		{ 60800, "INV_Misc_Bone_01", "=q2=Femur Club", "=ds=#h1#, #w6#", "14%" },
+		{ 60801, "INV_Misc_Book_05", "=q2=Tome of Dark Powers", "=ds=#h4#", "14%" },
+		{ 60802, "INV_Misc_Cape_11", "=q2=Shawl of the Forgotten", "=ds=#s4#", "14%" },
+		{ 60796, "INV_Sword_06", "=q2=Blade of Rotting", "=ds=#h1#, #w10#", "14%" },
+		{ 60797, "INV_Pants_09", "=q2=Rotskin Leggings", "=ds=#s11#, #a2#", "14%" },
+		{ 60798, "INV_Jewelry_Ring_15", "=q3=Loop of the Forgotten", "=ds=#s13#", "14%" },
 	};
 	COTBMChronar = {
-		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
+		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#, 10-15", "100%" },
 		{ 0, "", "", "" },
 		{ 61016, "INV_sword_10", "=q3=Time-Lost Claymore", "=ds=#h2#, #w10#", "17%" },
 		{ 61018, "INV_misc_cape_02", "=q3=Cloak of Elemental Warding", "=ds=#s4#, #a1#", "17%" },
@@ -2915,7 +2931,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 60496, "INV_misc_head_dragon_black", "=q1=Head of Chronar", "=ds=#m3#", "100%" },
 	};
 	COTBMHarbingerAphygth = {
-		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
+		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#, 15-20", "100%" },
 		{ 0, "", "", "" },
 		{ 61015, "INV_jewelry_necklace_04", "=q3=Hollowbone Choker", "=ds=#s2#", "14%" },
 		{ 61024, "INV_boots_01", "=q3=Greaves of the Ceaseless Expanse", "=ds=#s12#, #a3#", "14%" },
@@ -2927,8 +2943,14 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "" },
 		{ 61020, "INV_wand_02", "=q4=Voidstar", "=ds=#w12#", "0.95%" },
 	};
+	COTBMEpidamu = {
+		{ 0, "", "", "" },
+	};
+	COTBMDriftingAvatar = {
+		{ 0, "", "", "" },
+	};
 	COTBMTimeLordEpochronos = {
-		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
+		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#, 15-20", "100%" },
 		{ 0, "", "", "" },
 		{ 50428, "INV_belt_06", "=q3=Ancient Clutch", "=ds=#s10#, #a4#", "12%" },
 		{ 50430, "inv_misc_cape_16", "=q3=Magic-infused Cloak", "=ds=#s4#, #a1#", "12%" },
@@ -2940,9 +2962,29 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61022, "INV_Weapon_Shortblade_38", "=q3=Dagger of the Currents", "=ds=#h4#, #w4#", "12%" },
 		{ 0, "", "", "" },
 		{ 61049, "INV_sword_19", "=q4=Chronobreaker", "=ds=#h2#, #w10#", "0.95%" },
+	};	
+	COTBMMossheart = {
+		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#, 20-25", "100%" },
+		{ 0, "", "", "" },
+		{ 61050, "inv_gauntlets_11", "=q3=Gauntlets of the Bogbeast", "=ds=#s9#, #a3#", "17%" },
+		{ 61051, "inv_misc_root_01", "=q3=Blackthorn Band", "=ds=#s13#", "17%" },
+		{ 61059, "inv_misc_gem_stone_01", "=q3=Mossheart's Heart", "=ds=#s14#", "17%" },
+		{ 61060, "inv_misc_bandana_03", "=q3=Thornweave Mask", "=ds=#s1#, #a2#", "17%" },
+		{ 61061, "inv_chest_cloth_01", "=q3=Regenerating Robe", "=ds=#s5#, #a1#", "17%" },
+		{ 61062, "inv_belt_21", "=q3=Corroded Plate Belt", "=ds=#s10#, #a4#", "17%" },
+	};
+	COTBMRotmaw = {
+		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#, 10-15", "100%" },
+		{ 0, "", "", "" },
+		{ 61023, "inv_chest_leather_08", "=q2=Breastplate of the Wild Hunt", "=ds=#s5#, #a2#", "100%" },
+		{ 61025, "inv_misc_lantern_01", "=q2=Pyreflame Lantern", "=ds=#s15#", "100%" },
+		{ 61029, "inv_jewelry_necklace_22", "=q2=Crocolisk Tooth Necklace", "=ds#s2#", "100%" },
+		{ 61030, "inv_fishingpole_02", "=q2=The Murkfisher", "=ds=#h2#, #w9#", "100%" },
+		{ 61034, "inv_jewelry_ring_12", "=q2=Band of the Marsh Bog", "=ds=#s15#", "100%" },
+		{ 61063, "inv_misc_monsterfang_01", "=q2=Rotmaw's Tooth", "=ds=#h1#, #w4#", "100%" },
 	};
 	COTBMAntnormi = {
-		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
+		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#, 10-15", "100%" },
 		{ 0, "", "", "" },
 		{ 50427, "INV_chest_leather_08", "=q3=Time-blackened Chestpiece", "=ds=#s5#, #a2#", "50%" },
 		{ 61053, "INV_helmet_24", "=q3=Timeloop Headguard", "=ds=#s1#, #a3#", "50%" },
@@ -2953,12 +2995,14 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61027, "INV_shoulder_24", "=q3=Epaulets of the Forgotten Past", "=ds=#s3#, #a1#", "33%" },
 		{ 61040, "INV_gauntlets_05", "=q3=Gloves of the Unknown", "=ds=#s9#, #a1#", "33%" },
 		{ 0, "", "", "" },
+		{ 61014, "INV_DataCrystal01", "Shard of Eternity", "=ds=#s14#", "1%" },
+		{ 0, "", "", "" },
 		{ 51044, "INV_misc_head_dragon_black", "=q1=Antnormi's Head", "=ds=#m3#", "100%" },
 		{ 0, "", "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#, Quantity of 2", "100%" },
 	};
 	COTBMInfiniteChromie = {
-		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#", "100%" },
+		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#, 17-23", "100%" },
 		{ 0, "", "", "" },
 		{ 50431, "INV_bracer_13", "=q3=Extremely Well Crafted Cuffs", "=ds=#s8#, #a1#", "12%" },
 		{ 61032, "INV_jewelry_ring_48naxxramas", "=q3=Band of Infinite Possibilities", "=ds=#s13#", "12%" },
@@ -4889,7 +4933,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 16726,"INV_Chest_Plate03","=q3=Lightforge Breastplate","=ds=#s5#, #a4# (D1, =q16=#c4#=ds=)", "11%" },
 		{ 16730,"INV_Chest_Plate03","=q3=Breastplate of Valor", "=ds=#s5#, #a4# (D1, =q17=#c9#=ds=)", "11%" },
 		{ 0, "", "", "", "" },
-		{ 13090, "", "=q3=Breastplate of the Chosen", "=ds=#s5#, #a3#", "10%" },
+		{ 13090, "INV_Chest_Chain_16", "=q3=Breastplate of the Chosen", "=ds=#s5#, #a3#", "10%" },
 		{ 0, "", "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#, Quantity of 3", "100%" },
 	};
@@ -5298,7 +5342,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 13213, "INV_Misc_Gem_Pearl_01", "=q3=Smolderweb's Eye", "=ds=#s14#", "25%" },
 		{ 13183, "INV_Wand_10", "=q3=Venomspitter", "=ds=#h1#, #w6#", "25%" },
 		{ 0, "", "", "", "" },
-		{ 80758, "", "=q3=Carapace of the Spider Queen", "=ds=#s5#, #a2#", "40%" },
+		{ 80758, "INV_Chest_Leather_03", "=q3=Carapace of the Spider Queen", "=ds=#s5#, #a2#", "40%" },
 		{ 0, "", "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "5%" },
 	};
@@ -5326,7 +5370,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 12835, "INV_Scroll_03", "=q3=Plans: Annihilator", "=ds=#p2# #m14#", "10%" },
 		{ 12798, "INV_Axe_12", "=q3=Annihilator", "=ds=#h3#, #w1#" },
 		{ 0, "", "", "", "" },
-		{ 80759, "", "=q3=Cloak of the Protector", "=ds=#s4#", "40%" },
+		{ 80759, "INV_Misc_Cape_21", "=q3=Cloak of the Protector", "=ds=#s4#", "40%" },
 		{ 0, "", "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "5%" },
 	};
@@ -5368,7 +5412,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 13968, "INV_Jewelry_Talisman_08", "=q3=Eye of the Beast", "=q1=#m4# =ds=#s14# =q9=#c5#=ds=, =q15=#c7#=ds=, =q10=#c3#=ds=, =q11=#c8#=ds=, =q13=#c1#" },
 		{ 13965, "INV_Misc_ArmorKit_09", "=q3=Blackhand's Breadth", "=q1=#m4# =ds=#s14#" },
 		{ 0, "", "", "", "" },
-		{ 80760, "", "=q3=Spireblade Band","=ds=#s13#", "35%" },
+		{ 80760, "INV_Jewelry_Ring_14", "=q3=Spireblade Band","=ds=#s13#", "35%" },
 		{ 0, "", "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#, Quantity of 2", "100%" },
 	};
@@ -6138,5 +6182,44 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 5423, "INV_Axe_17", "=q3=Boahn's Fang", "=ds=#h2#, #w1#", "28%" },
 		{ 0,"","","" },
 		{ 5422, "INV_Pants_02", "=q2=Brambleweed Leggings", "=ds=#s11#, #a2#", "64%" },
+	};
+	LKHBoss1 = {
+		{ 0, "", "", "" },
+	};
+	LKHBroodQueenAraxxna = {
+		{ 0, "", "", "" },
+	};
+	LKHLordBlackwaldII = {
+		{ 0, "", "", "" },
+	};
+	LKHClawlordHowlfang = {
+		{ 0, "", "", "" },
+	};
+	LKHGrizikil = {
+		{ 0, "", "", "" },
+	};
+	LKHMoroes = {
+		{ 0, "", "", "" },
+		{ 61231, "", "=q1=Key to the Upper Chambers", "" },
+	};
+	ESErennius = {
+		{ 0, "", "", "" },
+	};
+	ESSolnius = {
+		{ 17962, "", "=q3=", "", "20%" },
+		{ 17963, "", "=q3=", "", "20%" },
+		{ 17964, "", "=q3=", "", "20%" },
+		{ 17965, "", "=q3=", "", "20%" },
+		{ 17969, "", "=q3=", "", "20%" },
+		{ 60000, "", "=q3=", "", "100%" },
+		{ 0, "", "", "" },
+		{ 61196, "", "=q3=Bag of the Vast Conscious", "", "15%" },
+		{ 61215, "", "=q3=Head of Solnius", "", "100%" },
+		{ 61217, "", "=q2=Formula: Enchant Chest - Mighty Mana", "", "10%" },
+		{ 61218, "", "=q2=Recipe: Elixir of Greater Nature Power", "", "10%" },
+		{ 61424, "", "=q3=Plans: Dreamsteel Mantle", "", "10%" },
+		{ 61428, "", "=q3=Pattern: Dreamhide Mantle", "", "10%" },
+		{ 61432, "", "=q3=Pattern: Dreamthread Mantle", "", "10%" },
+		{ 61444, "", "=q3=Smoldering Dream Essence", "", "10%" },
 	};
 };

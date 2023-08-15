@@ -20,7 +20,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 10412, "INV_Belt_30", "=q2=Belt of the Fang", "=ds=#s10#, #a2# =q7=#x2#", "8.64%" },
 		{ 10410, "INV_Pants_11", "=q3=Leggings of the Fang", "=ds=#s11#, #a2# =q7=#x1#", "16.03%" },
 		{ 10411, "INV_Boots_04", "=q2=Footpads of the Fang", "=ds=#s12#, #a2# =q7=#x3#", "19.08%" },
-		{ 81006, "", "=q2=Cowl of the Fang", "=ds=#s1#, #a1#", "5%" },
+		{ 81006, "INV_HELMET_27", "=q2=Cowl of the Fang", "=ds=#s1#, #a1#", "5%" },
 	};
 	SCARLET = {
 		{ 0, "", "", "" },

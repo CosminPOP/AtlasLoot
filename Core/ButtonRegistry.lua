@@ -488,24 +488,52 @@ AtlasLoot_ButtonRegistry = {
 	};
 	["COTBMHarbingerAphygth"] = {
 		Title = AL["Harbinger Aph'ygth"];
-		Next_Page = "COTBMTimeLordEpochronos";
-		Next_Title = AL["Time-Lord Epochronos"];
+		Next_Page = "COTBMEpidamu";
+		Next_Title = AL["Epidamu"];
 		Prev_Page = "COTBMChronar";
 		Prev_Title = AL["Chronar"];
 	};
+	["COTBMEpidamu"] = {
+		Title = AL["Epidamu"];
+		Next_Page = "COTBMDriftingAvatar";
+		Next_Title = AL["Drifting Avatar of Time"];
+		Prev_Page = "COTBMChronar";
+		Prev_Title = AL["Chronar"];
+	};
+	["COTBMDriftingAvatar"] = {
+		Title = AL["Drifting Avatar of Time"];
+		Next_Page = "COTBMTimeLordEpochronos";
+		Next_Title = AL["Time-Lord Epochronos"];
+		Prev_Page = "COTBMEpidamu";
+		Prev_Title = AL["Epidamu"];
+	};
 	["COTBMTimeLordEpochronos"] = {
 		Title = AL["Time-Lord Epochronos"];
+		Next_Page = "COTBMMossheart";
+		Next_Title = AL["Mossheart"];
+		Prev_Page = "COTBMDriftingAvatar";
+		Prev_Title = AL["Drifting Avatar of Time"];
+	};
+	["COTBMMossheart"] = {
+		Title = AL["Mossheart"];
+		Next_Page = "COTBMRotmaw";
+		Next_Title = AL["Rotmaw"];
+		Prev_Page = "COTBMTimeLordEpochronos";
+		Prev_Title = AL["Time-Lord Epochronos"];
+	};
+	["COTBMRotmaw"] = {
+		Title = AL["Rotmaw"];
 		Next_Page = "COTBMAntnormi";
 		Next_Title = AL["Antnormi"];
-		Prev_Page = "COTBMHarbingerAphygth";
-		Prev_Title = AL["Harbinger Aph'ygth"];
+		Prev_Page = "COTBMMossheart";
+		Prev_Title = AL["Mossheart"];
 	};
 	["COTBMAntnormi"] = {
 		Title = AL["Antnormi"];
 		Next_Page = "COTBMInfiniteChromie";
 		Next_Title = AL["Infinite Chromie"];
-		Prev_Page = "COTBMTimeLordEpochronos";
-		Prev_Title = AL["Time-Lord Epochronos"];
+		Prev_Page = "COTBMRotmaw";
+		Prev_Title = AL["Rotmaw"];
 	};
 	["COTBMInfiniteChromie"] = {
 		Title = AL["Infinite Chromie"];
@@ -2496,6 +2524,68 @@ AtlasLoot_ButtonRegistry = {
 		Prev_Page = "ZFChiefUkorzSandscalp";
 		Prev_Title = AL["Chief Ukorz Sandscalp"];
 	};
+
+	-- Emerald Sanctum
+	["ESErennius"] = {
+		Title = AL["Erennius"];
+		Next_Page = "ESSolnius";
+		Next_Title = AL["Solnius the Awakener"];
+		Prev_Page = "ESSolnius";
+		Prev_Title = AL["Solnius the Awakener"];
+	};
+	["ESSolnius"] = {
+		Title = AL["Solnius the Awakener"];
+		Next_Page = "ESErennius";
+		Next_Title = AL["Erennius"];
+		Prev_Page = "ESErennius";
+		Prev_Title = AL["Erennius"];
+	};
+	
+	-- Lower Karazhan Halls
+	["LKHBoss1"] = {
+		Title = AL["LKHBoss1"];
+		Next_Page = "LKHBroodQueenAraxxna";
+		Next_Title = AL["Brood Queen Araxxna"];
+		Prev_Page = "LKHMoroes";
+		Prev_Title = AL["Moroes"];
+	};
+	["LKHBroodQueenAraxxna"] = {
+		Title = AL["Brood Queen Araxxna"];
+		Next_Page = "LKHLordBlackwaldII";
+		Next_Title = AL["Lord Blackwald II"];
+		Prev_Page = "LKHBoss1";
+		Prev_Title = AL["LKHBoss1"];
+	};
+	["LKHLordBlackwaldII"] = {
+		Title = AL["Lord Blackwald II"];
+		Next_Page = "LKHClawlordHowlfang";
+		Next_Title = AL["Clawlord Howlfang"];
+		Prev_Page = "LKHBroodQueenAraxxna";
+		Prev_Title = AL["Brood Queen Araxxna"];
+	};
+	["LKHClawlordHowlfang"] = {
+		Title = AL["Clawlord Howlfang"];
+		Next_Page = "LKHGrizikil";
+		Next_Title = AL["Grizikil"];
+		Prev_Page = "LKHLordBlackwaldII";
+		Prev_Title = AL["Lord Blackwald II"];
+	};
+	["LKHGrizikil"] = {
+		Title = AL["Grizikil"];
+		Next_Page = "LKHMoroes";
+		Next_Title = AL["Moroes"];
+		Prev_Page = "LKHClawlordHowlfang";
+		Prev_Title = AL["Clawlord Howlfang"];
+	};
+	["LKHMoroes"] = {
+		Title = AL["Moroes"];
+		Next_Page = "LKHBoss1";
+		Next_Title = AL["LKHBoss1"];
+		Prev_Page = "LKHGrizikil";
+		Prev_Title = AL["Grizikil"];
+	};
+	
+	-- World Bosses
 	["AAzuregos"] = {
 		Title = AL["Azuregos"];
 		Next_Page = "DEmeriss";

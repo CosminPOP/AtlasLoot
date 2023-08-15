@@ -155,7 +155,7 @@ end
 
 --[[
 local RecursiveSearchZoneName(dataTable, zoneID):
-A recursive function iterate AtlasLoot_DewDropDown table for the zone name
+A recursive function iterate AtlasLoot_HewdropDown table for the zone name
 ]]
 local function RecursiveSearchZoneName(dataTable, zoneID)
 	if(dataTable[2] == zoneID) then
@@ -174,9 +174,9 @@ AtlasLoot_GetWishListSubheading(dataID):
 Iterating through dropdown data tables to search backward for zone name with specified dataID
 ]]
 function AtlasLoot_GetWishListSubheading(dataID)
-	if not AtlasLoot_DewDropDown or not AtlasLoot_DewDropDown_SubTables then return end
+	if not AtlasLoot_HewdropDown or not AtlasLoot_HewdropDown_SubTables then return end
 	local zoneID;
-	for subKey, subTable in pairs(AtlasLoot_DewDropDown_SubTables) do
+	for subKey, subTable in pairs(AtlasLoot_HewdropDown_SubTables) do
 		for _, t in ipairs(subTable) do
 			if t[2] == dataID then
 				zoneID = subKey;
@@ -185,7 +185,7 @@ function AtlasLoot_GetWishListSubheading(dataID)
 		end
 		if zoneID then break end
 	end
-	return RecursiveSearchZoneName(AtlasLoot_DewDropDown, zoneID or dataID);
+	return RecursiveSearchZoneName(AtlasLoot_HewdropDown, zoneID or dataID);
 end
 
 function AtlasLoot_GetWishListSubheadingBoss(dataID)

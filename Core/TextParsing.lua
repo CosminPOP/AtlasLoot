@@ -82,6 +82,7 @@ function AtlasLoot_FixText(text)
 	text = gsub(text, "#e31#", AL["random stats"]);
 	text = gsub(text, "#e32#", AL["random resistance"]);
 	text = gsub(text, "#e33#", AL["random colour"]);
+	text = gsub(text, "#e34#", AL["toy"]);
 
 	-- Classes
 	text = gsub(text, "#c1#", AL["Druid"]); -- =q13=#c1#
@@ -126,8 +127,8 @@ function AtlasLoot_FixText(text)
 	text = gsub(text, "#r5#", AL["Exalted"]);
 
 	--Battleground Factions
-	text = gsub(text, "#b1#", AL["Stormpike Guard"]);
-	text = gsub(text, "#b2#", AL["Frostwolf Clan"]);
+	text = gsub(text, "#b1#", "Stormpike Guard");
+	text = gsub(text, "#b2#", "Frostwolf Clan");
 	text = gsub(text, "#b3#", AL["Silverwing Sentinels"]);
 	text = gsub(text, "#b4#", AL["Warsong Outriders"]);
 	text = gsub(text, "#b5#", AL["The League of Arathor"]);

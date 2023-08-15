@@ -120,7 +120,7 @@ local AceDB = Mixin {
 						"IsActive",
 						"AcquireDBNamespace",
 					}
-local Dewdrop = AceLibrary:HasInstance("Dewdrop-2.0") and AceLibrary("Dewdrop-2.0")
+local Hewdrop = AceLibrary:HasInstance("Hewdrop-2.0") and AceLibrary("Hewdrop-2.0")
 
 local _G = getfenv(0)
 
@@ -1027,12 +1027,12 @@ function AceDB:SetProfile(name, copyFrom)
 			self['acedb-profile-list'][name] = name
 		end
 	end
-	if Dewdrop then
-		Dewdrop:Refresh(1)
-		Dewdrop:Refresh(2)
-		Dewdrop:Refresh(3)
-		Dewdrop:Refresh(4)
-		Dewdrop:Refresh(5)
+	if Hewdrop then
+		Hewdrop:Refresh(1)
+		Hewdrop:Refresh(2)
+		Hewdrop:Refresh(3)
+		Hewdrop:Refresh(4)
+		Hewdrop:Refresh(5)
 	end
 end
 
@@ -1418,8 +1418,8 @@ local function external(self, major, instance)
 		
 		self:RegisterEvent("ADDON_LOADED")
 		self:RegisterEvent("PLAYER_LOGOUT")
-	elseif major == "Dewdrop-2.0" then
-		Dewdrop = instance
+	elseif major == "Hewdrop-2.0" then
+		Hewdrop = instance
 	end
 end
 
