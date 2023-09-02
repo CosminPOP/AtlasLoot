@@ -1090,6 +1090,7 @@ AtlasLoot_TableNamesBoss = {
 		["TCGHighPriestessAlathea"] = { AL["High Priestess A'lathea"], "AtlasLootItems" },
 		["TCGFenektistheDeceiver"] = { AL["Fenektis the Deceiver"], "AtlasLootItems" },
 		["TCGMasterRaxxieth"] = { AL["Master Raxxieth"], "AtlasLootItems" },
+		["TCGTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 	},
 	["Karazhan Crypt"] = {
 		["KCMarrowspike"] = { AL["Marrowspike"], "AtlasLootItems" },
