@@ -3828,7 +3828,7 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 		end
 		local v, remoteversion = AtlasLoot_strsplit(":", arg2)
 		local remoteversion = tonumber(remoteversion)
-		if remoteversion == 40701 then remoteversion = 0 end --Block for people using some version from another version of WoW.
+		if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
 		if v == "VERSION" and remoteversion then
 			if remoteversion > localversion then
 			print(arg4.." is using "..remoteversion.." of AtlasLoot")
