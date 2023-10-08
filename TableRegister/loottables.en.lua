@@ -377,6 +377,7 @@ AtlasLoot_TableNames = {
 	["KCCommanderAnderson"] = { AL["Commander Anderson"], "AtlasLootItems" },
 	["KCAlarus"] = { AL["Alarus"], "AtlasLootItems" },
 	["KCTreasure"] = { AL["Half-Buried Treasure Chest"], "AtlasLootItems" },
+	["KCTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 	-- Caverns of Time: Black Morass
 	["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
 	["COTBMHarbingerAphygth"] = { AL["Harbinger Aph'ygth"], "AtlasLootItems" },
@@ -1101,6 +1102,7 @@ AtlasLoot_TableNamesBoss = {
 		["KCCommanderAnderson"] = { AL["Commander Anderson"], "AtlasLootItems" },
 		["KCAlarus"] = { AL["Alarus"], "AtlasLootItems" },
 		["KCTreasure"] = { AL["Half-Buried Treasure Chest"], "AtlasLootItems" },
+		["KCTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 	},
 	["Caverns of Time: Black Morass"] = {
 		["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },

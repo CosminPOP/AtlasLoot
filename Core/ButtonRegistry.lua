@@ -480,6 +480,15 @@ AtlasLoot_ButtonRegistry = {
 		Title = AL["Half-Buried Treasure Chest"];
 		Prev_Page = "KCAlarus";
 		Prev_Title = AL["Alarus"];
+		Next_Page = "KCTrash";
+		Next_Title = AL["Trash Mobs"];
+	};
+	["KCTrash"] = {
+		Title = AL["Trash Mobs"];
+		Prev_Page = "KCTreasure";
+		Prev_Title = AL["Half-Buried Treasure Chest"];
+		Next_Page = "KCMarrowspike";
+		Next_Title = AL["Marrowspike"];
 	};
 	["COTBMChronar"] = {
 		Title = AL["Chronar"];

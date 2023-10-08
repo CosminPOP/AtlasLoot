@@ -910,7 +910,6 @@ Legacy function used in Cosmos integration to open the loot browser
 ]]
 function AtlasLoot_ShowMenu()
 	AtlasLootDefaultFrame:Show();
-	DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r |cffddabffIf you find anything missing, please /w Lexie or message me on Discord Lexie#4024|r")
 end
 
 --[[
@@ -2538,6 +2537,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Commander Anderson"], "KCCommanderAnderson" },
 		{ AL["Alarus"], "KCAlarus" },
 		{ AL["Half-Buried Treasure Chest"], "KCTreasure" },
+		{ AL["Trash Mobs"], "KCTrash" },
 	},
 	["CavernsOfTimeBlackMorass"] = {
 		{ AL["Chronar"], "COTBMChronar" },
@@ -3823,15 +3823,11 @@ AtlasLoot_updater:RegisterEvent("PLAYER_ENTERING_WORLD")
 AtlasLoot_updater:RegisterEvent("PARTY_MEMBERS_CHANGED")
 AtlasLoot_updater:SetScript("OnEvent", function()
 	if event == "CHAT_MSG_ADDON" and arg1 == "AtlasLoot" then
-		if UnitName("player") == "Lexie" then
-			--print(arg1.." "..arg2.." "..arg3.." "..arg4)
-		end
 		local v, remoteversion = AtlasLoot_strsplit(":", arg2)
 		local remoteversion = tonumber(remoteversion)
 		if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
 		if v == "VERSION" and remoteversion then
 			if remoteversion > localversion then
-			print(arg4.." is using "..remoteversion.." of AtlasLoot")
 				AtlasLoot_updateavailable = remoteversion
 				if not alreadyshown then
 					DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")

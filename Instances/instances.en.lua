@@ -639,6 +639,7 @@ AtlasLootBossButtons = {
 		"KCCommanderAnderson";
 		"KCAlarus";
 		"KCTreasure";
+		"KCTrash";
 	};
 	CavernsOfTimeBlackMorass = {
 		"";
@@ -2918,6 +2919,29 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 60797, "INV_Pants_09", "=q2=Rotskin Leggings", "=ds=#s11#, #a2#", "14%" },
 		{ 60798, "INV_Jewelry_Ring_15", "=q3=Loop of the Forgotten", "=ds=#s13#", "14%" },
 	};
+	KCTrash = {
+		{ 60803, "inv_misc_monsterclaw_01", "=q3=Claw of Darkness", "=ds=#s15#", "0.01%" },
+		{ 60804, "INV_Misc_Cape_21", "=q3=Shade of Reminisce", "=ds=#s4#, #a1#", "0.01%" },
+		{ 60805, "inv_wand_12", "=q3=Clutch of the Damned", "=ds=#w12#", "0.01%" },
+		{ 60806, "inv_weapon_shortblade_15", "=q3=Coldheart Icicle", "=ds=#h1#, #w4#", "0.01%" },
+		{ 60807, "INV_Boots_07", "=q3=Grave Robber's Treads", "=ds=#s12#, #a2#", "0.01%" },
+		{ 60808, "inv_sword_47", "=q3=Bone Fracture", "=ds=#h2#, #w10#", "0.01%" },
+		{ 60809, "Spell_Shadow_Haunting", "=q3=Remains of the Lost", "=ds=#s14#", "0.01%" },
+		{ 18742, "INV_Shoulder_14", "=q3=Stratholme Militia Shoulderguard", "=ds=#s3#, #a3#", "0.02%" },
+		{ 18743, "INV_Misc_Cape_18", "=q3=Gracious Cape", "=ds=#s4#", "0.0935%" },
+		{ 17061, "INV_Misc_Cape_20", "=q3=Juno's Shadow", "=ds=#s4#", "0.02%" },
+		{ 18741, "INV_Bracer_17", "=q3=Morlune's Bracer", "=ds=#s8#, #a4#", "0.02%" },
+		{ 18744, "INV_Gauntlets_18", "=q3=Plaguebat Fur Gloves", "=ds=#s9#, #a2#", "0.04%" },
+		{ 18745, "INV_Pants_01", "=q3=Sacred Cloth Leggings", "=ds=#s11#, #a1#", "0.06%" },
+		{ 18736, "INV_Pants_12", "=q3=Plaguehound Leggings", "=ds=#s11#, #a2#", "0.02%" },
+		{ 18698, "INV_Helmet_41", "=q3=Tattered Leather Hood", "=ds=#s1#, #a2#", "0.6%" },
+		{ 18699, "INV_Shoulder_27", "=q3=Icy Tomb Spaulders", "=ds=#s3#, #a2#", "0.02%" },
+		{ 14536, "INV_Chest_Chain_14", "=q3=Bonebrace Hauberk", "=ds=#s5#, #a3#", "0.06%" },
+		{ 18700, "INV_Bracer_07", "=q3=Malefic Bracers", "=ds=#s8#, #a2#", "0.02%" },
+		{ 18702, "INV_Belt_28", "=q3=Belt of the Ordained", "=ds=#s10#, #a4#", "0.02%" },
+		{ 18697, "INV_Boots_Fabric_01", "=q3=Coldstone Slippers", "=ds=#s12#, #a1#", "0.26%" },
+		{ 18701, "INV_Jewelry_Ring_24", "=q3=Innervating Band", "=ds=#s13#", "0.06%" },
+	};
 	COTBMChronar = {
 		{ 50203, "INV_enchant_dustsoul", "=q2=Corrupted Sand", "=ds=#m3#, 10-15", "100%" },
 		{ 0, "", "", "" },
@@ -3147,6 +3171,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 84014, "INV_Scroll_05", "=q3=Plans: Hateforge Helmet", "=ds=#p2# #m19#", "0.005%" },
 		{ 84015, "INV_Scroll_05", "=q3=Plans: Hateforge Leggings", "=ds=#p2# #m19#", "0.005%" },
 		{ 0, "", "", "" },
+		{ 60616, "inv_weapon_halbard_01", "=q3=Shadowcaller Axe", "=ds=#h2#, #w1#", "0.005%" },
 		{ 60582, "INV_gauntlets_05", "=q3=Incendosaur Skin Gloves", "=ds=#s9#, #a2#", "0.005%" },
 		{ 60572, "INV_Shoulder_23", "=q3=Incendosaur Skin Pauldrons", "=ds=#s3#, #a2#, From Elites Outside Dungeon", "0.1%" },
 	};
@@ -5014,6 +5039,8 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 81124, "inv_helmet_19", "=q3=Helmet of the Scarlet Avenger", "=ds=#a4#, #s1#", "10%" },
 		{ 81125, "inv_misc_orb_03", "=q3=Inquisitor's Orb", "=ds=#h4#", "10%" },
 		{ 81131, "inv_helmet_19", "=q3=Helmet of the Scarlet Avenger", "=ds=#a4#, #s1#", "10%" },
+		{ 0, "", "", "", "" },
+		{ 83575, "inv_misc_book_09", "=q3=Codex of Smite IX", "=ds=#e20#", "10%" },
 		{ 0, "", "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=Fashion Coin", "=ds=#e27#", "5%" },
 	};
