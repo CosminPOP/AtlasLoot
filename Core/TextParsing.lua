@@ -49,6 +49,7 @@ function AtlasLoot_FixText(text)
 	text = gsub(text, "#w12#", AL["Wand"]);
 	text = gsub(text, "#w13#", AL["Fist Weapon"]);
 	text = gsub(text, "#w14#", AL["Fishing Pole"]);
+	text = gsub(text, "#w15#", AL["Spear"]);
 
 	-- Misc. Equipment
 	text = gsub(text, "#e1#", AL["Potion"]);

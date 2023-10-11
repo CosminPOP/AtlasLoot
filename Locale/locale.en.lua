@@ -1243,6 +1243,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Skinning Knife"] = true,
 	["Herbalism Knife"] = true,
 	["Fishing Pole"] = true,
+	["Spear"] = true,
 	["Fish"] = true,
 	["Combat Pet"] = true,
 	["Fireworks"] = true,
