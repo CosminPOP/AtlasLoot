@@ -489,11 +489,10 @@ AtlasLoot_TableNames = {
 	["ESErennius"] = { AL["Erennius"], "AtlasLootItems" },
 	["ESSolnius"] = { AL["Solnius the Awakener"], "AtlasLootItems" },
 	--Lower Karazhan Halls
-	["LKHBoss1"] = { AL["LKHBoss1"], "AtlasLootItems" },
 	["LKHBroodQueenAraxxna"] = { AL["Erennius"], "AtlasLootItems" },
-	["LKHLordBlackwaldII"] = { AL["Lord Blackwald II"], "AtlasLootItems" },
-	["LKHClawlordHowlfang"] = { AL["Clawlord Howlfang"], "AtlasLootItems" },
 	["LKHGrizikil"] = { AL["Grizikil"], "AtlasLootItems" },
+	["LKHClawlordHowlfang"] = { AL["Clawlord Howlfang"], "AtlasLootItems" },
+	["LKHLordBlackwaldII"] = { AL["Lord Blackwald II"], "AtlasLootItems" },
 	["LKHMoroes"] = { AL["Moroes"], "AtlasLootItems" },
 
 	------------
@@ -1503,7 +1502,6 @@ AtlasLoot_TableNamesBoss = {
 		["ESSolnius"] = { AL["Solnius the Awakener"], "AtlasLootItems" },
 	},
 	["Lower Karazhan Halls"] = {
-		["LKHBoss1"] = { AL["LKHBoss1"], "AtlasLootItems" },
 		["LKHBroodQueenAraxxna"] = { AL["Erennius"], "AtlasLootItems" },
 		["LKHLordBlackwaldII"] = { AL["Lord Blackwald II"], "AtlasLootItems" },
 		["LKHClawlordHowlfang"] = { AL["Clawlord Howlfang"], "AtlasLootItems" },

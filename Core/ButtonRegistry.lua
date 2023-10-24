@@ -2551,22 +2551,15 @@ AtlasLoot_ButtonRegistry = {
 	};
 	
 	-- Lower Karazhan Halls
-	["LKHBoss1"] = {
-		Title = AL["LKHBoss1"];
-		Next_Page = "LKHBroodQueenAraxxna";
-		Next_Title = AL["Brood Queen Araxxna"];
+	["LKHBroodQueenAraxxna"] = {
+		Title = AL["Brood Queen Araxxna"];
+		Next_Page = "LKHGrizikil";
+		Next_Title = AL["Grizikil"];
 		Prev_Page = "LKHMoroes";
 		Prev_Title = AL["Moroes"];
 	};
-	["LKHBroodQueenAraxxna"] = {
-		Title = AL["Brood Queen Araxxna"];
-		Next_Page = "LKHLordBlackwaldII";
-		Next_Title = AL["Lord Blackwald II"];
-		Prev_Page = "LKHBoss1";
-		Prev_Title = AL["LKHBoss1"];
-	};
-	["LKHLordBlackwaldII"] = {
-		Title = AL["Lord Blackwald II"];
+	["LKHGrizikil"] = {
+		Title = AL["Grizikil"];
 		Next_Page = "LKHClawlordHowlfang";
 		Next_Title = AL["Clawlord Howlfang"];
 		Prev_Page = "LKHBroodQueenAraxxna";
@@ -2574,13 +2567,13 @@ AtlasLoot_ButtonRegistry = {
 	};
 	["LKHClawlordHowlfang"] = {
 		Title = AL["Clawlord Howlfang"];
-		Next_Page = "LKHGrizikil";
-		Next_Title = AL["Grizikil"];
-		Prev_Page = "LKHLordBlackwaldII";
-		Prev_Title = AL["Lord Blackwald II"];
+		Next_Page = "LKHLordBlackwaldII";
+		Next_Title = AL["Lord Blackwald II"];
+		Prev_Page = "LKHGrizikil";
+		Prev_Title = AL["Grizikil"];
 	};
-	["LKHGrizikil"] = {
-		Title = AL["Grizikil"];
+	["LKHLordBlackwaldII"] = {
+		Title = AL["Lord Blackwald II"];
 		Next_Page = "LKHMoroes";
 		Next_Title = AL["Moroes"];
 		Prev_Page = "LKHClawlordHowlfang";
@@ -2588,10 +2581,10 @@ AtlasLoot_ButtonRegistry = {
 	};
 	["LKHMoroes"] = {
 		Title = AL["Moroes"];
-		Next_Page = "LKHBoss1";
-		Next_Title = AL["LKHBoss1"];
-		Prev_Page = "LKHGrizikil";
-		Prev_Title = AL["Grizikil"];
+		Next_Page = "LKHBroodQueenAraxxna";
+		Next_Title = AL["Brood Queen Araxxna"];
+		Prev_Page = "LKHLordBlackwaldII";
+		Prev_Title = AL["Lord Blackwald II"];
 	};
 	
 	-- World Bosses
