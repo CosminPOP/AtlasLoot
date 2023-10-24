@@ -2537,17 +2537,31 @@ AtlasLoot_ButtonRegistry = {
 	-- Emerald Sanctum
 	["ESErennius"] = {
 		Title = AL["Erennius"];
-		Next_Page = "ESSolnius";
+		Next_Page = "ESSolnius1";
 		Next_Title = AL["Solnius the Awakener"];
-		Prev_Page = "ESSolnius";
-		Prev_Title = AL["Solnius the Awakener"];
+		Prev_Page = "ESTrash";
+		Prev_Title = AL["Trash Mobs"];
 	};
-	["ESSolnius"] = {
+	["ESSolnius1"] = {
 		Title = AL["Solnius the Awakener"];
-		Next_Page = "ESErennius";
-		Next_Title = AL["Erennius"];
+		Next_Page = "ESSolnius2";
+		Next_Title = AL["Solnius the Awakener (Page 2)"];
 		Prev_Page = "ESErennius";
 		Prev_Title = AL["Erennius"];
+	};
+	["ESSolnius2"] = {
+		Title = AL["Solnius the Awakener (Page 2)"];
+		Next_Page = "ESTrash";
+		Next_Title = AL["Trash Mobs"];
+		Prev_Page = "ESSolnius1";
+		Prev_Title = AL["Solnius the Awakener"];
+	};
+	["ESTrash"] = {
+		Title = AL["Trash Mobs"];
+		Next_Page = "ESErennius";
+		Next_Title = AL["Erennius"];
+		Prev_Page = "ESSolnius2";
+		Prev_Title = AL["Solnius the Awakener (Page 2)"];
 	};
 	
 	-- Lower Karazhan Halls

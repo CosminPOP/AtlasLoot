@@ -2917,7 +2917,9 @@ AtlasLoot_HewdropDown_SubTables = {
 	},
 	["EmeraldSanctum"] = {
 		{ AL["Erennius"], "ESErennius" },
-		{ AL["Solnius the Awakener"], "ESSolnius" },
+		{ AL["Solnius the Awakener"], "ESSolnius1" },
+		{ AL["Solnius the Awakener (Page 2)"], "ESSolnius2" },
+		{ AL["Trash Mobs"], "ESTrash" },
 	},
 	["LowerKara"] = {
 		{ AL["Brood Queen Araxxna"], "LKHBroodQueenAraxxna" },

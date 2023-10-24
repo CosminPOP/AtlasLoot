@@ -938,7 +938,9 @@ AtlasLootBossButtons = {
 	};
 	EmeraldSanctum = {
 		"ESErennius";
-		"ESSolnius";
+		"ESSolnius1";
+		"ESSolnius2";
+		"ESTrash";
 	}
 };
 --------------------------------------------------------------------------------
@@ -6370,23 +6372,85 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61191, "INV_Scroll_05", "=q4=Schematic: Intricate Gyroscope Goggles", "=ds=#p5# #m14#", "2%" },	
 	};
 	ESErennius = {
+		{ 61652, "INV_Misc_MonsterClaw_02", "=q4=Claw of Erennius", "=ds=#m2#", "100%" },
+		{ 61650, "INV_Spear_02", "=q4=Jadestone Skewer", "=ds=#m4#, #w7#" },
+		{ 61651, "INV_Mace_20", "=q4=Jadestone Mallet", "=ds=#m4#, #w6#" },
+		{ 61740, "INV_Misc_MonsterClaw_04", "=q4=Claw of Senthos", "=ds=#m4#, #w13#" },
 		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 61198, "INV_Stone_03", "=q2=Small Dream Shard", "2-5", "100%" },
+		{ 61197, "INV_Stone_05", "=q3=Fading Dream Fragment", "", "48%" },
+		{ 20381, "INV_Misc_MonsterScales_11", "=q2=Dreamscale", "", "48%" },
 	};
-	ESSolnius = {
-		{ 17962, "", "=q3=", "", "20%" },
-		{ 17963, "", "=q3=", "", "20%" },
-		{ 17964, "", "=q3=", "", "20%" },
-		{ 17965, "", "=q3=", "", "20%" },
-		{ 17969, "", "=q3=", "", "20%" },
-		{ 60000, "", "=q3=", "", "100%" },
+	ESSolnius1 = {
+		{ 61206, "inv_chest_leather_06", "=q4=Robe of the Dreamways", "=ds=#s5#, #a1#" , "94.1%" },
+		{ 61211, "INV_Boots_Fabric_01", "=q4=Sandals of Lucidity", "=ds=#s12#, #a1#", "94.1%" },
+		{ 61213, "INV_Gauntlets_29", "=q4=Talonwind Gauntlets", "=ds=#s9#, #a3#", "94.1%" },
+		{ 61239, "INV_Pants_03", "=q4=Ancient Jade Leggings", "=ds=#s11#, #a3#", "94.1%" },
 		{ 0, "", "", "" },
-		{ 61196, "", "=q3=Bag of the Vast Conscious", "", "15%" },
-		{ 61215, "", "=q3=Head of Solnius", "", "100%" },
-		{ 61217, "", "=q2=Formula: Enchant Chest - Mighty Mana", "", "10%" },
-		{ 61218, "", "=q2=Recipe: Elixir of Greater Nature Power", "", "10%" },
-		{ 61424, "", "=q3=Plans: Dreamsteel Mantle", "", "10%" },
-		{ 61428, "", "=q3=Pattern: Dreamhide Mantle", "", "10%" },
-		{ 61432, "", "=q3=Pattern: Dreamthread Mantle", "", "10%" },
-		{ 61444, "", "=q3=Smoldering Dream Essence", "", "10%" },
+		{ 0, "", "", "" },
+		{ 61237, "INV_Mace_35", "=q4=Mallet of the Awakening", "=ds=#h3#, #w6#", "94.1%" },
+		{ 61238, "INV_Shield_23", "=q4=Scaleshield of Emerald Flight", "=ds=#w8#", "94.1%" },
+		{ 0, "", "", "" },
+		{ 61205, "INV_Jewelry_Ring_37", "=q4=Ring of Nature's Duality", "=ds=#s13#", "99.96%" },
+		{ 61209, "INV_Enchant_EssenceMysticalLarge", "=q4=Shard of Nightmare", "=ds=#s14#", "94.1%" },
+		{ 61210, "INV_Misc_Cape_01", "=q4=Veil of Nightmare", "=ds=#s4#", "94.1%" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 61212, "INV_Bracer_09", "=q4=Sanctum Bark Wraps", "=ds=#s8#, #a2#", "94.1%" },
+		{ 61214, "inv_shoulder_13", "=q4=Mantle of the Wakener", "=ds=#s3#, #a2#", "94.1%" },
+		{ 61207, "INV_Helmet_02", "=q4=Jadestone Helmet", "=ds=#s1#, #a4#", "94.1%" },
+		{ 0, "", "", "" },
+		{ 61448, "INV_Weapon_Halberd_05", "=q4=Axe of Dormant Slumber", "=ds=#h1#, #w1#", "94.1%" },
+		{ 61208, "INV_Staff_49", "=q4=Staff of the Dreamer", "=ds=#h2#, #w9#", "94.1%" },
+		{ 0, "", "", "" },
+		{ 61455, "Spell_Nature_NatureTouchDecay", "=q4=Idol of the Emerald Rot", "=ds=#s16#, #e16#", "99.96%" },
+		{ 61203, "INV_Relics_LibramofGrace", "=q4=Libram of the Dreamguard", "=ds=#s16#, #e18#", "99.96%" },
+		{ 61204, "Spell_Nature_StoneSkinTotem", "=q4=Totem of the Stonebreaker", "=ds=#s16#, #e17#", "99.96%" },
+	};
+	ESSolnius2 = {
+		{ 61215, "inv_misc_head_dragon_green", "=q4=Head of Solnius", "=ds=#m2#", "100%" },
+		{ 61195, "BTNWoodenRingUPG1", "=q4=Ring of Nordrassil", "=ds=#m4#, #s13#" },
+		{ 61194, "BTNOrbOfDepths", "=q4=The Heart of Dreams", "=ds=#m4#, #s14#" },
+		{ 61193, "BTNEnchantedNecklace", "=q4=Verdant Eye Necklace", "=ds=#m4#, #s2#" },
+		{ 0, "", "", "" },
+		{ 61196, "INV_Misc_Bag_18", "=q3=Bag of the Vast Conscious", "=ds=#e10#", "15%" }, 
+		{ 0, "", "", "" },
+		{ 61733, "INV_Misc_Note_01", "=q5=Formula: Eternal Dreamstone Shard", "=ds=#p4# #m14#", "5.25%" },
+		{ 61217, "INV_Misc_Note_01", "=q3=Formula: Enchant Chest - Mighty Mana", "=ds=#p4# #m14#", "22%" }, 
+		{ 70000, "INV_Misc_Note_01", "=q3=Formula: Enchant Gloves - Nature Power", "=ds=#p4# #m14#", "5.25%" },
+		{ 0, "", "", "" },
+		{ 61218, "INV_Scroll_05", "=q3=Recipe: Elixir of Greater Nature Power", "=ds=#p1# #m14#", "22%" },
+		{ 0, "", "", "" },
+		{ 61198, "INV_Stone_03", "=q2=Small Dream Shard", "6-10", "100%" },
+		{ 20381, "INV_Misc_MonsterScales_11", "=q2=Dreamscale", "", "48%" },
+		{ 61444, "INV_Stone_05", "=q4=Smoldering Dream Essence", "=ds=#m2#, =q13=#c1#, ", "20%" },
+		{ 61445, "INV_Enchant_EssenceNetherLarge", "=q4=Purified Emerald Essence", "=ds=#m4#, =q13=#c1#" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 51361, "INV_Misc_Note_05", "=q3=Glyph of the Dreamkin", "=ds==q13=#c1#", "14%" },
+		{ 0, "", "", "" },
+		{ 61428, "INV_Scroll_05", "=q4=Pattern: Dreamhide Mantle", "=ds=#p7# #m14#", "22%" },
+		{ 61432, "INV_Scroll_05", "=q4=Pattern: Dreamthread Mantle", "=ds=#p7# #m14#", "22%" },
+		{ 61424, "INV_Scroll_05", "=q4=Plans: Dreamsteel Mantle", "=ds=#p7# #m14#", "22%" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 0, "", "", "" },
+		{ 17962,"INV_Misc_Bag_10_Blue","=q2=Blue Sack of Gems","=ds=#m23# =q2=#e33#", "100%" },
+	};
+	ESTrash = {
+		{ 0, "", "Coming Soon", "" },
 	};
 };

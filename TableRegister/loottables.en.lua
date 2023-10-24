@@ -487,7 +487,9 @@ AtlasLoot_TableNames = {
 	["ZGEnchants"] = { "ZG Enchants", "AtlasLootItems" },
 	--Emerald Sanctum
 	["ESErennius"] = { AL["Erennius"], "AtlasLootItems" },
-	["ESSolnius"] = { AL["Solnius the Awakener"], "AtlasLootItems" },
+	["ESSolnius1"] = { AL["Solnius the Awakener"], "AtlasLootItems" },
+	["ESSolnius2"] = { AL["Solnius the Awakener (Page 2)"], "AtlasLootItems" },
+	["ESTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 	--Lower Karazhan Halls
 	["LKHBroodQueenAraxxna"] = { AL["Erennius"], "AtlasLootItems" },
 	["LKHGrizikil"] = { AL["Grizikil"], "AtlasLootItems" },

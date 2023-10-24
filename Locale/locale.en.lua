@@ -1485,6 +1485,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Genn Greymane"] = true,
 	["Erennius"] = true,
 	["Solnius the Awakener"] = true,
+	["Solnius the Awakener (Page 2)"] = true,
 	["Brood Queen Araxxna"] = true,
 	["Lord Blackwald II"] = true,
 	["Clawlord Howlfang"] = true,
