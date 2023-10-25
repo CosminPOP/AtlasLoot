@@ -4710,6 +4710,17 @@ AtlasLoot_ButtonRegistry = {
 		Back_Title = AL["Tailoring"];
 		Prev_Page = "TailoringArtisan3";
 		Prev_Title = AL["Tailoring"] .. ": " .. AL["Artisan"];
+		Next_Page = "TailoringArtisan5";
+		Next_Title = AL["Tailoring"] .. ": " .. AL["Artisan"];
+	};
+	["TailoringArtisan5"] = {
+		Title = AL["Tailoring"] .. ": " .. AL["Artisan"];
+		Back_Page = "TAILORINGMENU";
+		Back_Title = AL["Tailoring"];
+		Prev_Page = "TailoringArtisan4";
+		Prev_Title = AL["Tailoring"] .. ": " .. AL["Artisan"];
+		Next_Page = "TailoringApprentice1";
+		Next_Title = AL["Tailoring"] .. ": " .. AL["Artisan"];
 	};
 	["CookingApprentice1"] = {
 		Title = AL["Cooking"] .. ": " .. AL["Apprentice"];

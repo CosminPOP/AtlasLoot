@@ -866,6 +866,7 @@ AtlasLoot_TableNames = {
 	["TailoringArtisan2"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 	["TailoringArtisan3"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 	["TailoringArtisan4"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["TailoringArtisan5"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 	--Cooking
 	["CookingApprentice1"] = { AL["Cooking"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
 	["CookingJourneyman1"] = { AL["Cooking"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
@@ -1892,6 +1893,7 @@ AtlasLoot_TableNamesBoss = {
 		["TailoringArtisan2"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 		["TailoringArtisan3"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 		["TailoringArtisan4"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["TailoringArtisan5"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 		--Cooking
 		["CookingApprentice1"] = { AL["Cooking"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
 		["CookingJourneyman1"] = { AL["Cooking"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },

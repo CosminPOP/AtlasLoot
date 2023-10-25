@@ -171,6 +171,7 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 		{ 19210, "INV_Scroll_03", "=q1=Plans: Ebon Hand", "=ds=#p2# #m14#" },
 		{ 19211, "INV_Scroll_03", "=q1=Plans: Blackguard", "=ds=#p2# #m14#" },
 		{ 19212, "INV_Scroll_03", "=q1=Plans: Nightfall", "=ds=#p2# #m14#" },
+		{ 62005, "INV_Scroll_03", "=q1=Pattern: Flarecore Boots", "=ds=#p8# #m14#" },
 	};
 	Cenarion1 = {
 		{ 0, "", "", "" },
