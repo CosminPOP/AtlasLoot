@@ -606,7 +606,7 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
 	HighvaleSilverback = {
 		{ 61518, "INV_Gauntlets_18", "=q2=Apefist Pummelers", "=ds=#s9#, #a2#", "40%" },
 		{ 61519, "INV_Chest_Plate10", "=q2=Tel Co. Chestguard", "=ds=#s5#, #a4#", "40%" },
-		{ 61520, "INV_Misc_Food_24", "=q2=The Golden Banana", "=ds=#s14#", "20%" },,
+		{ 61520, "INV_Misc_Food_24", "=q2=The Golden Banana", "=ds=#s14#", "20%" },
 	};
 	Azurebeak = {
 		{ 61550, "INV_Helmet_25", "=q2=Sanctified Helm", "=ds=#s1#, #a4#", "40%" },

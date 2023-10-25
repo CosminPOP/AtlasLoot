@@ -641,6 +641,46 @@ GetSpellInfoVanillaDB = {
 			["name"] = "Enchant Bracer - Spell Power",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
+		[57142] = {
+			["name"] = "Enchant Boots - Greater Spirit",
+			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
+		},
+		[57518] = {
+			["name"] = "Eternal Dreamstone Shard",
+			["icon"] = "Interface\\Icons\\inv_misc_gem_pearl_04",
+		},
+		[57127] = { 
+			["name"] = "Enchant Boots - Superior Stamina",
+			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
+		},
+		[57148] = { 
+			["name"] = "Enchant Boots - Vampirism",
+			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
+		},
+		[57144] = { 
+			["name"] = "Enchant Bracer - Greater Deflection",
+			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
+		},
+		[57119] = { 
+			["name"] = "Enchant Chest - Mighty Mana",
+			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
+		},
+		[57117] = { 
+			["name"] = "Enchant Cloak - Greater Arcane Resistance",
+			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
+		},
+		[46601] = { 
+			["name"] = "Enchant Gloves - Arcane Power",
+			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
+		},
+		[46602] = { 
+			["name"] = "Enchant Gloves - Nature Power",
+			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
+		},
+		[57146] = {
+			["name"] = "Enchant Bracer - Vampirism",
+			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
+		},
 	},
 	["craftspells"] = {
 		[6510] = {
