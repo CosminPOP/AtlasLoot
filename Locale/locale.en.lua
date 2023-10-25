@@ -1493,4 +1493,5 @@ AL:RegisterTranslations("enUS", function() return {
 	["Clawlord Howlfang"] = true,
 	["Grizikil"] = true,
 	["Moroes"] = true,
+	["LKH Enchants"] = true,
 	} end)

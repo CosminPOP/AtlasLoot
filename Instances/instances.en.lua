@@ -938,6 +938,7 @@ AtlasLootBossButtons = {
 		"LKHLordBlackwaldII";
 		"LKHMoroes";
 		"LKHTrash";
+		"LKHEnchants";
 	};
 	EmeraldSanctum = {
 		"ESErennius";
@@ -6481,6 +6482,17 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "" },
 		{ 61295, "INV_Mace_34", "=q3=Dawnstone Bludgeon", "=ds=#h1#, #w6#", "0.15%" },
 		{ 61452, "INV_Axe_30", "=q3=Skycleaver", "=ds=#h1#, #w1#", "0.15%" },
+		{ 0, "", "", "" },
+		{ 8547, "INV_Scroll_05", "=q3=Formula: Powerful Smelling Salts ", "=ds=#p6# #m14#", "0.03%" },
+		{ 61177, "INV_Scroll_05", "=q3=Recipe: Potion of Quickness", "=ds=#p1# #m14#", "0.03%" },
+		{ 61178, "INV_Scroll_05", "=q3=Plans: Thorium Spurs", "=ds=#p2# #m14#", "0.03%" },
+		{ 61180, "INV_Misc_Note_01", "=q3=Formula: Enchant Cloak - Greater Arcane Resistance", "=ds=#p4# #m14#", "0.03%" },
+	};
+	LKHEnchants = {
+		{ 92005, "Ability_Creature_Cursed_01", "=q3=Invocation of Shattering", "=ds=#s1#/#s11# #e11#" },
+		{ 92006, "Ability_Creature_Cursed_01", "=q3=Invocation of Greater Protection", "=ds=#s1#/#s11# #e11#" },
+		{ 92007, "Ability_Creature_Cursed_01", "=q3=Invocation of Expansive Mind", "=ds=#s1#/#s11# #e11#" },
+		{ 92008, "Ability_Creature_Cursed_01", "=q3=Invocation of Greater Arcane Fortitude", "=ds=#s1#/#s11# #e11#" },
 	};
 	ESErennius = {
 		{ 61652, "INV_Misc_MonsterClaw_02", "=q4=Claw of Erennius", "=ds=#m2#", "100%" },

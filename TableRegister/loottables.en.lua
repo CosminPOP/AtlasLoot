@@ -499,6 +499,7 @@ AtlasLoot_TableNames = {
 	["LKHLordBlackwaldII"] = { AL["Lord Blackwald II"], "AtlasLootItems" },
 	["LKHMoroes"] = { AL["Moroes"], "AtlasLootItems" },
 	["LKHTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	["LKHEnchants"] = { AL["LKH Enchants"], "AtlasLootItems" },
 
 	------------
 	--- Sets ---
@@ -1515,6 +1516,7 @@ AtlasLoot_TableNamesBoss = {
 		["LKHGrizikil"] = { AL["Grizikil"], "AtlasLootItems" },
 		["LKHMoroes"] = { AL["Moroes"], "AtlasLootItems" },
 		["LKHTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+		["LKHEchants"] = { AL["LKH Enchants"], "AtlasLootItems" },
 	},
 
 	------------
