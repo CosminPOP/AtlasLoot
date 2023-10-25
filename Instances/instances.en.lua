@@ -6451,6 +6451,16 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 17962,"INV_Misc_Bag_10_Blue","=q2=Blue Sack of Gems","=ds=#m23# =q2=#e33#", "100%" },
 	};
 	ESTrash = {
-		{ 0, "", "Coming Soon", "" },
+		{ 84502, "inv_boots_cloth_04", "=q4=Verdant Dreamer's Boots", "=ds=#s12#, #a2#", "0.125%, 0.5%, 1.25%" },
+		{ 84505, "INV_Bracer_06", "=q4=Infused Wildthorn Bracers", "=ds=#s8#, #a3#", "0.125%, 0.5%, 1.25%" },
+		{ 84506, "INV_Jewelry_Ring_37", "=q4=Sleeper's Ring", "=ds=#s13#", "0.125%, 0.5%, 1.25%" },
+		{ 84504, "INV_Misc_Herb_15", "=q4=Lasher's Whip", "=ds=#s14#", "0.125%, 0.5%, 1.25%" },
+		{ 84500, "INV_Weapon_ShortBlade_22", "=q4=Lucid Nightmare", "=ds=#h3#, #w4#", "0.125%, 0.5%, 1.25%" },
+		{ 84509, "INV_Staff_14", "=q4=Emerald Rod", "=ds=#s15#", "0.125%, 0.5%, 1.25%" },
+		{ 0, "", "", "" },
+		{ 61198, "INV_Stone_03", "=q2=Small Dream Shard", "", "8%" },
+		{ 20381, "INV_Misc_MonsterScales_11", "=q2=Dreamscale", "", "5%" },
+		{ 61197, "INV_Stone_05", "=q3=Fading Dream Fragment", "", "0.35%" },
+		
 	};
 };
