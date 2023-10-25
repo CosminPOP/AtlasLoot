@@ -2927,6 +2927,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Clawlord Howlfang"], "LKHClawlordHowlfang" },
 		{ AL["Lord Blackwald II"], "LKHLordBlackwaldII" },
 		{ AL["Moroes"], "LKHMoroes" },
+		{ AL["Trash Mobs"], "LKHTrash" },
 	},
 	["WorldBosses"] = {
 		{ AL["Azuregos"], "AAzuregos" },

@@ -935,6 +935,7 @@ AtlasLootBossButtons = {
 		"LKHClawlordHowlfang";
 		"LKHLordBlackwaldII";
 		"LKHMoroes";
+		"LKHTrash";
 	};
 	EmeraldSanctum = {
 		"ESErennius";
@@ -6370,6 +6371,18 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61177, "INV_Scroll_05", "=q3=Recipe: Potion of Quickness", "=ds=#p1# #m14#", "1.2%" },
 		{ 61192, "INV_Scroll_05", "=q4=Pattern: Inscribed Runic Bracers", "=ds=#p7# #m14#", "2%" },
 		{ 61191, "INV_Scroll_05", "=q4=Schematic: Intricate Gyroscope Goggles", "=ds=#p5# #m14#", "2%" },	
+	};
+	LKHTrash = {
+		{ 51326, "INV_Misc_Note_03", "=q4=Scribbled Cooking Notes", "=ds=#m2#",  "0.3%, 1%" },
+		{ 61666, "INV_Scroll_04", "=q4=Recipe: Le Fishe Au Chocolat", "=ds=#m4#, #p3# #m14#" },
+		{ 0, "", "", "" },
+		{ 61254, "INV_Belt_25", "=q3=Reedmesh Belt", "=ds=#s10#, #a1#", "0.15%" },
+		{ 61288, "INV_Belt_15", "=q3=Nightwoven Belt", "=ds=#s10#, #a1#", "0.15%" },
+		{ 61280, "INV_Bracer_16", "=q3=Granitized Bracers", "=ds=#s8#, #a3#", "0.15%" },
+		{ 61290, "INV_Belt_32", "=q3=Zephyrian Girdle", "=ds=#s10#, #a4#", "0.15%" },
+		{ 0, "", "", "" },
+		{ 61295, "INV_Mace_34", "=q3=Dawnstone Bludgeon", "=ds=#h1#, #w6#", "0.15%" },
+		{ 61452, "INV_Axe_30", "=q3=Skycleaver", "=ds=#h1#, #w1#", "0.15%" },
 	};
 	ESErennius = {
 		{ 61652, "INV_Misc_MonsterClaw_02", "=q4=Claw of Erennius", "=ds=#m2#", "100%" },

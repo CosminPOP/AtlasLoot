@@ -2569,8 +2569,8 @@ AtlasLoot_ButtonRegistry = {
 		Title = AL["Brood Queen Araxxna"];
 		Next_Page = "LKHGrizikil";
 		Next_Title = AL["Grizikil"];
-		Prev_Page = "LKHMoroes";
-		Prev_Title = AL["Moroes"];
+		Prev_Page = "LKHTrash";
+		Prev_Title = AL["Trash Mobs"];
 	};
 	["LKHGrizikil"] = {
 		Title = AL["Grizikil"];
@@ -2595,10 +2595,17 @@ AtlasLoot_ButtonRegistry = {
 	};
 	["LKHMoroes"] = {
 		Title = AL["Moroes"];
-		Next_Page = "LKHBroodQueenAraxxna";
-		Next_Title = AL["Brood Queen Araxxna"];
+		Next_Page = "LKHTrash";
+		Next_Title = AL["Trash Mobs"];
 		Prev_Page = "LKHLordBlackwaldII";
 		Prev_Title = AL["Lord Blackwald II"];
+	};
+	["LKHTrash"] = {
+		Title = AL["Trash Mobs"];
+		Next_Page = "LKHBroodQueenAraxxna";
+		Next_Title = AL["Brood Queen Araxxna"];
+		Prev_Page = "LKHMoroes";
+		Prev_Title = AL["Moroes"];
 	};
 	
 	-- World Bosses
