@@ -8354,6 +8354,21 @@ GetSpellInfoVanillaDB = {
 				[1] = {10620},
 			},
 		},
+		[57121] = {
+			["name"] = "Smelting: Smelt Dreamsteel",
+			["requires"] = AL["Forge"],
+			["tools"] = "",
+			["castTime"] = 5,
+			["text"] = "Allows the miner to smelt a bright dream shard into a dreamsteel bar. Smelting dreamsteel requires a forge.",
+			["craftItem"] = 61216,
+			["craftQuantityMin"] = "",
+			["craftQuantityMax"] = "",
+			["reagents"] = {
+				[1] = {61199},
+				[2] = {3859},
+				[3] = {20381},
+			},
+		},
 		[22967] = {
 			["name"] = "Smelting: Smelt Elementium",
 			["requires"] = AL["Forge"],
