@@ -172,6 +172,9 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 		{ 19211, "INV_Scroll_03", "=q1=Plans: Blackguard", "=ds=#p2# #m14#" },
 		{ 19212, "INV_Scroll_03", "=q1=Plans: Nightfall", "=ds=#p2# #m14#" },
 		{ 62005, "INV_Scroll_03", "=q1=Pattern: Flarecore Boots", "=ds=#p8# #m14#" },
+		{ 62006, "INV_Scroll_03", "=q1=Pattern: Chromatic Leggings", "=ds=#p7# #m14#" },
+		{ 62007, "INV_Scroll_03", "=q1=Pattern: Molten Leggings", "=ds=#p7# #m14#" },
+		{ 62003, "INV_Scroll_03", "=q1=Pattern: Corehound Gloves", "=ds=#p7# #m14#" },
 	};
 	Cenarion1 = {
 		{ 0, "", "", "" },

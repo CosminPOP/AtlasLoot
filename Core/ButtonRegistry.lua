@@ -4719,8 +4719,6 @@ AtlasLoot_ButtonRegistry = {
 		Back_Title = AL["Tailoring"];
 		Prev_Page = "TailoringArtisan4";
 		Prev_Title = AL["Tailoring"] .. ": " .. AL["Artisan"];
-		Next_Page = "TailoringApprentice1";
-		Next_Title = AL["Tailoring"] .. ": " .. AL["Artisan"];
 	};
 	["CookingApprentice1"] = {
 		Title = AL["Cooking"] .. ": " .. AL["Apprentice"];
