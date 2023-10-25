@@ -506,73 +506,119 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
 		{ 60390, "inv_chest_leather_10", "=q4=Jacket of the Scarlet Admiral", "=ds=#a2#, #s5#", "15%" },
 	};
 	ShadeMage = {
-		{ 0, "", "", "", "" },
+		{ 61500, "INV_Staff_11", "=q2=Shadestaff", "=ds=#h2#, #w9#", "50%" },
+		{ 61501, "INV_Boots_05", "=q2=Silent Sneakers", "=ds=#s12#, #a2#", "50%" },
 	};
 	GraypawAlpha = {
-		{ 0, "", "", "", "" },
+		{ 60492, "INV_Pants_02", "=q2=Graypaw Leggings", "=ds=#s11#, #a2#", "50%" },
+		{ 60493, "INV_Boots_05", "=q2=Graypaw Boots", "=ds=#s12#, #a1#", "50%" },
 	};
 	EarthcallerRezengal = {
-		{ 0, "", "", "", "" },
+		{ 61502, "INV_Staff_17", "=q2=Earthcaller Staff", "=ds=#h2#, #w9#", "50%" },
+		{ 61503, "INV_Chest_Cloth_15", "=q2=Rezengal's Robe", "=ds=#s5#, #a1#", "50%" },
 	};
 	Blazespark = {
-		{ 0, "", "", "", "" },
+		{ 61504, "INV_Belt_13", "=q2=Wildfire Girdle", "=ds=#s10#, #a3#", "50%" },
+		{ 61505, "INV_Pants_06", "=q2=Leggings of Fiery Temper", "=ds=#s11#, #a2#", "50%" },
 	};
 	WitchDoctorTanzo = {
-		{ 0, "", "", "", "" },
+		{ 61507, "INV_Jewelry_Necklace_01", "=q2=Pendant of Wilderness", "=ds=#s2#", "50%" },
+		{ 61508, "Ability_Creature_Poison_04", "=q2=Thorned Branch", "=ds=#s14#", "50%" },
 	};
 	Dawnhowl = {
-		{ 0, "", "", "", "" },
+		{ 61580, "Ability_Mount_WhiteDireWolf", "=q2=Wolf's Skull", "=ds=#s1#, #a3#", "33%" },
+		{ 61581, "INV_Chest_Leather_02", "=q2=Wolffur Armor", "=ds=#s5#, #a2#", "33%" },
+		{ 61582, "INV_Jewelry_Necklace_22", "=q2=Sharp Teeth Necklace", "=ds=#s2#", "33%" },
 	};
 	MaltimorsPrototype = {
+		{ 61573, "INV_Helmet_25", "=q2=Scrapmetal Helm", "=ds=#s1#, #a4#", "40%" },
+		{ 61574, "INV_Misc_Gear_01", "=q2=Polished Gear", "=ds=#s13#", "40%" },
 		{ 0, "", "", "", "" },
+		{ 61572, "INV_Misc_Wrench_01", "=q3=Gartside Family Wrench", "=ds=#h3#, #w6#", "20%" },
 	};
 	Bonecruncher = {
-		{ 0, "", "", "", "" },
+		{ 61583, "INV_Belt_25", "=q2=Light Ogre Belt", "=ds=#s10#, #a2#", "40%" },
+		{ 61584, "INV_Bracer_08", "=q2=Ogre Fighter's Bracers", "=ds=#s8#, #a4#", "40%" },
+		{ 61585, "INV_Misc_Bone_03", "=q2=Brawling Trophy", "=ds=#s14#", "20%" },
 	};
 	Duskskitter = {
-		{ 0, "", "", "", "" },
+		{ 61610, "INV_Spear_04", "=q2=Old Farmer's Pitchfork", "=ds=#h2#, #w7#", "33%" },
+		{ 61611, "INV_Jewelry_Necklace_01", "=q2=Emerald Pendant", "=ds=#s2#", "33%" },
+		{ 61612, "INV_Sword_06", "=q2=Holy Sword", "=ds=#h2#, #w10#", "33%" },
 	};
 	BaronPerenolde = {
-		{ 0, "", "", "", "" },
+		{ 61577, "INV_Sword_25", "=q2=Lieutenant's Sword", "=ds=#h1#, #w10#", "33%" },
 	};
 	FirstbornofArugal = {
+		{ 61586, "INV_Shoulder_08", "=q2=Explorer's Shoulders", "=ds=#s3#, #a2#", "40%" },
+		{ 61587, "INV_Boots_07", "=q2=Old Hunter's Boots", "=ds=#s12#, #a2#", "40%" },
 		{ 0, "", "", "", "" },
+		{ 61588, "INV_Jewelry_Ring_43", "=q3=Arugal Family Sigil", "=ds=#s13#", "20%" },
 	};
 	WidowoftheWoods = {
+		{ 61575, "INV_Misc_Cape_04", "=q2=Forgotten Veil", "=ds=#s1#, #a1#", "40%" },
+		{ 61576, "INV_Jewelry_Ring_03", "=q2=Lover's Ring", "=ds=#s13#", "40%" },
 		{ 0, "", "", "", "" },
+		{ 61589, "INV_Weapon_ShortBlade_01", "=q3=Widow's Kiss", "=ds=#h1#, #w4#", "20%" },
 	};
 	Ripjaw = {
+		{ 61535, "INV_Helmet_30", "=q2=Outlaw's Pirate Hat", "=ds=#s1#, #a2#", "40%" },
+		{ 61536, "INV_Belt_02", "=q2=Mystical Girdle", "=ds=#s10#, #a1#", "40%" },
 		{ 0, "", "", "", "" },
+		{ 61537, "INV_Misc_MonsterFang_01", "=q3=Ripjaw's Tooth", "=ds=#h1#, #w4#", "20%" },
 	};
 	Rukthok = {
-		{ 0, "", "", "", "" },
+		{ 61613, "INV_Chest_Leather_09", "=q2=Burnt Explorer's Tunic", "=ds=#s5#, #a2#", "33%" },
+		{ 61614, "INV_Boots_09", "=q2=Ruk'thok Slippers", "=ds=#s12#, #a1#", "33%" },
+		{ 61615, "INV_Wand_11", "=q2=Burning Torch", "=ds=#w12#", "33%" },
 	};
 	MargontheMighty = {
+		{ 61531, "INV_Misc_Gem_Pearl_01", "=q3=Glowing Black Pearl", "=ds=#s14#", "33%" },
 		{ 0, "", "", "", "" },
+		{ 61532, "INV_Hammer_16", "=q3=Giants Heavy Mace", "=ds=#h2#, #w6#", "33%" },
+		{ 61534, "INV_Spear_04", "=q3=Fisher's Harpoon", "=ds=#h2#, #w7#", "33%" },
+		{ 0, "", "", "", "" },
+		{ 61533, "INV_Belt_27", "=q4=Ring of the Forgotten Hero", "=ds=#s13#", "2%" },
 	};
 	Embereye = {
-		{ 0, "", "", "", "" },
+		{ 61538, "INV_Sword_26", "=q2=Moonsteel Zweihander", "=ds=#h2#, #w10#", "33%" },
+		{ 61539, "INV_Shoulder_02", "=q2=Scaleshard Shoulders", "=ds=#s3#, #a3#", "33%" },
+		{ 61540, "INV_Shield_02", "=q2=Emberscale Shield", "=ds=#w8#", "33%" },
 	};
 	Aquitus = {
+		{ 61529, "INV_Sword_24", "=q2=Pirate's Scimitar", "=ds=#h3#, #w10#", "40%" },
+		{ 61530, "INV_Jewelry_Ring_12", "=q2=Ring of the Deep Sea", "=ds=#s13#", "40%" },
 		{ 0, "", "", "", "" },
+		{ 61528, "INV_Bracer_06", "=q3=Aquis' Bindings", "=ds=#s8#, #a3#", "20%" },
 	};
 	Letashaz = {
+		{ 61542, "INV_Pick_03", "=q3=Dwarven Pickaxe", "=ds=#h2#, #w1#", "33%" },
+		{ 61543, "INV_Chest_Leather_07", "=q3=Miner's Vest", "=ds=#s5#, #a2#", "33%" },
+		{ 61544, "INV_Misc_Cape_14", "=q3=Shawl of the Magician", "=ds=#s4#", "33%" },
 		{ 0, "", "", "", "" },
+		{ 61541, "INV_Gauntlets_07", "=q4=Letashaz's Right Claw", "=ds=#h3#, #w13#", "2%" },
 	};
 	Stoneshell = {
-		{ 0, "", "", "", "" },
+		{ 61509, "INV_Shield_21", "=q2=Stoneshell Shield", "=ds=#w8#", "40%" },
+		{ 61510, "INV_Shoulder_29", "=q2=Stonehewn Pauldrons", "=ds=#s3#, #a4#", "40%" },
+		{ 61511, "INV_Misc_StoneTablet_07", "=q2=Scale of the Makrura", "=ds=#s14#", "20%" },
 	};
 	HighvaleSilverback = {
-		{ 0, "", "", "", "" },
+		{ 61518, "INV_Gauntlets_18", "=q2=Apefist Pummelers", "=ds=#s9#, #a2#", "40%" },
+		{ 61519, "INV_Chest_Plate10", "=q2=Tel Co. Chestguard", "=ds=#s5#, #a4#", "40%" },
+		{ 61520, "INV_Misc_Food_24", "=q2=The Golden Banana", "=ds=#s14#", "20%" },,
 	};
 	Azurebeak = {
+		{ 61550, "INV_Helmet_25", "=q2=Sanctified Helm", "=ds=#s1#, #a4#", "40%" },
+		{ 61551, "INV_Staff_14", "=q2=Mathrengyl's Lost Staff", "=ds=#h2#, #w9#", "40%" },
 		{ 0, "", "", "", "" },
+		{ 61549, "INV_Misc_Quiver_03", "=q3=Swiftfeather Quiver", "=ds=#e9#", "20%" },
 	};
 	BarkskinFisher = {
-		{ 0, "", "", "", "" },
+		{ 84507, "INV_Fishingpole_02", "=q2=Barkskin Fisher", "=ds=#w14#", "100%" },
 	};
 	ShadeflayerGoliath = {
-		{ 0, "", "", "", "" },
+		{ 61707, "INV_Bracer_01", "=q1=Shadeflayer Tribal Bracelet", "=ds=#m3#" },
 	};
 	M0L1Y = {
 		{ 0, "", "", "", "" },
