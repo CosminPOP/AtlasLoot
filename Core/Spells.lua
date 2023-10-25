@@ -1166,6 +1166,21 @@ GetSpellInfoVanillaDB = {
 				[1] = {19441},
 			},
 		},
+		[10844] = {
+			["name"] = "First Aid: Powerful Anti-Venom",
+			["requires"] = "",
+			["tools"] = "",
+			["castTime"] = 3,
+			["text"] = "Creates a Vial of Powerful Anti-Venom.",
+			["craftItem"] = 8546,
+			["craftQuantityMin"] = "",
+			["craftQuantityMax"] = "",
+			["reagents"] = {
+				[1] = {8150, 4},
+				[2] = {7078, 2},
+				[3] = {18512},
+			},
+		},
 		[818] = {
 			["name"] = "Basic Campfire",
 			["requires"] = "",

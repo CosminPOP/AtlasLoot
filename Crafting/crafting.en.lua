@@ -1898,10 +1898,11 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s18629", "inv_misc_bandage_11", "=q1=Runecloth Bandage", "=ds=#sr# =so1=260 =so2=260 =so3=290 =so4=320" },
 		{ "s18630", "inv_misc_bandage_12", "=q1=Heavy Runecloth Bandage", "=ds=#sr# =so1=290 =so2=290 =so3=320 =so4=350" },
 		{ "s23787", "inv_drink_14", "=q1=Powerful Anti-Venom", "=ds=#sr# =so1=300 =so2=300 =so3=330 =so4=360" },
+		{ "s10844", "inv_misc_ammo_gunpowder_02", "=q1=Powerful Smelling Salts", "=ds=#sr# =so1=300 =so2=300 =so3=330 =so4=360" },
 	};
 	
 --------------
--- FirstAid --
+-- Survival --
 --------------
 
 	Survival1 = {
