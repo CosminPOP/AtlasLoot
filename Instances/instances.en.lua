@@ -830,13 +830,15 @@ AtlasLootBossButtons = {
 		"UldShovelphlange";
 	};
 	GilneasCity = {
-		"MatthiasHoltz";
-		"JudgeSutherland";
-		"DustivanBlackcowl";
-		"MarshalMagnusGreystone";
-		"CeliaHarlow";
-		"MortimerHarlow";
-		"GennGreymane";
+		"GCMatthiasHoltz";
+		"GCPackmasterRagetooth";
+		"GCJudgeSutherland";
+		"GCDustivanBlackcowl";
+		"GCMarshalMagnusGreystone";
+		"GCHorsemasterLevvin";
+		"GCHarlowFamilyChest";
+		"GCGennGreymane";
+		"GCTrash";
 	};
 	WailingCaverns = {
 		"";
@@ -2829,6 +2831,102 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 83202, "inv_belt_09", "=q2=Grizzlehide Belt", "=ds=#s10#, #a2#", "0.5" },
 		{ 83200, "inv_staff_26", "=q3=Verdant Cane", "=ds=#w9#", "0.01%" },
 		{ 83205, "ability_whirlwind", "=q2=Thornwood Claw", "=ds=#h3#, #w13#", "0.5%" },
+	};
+	GCMatthiasHoltz = {
+		{ 61305, "INV_Pants_02", "=q2=Darkwatch Pants", "=ds=#s11#, #a1#", "33%" },
+		{ 61304, "INV_Bracer_16", "=q2=Gilneas Shackles", "=ds=#s8#, #a3#", "33%" },
+		{ 61306, "INV_Gauntlets_03", "=q2=Worgen Hunter Grips", "=ds=#s9#, #a3#", "33%" },
+		{ 0, "", "", "" },
+		{ 61307, "INV_Weapon_Rifle_TWoW_02_Ironblack", "=q3=Worgen Hunter Musket", "=ds=#w5#", "2%" },
+	};
+	GCPackmasterRagetooth = {
+		{ 61301, "INV_Boots_05", "=q2=Shaderun Boots", "=ds=#s12#, #a1#", "33%" },
+		{ 61300, "INV_Gauntlets_21", "=q2=Packmaster Gloves", "=ds=#s9#, #a2#", "33%" },
+		{ 0, "", "", "" },
+		{ 61302, "INV_Jewelry_Necklace_13", "=q2=Wolfheart Necklace", "=ds=#s2#", "33%" },
+		{ 0, "", "", "" },
+		{ 61303, "INV_Misc_Orb_04", "=q3=Orb of Aka'thar", "=ds=#s15#", "2%" },
+	};
+	GCJudgeSutherland = {
+		{ 61309, "inv_shoulder_24", "=q3=Mantle of Law", "=ds=#s3#, #a1#", "25%" },
+		{ 61311, "INV_Bracer_07", "=q3=Sutherland's Cuffs", "=ds=#s8#, #a1#", "25%" },
+		{ 61310, "INV_Belt_15", "=q3=Sash of Conviction", "=ds=#s10#, #a1#", "25%" },
+		{ 61312, "INV_Jewelry_Necklace_17", "=q3=The Black Pendant", "=ds=#s2#", "2%" },
+		{ 0, "", "", "" },
+		{ 61308, "INV_Hammer_05", "=q3=Gavel of Gilnean Justice", "=ds=#h3#, #w6#", "25%" },
+	};
+	GCDustivanBlackcowl = {		
+		{ 61331, "INV_Belt_17", "=q3=Blackcowl Sash", "=ds=#s10#, #a2#", "25%" },
+		{ 61332, "INV_Jewelry_Ring_35", "=q3=Ring of Electrical Binding", "=ds=#s13#", "25%" },
+		{ 61334, "INV_Misc_Cape_19", "=q3=Cloak of the Dark Veil", "=ds=#s4#", "5%" },
+		{ 0, "", "", "" },
+		{ 61330, "INV_Knife_1H_Draenei_A_03", "=q3=Dagger of Sinister Secrets", "=ds=#h1#, #w4#", "25%" },
+		{ 61333, "INV_Sword_36", "=q3=Hookblade Cleaver", "=ds=#h1#, #w10#", "25%" },
+		{ 0, "", "", "" },
+		{ 61626, "INV_Scroll_03", "=q1=Ebonmere Deed", "=ds=#m3#", "100%" },
+	};
+	GCMarshalMagnusGreystone = {
+		{ 61313, "inv_helmet_02", "=q3=Greymane Helmet", "=ds=#s1#, #a4#", "25%" },
+		{ 0, "", "", "" },
+		{ 61315, "INV_Jewelry_Ring_27", "=q3=Band of Piercing Shadows", "=ds=#s13#", "25%" },
+		{ 61317, "INV_Misc_Book_10", "=q3=Scriptures of Blood", "=ds=#s14#", "5%" },
+		{ 61316, "INV_Misc_Cape_02", "=q3=Chainlinked Cloak", "=ds=#s4#", "25%" },
+		{ 0, "", "", "" },
+		{ 61314, "INV_Shield_06", "=q3=Marshal's Blocker", "=ds=#w8#", "25%" },
+		{ 0, "", "", "" },
+		{ 61368, "INV_Shirt_GuildTabard_01", "=q2=Greymane Tabard", "=ds=#s7#", "3%" },
+	};
+	--GCCeliaHarlow = {
+	--};
+	--GCMortimerHarlow = {
+	--};
+	GCHorsemasterLevvin = {
+		{ 61734, "INV_Belt_09", "=q2=Horsemaster Belt", "=ds=#s10#, #a2#", "25%" },
+		{ 61736, "INV_Misc_Pelt_Bear_Ruin_03", "=q2=Horse Rustler Drape", "=ds=#s4#", "25%" },
+		{ 0, "", "", "" },
+		{ 61735, "INV_Staff_08", "=q2=Stablehand Broom", "=ds=#h2#, #w9#", "25%" },
+		{ 61737, "INV_Misc_Lantern_01", "=q3=Stablemaster's Nightlight", "=ds=#s15#", "25%" },
+		{ 0, "", "", "" },
+		{ 83157, "Ability_Mount_RidingHorse", "=q4=Greymane Charger", "=ds=#e7#", "0.18%" },
+	};
+	GCHarlowFamilyChest = {
+		{ 61319, "INV_Chest_Cloth_04", "=q3=Regal Robes of the Regent", "=ds=#s5#, #a1#", "25%" },
+		{ 61321, "INV_Bracer_13", "=q3=Wildfeather Bracers", "=ds=#s8#, #a2#", "25%" },
+		{ 61320, "inv_misc_desecrated_mailpants", "=q3=Ashen Leggings", "=ds=#s11#, #a3#", "25%" },
+		{ 0, "", "", "" },
+		{ 61318, "INV_ThrowingAxe_06", "=q3=Fleshslasher", "=ds=#h2#, #w1#", "25%" },
+		{ 0, "", "", "" },
+		{ 61322, "INV_Jewelry_Necklace_16", "=q3=Resurging Necklace", "=ds=#s2#", "5%" },
+	};
+	GCGennGreymane = {
+		{ 61323, "INV_Helmet_53", "=q3=Swiftcaster's Chapeau", "=ds=#s1#, #a1#", "15%" },
+		{ 61326, "INV_Chest_Cloth_04", "=q3=Robe of Light's Ambassador", "=ds=#s5#, #a1#", "15%" },
+		{ 61327, "INV_Boots_07", "=q3=Boots of Espionage", "=ds=#s12#, #a2#", "15%" },
+		{ 61325, "inv_chest_plate04", "=q3=Regal Goldforged Breastplate", "=ds=#s5#, #a3#", "15%" },
+		{ 61324, "inv_shoulder_12", "=q3=Greymane Shoulders", "=ds=#s3#, #a4#", "15%" },
+		{ 0, "", "", "" },
+		{ 61328, "INV_Sword_17", "=q3=Wolfblood", "=ds=#h2#, #w10#", "15%" },
+		{ 61329, "inv_misc_bag_10_red", "=q3=Sack of Gruesome Eminence", "=ds=#s15#", "15%" },
+		{ 0, "", "", "" },
+		{ 61406, "INV_Jewelry_Necklace_22", "=q4=Mark of the Worgen", "=ds=#s13#", "0.5%, 1%" },
+		{ 0, "", "", "" },
+		{ 61738, "INV_Misc_Note_01", "=q2=Formula: Enchant Bracer - Vampirism", "=ds=#p4# #m14#", "6%" },
+		{ 69000, "INV_Weapon_ShortBlade_16", "=q2=Gilnean Raven", "=ds=#e15#", "1.5%" },
+		{ 0, "", "", "" },
+		{ 61352, "INV_Misc_Head_Human_01", "=q1=Genn Greymane's Head", "=ds=#m3#", "100%" },
+		{ 61496, "INV_Crown_01", "=q1=The Greymane Crown", "=ds=#m3#", "100%" },
+	};
+	GCTrash = {	
+		{ 61598, "INV_Bracer_13", "=q3=Wraps of the Pauper", "=ds=#s8#, #a1#", "0.0125%, 0.0338%" },
+		{ 61336, "INV_Gauntlets_32", "=q3=Knife Juggler Gloves", "=ds=#s9#, #a2#", "0.0125%, 0.0338%" },
+		{ 61597, "INV_Pants_11", "=q3=Conspirator's Trickpockets", "=ds=#s11#, #a2#", "0.0125%, 0.0338%" },
+		{ 61335, "INV_Shoulder_02", "=q3=Dragonbane Pauldrons", "=ds=#s3#, #a3#", "0.0125%, 0.0338%" },
+		{ 61339, "inv_shoulder_22", "=q3=Pauldrons of the Justicar", "=ds=#s3#, #a4#", "0.0125%, 0.0338%" },
+		{ 0, "", "", "" },
+		{ 61337, "INV_Relics_LibramofGrace", "=q3=Libram of the Justicar", "=ds=#s16#, #e18#", "0.0125%, 0.0338%" },
+		{ 0, "", "", "" },
+		{ 61338, "INV_Staff_28", "=q3=Staff of Ushered Ruination", "=ds=#h2#, #w9#", "0.0125%, 0.0338%" },
+		{ 61596, "INV_Weapon_Halberd_09", "=q3=Defender's Glaive", "=ds=#h2#, #w7#", "0.0125%, 0.0338%" },
 	};
 	KCMarrowspike = {
 		{ 83441, "INV_chest_chain_15", "=q3=Splintercage Breastplate", "=ds=#s5#, #a4#", "18%" },

@@ -1654,53 +1654,67 @@ AtlasLoot_ButtonRegistry = {
 		Prev_Page = "UldArchaedas";
 		Prev_Title = AL["Archaedas"];
 	};
-	["MatthiasHoltz"] = {
+	["GCMatthiasHoltz"] = {
 		Title = AL["Matthias Holtz"];
-		Next_Page = "JudgeSutherland";
-		Next_Title = AL["Judge Sutherland"];
-		Prev_Page = "GennGreymane";
-		Prev_Title = AL["Genn Greymane"];
+		Next_Page = "GCPackmasterRagetooth";
+		Next_Title = AL["Packmaster Ragetooth"];
+		Prev_Page = "GCTrash";
+		Prev_Title = AL["Trash Mobs"];
 	};
-	["JudgeSutherland"] = {
-		Title = AL["Judge Sutherland"];
-		Prev_Page = "MatthiasHoltz";
+	["GCPackmasterRagetooth"] = {
+		Title = AL["Packmaster Ragetooth"];
+		Next_Page = "GCJudgeSutherland";
+		Next_Title = AL["Judge Sutherland"];
+		Prev_Page = "GCMatthiasHoltz";
 		Prev_Title = AL["Matthias Holtz"];
-		Next_Page = "DustivanBlackcowl";
+	};
+	["GCJudgeSutherland"] = {
+		Title = AL["Judge Sutherland"];
+		Prev_Page = "GCPackmasterRagetooth";
+		Prev_Title = AL["Packmaster Ragetooth"];
+		Next_Page = "GCDustivanBlackcowl";
 		Next_Title = AL["Dustivan Blackcowl"];
 	};
-	["DustivanBlackcowl"] = {
+	["GCDustivanBlackcowl"] = {
 		Title = AL["Dustivan Blackcowl"];
-		Prev_Page = "JudgeSutherland";
+		Prev_Page = "GCJudgeSutherland";
 		Prev_Title = AL["Judge Sutherland"];
-		Next_Page = "MarshalMagnusGreystone";
+		Next_Page = "GCMarshalMagnusGreystone";
 		Next_Title = AL["Marshal Magnus Greystone"];
 	};
-	["MarshalMagnusGreystone"] = {
+	["GCMarshalMagnusGreystone"] = {
 		Title = AL["Marshal Magnus Greystone"];
-		Prev_Page = "DustivanBlackcowl";
+		Prev_Page = "GCDustivanBlackcowl";
 		Prev_Title = AL["Dustivan Blackcowl"];
-		Next_Page = "CeliaHarlow";
-		Next_Title = AL["Celia Harlow"];
+		Next_Page = "GCHorsemasterLevvin";
+		Next_Title = AL["Horsemaster Levvin"];
 	};
-	["CeliaHarlow"] = {
-		Title = AL["Celia Harlow"];
-		Prev_Page = "MarshalMagnusGreystone";
+	["GCHorsemasterLevvin"] = {
+		Title = AL["Horsemaster Levvin"];
+		Prev_Page = "GCMarshalMagnusGreystone";
 		Prev_Title = AL["Marshal Magnus Greystone"];
-		Next_Page = "MortimerHarlow";
-		Next_Title = AL["Mortimer Harlow"];
+		Next_Page = "GCHarlowFamilyChest";
+		Next_Title = AL["Harlow Family Chest"];
 	};
-	["MortimerHarlow"] = {
-		Title = AL["Mortimer Harlow"];
-		Prev_Page = "CeliaHarlow";
-		Prev_Title = AL["Celia Harlow"];
-		Next_Page = "GennGreymane";
+	["GCHarlowFamilyChest"] = {
+		Title = AL["Harlow Family Chest"];
+		Prev_Page = "GCHorsemasterLevvin";
+		Prev_Title = AL["Horsemaster Levvin"];
+		Next_Page = "GCGennGreymane";
 		Next_Title = AL["Genn Greymane"];
 	};
-	["GennGreymane"] = {
+	["GCGennGreymane"] = {
 		Title = AL["Genn Greymane"];
-		Prev_Page = "MortimerHarlow";
-		Prev_Title = AL["Mortimer Harlow"];
-		Next_Page = "MatthiasHoltz";
+		Prev_Page = "GCHarlowFamilyChest";
+		Prev_Title = AL["Harlow Family Chest"];
+		Next_Page = "GCTrash";
+		Next_Title = AL["Trash Mobs"];
+	};
+	["GCTrash"] = {
+		Title = AL["Trash Mobs"];
+		Prev_Page = "GCGennGreymane";
+		Prev_Title = AL["Genn Greymane"];
+		Next_Page = "GCMatthiasHoltz";
 		Next_Title = AL["Matthias Holtz"];
 	};
 	["ZGJeklik"] = {
