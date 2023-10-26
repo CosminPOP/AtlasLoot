@@ -932,6 +932,7 @@ AtlasLootBossButtons = {
 		"ZGEnchants";
 	};
 	LowerKara = {
+		"LKHRolfen";
 		"LKHBroodQueenAraxxna";
 		"LKHGrizikil";
 		"LKHClawlordHowlfang";
@@ -6311,6 +6312,12 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 5423, "INV_Axe_17", "=q3=Boahn's Fang", "=ds=#h2#, #w1#", "28%" },
 		{ 0,"","","" },
 		{ 5422, "INV_Pants_02", "=q2=Brambleweed Leggings", "=ds=#s11#, #a2#", "64%" },
+	};
+	LKHRolfen = {
+		{ 61805, "INV_Scroll_04", "=q4=Plans: Towerforge Demolisher", "=ds=#p2# #m14#", "1.44%" },	
+		{ 61806, "INV_Scroll_04", "=q4=Plans: Towerforge Pauldrons", "=ds=#p2# #m14#", "1.44%" },	
+		{ 61807, "INV_Scroll_04", "=q4=Plans: Towerforge Breastplate", "=ds=#p2# #m14#", "1.44%" },	
+		{ 61808, "INV_Scroll_04", "=q4=Plans: Towerforge Crown", "=ds=#p2# #m14#", "1.44%" },	
 	};
 	LKHBroodQueenAraxxna = {
 		{ 61297, "inv_boots_cloth_04", "=q4=Marshtreader Slippers", "=ds=#s12#, #a1#", "20" },

@@ -1489,6 +1489,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Solnius the Awakener"] = true,
 	["Solnius the Awakener (Page 2)"] = true,
 	["Favor of Erennius (ES Hard Mode)"] = true,
+	["Master Blacksmith Rolfen"] = true,
 	["Brood Queen Araxxna"] = true,
 	["Lord Blackwald II"] = true,
 	["Clawlord Howlfang"] = true,

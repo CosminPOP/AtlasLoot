@@ -2586,12 +2586,19 @@ AtlasLoot_ButtonRegistry = {
 	};
 	
 	-- Lower Karazhan Halls
+	["LKHRolfen"] = {
+		Title = AL["Master Blacksmith Rolfen"];
+		Next_Page = "LKHBroodQueenAraxxna";
+		Next_Title = AL["Brood Queen Araxxna"];
+		Prev_Page = "LKHEnchants";
+		Prev_Title = AL["LKH Enchants"];
+	};
 	["LKHBroodQueenAraxxna"] = {
 		Title = AL["Brood Queen Araxxna"];
 		Next_Page = "LKHGrizikil";
 		Next_Title = AL["Grizikil"];
-		Prev_Page = "LKHEnchants";
-		Prev_Title = AL["LKH Enchants"];
+		Prev_Page = "LKHRolfen";
+		Prev_Title = AL["Master Blacksmith Rolfen"];
 	};
 	["LKHGrizikil"] = {
 		Title = AL["Grizikil"];
@@ -2630,12 +2637,13 @@ AtlasLoot_ButtonRegistry = {
 	};
 	["LKHEnchants"] = {
 		Title = AL["LKH Enchants"];
-		Next_Page = "LKHBroodQueenAraxxna";
-		Next_Title = AL["Brood Queen Araxxna"];
+		Next_Page = "LKHRolfen";
+		Next_Title = AL["Master Blacksmith Rolfen"];
 		Prev_Page = "LKHTrash";
 		Prev_Title = AL["Trash Mobs"];
 	};
-	
+
+
 	
 	-- World Bosses
 	["AAzuregos"] = {

@@ -494,7 +494,8 @@ AtlasLoot_TableNames = {
 	["ESHardMode"] = { AL["Favor of Erennius (ES Hard Mode)"], "AtlasLootItems" },
 	["ESTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 	--Lower Karazhan Halls
-	["LKHBroodQueenAraxxna"] = { AL["Erennius"], "AtlasLootItems" },
+	["LKHRolfen"] = { AL["Master Blacksmith Rolfen"], "AtlasLootItems" },
+	["LKHBroodQueenAraxxna"] = { AL["Brood Queen Araxxna"], "AtlasLootItems" },
 	["LKHGrizikil"] = { AL["Grizikil"], "AtlasLootItems" },
 	["LKHClawlordHowlfang"] = { AL["Clawlord Howlfang"], "AtlasLootItems" },
 	["LKHLordBlackwaldII"] = { AL["Lord Blackwald II"], "AtlasLootItems" },
@@ -1509,9 +1510,13 @@ AtlasLoot_TableNamesBoss = {
 	},
 	["Emerald Sanctum"] = {
 		["ESErennius"] = { AL["Erennius"], "AtlasLootItems" },
-		["ESSolnius"] = { AL["Solnius the Awakener"], "AtlasLootItems" },
+		["ESSolnius1"] = { AL["Solnius the Awakener"], "AtlasLootItems" },
+		["ESSolnius2"] = { AL["Solnius the Awakener (Page 2)"], "AtlasLootItems" },
+		["ESHardMode"] = { AL["Favor of Erennius (ES Hard Mode)"], "AtlasLootItems" },
+		["ESTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 	},
 	["Lower Karazhan Halls"] = {
+		["LKHRolfen"] = { AL["Master Blacksmith Rolfen"], "AtlasLootItems" },
 		["LKHBroodQueenAraxxna"] = { AL["Erennius"], "AtlasLootItems" },
 		["LKHLordBlackwaldII"] = { AL["Lord Blackwald II"], "AtlasLootItems" },
 		["LKHClawlordHowlfang"] = { AL["Clawlord Howlfang"], "AtlasLootItems" },

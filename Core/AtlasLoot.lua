@@ -2925,6 +2925,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Trash Mobs"], "ESTrash" },
 	},
 	["LowerKara"] = {
+		{ AL["Master Blacksmith Rolfen"], "LKHRolfen" },
 		{ AL["Brood Queen Araxxna"], "LKHBroodQueenAraxxna" },
 		{ AL["Grizikil"], "LKHGrizikil" },
 		{ AL["Clawlord Howlfang"], "LKHClawlordHowlfang" },
