@@ -944,6 +944,7 @@ AtlasLootBossButtons = {
 		"ESErennius";
 		"ESSolnius1";
 		"ESSolnius2";
+		"ESHardMode";
 		"ESTrash";
 	}
 };
@@ -6572,6 +6573,17 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 17962,"INV_Misc_Bag_10_Blue","=q2=Blue Sack of Gems","=ds=#m23# =q2=#e33#", "100%" },
+	};
+	ESHardMode = {
+		{ 61524, "INV_Chest_Plate07", "=q4=Naturecaller's Tunic", "=ds=#s5#, #a2#", "17%" },
+		{ 61522, "INV_Jewelry_Necklace_01", "=q4=Choker of the Emerald Lord", "=ds=#s2#", "17%" },
+		{ 61527, "BTNOrbofChaos", "=q4=Breath of Solnius", "=ds=#s14#", "17%" },
+		{ 0, "", "", "" },
+		{ 61523, "inv_sword_38", "=q4=Crystal Sword of the Blossom", "=ds=#h1#, #w10#", "17%" },
+		{ 61525, "INV_Weapon_Bow_04", "=q4=Nature's Call", "=ds=#w2#", "17%" },
+		{ 61526, "inv_shield_24", "=q4=Jadestone Protector", "=ds=#w8#", "17%" },
+		{ 0, "", "", "" },
+		{ 61197, "INV_Stone_05", "=q3=Fading Dream Fragment", "", "48%" },
 	};
 	ESTrash = {
 		{ 84502, "inv_boots_cloth_04", "=q4=Verdant Dreamer's Boots", "=ds=#s12#, #a2#", "0.125%, 0.5%, 1.25%" },

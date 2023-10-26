@@ -2921,6 +2921,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Erennius"], "ESErennius" },
 		{ AL["Solnius the Awakener"], "ESSolnius1" },
 		{ AL["Solnius the Awakener (Page 2)"], "ESSolnius2" },
+		{ AL["Favor of Erennius (ES Hard Mode)"], "ESHardMode" },
 		{ AL["Trash Mobs"], "ESTrash" },
 	},
 	["LowerKara"] = {

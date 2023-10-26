@@ -2565,9 +2565,16 @@ AtlasLoot_ButtonRegistry = {
 	};
 	["ESSolnius2"] = {
 		Title = AL["Solnius the Awakener (Page 2)"];
+		Next_Page = "ESHardMode";
+		Next_Title = AL["Favor of Erennius (ES Hard Mode)"];
+		Prev_Page = "ESSolnius1";
+		Prev_Title = AL["Solnius the Awakener"];
+	};
+	["ESHardMode"] = {
+		Title = AL["Favor of Erennius (ES Hard Mode)"];
 		Next_Page = "ESTrash";
 		Next_Title = AL["Trash Mobs"];
-		Prev_Page = "ESSolnius1";
+		Prev_Page = "ESSolnius2";
 		Prev_Title = AL["Solnius the Awakener"];
 	};
 	["ESTrash"] = {

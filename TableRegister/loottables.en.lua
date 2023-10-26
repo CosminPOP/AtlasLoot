@@ -491,6 +491,7 @@ AtlasLoot_TableNames = {
 	["ESErennius"] = { AL["Erennius"], "AtlasLootItems" },
 	["ESSolnius1"] = { AL["Solnius the Awakener"], "AtlasLootItems" },
 	["ESSolnius2"] = { AL["Solnius the Awakener (Page 2)"], "AtlasLootItems" },
+	["ESHardMode"] = { AL["Favor of Erennius (ES Hard Mode)"], "AtlasLootItems" },
 	["ESTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 	--Lower Karazhan Halls
 	["LKHBroodQueenAraxxna"] = { AL["Erennius"], "AtlasLootItems" },
