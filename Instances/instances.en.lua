@@ -6320,10 +6320,10 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61808, "INV_Scroll_04", "=q4=Plans: Towerforge Crown", "=ds=#p2# #m14#", "1.44%" },	
 	};
 	LKHBroodQueenAraxxna = {
-		{ 61297, "inv_boots_cloth_04", "=q4=Marshtreader Slippers", "=ds=#s12#, #a1#", "20" },
-		{ 61260, "INV_Helmet_34", "=q4=Flamescorched Hood", "=ds=#s1#, #a2#", "20" },
-		{ 61268, "Spell_Nature_Crystalball", "=q4=Sigil of the Brood", "=ds=#s15#", "20" },
-		{ 61243, "INV_Potion_97", "=q4=Vial of Potent Venoms", "=ds=#s14#", "20" },
+		{ 61297, "inv_boots_cloth_04", "=q4=Marshtreader Slippers", "=ds=#s12#, #a1#", "20%" },
+		{ 61260, "INV_Helmet_34", "=q4=Flamescorched Hood", "=ds=#s1#, #a2#", "20%" },
+		{ 61268, "Spell_Nature_Crystalball", "=q4=Sigil of the Brood", "=ds=#s15#", "20%" },
+		{ 61243, "INV_Potion_97", "=q4=Vial of Potent Venoms", "=ds=#s14#", "20%" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
@@ -6421,7 +6421,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61247, "INV_Sword_2H_Blood_C_02", "=q4=Shadowbringer", "=ds=#h2#, #w10#", "20%" },
 		{ 61443, "INV_Misc_Book_13", "=q4=Libram of the Faithful", "=ds=#s16#, #e18#", "20%" },
 		{ 0, "", "", "" },
-		{ 0, "", "", "" },
+		{ 61184, "Inv_weapon_shortblade_23", "=q5=The Scythe of Elune", "=ds=#m2#" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },

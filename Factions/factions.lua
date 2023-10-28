@@ -168,6 +168,7 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 		{ 0, "", "", "" },
 		{ 0, "INV_Ingot_Mithril", "=q6=#r5#", "" },
 		{ 20040, "INV_Scroll_03", "=q1=Plans: Dark Iron Boots", "=ds=#p2# #m14#" },
+		{ 62004, "INV_Scroll_03", "=q1=Plans: Fiery Chain Breastplate", "=ds=#p2# #m14#" },
 		{ 19210, "INV_Scroll_03", "=q1=Plans: Ebon Hand", "=ds=#p2# #m14#" },
 		{ 19211, "INV_Scroll_03", "=q1=Plans: Blackguard", "=ds=#p2# #m14#" },
 		{ 19212, "INV_Scroll_03", "=q1=Plans: Nightfall", "=ds=#p2# #m14#" },
