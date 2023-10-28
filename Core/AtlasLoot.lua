@@ -3825,10 +3825,46 @@ local remoteversion = tonumber(AtlasLoot_updateavailable) or 0
 local loginchannels = { "BATTLEGROUND", "RAID", "GUILD" }
 local groupchannels = { "BATTLEGROUND", "RAID" }
 
+AtlasLoot_updater_ChatFrame_OnEvent = ChatFrame_OnEvent
 AtlasLoot_updater = CreateFrame("Frame")
 AtlasLoot_updater:RegisterEvent("CHAT_MSG_ADDON")
 AtlasLoot_updater:RegisterEvent("PLAYER_ENTERING_WORLD")
 AtlasLoot_updater:RegisterEvent("PARTY_MEMBERS_CHANGED")
+
+function ChatFrame_OnEvent(event)
+
+	if event == "CHAT_MSG_CHANNEL" then
+	
+		local type = strsub(event, 10)
+		local source = strsub(type,1,1)
+		if type == "CHANNEL" and arg4 then
+			_,_,source = string.find(arg4,"(%d+)%.")
+		end
+		
+		if source then
+			_,name = GetChannelName(source)
+		end
+		
+		if name == "LFT" then
+			local msg, v, remoteversion = AtlasLoot_strsplit(":", arg1)
+			if msg == "Atlasloot" then
+				local remoteversion = tonumber(remoteversion)
+				if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
+				if v == "VERSION" and remoteversion then
+					if remoteversion > localversion then
+						AtlasLoot_updateavailable = remoteversion
+						if not alreadyshown then
+							DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
+							alreadyshown = true
+						end
+					end
+				end
+			end
+		end
+	end
+	AtlasLoot_updater_ChatFrame_OnEvent(event);
+end
+
 AtlasLoot_updater:SetScript("OnEvent", function()
 	if event == "CHAT_MSG_ADDON" and arg1 == "AtlasLoot" then
 		local v, remoteversion = AtlasLoot_strsplit(":", arg2)
@@ -3864,6 +3900,9 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 
 	  for _, chan in pairs(loginchannels) do
 		SendAddonMessage("AtlasLoot", "VERSION:" .. localversion, chan)
+	  end
+	  if GetChannelName("LFT") ~= 0 then
+		SendChatMessage("Atlasloot:VERSION:" .. localversion, "CHANNEL", nil, GetChannelName("LFT"))
 	  end
 	end
   end)
